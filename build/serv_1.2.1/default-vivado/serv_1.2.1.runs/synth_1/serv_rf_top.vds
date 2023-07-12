@@ -1,0 +1,432 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 12 11:12:52 2023
+# Process ID: 1467637
+# Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/default-vivado/serv_1.2.1.runs/synth_1
+# Command line: vivado -log serv_rf_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source serv_rf_top.tcl
+# Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/default-vivado/serv_1.2.1.runs/synth_1/serv_rf_top.vds
+# Journal file: /home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/default-vivado/serv_1.2.1.runs/synth_1/vivado.jou
+# Running On: binhkieudo, OS: Linux, CPU Frequency: 3300.000 MHz, CPU Physical cores: 10, Host memory: 134739 MB
+#-----------------------------------------------------------
+source serv_rf_top.tcl -notrace
+Command: synth_design -top serv_rf_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1467692
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2415.980 ; gain = 382.707 ; free physical = 67579 ; free virtual = 116675
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1837.995; parent = 1632.130; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3417.031; parent = 2418.953; children = 998.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_top' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram_if' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram_if.v:2]
+	Parameter width bound to: 2 - type: integer 
+	Parameter reset_strategy bound to: MINI - type: string 
+	Parameter csr_regs bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram_if' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram.v:1]
+	Parameter width bound to: 2 - type: integer 
+	Parameter csr_regs bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_top' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_top.v:3]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+	Parameter PRE_REGISTER bound to: 1 - type: integer 
+	Parameter RESET_STRATEGY bound to: MINI - type: string 
+	Parameter RESET_PC bound to: 0 - type: integer 
+	Parameter MDU bound to: 1'b0 
+	Parameter COMPRESSED bound to: 1'b0 
+	Parameter ALIGN bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'serv_csr' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_csr.v:2]
+	Parameter RESET_STRATEGY bound to: MINI - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'serv_csr' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_csr.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_state' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_state.v:1]
+	Parameter RESET_STRATEGY bound to: MINI - type: string 
+	Parameter WITH_CSR bound to: 1'b1 
+	Parameter ALIGN bound to: 1'b0 
+	Parameter MDU bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'serv_state' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_state.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_decode' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:2]
+	Parameter PRE_REGISTER bound to: 1 - type: integer 
+	Parameter MDU bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'serv_decode' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_immdec' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_immdec.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_immdec' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_immdec.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_bufreg' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_bufreg.v:1]
+	Parameter MDU bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'serv_bufreg' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_bufreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_bufreg2' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_bufreg2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'serv_bufreg2' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_bufreg2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serv_ctrl' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_ctrl.v:2]
+	Parameter RESET_STRATEGY bound to: MINI - type: string 
+	Parameter RESET_PC bound to: 0 - type: integer 
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_ctrl' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_alu' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_alu' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_rf_if' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_if.v:2]
+	Parameter WITH_CSR bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_if' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_if.v:2]
+INFO: [Synth 8-6157] synthesizing module 'serv_mem_if' [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_mem_if.v:2]
+	Parameter WITH_CSR bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'serv_mem_if' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_mem_if.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'serv_top' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'serv_rf_top' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_rf_top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element imm25_reg was removed.  [/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:242]
+WARNING: [Synth 8-7129] Port i_mdu_op in module serv_bufreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[31] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[29] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[28] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[27] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[25] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[24] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[23] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[19] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[18] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[17] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[16] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[15] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[11] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[10] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[9] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[8] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_rdt[7] in module serv_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_mdu_op in module serv_state is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_mdu_ready in module serv_state is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ibus_rdt[1] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ibus_rdt[0] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[31] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[30] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[29] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[28] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[27] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[26] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[25] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[24] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[23] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[22] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[21] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[20] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[19] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[18] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[17] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[16] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[15] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[14] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[13] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[12] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[11] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[10] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[9] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[8] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[7] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[6] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[5] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[4] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[3] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[2] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[1] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[0] in module serv_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ren in module serv_rf_ram is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2496.918 ; gain = 463.645 ; free physical = 67663 ; free virtual = 116753
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1837.995; parent = 1632.130; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3495.000; parent = 2496.922; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2511.762 ; gain = 478.488 ; free physical = 67646 ; free virtual = 116737
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1837.995; parent = 1632.130; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3509.844; parent = 2511.766; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2519.766 ; gain = 486.492 ; free physical = 67646 ; free virtual = 116736
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1837.995; parent = 1632.130; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3517.848; parent = 2519.770; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2525.703 ; gain = 492.430 ; free physical = 67599 ; free virtual = 116691
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1837.995; parent = 1632.130; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3523.785; parent = 2525.707; children = 998.078
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   3 Input    2 Bit       Adders := 4     
+	   4 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 33    
++---RAMs : 
+	               1K Bit	(576 X 2 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 25    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design serv_rf_top has port o_dbus_adr[1] driven by constant 0
+WARNING: [Synth 8-3917] design serv_rf_top has port o_dbus_adr[0] driven by constant 0
+WARNING: [Synth 8-3917] design serv_rf_top has port o_mdu_valid driven by constant 0
+WARNING: [Synth 8-7129] Port i_ibus_rdt[1] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ibus_rdt[0] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[31] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[30] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[29] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[28] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[27] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[26] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[25] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[24] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[23] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[22] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[21] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[20] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[19] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[18] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[17] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[16] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[15] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[14] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[13] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[12] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[11] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[10] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[9] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[8] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[7] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[6] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[5] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[4] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[3] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[2] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[1] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_rd[0] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ext_ready in module serv_rf_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2684.875 ; gain = 651.602 ; free physical = 67348 ; free virtual = 116439
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3682.957; parent = 2684.879; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|serv_rf_top | rf_ram/memory_reg | 0 K x 2(READ_FIRST)    | W |   | 0 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2684.875 ; gain = 651.602 ; free physical = 67348 ; free virtual = 116439
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3682.957; parent = 2684.879; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|serv_rf_top | rf_ram/memory_reg | 0 K x 2(READ_FIRST)    | W |   | 0 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance rf_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     1|
+|3     |LUT2     |    13|
+|4     |LUT3     |    75|
+|5     |LUT4     |    35|
+|6     |LUT5     |    25|
+|7     |LUT6     |    65|
+|8     |RAMB18E1 |     1|
+|9     |FDRE     |   184|
+|10    |IBUF     |    67|
+|11    |OBUF     |   171|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+---------------+------+
+|      |Instance    |Module         |Cells |
++------+------------+---------------+------+
+|1     |top         |               |   638|
+|2     |  cpu       |serv_top       |   362|
+|3     |    alu     |serv_alu       |     4|
+|4     |    bufreg  |serv_bufreg    |    40|
+|5     |    bufreg2 |serv_bufreg2   |    67|
+|6     |    csr     |serv_csr       |    15|
+|7     |    ctrl    |serv_ctrl      |    34|
+|8     |    decode  |serv_decode    |   103|
+|9     |    immdec  |serv_immdec    |    55|
+|10    |    mem_if  |serv_mem_if    |     1|
+|11    |    state   |serv_state     |    43|
+|12    |  rf_ram    |serv_rf_ram    |     8|
+|13    |  rf_ram_if |serv_rf_ram_if |    29|
++------+------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67347 ; free virtual = 116438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2100.567; parent = 1894.948; children = 205.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3690.965; parent = 2692.887; children = 998.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 95 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2692.883 ; gain = 659.609 ; free physical = 67357 ; free virtual = 116448
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2692.891 ; gain = 659.609 ; free physical = 67357 ; free virtual = 116448
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2692.891 ; gain = 0.000 ; free physical = 67454 ; free virtual = 116545
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2818.531 ; gain = 0.000 ; free physical = 67377 ; free virtual = 116468
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4f4981c7
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 95 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2818.531 ; gain = 809.070 ; free physical = 67587 ; free virtual = 116678
+INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/serv_1.2.1/default-vivado/serv_1.2.1.runs/synth_1/serv_rf_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file serv_rf_top_utilization_synth.rpt -pb serv_rf_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 12 11:13:18 2023...

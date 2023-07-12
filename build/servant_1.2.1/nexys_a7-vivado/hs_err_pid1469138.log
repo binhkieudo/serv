@@ -1,0 +1,16 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f506c787ecb]
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f506c78ec81]
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f506c782d23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x43090) [0x7f50a948d090]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(+0x3f1d54) [0x7f5090287d54]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(+0x33ddb0) [0x7f50901d3db0]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::getNext_()+0x23d) [0x7f509022584d]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::next()+0x11) [0x7f5090225c21]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(HADLSrcScanFileSet::addFilesFrom(HADAFileSet const&, bool)+0x377) [0x7f50903dc177]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(HADLEditorAssist::refresh()+0x341) [0x7f50903d1eb1]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_filemgmt.so(Java_ui_data_srcscan_srcscani_EditorAssist_1refresh+0x17) [0x7f50903e68b7]
+[0x7f505c6a5504]

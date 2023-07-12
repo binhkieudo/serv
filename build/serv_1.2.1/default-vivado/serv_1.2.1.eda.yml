@@ -1,0 +1,89 @@
+dependencies:
+  ::serv:1.2.1: []
+files:
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_bufreg.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_bufreg2.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_alu.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_csr.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_ctrl.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_decode.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_immdec.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_mem_if.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_rf_if.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_rf_ram_if.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_rf_ram.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_state.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_top.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_rf_top.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_aligner.v
+- core: ::serv:1.2.1
+  file_type: verilogSource
+  name: ../src/serv_1.2.1/rtl/serv_compdec.v
+hooks: {}
+name: serv_1.2.1
+parameters:
+  ALIGN:
+    datatype: int
+    description: Enable/Disable the support of misaligned instructions
+    paramtype: vlogparam
+  COMPRESSED:
+    datatype: int
+    description: Enable/Disable the support for Compressed instructions
+    paramtype: vlogparam
+  MDU:
+    datatype: int
+    description: Enables interface for RISC-V standard M-extension
+    paramtype: vlogparam
+  PRE_REGISTER:
+    datatype: int
+    description: Register signals before or after the decoder
+    paramtype: vlogparam
+  RESET_STRATEGY:
+    datatype: str
+    paramtype: vlogparam
+  RISCV_FORMAL:
+    datatype: bool
+    paramtype: vlogdefine
+  SERV_CLEAR_RAM:
+    datatype: bool
+    paramtype: vlogdefine
+  WITH_CSR:
+    datatype: int
+    paramtype: vlogparam
+tool_options:
+  vivado:
+    part: xc7a100tcsg324-1
+    pnr: none
+toplevel: serv_rf_top
+version: 0.2.1
+vpi: []

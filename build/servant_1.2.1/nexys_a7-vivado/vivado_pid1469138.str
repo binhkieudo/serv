@@ -1,0 +1,2593 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 04:59:54 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 1469138
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jul 12 11:22:33 JST 2023
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Ubuntu
+OS Version: 5.15.0-76-generic
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: 0
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9
+Java executable: 	/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	binhkieudo
+User home directory: /home/binhkieudo
+User working directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2022.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: /home/binhkieudo/.Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: /home/binhkieudo/.Xilinx/Vivado/2022.2/
+Vivado layouts directory: /home/binhkieudo/.Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.log
+Vivado journal file: 	/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1469138-binhkieudo
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2022.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: /tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2022.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2022.2/bin:/tools/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/vivado
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2022.2/tps/lnx64
+RDI_USE_JDK11: True
+XILINX: /tools/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2022.2
+XILINX_SDK: /tools/Xilinx/Vitis/2022.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2022.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2022.2
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,995 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 96 MB (+98589kb) [00:00:07]
+// [Engine Memory]: 1,889 MB (+1829313kb) [00:00:07]
+// Opening Vivado Project: servant_1.2.1.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project servant_1.2.1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,969 MB. GUI used memory: 66 MB. Current time: 7/12/23, 11:22:34 AM JST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,986 MB (+3064kb) [00:00:12]
+// [GUI Memory]: 124 MB (+23458kb) [00:00:13]
+// [Engine Memory]: 2,087 MB (+1652kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  2184 ms.
+// Tcl Message: open_project servant_1.2.1.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 7369.680 ; gain = 235.234 ; free physical = 68060 ; free virtual = 117464 
+// Project name: servant_1.2.1; location: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado; part: xc7vx485tffg1157-1
+dismissDialog("Open Project"); // bq
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectButton(PAResourceEtoH.FileSetPanel_RELOAD, "Reload..."); // g
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenuItem(PAResourceOtoP.Project_AUTOMATIC_UPDATE_AND_COMPILE_ORDER, "Automatic Update and Compile Order"); // ac
+// TclEventType: SRC_MGMT_MODE_CHANGE
+// Tcl Message: set_property source_mgmt_mode All [current_project] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,152 MB. GUI used memory: 71 MB. Current time: 7/12/23, 11:22:54 AM JST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 3); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servix.dcp to /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 20 
+// Tcl Message: [Wed Jul 12 11:23:04 2023] Launched synth_1... Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // S.a
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v)]", 1, true); // D - Node
+// [Engine Memory]: 2,193 MB (+903kb) [00:01:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,203 MB. GUI used memory: 74 MB. Current time: 7/12/23, 11:24:24 AM JST
+selectCodeEditor("servix.v", 360, 201); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("servix.v", 430, 492); // ac
+selectCodeEditor("servix.v", 409, 520); // ac
+selectCodeEditor("servix.v", 385, 546); // ac
+selectCodeEditor("servix.v", 195, 84); // ac
+selectCodeEditor("servix.v", 67, 95); // ac
+selectCodeEditor("servix.v", 96, 107); // ac
+// [GUI Memory]: 142 MB (+12729kb) [00:02:35]
+// Elapsed time: 14 seconds
+selectCodeEditor("servix.v", 170, 71); // ac
+selectCodeEditor("servix.v", 170, 70, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servix.v", 'c'); // ac
+selectCodeEditor("servix.v", 190, 522); // ac
+typeControlKey((HResource) null, "servix.v", 'v'); // ac
+selectCodeEditor("servix.v", 135, 532); // ac
+selectCodeEditor("servix.v", 136, 531, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servix.v", 171, 252); // ac
+selectCodeEditor("servix.v", 171, 251, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servix.v", 'c'); // ac
+selectCodeEditor("servix.v", 151, 554); // ac
+selectCodeEditor("servix.v", 143, 545); // ac
+selectCodeEditor("servix.v", 99, 538); // ac
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,223 MB. GUI used memory: 88 MB. Current time: 7/12/23, 11:25:24 AM JST
+// Elapsed time: 16 seconds
+selectCodeEditor("servant.v", 167, 78); // ac
+selectCodeEditor("servant.v", 167, 78, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servant.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "wb_rst"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("servant_mux.v", 255, 179); // ac
+selectCodeEditor("servant_mux.v", 255, 179, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "servix.v", 1); // o
+selectCodeEditor("servix.v", 186, 651); // ac
+selectCodeEditor("servix.v", 186, 651, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servix.v", 'c'); // ac
+selectCodeEditor("servix.v", 142, 542); // ac
+selectCodeEditor("servix.v", 103, 539); // ac
+typeControlKey((HResource) null, "servix.v", 'v'); // ac
+// Elapsed time: 86 seconds
+selectCodeEditor("servix.v", 503, 537); // ac
+selectCodeEditor("servix.v", 248, 543); // ac
+selectCodeEditor("servix.v", 202, 538); // ac
+selectCodeEditor("servix.v", 193, 542); // ac
+selectCodeEditor("servix.v", 203, 653); // ac
+selectCodeEditor("servix.v", 203, 653, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servix.v", 207, 647); // ac
+selectCodeEditor("servix.v", 169, 383); // ac
+selectCodeEditor("servix.v", 169, 383, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servix.v", 'c'); // ac
+selectCodeEditor("servix.v", 233, 550); // ac
+selectCodeEditor("servix.v", 201, 543); // ac
+typeControlKey((HResource) null, "servix.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servix.v", 243, 486); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,257 MB. GUI used memory: 89 MB. Current time: 7/12/23, 11:27:39 AM JST
+selectCodeEditor("servix.v", 293, 289); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("servix.v", 274, 222); // ac
+selectCodeEditor("servix.v", 291, 199); // ac
+selectCodeEditor("servix.v", 161, 174); // ac
+selectCodeEditor("servix.v", 161, 174, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servix.v", 211, 245); // ac
+selectCodeEditor("servix.v", 166, 156); // ac
+selectCodeEditor("servix.v", 166, 156, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servix.v", 221, 191); // ac
+selectCodeEditor("servix.v", 273, 205); // ac
+selectCodeEditor("servix.v", 290, 139); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servix.v", 261, 18); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,306 MB. GUI used memory: 89 MB. Current time: 7/12/23, 11:27:59 AM JST
+// [Engine Memory]: 2,306 MB (+4080kb) [00:05:36]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servix.v", 302, 466); // ac
+selectCodeEditor("servix.v", 264, 495); // ac
+selectCodeEditor("servix.v", 277, 463); // ac
+selectCodeEditor("servix.v", 374, 424); // ac
+// Elapsed time: 84 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("servant.v", 350, 145); // ac
+selectCodeEditor("servant.v", 361, 141); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servant.v", 243, 8); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,327 MB. GUI used memory: 89 MB. Current time: 7/12/23, 11:29:44 AM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servant.v", 211, 158); // ac
+selectCodeEditor("servant.v", 211, 157, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 277, 166); // ac
+selectCodeEditor("servant.v", 194, 135); // ac
+selectCodeEditor("servant.v", 193, 135, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 180, 169); // ac
+selectCodeEditor("servant.v", 180, 169, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 144, 182); // ac
+selectCodeEditor("servant.v", 144, 182, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servant.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim"); // d.c
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("servant_mux.v", 138, 504); // ac
+selectCodeEditor("servant_mux.v", 138, 504, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("servant_mux.v", 181, 429); // ac
+selectCodeEditor("servant_mux.v", 355, 842); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("servant_mux.v", 150, 841); // ac
+selectCodeEditor("servant_mux.v", 156, 846); // ac
+selectCodeEditor("servant_mux.v", 262, 562); // ac
+selectCodeEditor("servant_mux.v", 364, 522); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servant_mux.v", 21, 33); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,361 MB. GUI used memory: 90 MB. Current time: 7/12/23, 11:30:54 AM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servant_mux.v", 586, 354); // ac
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectCodeEditor("servant.v", 234, 227); // ac
+selectCodeEditor("servant.v", 235, 181); // ac
+selectCodeEditor("servant.v", 260, 416); // ac
+selectCodeEditor("servant.v", 220, 386); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("servant.v", 317, 632); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,394 MB. GUI used memory: 90 MB. Current time: 7/12/23, 11:31:14 AM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("servant.v", 586, 565); // ac
+// [Engine Memory]: 2,426 MB (+5160kb) [00:09:00]
+selectCodeEditor("servant.v", 205, 128); // ac
+selectCodeEditor("servant.v", 205, 128, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 548, 278); // ac
+selectCodeEditor("servant.v", 210, 133); // ac
+selectCodeEditor("servant.v", 174, 138); // ac
+selectCodeEditor("servant.v", 174, 138, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 153, 117); // ac
+selectCodeEditor("servant.v", 153, 117, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 170, 150); // ac
+selectCodeEditor("servant.v", 170, 150, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 206, 160); // ac
+selectCodeEditor("servant.v", 206, 160, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 257, 195); // ac
+selectCodeEditor("servant.v", 257, 195, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 312, 200); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servix.dcp 
+// Tcl Message: launch_runs synth_1 -jobs 20 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Jul 12 11:31:48 2023] Launched synth_1... Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 56 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // S.a
+// Elapsed time: 15 seconds
+selectCodeEditor("servant.v", 355, 214); // ac
+selectCodeEditor("servant.v", 255, 195); // ac
+selectCodeEditor("servant.v", 255, 194, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servant.v", 'c'); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "compress", true); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "compress"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "compress"); // d.c
+selectCodeEditor("servant.v", 217, 160); // ac
+selectCodeEditor("servant.v", 217, 160, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servant.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "align"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "align"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "align"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "align"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "align"); // d.c
+selectCodeEditor("servant.v", 250, 283); // ac
+selectCodeEditor("servant.v", 219, 199); // ac
+selectCodeEditor("servant.v", 219, 199, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("servant.v", 218, 759); // ac
+selectCodeEditor("servant.v", 67, 752); // ac
+selectCodeEditor("servant.v", 127, 593); // ac
+selectCodeEditor("servant.v", 158, 555); // ac
+selectCodeEditor("servant.v", 158, 555, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 231, 600); // ac
+selectCodeEditor("servant.v", 278, 578); // ac
+selectCodeEditor("servant.v", 283, 567); // ac
+selectCodeEditor("servant.v", 202, 563); // ac
+selectCodeEditor("servant.v", 201, 563, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 97, 765); // ac
+selectCodeEditor("servant.v", 142, 771); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("servant.v", 252, 794); // ac
+selectCodeEditor("servant.v", 252, 794, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 229, 811); // ac
+selectCodeEditor("servant.v", 229, 812, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("servant.v", 152, 785); // ac
+selectCodeEditor("servant.v", 152, 785, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "servant.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu_ready"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu_ready"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu_ready"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu_ready"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu_ready"); // d.c
+selectCodeEditor("servant.v", 281, 706); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 34 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), arbiter : servant_arbiter (servant_arbiter.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), arbiter : servant_arbiter (servant_arbiter.v)]", 3, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectCodeEditor("servant.v", 205, 116); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), servant_mux : servant_mux (servant_mux.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,461 MB. GUI used memory: 91 MB. Current time: 7/12/23, 11:35:14 AM JST
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), ram : servant_ram (servant_ram.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), ram : servant_ram (servant_ram.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), ram : servant_ram (servant_ram.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("servant_ram.v", 350, 540); // ac
+selectCodeEditor("servant_ram.v", 463, 466); // ac
+selectCodeEditor("servant_ram.v", 320, 830); // ac
+selectCodeEditor("servant_ram.v", 108, 830); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 683 seconds
+selectCodeEditor("servant_ram.v", 277, 716); // ac
+selectCodeEditor("servant_ram.v", 309, 707); // ac
+selectCodeEditor("servant_ram.v", 337, 700); // ac
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), gpio : servant_gpio (servant_gpio.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), gpio : servant_gpio (servant_gpio.v)]", 6, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), genblk1.timer : servant_timer (servant_timer.v)]", 8, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v)]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v)]", 7); // D
+selectCodeEditor("serv_rf_top.v", 65, 655); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,495 MB. GUI used memory: 92 MB. Current time: 7/12/23, 11:47:49 AM JST
+// Elapsed time: 25 seconds
+selectCodeEditor("serv_rf_top.v", 95, 659); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), decode : serv_decode (serv_decode.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_top.v", 85, 691); // ac
+// [GUI Memory]: 151 MB (+2416kb) [00:25:52]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,528 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:48:19 AM JST
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_top.v", 692, 621); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "formal", true); // d.c
+selectCodeEditor("serv_top.v", 4, 230); // ac
+selectCodeEditor("serv_top.v", 101, 575, true, false, false, false, false); // ac - Shift Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 167, 774); // ac
+selectCodeEditor("serv_top.v", 264, 827); // ac
+selectCodeEditor("serv_top.v", 238, 841); // ac
+selectCodeEditor("serv_top.v", 258, 817); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,561 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:48:49 AM JST
+// [Engine Memory]: 2,561 MB (+13638kb) [00:26:26]
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // d.c
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_rf_top.v", 3); // o
+selectCodeEditor("serv_rf_top.v", 139, 315); // ac
+selectCodeEditor("serv_rf_top.v", 139, 315, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 395, 533); // ac
+selectCodeEditor("serv_rf_top.v", 332, 540); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("serv_rf_top.v", 282, 879); // ac
+selectCodeEditor("serv_rf_top.v", 225, 878); // ac
+selectCodeEditor("serv_rf_top.v", 240, 872); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 332, 806); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,593 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:49:34 AM JST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_top.v", 4); // o
+// Elapsed time: 19 seconds
+selectCodeEditor("serv_top.v", 330, 597); // ac
+selectCodeEditor("serv_top.v", 323, 631); // ac
+selectCodeEditor("serv_top.v", 332, 603); // ac
+selectCodeEditor("serv_top.v", 6, 199); // ac
+selectCodeEditor("serv_top.v", 6, 199, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 370, 168); // ac
+selectCodeEditor("serv_top.v", 201, 141); // ac
+selectCodeEditor("serv_top.v", 219, 138); // ac
+selectCodeEditor("serv_top.v", 214, 137); // ac
+selectCodeEditor("serv_top.v", 214, 137, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MDU"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MDU"); // d.c
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MDU"); // d.c
+selectCodeEditor("serv_top.v", 339, 806); // ac
+selectCodeEditor("serv_top.v", 146, 825); // ac
+selectCodeEditor("serv_top.v", 131, 837); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,625 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:50:29 AM JST
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_top.v", 171, 393); // ac
+selectCodeEditor("serv_top.v", 85, 364); // ac
+selectCodeEditor("serv_top.v", 130, 352); // ac
+selectCodeEditor("serv_top.v", 210, 403); // ac
+selectCodeEditor("serv_top.v", 279, 378); // ac
+selectCodeEditor("serv_top.v", 126, 809); // ac
+selectCodeEditor("serv_top.v", 92, 810); // ac
+selectCodeEditor("serv_top.v", 170, 830); // ac
+selectCodeEditor("serv_top.v", 212, 837); // ac
+selectCodeEditor("serv_top.v", 156, 827); // ac
+selectCodeEditor("serv_top.v", 301, 710); // ac
+selectCodeEditor("serv_top.v", 71, 161); // ac
+selectCodeEditor("serv_top.v", 119, 146); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_top.v", 239, 20); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,657 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:51:14 AM JST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_rf_top.v", 3); // o
+selectCodeEditor("serv_rf_top.v", 328, 808); // ac
+selectCodeEditor("serv_rf_top.v", 22, 266); // ac
+selectCodeEditor("serv_rf_top.v", 20, 271); // ac
+selectCodeEditor("serv_rf_top.v", 20, 271, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 25, 291); // ac
+selectCodeEditor("serv_rf_top.v", 25, 291, false, false, false, false, true); // ac - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 12, 275); // ac
+selectCodeEditor("serv_rf_top.v", 12, 274, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 435, 459); // ac
+selectCodeEditor("serv_rf_top.v", 320, 807); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 520, 458); // ac
+selectCodeEditor("serv_rf_top.v", 64, 826); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 31, 255); // ac
+selectCodeEditor("serv_rf_top.v", 31, 255, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 50, 270); // ac
+selectCodeEditor("serv_rf_top.v", 13, 257); // ac
+selectCodeEditor("serv_rf_top.v", 13, 257, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 27, 261); // ac
+selectCodeEditor("serv_rf_top.v", 27, 260, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 39, 260); // ac
+selectCodeEditor("serv_rf_top.v", 59, 257); // ac
+selectCodeEditor("serv_rf_top.v", 53, 258); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,690 MB (+790kb) [00:29:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,690 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:51:44 AM JST
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10); // D
+selectCodeEditor("serv_rf_top.v", 407, 334); // ac
+selectCodeEditor("serv_rf_top.v", 265, 371); // ac
+selectCodeEditor("serv_rf_top.v", 346, 322); // ac
+selectCodeEditor("serv_rf_top.v", 376, 310); // ac
+selectCodeEditor("serv_rf_top.v", 271, 359); // ac
+selectCodeEditor("serv_rf_top.v", 85, 397); // ac
+selectCodeEditor("serv_rf_top.v", 86, 388); // ac
+selectCodeEditor("serv_rf_top.v", 367, 271); // ac
+selectCodeEditor("serv_rf_top.v", 91, 403); // ac
+selectCodeEditor("serv_rf_top.v", 107, 393); // ac
+selectCodeEditor("serv_rf_top.v", 131, 391); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_rf_top.v", 3, 318); // ac
+selectCodeEditor("serv_rf_top.v", 3, 318, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 23, 323); // ac
+selectCodeEditor("serv_rf_top.v", 22, 315); // ac
+selectCodeEditor("serv_rf_top.v", 60, 405); // ac
+selectCodeEditor("serv_rf_top.v", 0, 329); // ac
+selectCodeEditor("serv_rf_top.v", 0, 329, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 12, 350); // ac
+selectCodeEditor("serv_rf_top.v", 12, 350, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 12, 369); // ac
+selectCodeEditor("serv_rf_top.v", 12, 369, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 5, 388); // ac
+selectCodeEditor("serv_rf_top.v", 5, 388, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 8, 404); // ac
+selectCodeEditor("serv_rf_top.v", 8, 404, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 8, 422); // ac
+selectCodeEditor("serv_rf_top.v", 8, 422, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 10, 442); // ac
+selectCodeEditor("serv_rf_top.v", 10, 442, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 13, 460); // ac
+selectCodeEditor("serv_rf_top.v", 13, 460, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 9, 482); // ac
+selectCodeEditor("serv_rf_top.v", 9, 482, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 12, 502); // ac
+selectCodeEditor("serv_rf_top.v", 12, 502, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 12, 521); // ac
+selectCodeEditor("serv_rf_top.v", 12, 521, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 17, 537); // ac
+selectCodeEditor("serv_rf_top.v", 17, 537, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 12, 553); // ac
+selectCodeEditor("serv_rf_top.v", 12, 553, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 14, 575); // ac
+selectCodeEditor("serv_rf_top.v", 14, 575, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 83 seconds
+selectCodeEditor("serv_rf_top.v", 378, 601); // ac
+selectCodeEditor("serv_rf_top.v", 329, 584); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_rf_top.v", 257, 631); // ac
+selectCodeEditor("serv_rf_top.v", 301, 583); // ac
+selectCodeEditor("serv_rf_top.v", 140, 372); // ac
+selectCodeEditor("serv_rf_top.v", 100, 430); // ac
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_rf_top.v", 641, 451); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,723 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:54:54 AM JST
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_rf_top.v", 49, 181); // ac
+selectCodeEditor("serv_rf_top.v", 16, 163); // ac
+selectCodeEditor("serv_rf_top.v", 35, 205); // ac
+selectCodeEditor("serv_rf_top.v", 35, 205, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 22, 242); // ac
+selectCodeEditor("serv_rf_top.v", 22, 241, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 28, 276); // ac
+selectCodeEditor("serv_rf_top.v", 31, 290); // ac
+selectCodeEditor("serv_rf_top.v", 32, 310); // ac
+selectCodeEditor("serv_rf_top.v", 295, 641); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 54, 360); // ac
+selectCodeEditor("serv_rf_top.v", 34, 330); // ac
+selectCodeEditor("serv_rf_top.v", 28, 354); // ac
+selectCodeEditor("serv_rf_top.v", 25, 372); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 31, 372); // ac
+selectCodeEditor("serv_rf_top.v", 29, 391); // ac
+selectCodeEditor("serv_rf_top.v", 28, 414); // ac
+selectCodeEditor("serv_rf_top.v", 29, 428); // ac
+selectCodeEditor("serv_rf_top.v", 28, 447); // ac
+selectCodeEditor("serv_rf_top.v", 31, 464); // ac
+selectCodeEditor("serv_rf_top.v", 34, 478); // ac
+selectCodeEditor("serv_rf_top.v", 33, 500); // ac
+selectCodeEditor("serv_rf_top.v", 31, 542); // ac
+selectCodeEditor("serv_rf_top.v", 31, 564); // ac
+selectCodeEditor("serv_rf_top.v", 28, 580); // ac
+selectCodeEditor("serv_rf_top.v", 31, 604); // ac
+selectCodeEditor("serv_rf_top.v", 31, 616); // ac
+selectCodeEditor("serv_rf_top.v", 32, 641); // ac
+selectCodeEditor("serv_rf_top.v", 186, 275); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 21 seconds
+selectCodeEditor("serv_rf_top.v", 55, 411); // ac
+selectCodeEditor("serv_rf_top.v", 39, 431); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 37, 435); // ac
+selectCodeEditor("serv_rf_top.v", 36, 435, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 69, 434); // ac
+selectCodeEditor("serv_rf_top.v", 81, 428); // ac
+selectCodeEditor("serv_rf_top.v", 78, 449); // ac
+selectCodeEditor("serv_rf_top.v", 73, 462); // ac
+selectCodeEditor("serv_rf_top.v", 79, 446); // ac
+selectCodeEditor("serv_rf_top.v", 70, 465); // ac
+selectCodeEditor("serv_rf_top.v", 2, 439); // ac
+selectCodeEditor("serv_rf_top.v", 6, 386); // ac
+selectCodeEditor("serv_rf_top.v", 6, 386, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 23, 406); // ac
+selectCodeEditor("serv_rf_top.v", 4, 408); // ac
+selectCodeEditor("serv_rf_top.v", 4, 408, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 25, 413); // ac
+selectCodeEditor("serv_rf_top.v", 32, 409); // ac
+selectCodeEditor("serv_rf_top.v", 46, 410); // ac
+selectCodeEditor("serv_rf_top.v", 64, 478); // ac
+selectCodeEditor("serv_rf_top.v", 34, 488); // ac
+selectCodeEditor("serv_rf_top.v", 31, 388); // ac
+selectCodeEditor("serv_rf_top.v", 66, 408); // ac
+selectCodeEditor("serv_rf_top.v", 50, 410); // ac
+selectCodeEditor("serv_rf_top.v", 228, 807); // ac
+selectCodeEditor("serv_rf_top.v", 207, 737); // ac
+selectCodeEditor("serv_rf_top.v", 246, 351); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 42, 317); // ac
+selectCodeEditor("serv_rf_top.v", 43, 326); // ac
+selectCodeEditor("serv_rf_top.v", 37, 349); // ac
+selectCodeEditor("serv_rf_top.v", 250, 397); // ac
+selectCodeEditor("serv_rf_top.v", 65, 388); // ac
+selectCodeEditor("serv_rf_top.v", 62, 413); // ac
+selectCodeEditor("serv_rf_top.v", 79, 258); // ac
+selectCodeEditor("serv_rf_top.v", 65, 411); // ac
+selectCodeEditor("serv_rf_top.v", 61, 427); // ac
+selectCodeEditor("serv_rf_top.v", 62, 452); // ac
+selectCodeEditor("serv_rf_top.v", 63, 464); // ac
+selectCodeEditor("serv_rf_top.v", 62, 484); // ac
+selectCodeEditor("serv_rf_top.v", 62, 502); // ac
+selectCodeEditor("serv_rf_top.v", 64, 522); // ac
+selectCodeEditor("serv_rf_top.v", 65, 482); // ac
+selectCodeEditor("serv_rf_top.v", 60, 504); // ac
+selectCodeEditor("serv_rf_top.v", 63, 520); // ac
+selectCodeEditor("serv_rf_top.v", 59, 540); // ac
+selectCodeEditor("serv_rf_top.v", 61, 565); // ac
+selectCodeEditor("serv_rf_top.v", 63, 584); // ac
+selectCodeEditor("serv_rf_top.v", 62, 602); // ac
+selectCodeEditor("serv_rf_top.v", 62, 619); // ac
+selectCodeEditor("serv_rf_top.v", 61, 641); // ac
+selectCodeEditor("serv_rf_top.v", 61, 657); // ac
+selectCodeEditor("serv_rf_top.v", 59, 680); // ac
+selectCodeEditor("serv_rf_top.v", 63, 694); // ac
+selectCodeEditor("serv_rf_top.v", 224, 310); // ac
+selectCodeEditor("serv_rf_top.v", 245, 330); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_top.v", 262, 351); // ac
+selectCodeEditor("serv_rf_top.v", 261, 371); // ac
+selectCodeEditor("serv_rf_top.v", 271, 391); // ac
+selectCodeEditor("serv_rf_top.v", 248, 405); // ac
+selectCodeEditor("serv_rf_top.v", 243, 407); // ac
+selectCodeEditor("serv_rf_top.v", 244, 423); // ac
+selectCodeEditor("serv_rf_top.v", 234, 443); // ac
+selectCodeEditor("serv_rf_top.v", 230, 467); // ac
+selectCodeEditor("serv_rf_top.v", 249, 482); // ac
+selectCodeEditor("serv_rf_top.v", 252, 504); // ac
+selectCodeEditor("serv_rf_top.v", 244, 519); // ac
+selectCodeEditor("serv_rf_top.v", 240, 536); // ac
+selectCodeEditor("serv_rf_top.v", 253, 560); // ac
+selectCodeEditor("serv_rf_top.v", 254, 574); // ac
+selectCodeEditor("serv_rf_top.v", 242, 600); // ac
+selectCodeEditor("serv_rf_top.v", 241, 617); // ac
+selectCodeEditor("serv_rf_top.v", 223, 637); // ac
+selectCodeEditor("serv_rf_top.v", 243, 657); // ac
+selectCodeEditor("serv_rf_top.v", 223, 675); // ac
+selectCodeEditor("serv_rf_top.v", 240, 699); // ac
+selectCodeEditor("serv_rf_top.v", 504, 596); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 178, 203); // ac
+selectCodeEditor("serv_rf_top.v", 181, 234); // ac
+selectCodeEditor("serv_rf_top.v", 328, 199); // ac
+selectCodeEditor("serv_rf_top.v", 391, 217); // ac
+selectCodeEditor("serv_rf_top.v", 331, 238); // ac
+selectCodeEditor("serv_rf_top.v", 495, 355); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 277, 236); // ac
+selectCodeEditor("serv_rf_top.v", 276, 235, false, false, false, false, true); // ac - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,756 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:58:14 AM JST
+selectCodeEditor("serv_rf_top.v", 167, 255); // ac
+selectCodeEditor("serv_rf_top.v", 167, 255, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 386, 662); // ac
+selectCodeEditor("serv_rf_top.v", 354, 631); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 257, 268); // ac
+selectCodeEditor("serv_rf_top.v", 160, 250); // ac
+selectCodeEditor("serv_rf_top.v", 160, 250, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_top.v", 162, 464); // ac
+selectCodeEditor("serv_rf_top.v", 198, 425); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_rf_top.v", 149, 656); // ac
+selectCodeEditor("serv_rf_top.v", 149, 656, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_rf_top.v", 'c'); // ac
+selectCodeEditor("serv_rf_top.v", 151, 552); // ac
+typeControlKey((HResource) null, "serv_rf_top.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,789 MB. GUI used memory: 93 MB. Current time: 7/12/23, 11:58:54 AM JST
+selectCodeEditor("serv_rf_top.v", 164, 288); // ac
+selectCodeEditor("serv_rf_top.v", 164, 288, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 89 seconds
+selectCodeEditor("serv_rf_top.v", 687, 396); // ac
+selectCodeEditor("serv_rf_top.v", 269, 270); // ac
+selectCodeEditor("serv_rf_top.v", 290, 271); // ac
+selectCodeEditor("serv_rf_top.v", 294, 248); // ac
+selectCodeEditor("serv_rf_top.v", 291, 250); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_rf_top.v", 527, 364); // ac
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10); // D
+// Elapsed time: 38 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectCodeEditor("serv_rf_top.v", 98, 299); // ac
+selectCodeEditor("serv_rf_top.v", 98, 298, false, false, false, false, true); // ac - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), rf_ram_if : serv_rf_ram_if (serv_rf_ram_if.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), rf_ram_if : serv_rf_ram_if (serv_rf_ram_if.v)]", 8, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 170, 650); // ac
+selectCodeEditor("serv_rf_ram_if.v", 170, 650, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_rf_ram_if.v", 203, 170); // ac
+selectCodeEditor("serv_rf_ram_if.v", 278, 156); // ac
+selectCodeEditor("serv_rf_ram_if.v", 279, 156, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 300, 168); // ac
+selectCodeEditor("serv_rf_ram_if.v", 317, 160); // ac
+selectCodeEditor("serv_rf_ram_if.v", 318, 160, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 139, 658); // ac
+selectCodeEditor("serv_rf_ram_if.v", 139, 658, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 198, 155); // ac
+selectCodeEditor("serv_rf_ram_if.v", 198, 154, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_rf_ram_if.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset_strategy"); // d.c
+selectCodeEditor("serv_rf_ram_if.v", 353, 690); // ac
+selectCodeEditor("serv_rf_ram_if.v", 457, 635); // ac
+selectCodeEditor("serv_rf_ram_if.v", 73, 720); // ac
+selectCodeEditor("serv_rf_ram_if.v", 72, 720, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 105, 734); // ac
+selectCodeEditor("serv_rf_ram_if.v", 131, 736); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,822 MB. GUI used memory: 94 MB. Current time: 7/12/23, 12:02:34 PM JST
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_rf_ram_if.v", 186, 147); // ac
+selectCodeEditor("serv_rf_ram_if.v", 414, 159); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,838 MB (+14508kb) [00:40:21]
+selectCodeEditor("serv_rf_ram_if.v", 258, 153); // ac
+selectCodeEditor("serv_rf_ram_if.v", 323, 139); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,854 MB. GUI used memory: 94 MB. Current time: 7/12/23, 12:02:49 PM JST
+selectCodeEditor("serv_rf_ram_if.v", 258, 356); // ac
+selectCodeEditor("serv_rf_ram_if.v", 257, 356, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_ram_if.v", 261, 374); // ac
+selectCodeEditor("serv_rf_ram_if.v", 19, 220); // ac
+selectCodeEditor("serv_rf_ram_if.v", 40, 48); // ac
+selectCodeEditor("serv_rf_ram_if.v", 22, 49); // ac
+selectCodeEditor("serv_rf_ram_if.v", 230, 13); // ac
+selectCodeEditor("serv_rf_ram_if.v", 32, 258); // ac
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 30 seconds
+selectCodeEditor("serv_rf_ram_if.v", 233, 334); // ac
+// Elapsed time: 59 seconds
+selectCodeEditor("serv_rf_ram_if.v", 147, 395); // ac
+selectCodeEditor("serv_rf_ram_if.v", 147, 394, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_rf_ram_if.v", 427, 461); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_rf_top.v", 3); // o
+selectCodeEditor("serv_rf_top.v", 227, 444); // ac
+selectCodeEditor("serv_rf_top.v", 268, 423); // ac
+selectCodeEditor("serv_rf_top.v", 217, 432); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,886 MB. GUI used memory: 94 MB. Current time: 7/12/23, 12:05:39 PM JST
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "servant_gpio.v", 2); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("serv_top.v", 11, 680); // ac
+selectCodeEditor("serv_top.v", 11, 680, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 23, 667); // ac
+selectCodeEditor("serv_top.v", 32, 669); // ac
+selectCodeEditor("serv_top.v", 43, 24); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 13 seconds
+selectCodeEditor("serv_top.v", 392, 159); // ac
+selectCodeEditor("serv_top.v", 411, 160); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,918 MB. GUI used memory: 95 MB. Current time: 7/12/23, 12:06:09 PM JST
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_top.v", 266, 276); // ac
+// Elapsed time: 72 seconds
+selectCodeEditor("serv_top.v", 263, 370); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectCodeEditor("serv_top.v", 152, 275); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 172, 310); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,950 MB. GUI used memory: 93 MB. Current time: 7/12/23, 12:08:24 PM JST
+selectCodeEditor("serv_top.v", 155, 509); // ac
+selectCodeEditor("serv_top.v", 193, 509); // ac
+selectCodeEditor("serv_top.v", 137, 403); // ac
+selectCodeEditor("serv_top.v", 137, 403, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 165, 524); // ac
+selectCodeEditor("serv_top.v", 164, 523); // ac
+selectCodeEditor("serv_top.v", 170, 521); // ac
+// Elapsed time: 24 seconds
+selectCodeEditor("serv_top.v", 130, 562); // ac
+// Elapsed time: 36 seconds
+selectCodeEditor("serv_top.v", 206, 637); // ac
+selectCodeEditor("serv_top.v", 206, 637, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 285, 647); // ac
+selectCodeEditor("serv_top.v", 312, 641); // ac
+selectCodeEditor("serv_top.v", 178, 515); // ac
+selectCodeEditor("serv_top.v", 177, 515, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 210, 506); // ac
+selectCodeEditor("serv_top.v", 109, 498); // ac
+selectCodeEditor("serv_top.v", 167, 477); // ac
+selectCodeEditor("serv_top.v", 167, 477, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 182, 471); // ac
+selectCodeEditor("serv_top.v", 182, 470, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 377, 482); // ac
+selectCodeEditor("serv_top.v", 338, 472); // ac
+// Elapsed time: 22 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_top.v", 152, 443); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_top.v", 123, 316); // ac
+selectCodeEditor("serv_top.v", 123, 314, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 145, 601); // ac
+selectCodeEditor("serv_top.v", 228, 725); // ac
+selectCodeEditor("serv_top.v", 214, 677); // ac
+selectCodeEditor("serv_top.v", 230, 597); // ac
+selectCodeEditor("serv_top.v", 163, 389); // ac
+selectCodeEditor("serv_top.v", 88, 289); // ac
+selectCodeEditor("serv_top.v", 92, 315); // ac
+selectCodeEditor("serv_top.v", 87, 332); // ac
+selectCodeEditor("serv_top.v", 90, 351); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,983 MB (+2938kb) [00:48:28]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,983 MB. GUI used memory: 93 MB. Current time: 7/12/23, 12:10:54 PM JST
+selectCodeEditor("serv_top.v", 217, 436); // ac
+selectCodeEditor("serv_top.v", 275, 486); // ac
+selectCodeEditor("serv_top.v", 224, 450); // ac
+selectCodeEditor("serv_top.v", 166, 338); // ac
+selectCodeEditor("serv_top.v", 30, 277); // ac
+selectCodeEditor("serv_top.v", 352, 473); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,015 MB. GUI used memory: 93 MB. Current time: 7/12/23, 12:11:14 PM JST
+// Elapsed time: 210 seconds
+selectCodeEditor("serv_top.v", 421, 491); // ac
+selectCodeEditor("serv_top.v", 503, 466); // ac
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), state : serv_state (serv_state.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), state : serv_state (serv_state.v)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_state.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+selectCodeEditor("serv_state.v", 272, 85); // ac
+selectCodeEditor("serv_state.v", 396, 25); // ac
+selectCodeEditor("serv_state.v", 313, 728); // ac
+selectCodeEditor("serv_state.v", 324, 46); // ac
+selectCodeEditor("serv_state.v", 225, 54); // ac
+selectCodeEditor("serv_state.v", 243, 46); // ac
+selectCodeEditor("serv_state.v", 243, 46, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 317, 78); // ac
+selectCodeEditor("serv_state.v", 324, 47); // ac
+selectCodeEditor("serv_state.v", 345, 74); // ac
+selectCodeEditor("serv_state.v", 54, 65); // ac
+selectCodeEditor("serv_state.v", 396, 57); // ac
+selectCodeEditor("serv_state.v", 315, 79); // ac
+selectCodeEditor("serv_state.v", 338, 43); // ac
+selectCodeEditor("serv_state.v", 479, 583); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,064 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:15:39 PM JST
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_state.v", 206, 505); // ac
+selectCodeEditor("serv_state.v", 206, 504, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 629, 714); // ac
+selectCodeEditor("serv_state.v", 648, 679); // ac
+selectCodeEditor("serv_state.v", 213, 470); // ac
+selectCodeEditor("serv_state.v", 113, 507); // ac
+selectCodeEditor("serv_state.v", 158, 493); // ac
+selectCodeEditor("serv_state.v", 283, 434); // ac
+selectCodeEditor("serv_state.v", 165, 442); // ac
+selectCodeEditor("serv_state.v", 345, 444); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 306, 364); // ac
+selectCodeEditor("serv_state.v", 306, 363, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 320, 285); // ac
+selectCodeEditor("serv_top.v", 320, 285, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 324, 275); // ac
+selectCodeEditor("serv_top.v", 324, 275, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 269, 417); // ac
+selectCodeEditor("serv_state.v", 372, 368); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 390, 297); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,112 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:16:14 PM JST
+selectCodeEditor("serv_top.v", 224, 465); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_top.v", 288, 307); // ac
+selectCodeEditor("serv_top.v", 283, 278); // ac
+selectCodeEditor("serv_top.v", 125, 254); // ac
+selectCodeEditor("serv_top.v", 129, 258); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 316, 84); // ac
+selectCodeEditor("serv_top.v", 282, 104); // ac
+selectCodeEditor("serv_top.v", 300, 138); // ac
+selectCodeEditor("serv_top.v", 299, 160); // ac
+selectCodeEditor("serv_top.v", 272, 182); // ac
+selectCodeEditor("serv_top.v", 294, 198); // ac
+selectCodeEditor("serv_top.v", 301, 213); // ac
+selectCodeEditor("serv_top.v", 323, 239); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 267, 259); // ac
+selectCodeEditor("serv_top.v", 272, 272); // ac
+selectCodeEditor("serv_top.v", 271, 294); // ac
+selectCodeEditor("serv_top.v", 272, 308); // ac
+selectCodeEditor("serv_top.v", 272, 328); // ac
+selectCodeEditor("serv_top.v", 308, 349); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 320, 371); // ac
+selectCodeEditor("serv_top.v", 330, 384); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 273, 409); // ac
+selectCodeEditor("serv_top.v", 268, 424); // ac
+selectCodeEditor("serv_top.v", 302, 445); // ac
+selectCodeEditor("serv_top.v", 290, 442); // ac
+selectCodeEditor("serv_top.v", 327, 444); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 392, 504); // ac
+selectCodeEditor("serv_top.v", 325, 465); // ac
+selectCodeEditor("serv_top.v", 335, 464); // ac
+selectCodeEditor("serv_top.v", 340, 485); // ac
+selectCodeEditor("serv_top.v", 305, 504); // ac
+selectCodeEditor("serv_top.v", 354, 527); // ac
+selectCodeEditor("serv_top.v", 324, 542); // ac
+selectCodeEditor("serv_top.v", 313, 564); // ac
+selectCodeEditor("serv_top.v", 312, 577); // ac
+selectCodeEditor("serv_top.v", 397, 642); // ac
+selectCodeEditor("serv_top.v", 273, 618); // ac
+selectCodeEditor("serv_top.v", 282, 634); // ac
+selectCodeEditor("serv_top.v", 379, 560); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_top.v", 364, 580); // ac
+selectCodeEditor("serv_top.v", 326, 498); // ac
+selectCodeEditor("serv_top.v", 332, 516); // ac
+selectCodeEditor("serv_top.v", 340, 536); // ac
+selectCodeEditor("serv_top.v", 339, 560); // ac
+selectCodeEditor("serv_top.v", 321, 600); // ac
+selectCodeEditor("serv_top.v", 325, 612); // ac
+selectCodeEditor("serv_top.v", 332, 638); // ac
+selectCodeEditor("serv_top.v", 292, 659); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,145 MB (+13479kb) [00:55:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,145 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:18:24 PM JST
+// Elapsed time: 19 seconds
+selectCodeEditor("serv_state.v", 323, 413); // ac
+selectCodeEditor("serv_state.v", 228, 315); // ac
+selectCodeEditor("serv_state.v", 228, 314, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 258, 393); // ac
+selectCodeEditor("serv_state.v", 287, 367); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_state.v", 323, 493); // ac
+selectCodeEditor("serv_state.v", 323, 493, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 468, 485); // ac
+selectCodeEditor("serv_state.v", 469, 485, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 614, 485); // ac
+selectCodeEditor("serv_state.v", 614, 485, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 740, 492); // ac
+selectCodeEditor("serv_state.v", 740, 492, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 181, 541); // ac
+selectCodeEditor("serv_state.v", 181, 541, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 269, 543); // ac
+selectCodeEditor("serv_state.v", 270, 543, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 567, 588); // ac
+selectCodeEditor("serv_state.v", 642, 546); // ac
+selectCodeEditor("serv_state.v", 173, 550); // ac
+selectCodeEditor("serv_state.v", 437, 556); // ac
+selectCodeEditor("serv_state.v", 150, 557); // ac
+selectCodeEditor("serv_state.v", 150, 557, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 328, 562); // ac
+selectCodeEditor("serv_state.v", 447, 633); // ac
+selectCodeEditor("serv_state.v", 481, 593); // ac
+// Elapsed time: 32 seconds
+selectCodeEditor("serv_state.v", 276, 575); // ac
+selectCodeEditor("serv_state.v", 276, 575, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 495, 561); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 359, 584); // ac
+selectCodeEditor("serv_state.v", 372, 580); // ac
+selectCodeEditor("serv_state.v", 693, 570); // ac
+selectCodeEditor("serv_state.v", 696, 558); // ac
+// Elapsed time: 19 seconds
+selectCodeEditor("serv_state.v", 619, 557); // ac
+selectCodeEditor("serv_state.v", 233, 582); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 556, 623); // ac
+selectCodeEditor("serv_state.v", 632, 575); // ac
+// Elapsed time: 32 seconds
+selectCodeEditor("serv_state.v", 789, 537); // ac
+selectCodeEditor("serv_state.v", 843, 505); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 839, 513); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,177 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:21:19 PM JST
+selectCodeEditor("serv_state.v", 740, 539); // ac
+selectCodeEditor("serv_state.v", 390, 365); // ac
+selectCodeEditor("serv_state.v", 402, 365); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 347, 536); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,209 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:21:39 PM JST
+selectCodeEditor("serv_state.v", 293, 544); // ac
+selectCodeEditor("serv_state.v", 293, 543, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 135, 508); // ac
+selectCodeEditor("serv_state.v", 135, 507, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 224, 504); // ac
+selectCodeEditor("serv_state.v", 564, 507); // ac
+selectCodeEditor("serv_state.v", 565, 507, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 669, 539); // ac
+selectCodeEditor("serv_state.v", 700, 505); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 859, 690); // ac
+selectCodeEditor("serv_state.v", 317, 539); // ac
+// Elapsed time: 61 seconds
+selectCodeEditor("serv_state.v", 353, 558); // ac
+selectCodeEditor("serv_state.v", 955, 556); // ac
+selectCodeEditor("serv_state.v", 958, 560); // ac
+// Elapsed time: 55 seconds
+selectCodeEditor("serv_state.v", 39, 502); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,242 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:24:14 PM JST
+// Elapsed time: 57 seconds
+selectCodeEditor("serv_state.v", 368, 633); // ac
+selectCodeEditor("serv_state.v", 368, 633, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 90, 599); // ac
+selectCodeEditor("serv_state.v", 101, 595); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 190, 594); // ac
+selectCodeEditor("serv_state.v", 113, 655); // ac
+selectCodeEditor("serv_state.v", 113, 655, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 70, 617); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 448, 640); // ac
+selectCodeEditor("serv_state.v", 459, 639); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("serv_state.v", 304, 486); // ac
+selectCodeEditor("serv_state.v", 304, 486, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 348, 465); // ac
+selectCodeEditor("serv_state.v", 365, 434); // ac
+selectCodeEditor("serv_state.v", 365, 434, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 162, 409); // ac
+selectCodeEditor("serv_state.v", 162, 409, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 142, 664); // ac
+selectCodeEditor("serv_state.v", 124, 669); // ac
+selectCodeEditor("serv_state.v", 422, 540); // ac
+selectCodeEditor("serv_state.v", 111, 660); // ac
+selectCodeEditor("serv_state.v", 423, 490); // ac
+selectCodeEditor("serv_state.v", 92, 690); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 883, 497); // ac
+selectCodeEditor("serv_state.v", 277, 619); // ac
+selectCodeEditor("serv_state.v", 268, 548); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 872, 510); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,274 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:26:39 PM JST
+selectCodeEditor("serv_state.v", 81, 733); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 161, 541); // ac
+selectCodeEditor("serv_state.v", 163, 558); // ac
+selectCodeEditor("serv_state.v", 181, 584); // ac
+selectCodeEditor("serv_state.v", 206, 598); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 913, 687); // ac
+selectCodeEditor("serv_state.v", 205, 618); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,306 MB (+4395kb) [01:04:36]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,306 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:26:59 PM JST
+selectCodeEditor("serv_state.v", 389, 687); // ac
+selectCodeEditor("serv_state.v", 829, 725); // ac
+selectCodeEditor("serv_state.v", 904, 688); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 130, 517); // ac
+selectCodeEditor("serv_state.v", 130, 517, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 388, 221); // ac
+selectCodeEditor("serv_state.v", 393, 203); // ac
+selectCodeEditor("serv_state.v", 413, 194); // ac
+selectCodeEditor("serv_state.v", 50, 205); // ac
+selectCodeEditor("serv_state.v", 157, 350); // ac
+selectCodeEditor("serv_state.v", 309, 332); // ac
+selectCodeEditor("serv_state.v", 362, 272); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 301, 219); // ac
+selectCodeEditor("serv_state.v", 568, 202); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,338 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:27:29 PM JST
+selectCodeEditor("serv_state.v", 924, 575); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 160, 542); // ac
+selectCodeEditor("serv_state.v", 159, 542, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 168, 568); // ac
+selectCodeEditor("serv_state.v", 168, 568, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 251, 594); // ac
+selectCodeEditor("serv_state.v", 295, 545); // ac
+selectCodeEditor("serv_state.v", 251, 557); // ac
+selectCodeEditor("serv_state.v", 302, 539); // ac
+selectCodeEditor("serv_state.v", 286, 687); // ac
+selectCodeEditor("serv_state.v", 301, 658); // ac
+selectCodeEditor("serv_state.v", 333, 579); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 305, 693); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,370 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:28:04 PM JST
+selectCodeEditor("serv_state.v", 336, 590); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 212, 740); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_state.v", 695, 686); // ac
+selectCodeEditor("serv_state.v", 708, 677); // ac
+selectCodeEditor("serv_state.v", 106, 146); // ac
+selectCodeEditor("serv_state.v", 106, 146, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 396, 153); // ac
+selectCodeEditor("serv_state.v", 391, 140); // ac
+selectCodeEditor("serv_state.v", 153, 160); // ac
+selectCodeEditor("serv_state.v", 150, 428); // ac
+selectCodeEditor("serv_state.v", 150, 428, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 116, 634); // ac
+selectCodeEditor("serv_state.v", 408, 562); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 182, 412); // ac
+selectCodeEditor("serv_state.v", 182, 412, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 263, 684); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 391, 370); // ac
+selectCodeEditor("serv_state.v", 348, 809); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 147, 697); // ac
+selectCodeEditor("serv_state.v", 147, 696, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 544, 695); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 88, 275); // ac
+selectCodeEditor("serv_state.v", 88, 274, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 87, 421); // ac
+selectCodeEditor("serv_state.v", 81, 428); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 345, 404); // ac
+selectCodeEditor("serv_state.v", 333, 429); // ac
+selectCodeEditor("serv_state.v", 351, 407); // ac
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 235, 429); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 148, 326); // ac
+selectCodeEditor("serv_state.v", 174, 275); // ac
+selectCodeEditor("serv_state.v", 178, 248); // ac
+selectCodeEditor("serv_state.v", 61, 323); // ac
+selectCodeEditor("serv_state.v", 60, 323, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 402, 331); // ac
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 360, 649); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 430, 638); // ac
+selectCodeEditor("serv_state.v", 430, 655); // ac
+selectCodeEditor("serv_state.v", 574, 658); // ac
+selectCodeEditor("serv_state.v", 550, 640); // ac
+selectCodeEditor("serv_state.v", 115, 645); // ac
+selectCodeEditor("serv_state.v", 115, 645, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 115, 658); // ac
+selectCodeEditor("serv_state.v", 115, 658, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 579, 649); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 131, 405); // ac
+selectCodeEditor("serv_state.v", 123, 249); // ac
+selectCodeEditor("serv_state.v", 123, 249, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 171, 180); // ac
+selectCodeEditor("serv_state.v", 434, 274); // ac
+selectCodeEditor("serv_state.v", 249, 415); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 202, 393); // ac
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 484, 407); // ac
+selectCodeEditor("serv_state.v", 109, 267); // ac
+selectCodeEditor("serv_state.v", 109, 267, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,435 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:30:14 PM JST
+selectCodeEditor("serv_state.v", 326, 546); // ac
+selectCodeEditor("serv_state.v", 312, 650); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_state.v", 270, 374); // ac
+selectCodeEditor("serv_state.v", 270, 374, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 379, 355); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_state.v", 285, 388); // ac
+selectCodeEditor("serv_state.v", 380, 352); // ac
+selectCodeEditor("serv_state.v", 298, 411); // ac
+selectCodeEditor("serv_state.v", 138, 452); // ac
+selectCodeEditor("serv_state.v", 137, 452, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 99, 619); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 274, 412); // ac
+selectCodeEditor("serv_state.v", 381, 352); // ac
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 257, 622); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 506, 617); // ac
+selectCodeEditor("serv_state.v", 316, 314); // ac
+selectCodeEditor("serv_state.v", 279, 341); // ac
+selectCodeEditor("serv_state.v", 312, 310); // ac
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 519, 622); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 104, 613); // ac
+selectCodeEditor("serv_state.v", 104, 613, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 657, 613); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 111, 765); // ac
+selectCodeEditor("serv_state.v", 223, 392); // ac
+selectCodeEditor("serv_state.v", 152, 688); // ac
+selectCodeEditor("serv_state.v", 2, 177, true, false, false, false, false); // ac - Shift Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_state.v", 125, 528); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,467 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:31:39 PM JST
+selectCodeEditor("serv_state.v", 750, 541); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_state.v", 360, 593); // ac
+selectCodeEditor("serv_state.v", 460, 554); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,483 MB (+11647kb) [01:09:38]
+selectCodeEditor("serv_state.v", 161, 515); // ac
+selectCodeEditor("serv_state.v", 152, 501); // ac
+selectCodeEditor("serv_state.v", 152, 501, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 236, 526); // ac
+selectCodeEditor("serv_state.v", 236, 526, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_state.v", 622, 686); // ac
+selectCodeEditor("serv_state.v", 410, 616); // ac
+selectCodeEditor("serv_state.v", 410, 616, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 244, 522); // ac
+selectCodeEditor("serv_state.v", 244, 522, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 474, 615); // ac
+selectCodeEditor("serv_state.v", 474, 615, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 460 seconds
+selectCodeEditor("serv_state.v", 541, 688); // ac
+selectCodeEditor("serv_state.v", 545, 772); // ac
+selectCodeEditor("serv_state.v", 505, 843); // ac
+// Elapsed time: 362 seconds
+selectCodeEditor("serv_state.v", 406, 393); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,500 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:46:30 PM JST
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_state.v", 489, 476); // ac
+selectCodeEditor("serv_state.v", 492, 466); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("serv_state.v", 424, 409); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,532 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:47:15 PM JST
+// Elapsed time: 33 seconds
+selectCodeEditor("serv_state.v", 221, 505); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 587, 605); // ac
+selectCodeEditor("serv_state.v", 580, 597); // ac
+selectCodeEditor("serv_state.v", 619, 603); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 362, 556); // ac
+selectCodeEditor("serv_state.v", 508, 557); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,564 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:48:25 PM JST
+// Elapsed time: 50 seconds
+selectCodeEditor("serv_state.v", 671, 559); // ac
+selectCodeEditor("serv_state.v", 646, 610); // ac
+selectCodeEditor("serv_state.v", 701, 569); // ac
+selectCodeEditor("serv_state.v", 841, 537); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_state.v", 1092, 560); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "o_ctrl_trap"); // d.c
+selectCodeEditor("serv_state.v", 431, 641); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_state.v", 468, 635); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 679, 701); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 825, 617); // ac
+// Elapsed time: 24 seconds
+selectCodeEditor("serv_state.v", 93, 800); // ac
+selectCodeEditor("serv_state.v", 83, 789); // ac
+selectCodeEditor("serv_state.v", 155, 809); // ac
+selectCodeEditor("serv_state.v", 166, 814); // ac
+selectCodeEditor("serv_state.v", 270, 465); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_state.v", 29, 451); // ac
+selectCodeEditor("serv_state.v", 406, 503); // ac
+// Elapsed time: 60 seconds
+selectCodeEditor("serv_state.v", 213, 480); // ac
+// Elapsed time: 37 seconds
+selectCodeEditor("serv_state.v", 309, 446); // ac
+selectCodeEditor("serv_state.v", 58, 530); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 195, 702); // ac
+selectCodeEditor("serv_state.v", 195, 701, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 223, 725); // ac
+selectCodeEditor("serv_state.v", 171, 691); // ac
+selectCodeEditor("serv_state.v", 198, 683); // ac
+selectCodeEditor("serv_state.v", 198, 683, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 192, 696); // ac
+selectCodeEditor("serv_state.v", 192, 696, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_state.v", 482, 709); // ac
+selectCodeEditor("serv_state.v", 392, 670); // ac
+selectCodeEditor("serv_state.v", 158, 755); // ac
+selectCodeEditor("serv_state.v", 158, 755, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_state.v", 110, 691); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 189, 691); // ac
+selectCodeEditor("serv_state.v", 383, 808); // ac
+selectCodeEditor("serv_state.v", 120, 713); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 412, 746); // ac
+selectCodeEditor("serv_state.v", 583, 704); // ac
+selectCodeEditor("serv_state.v", 564, 739); // ac
+selectCodeEditor("serv_state.v", 575, 715); // ac
+selectCodeEditor("serv_state.v", 108, 669); // ac
+typeControlKey((HResource) null, "serv_state.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 241, 699); // ac
+selectCodeEditor("serv_state.v", 419, 753); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_state.v", 47, 592); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,596 MB. GUI used memory: 87 MB. Current time: 7/12/23, 12:53:25 PM JST
+// Elapsed time: 32 seconds
+selectCodeEditor("serv_top.v", 412, 493); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_top.v", 402, 589); // ac
+selectCodeEditor("serv_top.v", 455, 531); // ac
+selectCodeEditor("serv_top.v", 466, 481); // ac
+selectCodeEditor("serv_top.v", 397, 380); // ac
+selectCodeEditor("serv_top.v", 395, 373); // ac
+selectCodeEditor("serv_state.v", 275, 411); // ac
+selectCodeEditor("serv_state.v", 276, 410, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_top.v", 64, 388); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+selectCodeEditor("serv_state.v", 263, 486); // ac
+selectCodeEditor("serv_state.v", 263, 486, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_state.v", 'c'); // ac
+selectCodeEditor("serv_top.v", 395, 440); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+// Elapsed time: 41 seconds
+selectCodeEditor("serv_top.v", 354, 391); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+// Elapsed time: 50 seconds
+selectCodeEditor("serv_top.v", 250, 554); // ac
+selectCodeEditor("serv_top.v", 229, 697); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+selectCodeEditor("serv_top.v", 307, 695); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_top.v", 231, 764); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,629 MB. GUI used memory: 86 MB. Current time: 7/12/23, 12:56:20 PM JST
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_top.v", 218, 391); // ac
+selectCodeEditor("serv_top.v", 218, 391, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mem_misalign"); // d.c
+// Elapsed time: 148 seconds
+selectCodeEditor("serv_state.v", 257, 360); // ac
+selectCodeEditor("serv_state.v", 531, 246); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+// Elapsed time: 613 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), decode : serv_decode (serv_decode.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), decode : serv_decode (serv_decode.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_decode.v", 298, 53); // ac
+selectCodeEditor("serv_decode.v", 298, 53, false, false, false, false, true); // ac - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,645 MB. GUI used memory: 87 MB. Current time: 7/12/23, 1:26:20 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,645 MB. GUI used memory: 86 MB. Current time: 7/12/23, 1:56:20 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,645 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:26:20 PM JST
+// Elapsed time: 6171 seconds
+selectCodeEditor("serv_decode.v", 192, 484); // ac
+selectCodeEditor("serv_decode.v", 77, 529); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,661 MB (+4690kb) [03:30:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,661 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:52:35 PM JST
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_decode.v", 174, 835); // ac
+// Elapsed time: 28 seconds
+selectCodeEditor("serv_decode.v", 21, 183, true, false, false, false, false); // ac - Shift Key
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_decode.v", 196, 844); // ac
+selectCodeEditor("serv_decode.v", 362, 150); // ac
+selectCodeEditor("serv_decode.v", 8, 369); // ac
+selectCodeEditor("serv_decode.v", 9, 368, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("serv_decode.v", 60, 403); // ac
+selectCodeEditor("serv_decode.v", 34, 375); // ac
+selectCodeEditor("serv_decode.v", 34, 375, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 49, 390); // ac
+selectCodeEditor("serv_decode.v", 49, 390, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 51, 406); // ac
+selectCodeEditor("serv_decode.v", 51, 406, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 55, 422); // ac
+selectCodeEditor("serv_decode.v", 55, 422, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 54, 446); // ac
+selectCodeEditor("serv_decode.v", 54, 446, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 55, 461); // ac
+selectCodeEditor("serv_decode.v", 55, 461, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 53, 482); // ac
+selectCodeEditor("serv_decode.v", 53, 482, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 55, 502); // ac
+selectCodeEditor("serv_decode.v", 55, 502, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 61, 524); // ac
+selectCodeEditor("serv_decode.v", 61, 524, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 63, 537); // ac
+selectCodeEditor("serv_decode.v", 63, 537, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 53, 564); // ac
+selectCodeEditor("serv_decode.v", 53, 564, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 52, 583); // ac
+selectCodeEditor("serv_decode.v", 52, 583, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 33, 498); // ac
+selectCodeEditor("serv_decode.v", 33, 498, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 39, 519); // ac
+selectCodeEditor("serv_decode.v", 39, 519, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 41, 541); // ac
+selectCodeEditor("serv_decode.v", 41, 541, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 51, 442); // ac
+selectCodeEditor("serv_decode.v", 51, 442, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 50, 464); // ac
+selectCodeEditor("serv_decode.v", 50, 464, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 64, 482); // ac
+selectCodeEditor("serv_decode.v", 64, 482, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 63, 386); // ac
+selectCodeEditor("serv_decode.v", 63, 386, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 61, 416); // ac
+selectCodeEditor("serv_decode.v", 61, 416, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 61, 430); // ac
+selectCodeEditor("serv_decode.v", 61, 430, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 57, 443); // ac
+selectCodeEditor("serv_decode.v", 57, 443, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 82, 356); // ac
+selectCodeEditor("serv_decode.v", 82, 356, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 64, 364); // ac
+selectCodeEditor("serv_decode.v", 64, 364, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 57, 385); // ac
+selectCodeEditor("serv_decode.v", 57, 385, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 53, 412); // ac
+selectCodeEditor("serv_decode.v", 53, 412, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 76, 383); // ac
+selectCodeEditor("serv_decode.v", 75, 369); // ac
+selectCodeEditor("serv_decode.v", 75, 369, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 51, 388); // ac
+selectCodeEditor("serv_decode.v", 51, 388, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 55, 404); // ac
+selectCodeEditor("serv_decode.v", 55, 404, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 54, 427); // ac
+selectCodeEditor("serv_decode.v", 54, 427, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 50, 446); // ac
+selectCodeEditor("serv_decode.v", 50, 446, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 64, 407); // ac
+selectCodeEditor("serv_decode.v", 64, 407, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 58, 422); // ac
+selectCodeEditor("serv_decode.v", 58, 422, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 60, 441); // ac
+selectCodeEditor("serv_decode.v", 60, 441, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 50, 464); // ac
+selectCodeEditor("serv_decode.v", 50, 464, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 56, 372); // ac
+selectCodeEditor("serv_decode.v", 56, 372, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 59, 394); // ac
+selectCodeEditor("serv_decode.v", 59, 394, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 58, 410); // ac
+selectCodeEditor("serv_decode.v", 58, 410, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 62, 426); // ac
+selectCodeEditor("serv_decode.v", 62, 426, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 446); // ac
+selectCodeEditor("serv_decode.v", 71, 446, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 70, 464); // ac
+selectCodeEditor("serv_decode.v", 70, 464, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 70, 479); // ac
+selectCodeEditor("serv_decode.v", 70, 479, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 504); // ac
+selectCodeEditor("serv_decode.v", 71, 504, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 522); // ac
+selectCodeEditor("serv_decode.v", 71, 522, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 542); // ac
+selectCodeEditor("serv_decode.v", 71, 542, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 73, 565); // ac
+selectCodeEditor("serv_decode.v", 73, 565, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 72, 573); // ac
+selectCodeEditor("serv_decode.v", 72, 572, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 69, 593); // ac
+selectCodeEditor("serv_decode.v", 69, 593, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 66, 621); // ac
+selectCodeEditor("serv_decode.v", 66, 621, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 68, 641); // ac
+selectCodeEditor("serv_decode.v", 68, 641, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 660); // ac
+selectCodeEditor("serv_decode.v", 70, 660, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 77, 679); // ac
+selectCodeEditor("serv_decode.v", 78, 679, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 78, 695); // ac
+selectCodeEditor("serv_decode.v", 78, 694, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 77, 713); // ac
+selectCodeEditor("serv_decode.v", 77, 713, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 77, 737); // ac
+selectCodeEditor("serv_decode.v", 77, 737, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 77, 745); // ac
+selectCodeEditor("serv_decode.v", 77, 745, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 76, 759); // ac
+selectCodeEditor("serv_decode.v", 76, 759, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 73, 772); // ac
+selectCodeEditor("serv_decode.v", 73, 772, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 71, 787); // ac
+selectCodeEditor("serv_decode.v", 71, 787, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 58, 807); // ac
+selectCodeEditor("serv_decode.v", 58, 807, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 46, 815); // ac
+selectCodeEditor("serv_decode.v", 3, 365, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("serv_decode.v", 233, 685); // ac
+selectCodeEditor("serv_decode.v", 426, 792); // ac
+selectCodeEditor("serv_decode.v", 4, 405, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("serv_decode.v", 203, 416); // ac
+selectCodeEditor("serv_decode.v", 91, 411); // ac
+selectCodeEditor("serv_decode.v", 221, 411); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_decode.v", 246, 11); // ac
+selectCodeEditor("serv_decode.v", 272, 63); // ac
+selectCodeEditor("serv_decode.v", 319, 72); // ac
+selectCodeEditor("serv_decode.v", 529, 265); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,694 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:55:50 PM JST
+selectCodeEditor("serv_decode.v", 264, 352); // ac
+selectCodeEditor("serv_decode.v", 264, 352, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_decode.v", 383, 388); // ac
+selectCodeEditor("serv_decode.v", 607, 352); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_decode.v", 314, 354); // ac
+selectCodeEditor("serv_decode.v", 324, 375); // ac
+selectCodeEditor("serv_decode.v", 289, 372); // ac
+selectCodeEditor("serv_decode.v", 289, 371, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_decode.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "o_ext_funct3"); // d.c
+selectCodeEditor("serv_decode.v", 351, 596); // ac
+selectCodeEditor("serv_decode.v", 402, 581); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_decode.v", 659, 408); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,726 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:56:15 PM JST
+selectCodeEditor("serv_decode.v", 590, 421); // ac
+selectCodeEditor("serv_decode.v", 1245, 445); // ac
+selectCodeEditor("serv_decode.v", 720, 538); // ac
+selectCodeEditor("serv_decode.v", 613, 557); // ac
+selectCodeEditor("serv_decode.v", 515, 616); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("serv_decode.v", 746, 542); // ac
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu"); // d.c
+selectCodeEditor("serv_decode.v", 433, 597); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_decode.v", 688, 673); // ac
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,774 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:57:00 PM JST
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu", true); // d.c
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mdu"); // d.c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v)]", 10, true); // D - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_top.v", 1); // o
+selectCodeEditor("serv_top.v", 331, 696); // ac
+selectCodeEditor("serv_top.v", 422, 669); // ac
+selectCodeEditor("serv_top.v", 359, 619); // ac
+selectCodeEditor("serv_top.v", 73, 638); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 189, 277); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 417, 199); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,806 MB. GUI used memory: 86 MB. Current time: 7/12/23, 2:57:30 PM JST
+selectCodeEditor("serv_top.v", 411, 80); // ac
+selectCodeEditor("serv_top.v", 382, 107); // ac
+selectCodeEditor("serv_top.v", 374, 141); // ac
+selectCodeEditor("serv_top.v", 382, 157); // ac
+selectCodeEditor("serv_top.v", 343, 179); // ac
+selectCodeEditor("serv_top.v", 313, 197); // ac
+typeControlKey(null, null, 'z');
+// Elapsed time: 31 seconds
+selectCodeEditor("serv_top.v", 371, 330); // ac
+selectCodeEditor("serv_top.v", 353, 351); // ac
+selectCodeEditor("serv_top.v", 349, 368); // ac
+selectCodeEditor("serv_top.v", 401, 351); // ac
+selectCodeEditor("serv_top.v", 330, 408); // ac
+selectCodeEditor("serv_top.v", 351, 426); // ac
+selectCodeEditor("serv_top.v", 409, 449); // ac
+selectCodeEditor("serv_top.v", 373, 466); // ac
+selectCodeEditor("serv_top.v", 401, 483); // ac
+selectCodeEditor("serv_top.v", 374, 505); // ac
+selectCodeEditor("serv_top.v", 365, 517); // ac
+selectCodeEditor("serv_top.v", 378, 537); // ac
+selectCodeEditor("serv_top.v", 372, 538); // ac
+selectCodeEditor("serv_top.v", 411, 563); // ac
+selectCodeEditor("serv_top.v", 381, 599); // ac
+selectCodeEditor("serv_top.v", 363, 619); // ac
+selectCodeEditor("serv_top.v", 360, 655); // ac
+// Elapsed time: 66 seconds
+selectCodeEditor("serv_top.v", 361, 672); // ac
+selectCodeEditor("serv_top.v", 372, 697); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 360, 575); // ac
+selectCodeEditor("serv_top.v", 252, 373); // ac
+typeControlKey(null, null, 'z');
+// Elapsed time: 38 seconds
+selectCodeEditor("serv_top.v", 357, 619); // ac
+selectCodeEditor("serv_top.v", 46, 258); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,839 MB. GUI used memory: 86 MB. Current time: 7/12/23, 3:00:50 PM JST
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), immdec : serv_immdec (serv_immdec.v)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), immdec : serv_immdec (serv_immdec.v)]", 13, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectCodeEditor("serv_immdec.v", 276, 44); // ac
+selectCodeEditor("serv_immdec.v", 276, 43, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 170 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), bufreg : serv_bufreg (serv_bufreg.v)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), bufreg : serv_bufreg (serv_bufreg.v)]", 14, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_bufreg.v", 230, 25); // ac
+selectCodeEditor("serv_bufreg.v", 230, 25, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 313, 381); // ac
+selectCodeEditor("serv_bufreg.v", 288, 304); // ac
+selectCodeEditor("serv_bufreg.v", 353, 187); // ac
+selectCodeEditor("serv_bufreg.v", 59, 46); // ac
+selectCodeEditor("serv_bufreg.v", 24, 55); // ac
+selectCodeEditor("serv_bufreg.v", 7, 52); // ac
+selectCodeEditor("serv_bufreg.v", 242, 164); // ac
+selectCodeEditor("serv_bufreg.v", 103, 389); // ac
+selectCodeEditor("serv_bufreg.v", 103, 389, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 94, 352); // ac
+selectCodeEditor("serv_bufreg.v", 94, 352, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 118, 393); // ac
+selectCodeEditor("serv_bufreg.v", 118, 393, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 311, 411); // ac
+selectCodeEditor("serv_bufreg.v", 347, 412); // ac
+selectCodeEditor("serv_bufreg.v", 326, 407); // ac
+selectCodeEditor("serv_bufreg.v", 294, 401); // ac
+selectCodeEditor("serv_bufreg.v", 307, 393); // ac
+selectCodeEditor("serv_bufreg.v", 333, 371); // ac
+selectCodeEditor("serv_bufreg.v", 335, 395); // ac
+selectCodeEditor("serv_bufreg.v", 354, 374); // ac
+selectCodeEditor("serv_bufreg.v", 181, 429); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_bufreg.v", 36, 666); // ac
+selectCodeEditor("serv_bufreg.v", 44, 657); // ac
+// Elapsed time: 51 seconds
+selectCodeEditor("serv_bufreg.v", 202, 615); // ac
+// Elapsed time: 62 seconds
+selectCodeEditor("serv_bufreg.v", 496, 849); // ac
+selectCodeEditor("serv_bufreg.v", 515, 829); // ac
+selectCodeEditor("serv_bufreg.v", 471, 859); // ac
+selectCodeEditor("serv_bufreg.v", 427, 846); // ac
+selectCodeEditor("serv_bufreg.v", 453, 828); // ac
+selectCodeEditor("serv_bufreg.v", 396, 857); // ac
+selectCodeEditor("serv_bufreg.v", 295, 835); // ac
+selectCodeEditor("serv_bufreg.v", 295, 835, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 439, 870); // ac
+selectCodeEditor("serv_bufreg.v", 453, 821); // ac
+// Elapsed time: 37 seconds
+selectCodeEditor("serv_bufreg.v", 263, 410); // ac
+selectCodeEditor("serv_bufreg.v", 263, 410, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 311, 370); // ac
+selectCodeEditor("serv_bufreg.v", 295, 337); // ac
+selectCodeEditor("serv_bufreg.v", 295, 337, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 152, 805); // ac
+selectCodeEditor("serv_bufreg.v", 152, 805, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 297, 325); // ac
+selectCodeEditor("serv_bufreg.v", 297, 325, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_bufreg.v", 299, 380); // ac
+selectCodeEditor("serv_bufreg.v", 332, 332); // ac
+selectCodeEditor("serv_bufreg.v", 493, 779); // ac
+selectCodeEditor("serv_bufreg.v", 296, 801); // ac
+selectCodeEditor("serv_bufreg.v", 488, 770); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,855 MB (+10902kb) [03:45:29]
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_bufreg.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+selectCodeEditor("serv_top.v", 195, 248); // ac
+selectCodeEditor("serv_top.v", 30, 279); // ac
+selectCodeEditor("serv_top.v", 267, 394); // ac
+selectCodeEditor("serv_top.v", 311, 621); // ac
+selectCodeEditor("serv_top.v", 335, 621); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 302, 603, true, false, false, false, false); // ac - Shift Key
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 408, 463); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,871 MB. GUI used memory: 87 MB. Current time: 7/12/23, 3:08:25 PM JST
+selectCodeEditor("serv_top.v", 316, 481); // ac
+selectCodeEditor("serv_top.v", 159, 278); // ac
+selectCodeEditor("serv_top.v", 157, 316); // ac
+selectCodeEditor("serv_top.v", 162, 331); // ac
+selectCodeEditor("serv_top.v", 163, 354); // ac
+selectCodeEditor("serv_top.v", 159, 365); // ac
+selectCodeEditor("serv_top.v", 160, 384); // ac
+selectCodeEditor("serv_top.v", 196, 426); // ac
+selectCodeEditor("serv_top.v", 190, 434); // ac
+selectCodeEditor("serv_top.v", 193, 448); // ac
+selectCodeEditor("serv_top.v", 192, 462); // ac
+selectCodeEditor("serv_top.v", 191, 485); // ac
+selectCodeEditor("serv_top.v", 156, 525); // ac
+selectCodeEditor("serv_top.v", 160, 545); // ac
+selectCodeEditor("serv_top.v", 160, 557); // ac
+selectCodeEditor("serv_top.v", 183, 594); // ac
+selectCodeEditor("serv_top.v", 245, 274); // ac
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("serv_top.v", 45, 262); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 3,903 MB. GUI used memory: 86 MB. Current time: 7/12/23, 3:09:25 PM JST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), bufreg2 : serv_bufreg2 (serv_bufreg2.v)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), bufreg2 : serv_bufreg2 (serv_bufreg2.v)]", 15, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_top.v", 1); // o
+selectCodeEditor("serv_top.v", 300, 681); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_bufreg2.v", 2); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_bufreg2.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_bufreg2.v", 270, 427); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,935 MB. GUI used memory: 87 MB. Current time: 7/12/23, 3:09:55 PM JST
+selectCodeEditor("serv_top.v", 461, 642); // ac
+selectCodeEditor("serv_top.v", 415, 702); // ac
+selectCodeEditor("serv_top.v", 237, 299); // ac
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+// Elapsed time: 178 seconds
+selectCodeEditor("serv_top.v", 459, 381); // ac
+selectCodeEditor("serv_top.v", 263, 594); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 223, 312); // ac
+selectCodeEditor("serv_top.v", 245, 354); // ac
+selectCodeEditor("serv_top.v", 250, 352); // ac
+selectCodeEditor("serv_top.v", 278, 317); // ac
+selectCodeEditor("serv_top.v", 252, 350); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,967 MB. GUI used memory: 87 MB. Current time: 7/12/23, 3:13:35 PM JST
+selectCodeEditor("serv_top.v", 233, 368); // ac
+selectCodeEditor("serv_top.v", 260, 388); // ac
+selectCodeEditor("serv_top.v", 263, 426); // ac
+selectCodeEditor("serv_top.v", 299, 441); // ac
+selectCodeEditor("serv_top.v", 292, 465); // ac
+selectCodeEditor("serv_top.v", 303, 482); // ac
+selectCodeEditor("serv_top.v", 292, 509); // ac
+selectCodeEditor("serv_top.v", 223, 539); // ac
+selectCodeEditor("serv_top.v", 230, 560); // ac
+selectCodeEditor("serv_top.v", 270, 572); // ac
+selectCodeEditor("serv_top.v", 255, 600); // ac
+// Elapsed time: 152 seconds
+selectCodeEditor("serv_top.v", 312, 695); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 3,967 MB. GUI used memory: 87 MB. Current time: 7/12/23, 3:43:35 PM JST
+// Elapsed time: 2404 seconds
+selectCodeEditor("serv_top.v", 368, 314); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 194, 298); // ac
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("serv_top.v", 458, 271); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), ctrl : serv_ctrl (serv_ctrl.v)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), ctrl : serv_ctrl (serv_ctrl.v)]", 16, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,999 MB. GUI used memory: 87 MB. Current time: 7/12/23, 3:56:30 PM JST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_top.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_ctrl.v", 2); // o
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_ctrl.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+selectCodeEditor("serv_ctrl.v", 310, 549); // ac
+// Elapsed time: 28 seconds
+selectCodeEditor("serv_ctrl.v", 449, 590); // ac
+selectCodeEditor("serv_ctrl.v", 449, 590, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_ctrl.v", 193, 87); // ac
+selectCodeEditor("serv_ctrl.v", 193, 87, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 130, 581); // ac
+selectCodeEditor("serv_ctrl.v", 130, 581, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 157, 583); // ac
+selectCodeEditor("serv_ctrl.v", 211, 499); // ac
+selectCodeEditor("serv_ctrl.v", 42, 482); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 146 seconds
+selectCodeEditor("serv_ctrl.v", 453, 607); // ac
+selectCodeEditor("serv_ctrl.v", 453, 606, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("serv_ctrl.v", 127, 750); // ac
+selectCodeEditor("serv_ctrl.v", 127, 749, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 64, 698); // ac
+selectCodeEditor("serv_ctrl.v", 210, 805); // ac
+selectCodeEditor("serv_ctrl.v", 210, 804, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 101, 715); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 216, 716); // ac
+selectCodeEditor("serv_ctrl.v", 120, 849); // ac
+selectCodeEditor("serv_ctrl.v", 120, 849, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 163, 728); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 334, 848); // ac
+selectCodeEditor("serv_ctrl.v", 334, 848, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 249, 729); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 126, 811); // ac
+selectCodeEditor("serv_ctrl.v", 126, 811, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 83, 692); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 628, 828); // ac
+selectCodeEditor("serv_ctrl.v", 666, 808); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 225, 688); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 160, 702); // ac
+selectCodeEditor("serv_ctrl.v", 143, 763); // ac
+selectCodeEditor("serv_ctrl.v", 113, 823); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_ctrl.v", 166, 577); // ac
+selectCodeEditor("serv_ctrl.v", 271, 584); // ac
+selectCodeEditor("serv_ctrl.v", 271, 584, false, false, false, false, true); // ac - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 4,031 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:01:15 PM JST
+selectCodeEditor("serv_ctrl.v", 417, 708); // ac
+selectCodeEditor("serv_ctrl.v", 417, 708, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_ctrl.v", 175, 711); // ac
+selectCodeEditor("serv_ctrl.v", 175, 711, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 448, 708); // ac
+selectCodeEditor("serv_ctrl.v", 482, 702); // ac
+selectCodeEditor("serv_ctrl.v", 204, 767); // ac
+selectCodeEditor("serv_ctrl.v", 222, 779); // ac
+selectCodeEditor("serv_ctrl.v", 247, 767); // ac
+selectCodeEditor("serv_ctrl.v", 172, 731); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_ctrl.v", 548, 814); // ac
+selectCodeEditor("serv_ctrl.v", 159, 676); // ac
+selectCodeEditor("serv_ctrl.v", 159, 676, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 354, 757); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 524, 834); // ac
+selectCodeEditor("serv_ctrl.v", 152, 614); // ac
+selectCodeEditor("serv_ctrl.v", 152, 613, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 97, 806); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 266, 611); // ac
+selectCodeEditor("serv_ctrl.v", 266, 611, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 268, 810); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 415, 625); // ac
+selectCodeEditor("serv_ctrl.v", 415, 625, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 361, 815); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 106, 796); // ac
+selectCodeEditor("serv_ctrl.v", 158, 814); // ac
+selectCodeEditor("serv_ctrl.v", 159, 814, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 492, 813); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 181, 619); // ac
+selectCodeEditor("serv_ctrl.v", 181, 619, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 94, 807); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_ctrl.v", 465, 593); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 628, 826); // ac
+selectCodeEditor("serv_ctrl.v", 633, 785); // ac
+selectCodeEditor("serv_ctrl.v", 624, 874); // ac
+selectCodeEditor("serv_ctrl.v", 635, 791); // ac
+selectCodeEditor("serv_ctrl.v", 421, 603); // ac
+selectCodeEditor("serv_ctrl.v", 421, 602, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 491, 747); // ac
+selectCodeEditor("serv_ctrl.v", 627, 788); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 350, 783); // ac
+selectCodeEditor("serv_ctrl.v", 324, 868); // ac
+selectCodeEditor("serv_ctrl.v", 556, 618); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 313, 804); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+selectCodeEditor("serv_ctrl.v", 399, 806); // ac
+selectCodeEditor("serv_ctrl.v", 489, 797); // ac
+selectCodeEditor("serv_ctrl.v", 489, 797, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 481, 812); // ac
+selectCodeEditor("serv_ctrl.v", 481, 812, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 323, 811); // ac
+selectCodeEditor("serv_ctrl.v", 323, 811, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 327, 852); // ac
+selectCodeEditor("serv_ctrl.v", 94, 775); // ac
+selectCodeEditor("serv_ctrl.v", 224, 798); // ac
+selectCodeEditor("serv_ctrl.v", 224, 797, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_ctrl.v", 326, 684); // ac
+typeControlKey((HResource) null, "serv_ctrl.v", 'v'); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_ctrl.v", 384, 710); // ac
+selectCodeEditor("serv_ctrl.v", 342, 709); // ac
+selectCodeEditor("serv_ctrl.v", 379, 717); // ac
+selectCodeEditor("serv_ctrl.v", 111, 696); // ac
+selectCodeEditor("serv_ctrl.v", 105, 781); // ac
+selectCodeEditor("serv_ctrl.v", 76, 671); // ac
+selectCodeEditor("serv_ctrl.v", 562, 680); // ac
+selectCodeEditor("serv_ctrl.v", 199, 576); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_ctrl.v", 482, 523); // ac
+selectCodeEditor("serv_ctrl.v", 482, 523, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 575, 604); // ac
+selectCodeEditor("serv_ctrl.v", 661, 523); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,063 MB (+16147kb) [04:42:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,063 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:04:40 PM JST
+// Elapsed time: 20 seconds
+selectCodeEditor("serv_ctrl.v", 510, 348); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("serv_ctrl.v", 238, 234); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_ctrl.v", 242, 41); // ac
+selectCodeEditor("serv_ctrl.v", 242, 41, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_ctrl.v", 366, 68); // ac
+selectCodeEditor("serv_ctrl.v", 388, 47); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:05:20 PM JST
+selectCodeEditor("serv_ctrl.v", 19, 47); // ac
+selectCodeEditor("serv_ctrl.v", 261, 85); // ac
+selectCodeEditor("serv_ctrl.v", 339, 67); // ac
+selectCodeEditor("serv_ctrl.v", 281, 87); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("serv_top.v", 305, 220); // ac
+selectCodeEditor("serv_top.v", 298, 182); // ac
+selectCodeEditor("serv_top.v", 51, 182); // ac
+selectCodeEditor("serv_top.v", 405, 197); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 489, 333); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,127 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:06:05 PM JST
+selectCodeEditor("serv_top.v", 222, 217); // ac
+selectCodeEditor("serv_top.v", 242, 238); // ac
+selectCodeEditor("serv_top.v", 293, 275); // ac
+selectCodeEditor("serv_top.v", 283, 296); // ac
+selectCodeEditor("serv_top.v", 232, 318); // ac
+selectCodeEditor("serv_top.v", 233, 333); // ac
+selectCodeEditor("serv_top.v", 234, 355); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 322, 335); // ac
+selectCodeEditor("serv_top.v", 321, 313); // ac
+selectCodeEditor("serv_top.v", 320, 295); // ac
+selectCodeEditor("serv_top.v", 321, 276); // ac
+selectCodeEditor("serv_top.v", 322, 240); // ac
+selectCodeEditor("serv_top.v", 321, 219); // ac
+selectCodeEditor("serv_top.v", 228, 383); // ac
+selectCodeEditor("serv_top.v", 239, 431); // ac
+selectCodeEditor("serv_top.v", 252, 448); // ac
+selectCodeEditor("serv_top.v", 298, 470); // ac
+selectCodeEditor("serv_top.v", 194, 487); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_top.v", 184, 317); // ac
+selectCodeEditor("serv_top.v", 181, 289); // ac
+selectCodeEditor("serv_top.v", 183, 270); // ac
+selectCodeEditor("serv_top.v", 184, 231); // ac
+selectCodeEditor("serv_top.v", 183, 217); // ac
+selectCodeEditor("serv_top.v", 179, 369); // ac
+selectCodeEditor("serv_top.v", 176, 389); // ac
+selectCodeEditor("serv_top.v", 181, 403); // ac
+selectCodeEditor("serv_top.v", 180, 423); // ac
+selectCodeEditor("serv_top.v", 179, 465); // ac
+selectCodeEditor("serv_top.v", 181, 487); // ac
+selectCodeEditor("serv_top.v", 180, 506); // ac
+selectCodeEditor("serv_top.v", 178, 523); // ac
+selectCodeEditor("serv_top.v", 181, 540); // ac
+selectCodeEditor("serv_top.v", 184, 579); // ac
+selectCodeEditor("serv_top.v", 252, 464); // ac
+selectCodeEditor("serv_top.v", 299, 486); // ac
+selectCodeEditor("serv_top.v", 283, 501); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 290, 523); // ac
+selectCodeEditor("serv_top.v", 283, 541); // ac
+selectCodeEditor("serv_top.v", 329, 583); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 22 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), rf_if : serv_rf_if (serv_rf_if.v)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), rf_if : serv_rf_if (serv_rf_if.v)]", 18, false, false, false, false, false, true); // D - Double Click
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_rf_if.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+// Elapsed time: 185 seconds
+selectCodeEditor("serv_rf_if.v", 245, 19); // ac
+selectCodeEditor("serv_rf_if.v", 254, 12); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_rf_if.v", 45, 27); // ac
+selectCodeEditor("serv_rf_if.v", 22, 63); // ac
+selectCodeEditor("serv_rf_if.v", 95, 71); // ac
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_if.v", 417, 553); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_rf_if.v", 257, 67); // ac
+// Elapsed time: 25 seconds
+selectCodeEditor("serv_top.v", 226, 144); // ac
+selectCodeEditor("serv_top.v", 226, 144, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'c'); // ac
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "WITH_CSR"); // d.c
+selectCodeEditor("serv_rf_if.v", 213, 83); // ac
+selectCodeEditor("serv_rf_if.v", 204, 72); // ac
+selectCodeEditor("serv_rf_if.v", 210, 69); // ac
+// Elapsed time: 40 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_rf_if.v", 113, 464); // ac
+selectCodeEditor("serv_rf_if.v", 113, 464, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_rf_if.v", 227, 293); // ac
+selectCodeEditor("serv_rf_if.v", 209, 296); // ac
+selectCodeEditor("serv_rf_if.v", 209, 296, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_if.v", 33, 582); // ac
+selectCodeEditor("serv_rf_if.v", 199, 851, true, false, false, false, false); // ac - Shift Key
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_rf_if.v", 236, 523); // ac
+selectCodeEditor("serv_rf_if.v", 84, 470); // ac
+// Elapsed time: 24 seconds
+selectCodeEditor("serv_rf_if.v", 100, 540); // ac
+selectCodeEditor("serv_rf_if.v", 484, 674); // ac
+selectCodeEditor("serv_rf_if.v", 126, 737); // ac
+selectCodeEditor("serv_rf_if.v", 215, 716); // ac
+selectCodeEditor("serv_rf_if.v", 202, 715); // ac
+selectCodeEditor("serv_rf_if.v", 637, 831); // ac
+selectCodeEditor("serv_rf_if.v", 311, 710); // ac
+// Elapsed time: 24 seconds
+selectCodeEditor("serv_rf_if.v", 142, 705); // ac
+selectCodeEditor("serv_rf_if.v", 142, 705, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 105 seconds
+selectCodeEditor("serv_rf_if.v", 140, 706); // ac
+selectCodeEditor("serv_rf_if.v", 140, 706, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_rf_if.v", 646, 836); // ac
+selectCodeEditor("serv_rf_if.v", 286, 753); // ac
+selectCodeEditor("serv_rf_if.v", 328, 736); // ac
+selectCodeEditor("serv_rf_if.v", 112, 695); // ac
+selectCodeEditor("serv_rf_if.v", 149, 714); // ac
+selectCodeEditor("serv_rf_if.v", 149, 714, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 119, 696); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 289, 706); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 239, 696); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_rf_if.v", 133, 694); // ac
+selectCodeEditor("serv_rf_if.v", 133, 694, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 118, 709); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("serv_rf_if.v", 519, 750); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 258, 707); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 151, 711); // ac
+selectCodeEditor("serv_rf_if.v", 151, 711, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 120, 726); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+// Elapsed time: 16 seconds
+selectCodeEditor("serv_rf_if.v", 808, 787); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("serv_rf_if.v", 339, 792); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 259, 737); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 500, 806); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 329, 749); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 811, 823); // ac
+selectCodeEditor("serv_rf_if.v", 811, 829); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 275, 768); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 813, 721); // ac
+selectCodeEditor("serv_rf_if.v", 808, 730); // ac
+selectCodeEditor("serv_rf_if.v", 845, 735); // ac
+selectCodeEditor("serv_rf_if.v", 1169, 732); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'c'); // ac
+selectCodeEditor("serv_rf_if.v", 287, 667); // ac
+typeControlKey((HResource) null, "serv_rf_if.v", 'v'); // ac
+selectCodeEditor("serv_rf_if.v", 1212, 725); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,159 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:19:15 PM JST
+// PAResourceOtoP.PAViews_CODE: Code: close view
+// Elapsed time: 35 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectCodeEditor("serv_top.v", 275, 268); // ac
+selectCodeEditor("serv_top.v", 307, 239); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_top.v", 33, 481); // ac
+selectCodeEditor("serv_top.v", 77, 396); // ac
+selectCodeEditor("serv_top.v", 117, 501); // ac
+selectCodeEditor("serv_top.v", 251, 525); // ac
+selectCodeEditor("serv_top.v", 251, 524, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 610, 486); // ac
+selectCodeEditor("serv_top.v", 246, 163); // ac
+selectCodeEditor("serv_top.v", 246, 163, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 577, 297); // ac
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), mem_if : serv_mem_if (serv_mem_if.v)]", 19, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), mem_if : serv_mem_if (serv_mem_if.v)]", 19, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_mem_if.v", 289, 390); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_mem_if.v", 345, 51); // ac
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_mem_if.v", 377, 332); // ac
+selectCodeEditor("serv_mem_if.v", 368, 281); // ac
+selectCodeEditor("serv_mem_if.v", 331, 313); // ac
+selectCodeEditor("serv_mem_if.v", 356, 277); // ac
+// Elapsed time: 982 seconds
+selectCodeEditor("serv_mem_if.v", 213, 149); // ac
+// Elapsed time: 15 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_mem_if.v", 2, true, false); // o - Popup Trigger
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem
+selectCodeEditor("serv_top.v", 323, 355); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 322, 482); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,192 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:37:40 PM JST
+// Elapsed time: 44 seconds
+selectCodeEditor("serv_top.v", 279, 255); // ac
+selectCodeEditor("serv_top.v", 363, 158); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_mem_if.v", 220, 589); // ac
+selectCodeEditor("serv_mem_if.v", 168, 566); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_mem_if.v", 306, 435); // ac
+selectCodeEditor("serv_mem_if.v", 134, 424); // ac
+selectCodeEditor("serv_mem_if.v", 134, 424, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 294, 432); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_mem_if.v", 522, 783); // ac
+selectCodeEditor("serv_mem_if.v", 523, 508); // ac
+selectCodeEditor("serv_mem_if.v", 127, 503); // ac
+selectCodeEditor("serv_mem_if.v", 127, 503, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 522, 501); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_mem_if.v", 124, 786); // ac
+selectCodeEditor("serv_mem_if.v", 124, 786, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("serv_mem_if.v", 425, 534); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_mem_if.v", 86, 699); // ac
+selectCodeEditor("serv_mem_if.v", 165, 658); // ac
+selectCodeEditor("serv_mem_if.v", 165, 658, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 97, 710); // ac
+selectCodeEditor("serv_mem_if.v", 85, 697); // ac
+selectCodeEditor("serv_mem_if.v", 343, 632); // ac
+selectCodeEditor("serv_mem_if.v", 86, 678); // ac
+selectCodeEditor("serv_mem_if.v", 108, 683); // ac
+selectCodeEditor("serv_mem_if.v", 79, 671); // ac
+selectCodeEditor("serv_mem_if.v", 382, 662); // ac
+selectCodeEditor("serv_mem_if.v", 382, 661, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 334, 645); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_mem_if.v", 265, 69); // ac
+selectCodeEditor("serv_mem_if.v", 375, 64); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,224 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:40:25 PM JST
+selectCodeEditor("serv_mem_if.v", 230, 81); // ac
+selectCodeEditor("serv_mem_if.v", 230, 81, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_mem_if.v", 'c'); // ac
+selectCodeEditor("serv_top.v", 326, 180); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+selectCodeEditor("serv_mem_if.v", 339, 140); // ac
+selectCodeEditor("serv_mem_if.v", 236, 89); // ac
+selectCodeEditor("serv_mem_if.v", 236, 89, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_mem_if.v", 'c'); // ac
+selectCodeEditor("serv_mem_if.v", 81, 676); // ac
+typeControlKey((HResource) null, "serv_mem_if.v", 'v'); // ac
+selectCodeEditor("serv_mem_if.v", 208, 681); // ac
+selectCodeEditor("serv_mem_if.v", 220, 691); // ac
+selectCodeEditor("serv_mem_if.v", 220, 691, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_mem_if.v", 'c'); // ac
+selectCodeEditor("serv_mem_if.v", 200, 681); // ac
+selectCodeEditor("serv_mem_if.v", 152, 667); // ac
+typeControlKey((HResource) null, "serv_mem_if.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("serv_mem_if.v", 356, 867); // ac
+selectCodeEditor("serv_mem_if.v", 284, 834); // ac
+selectCodeEditor("serv_mem_if.v", 284, 834, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 316, 859); // ac
+selectCodeEditor("serv_mem_if.v", 272, 833); // ac
+selectCodeEditor("serv_mem_if.v", 273, 832, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_mem_if.v", 885, 824); // ac
+selectCodeEditor("serv_mem_if.v", 347, 830); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_mem_if.v", 386, 890); // ac
+selectCodeEditor("serv_mem_if.v", 528, 823); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,256 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:41:10 PM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_mem_if.v", 593, 777); // ac
+// [Engine Memory]: 4,272 MB (+6782kb) [05:18:58]
+selectCodeEditor("serv_mem_if.v", 339, 823); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,288 MB. GUI used memory: 88 MB. Current time: 7/12/23, 4:41:30 PM JST
+// Elapsed time: 14 seconds
+selectCodeEditor("serv_mem_if.v", 254, 16); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_top.v", 260, 239); // ac
+selectCodeEditor("serv_top.v", 270, 254); // ac
+selectCodeEditor("serv_top.v", 341, 494); // ac
+selectCodeEditor("serv_top.v", 240, 478); // ac
+selectCodeEditor("serv_top.v", 282, 431); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 281, 410); // ac
+selectCodeEditor("serv_top.v", 269, 390); // ac
+selectCodeEditor("serv_top.v", 272, 372); // ac
+selectCodeEditor("serv_top.v", 281, 353); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("serv_top.v", 281, 335); // ac
+selectCodeEditor("serv_top.v", 264, 309); // ac
+selectCodeEditor("serv_top.v", 262, 293); // ac
+selectCodeEditor("serv_top.v", 274, 279); // ac
+selectCodeEditor("serv_top.v", 321, 258); // ac
+selectCodeEditor("serv_top.v", 323, 237); // ac
+selectCodeEditor("serv_top.v", 278, 349); // ac
+selectCodeEditor("serv_top.v", 280, 371); // ac
+selectCodeEditor("serv_top.v", 264, 391); // ac
+selectCodeEditor("serv_top.v", 259, 409); // ac
+selectCodeEditor("serv_top.v", 264, 450); // ac
+selectCodeEditor("serv_top.v", 278, 468); // ac
+selectCodeEditor("serv_top.v", 251, 485); // ac
+selectCodeEditor("serv_top.v", 261, 484); // ac
+selectCodeEditor("serv_top.v", 252, 527); // ac
+selectCodeEditor("serv_top.v", 276, 485); // ac
+selectCodeEditor("serv_top.v", 263, 489); // ac
+selectCodeEditor("serv_top.v", 268, 486); // ac
+selectCodeEditor("serv_top.v", 271, 504); // ac
+selectCodeEditor("serv_top.v", 259, 524); // ac
+selectCodeEditor("serv_top.v", 289, 541); // ac
+selectCodeEditor("serv_top.v", 256, 571); // ac
+selectCodeEditor("serv_top.v", 257, 559); // ac
+selectCodeEditor("serv_top.v", 291, 579); // ac
+selectCodeEditor("serv_top.v", 259, 603); // ac
+selectCodeEditor("serv_top.v", 295, 617); // ac
+selectCodeEditor("serv_top.v", 276, 657); // ac
+selectCodeEditor("serv_top.v", 228, 619); // ac
+selectCodeEditor("serv_top.v", 275, 659); // ac
+selectCodeEditor("serv_top.v", 285, 659); // ac
+selectCodeEditor("serv_top.v", 231, 614); // ac
+selectCodeEditor("serv_top.v", 303, 657); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,320 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:42:50 PM JST
+// Elapsed time: 22 seconds
+selectCodeEditor("serv_top.v", 240, 82); // ac
+selectCodeEditor("serv_top.v", 240, 82, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'c'); // ac
+selectCodeEditor("serv_top.v", 213, 487); // ac
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), alu : serv_alu (serv_alu.v)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), alu : serv_alu (serv_alu.v)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), alu : serv_alu (serv_alu.v)]", 17, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("serv_alu.v", 206, 70); // ac
+selectCodeEditor("serv_alu.v", 206, 70, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_alu.v", 2); // o
+selectCodeEditor("serv_alu.v", 280, 71); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_alu.v", 276, 635); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,353 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:43:30 PM JST
+selectCodeEditor("serv_alu.v", 353, 735); // ac
+// Elapsed time: 17 seconds
+selectCodeEditor("serv_alu.v", 222, 91); // ac
+selectCodeEditor("serv_alu.v", 222, 91, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_alu.v", 'c'); // ac
+selectCodeEditor("serv_alu.v", 83, 733); // ac
+typeControlKey((HResource) null, "serv_alu.v", 'v'); // ac
+selectCodeEditor("serv_alu.v", 162, 740); // ac
+selectCodeEditor("serv_alu.v", 209, 859); // ac
+selectCodeEditor("serv_alu.v", 100, 734); // ac
+selectCodeEditor("serv_alu.v", 100, 734, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_alu.v", 'c'); // ac
+selectCodeEditor("serv_alu.v", 102, 672); // ac
+typeControlKey((HResource) null, "serv_alu.v", 'v'); // ac
+selectCodeEditor("serv_alu.v", 54, 816); // ac
+selectCodeEditor("serv_alu.v", 54, 816, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_alu.v", 'c'); // ac
+selectCodeEditor("serv_alu.v", 93, 697); // ac
+typeControlKey((HResource) null, "serv_alu.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("serv_alu.v", 335, 637); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_alu.v", 582, 506); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 4,385 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:44:40 PM JST
+selectCodeEditor("serv_alu.v", 226, 505); // ac
+selectCodeEditor("serv_alu.v", 219, 507); // ac
+// Elapsed time: 57 seconds
+selectCodeEditor("serv_alu.v", 578, 546); // ac
+selectCodeEditor("serv_alu.v", 568, 498); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("serv_alu.v", 267, 2); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,417 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:46:10 PM JST
+selectCodeEditor("serv_top.v", 272, 274); // ac
+selectCodeEditor("serv_top.v", 272, 274, false, false, false, false, true); // ac - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), ctrl : serv_ctrl (serv_ctrl.v)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, servix (servix.v), servant : servant (servant.v), cpu : serv_rf_top (serv_rf_top.v), cpu : serv_top (serv_top.v), ctrl : serv_ctrl (serv_ctrl.v)]", 16, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("serv_ctrl.v", 255, 11); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_ctrl.v", 168, 49); // ac
+selectCodeEditor("serv_ctrl.v", 168, 48, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_ctrl.v", 'c'); // ac
+selectCodeEditor("serv_top.v", 207, 302); // ac
+selectCodeEditor("serv_top.v", 182, 277); // ac
+selectCodeEditor("serv_top.v", 182, 277, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+selectCodeEditor("serv_top.v", 202, 57); // ac
+selectCodeEditor("serv_top.v", 202, 57, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 187, 83); // ac
+selectCodeEditor("serv_top.v", 187, 83, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 205, 69); // ac
+selectCodeEditor("serv_top.v", 205, 68, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 203, 50); // ac
+selectCodeEditor("serv_top.v", 203, 50, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_top.v", 190, 102); // ac
+selectCodeEditor("serv_top.v", 190, 102, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'c'); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("serv_top.v", 269, 353); // ac
+selectCodeEditor("serv_top.v", 269, 353, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "serv_top.v", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,449 MB. GUI used memory: 89 MB. Current time: 7/12/23, 4:47:15 PM JST
+selectCodeEditor("serv_top.v", 24, 391); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
