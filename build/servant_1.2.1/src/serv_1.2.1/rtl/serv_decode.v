@@ -2,6 +2,7 @@
 module serv_decode
 (
    input wire        clk,
+   input wire        i_rst,
    //Input
    input wire [31:2] i_wb_rdt,
    input wire        i_wb_en,
@@ -228,15 +229,25 @@ module serv_decode
 
 
     always @(posedge clk) begin
-        if (i_wb_en) begin
-        funct3 <= i_wb_rdt[14:12];
-        imm30  <= i_wb_rdt[30];
-        imm25  <= i_wb_rdt[25];
-        opcode <= i_wb_rdt[6:2];
-        op20   <= i_wb_rdt[20];
-        op21   <= i_wb_rdt[21];
-        op22   <= i_wb_rdt[22];
-        op26   <= i_wb_rdt[26];
+        if (i_rst) begin // NOP
+            funct3 <= 3'b000;
+            imm30  <= 1'b0;
+            imm25  <= 1'b0;
+            opcode <= 5'b00100;
+            op20   <= 1'b0;
+            op21   <= 1'b0;
+            op22   <= 1'b0;
+            op26   <= 1'b0;
+        end
+        else if (i_wb_en) begin
+            funct3 <= i_wb_rdt[14:12];
+            imm30  <= i_wb_rdt[30];
+            imm25  <= i_wb_rdt[25];
+            opcode <= i_wb_rdt[6:2];
+            op20   <= i_wb_rdt[20];
+            op21   <= i_wb_rdt[21];
+            op22   <= i_wb_rdt[22];
+            op26   <= i_wb_rdt[26];
         end
     end
     

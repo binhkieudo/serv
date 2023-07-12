@@ -67,7 +67,7 @@ module serv_ctrl
       pc_plus_offset_cy_r <= i_pc_en & pc_plus_offset_cy;
 
       if (i_rst) o_ibus_adr          <= RESET_PC;
-      else o_ibus_adr <= {new_pc, o_ibus_adr[31:1]};
+      else if (i_pc_en) o_ibus_adr <= {new_pc, o_ibus_adr[31:1]};
    end
    
 endmodule

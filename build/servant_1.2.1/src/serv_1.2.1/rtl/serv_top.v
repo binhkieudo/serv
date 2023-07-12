@@ -201,7 +201,8 @@ module serv_top
    );
 
    serv_decode decode (
-      .clk (clk),
+      .clk                (clk              ),
+      .i_rst              (i_rst            ),
       //Input
       .i_wb_rdt           (i_wb_rdt[31:2]   ),
       .i_wb_en            (wb_ibus_ack      ),
@@ -281,6 +282,7 @@ module serv_top
 
    serv_bufreg bufreg (
       .i_clk        (clk              ),
+      .i_rst        (i_rst            ),
       //State
       .i_cnt0       (cnt0             ),
       .i_cnt1       (cnt1             ),
@@ -302,6 +304,7 @@ module serv_top
 
    serv_bufreg2 bufreg2 (
       .i_clk        (clk        ),
+      .i_rst        (i_rst      ),
       //State
       .i_en         (cnt_en     ),
       .i_init       (init       ),

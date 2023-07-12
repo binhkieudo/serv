@@ -1,6 +1,7 @@
 module serv_bufreg2
   (
    input wire 	      i_clk,
+   input wire         i_rst,
    //State
    input wire 	      i_en,
    input wire 	      i_init,
@@ -59,8 +60,9 @@ module serv_bufreg2
    assign o_dat = dat;
 
    always @(posedge i_clk) begin
-      if (dat_en | i_load)
-	dat <= i_load ? i_dat : {o_op_b, dat[31:7], dat_shamt};
+      if (i_rst) dat <= 32'd0;
+      else if (dat_en | i_load)
+	       dat <= i_load ? i_dat : {o_op_b, dat[31:7], dat_shamt};
    end
 
 endmodule

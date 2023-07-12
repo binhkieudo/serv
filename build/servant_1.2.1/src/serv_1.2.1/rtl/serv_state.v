@@ -143,7 +143,7 @@ module serv_state
 	always @(posedge i_clk) begin
 	  if (i_rst)
 	      misalign_trap_sync_r <= 1'b0;
-	  else
+	  else if (o_cnt_done)
 	      misalign_trap_sync_r <= trap_pending && o_init;		
 	end
 	 

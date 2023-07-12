@@ -20,6 +20,25 @@ module servant_ram
    reg [31:0] 		mem [0:depth/4-1] /* verilator public */;
 
    wire [aw-3:0] 	addr = i_wb_adr[aw-1:2];
+   
+   integer i;
+   initial begin
+    for (i = 0; i < depth/4; i = i + 1)
+        mem[i] = 32'd0;
+    mem[0] = 32'h40000537; // lui x10, 262144
+    mem[1] = 32'h00050513; // addi x10, x10, 0
+    mem[2] = 32'h00400313; // addi x6, x0, 4
+//    mem[2] = 32'h00000313; // addi x6, x0, 0
+    mem[3] = 32'h00000293; // addi x5, x0, 0
+    mem[4] = 32'h00550023; // sb x5, 0(x10)
+    mem[5] = 32'h0012C293; // xori x5, x5, 1
+    mem[6] = 32'h000073B3; // and x7, x0, x0
+    mem[7] = 32'h00138393; // addi x7, x7, 1
+//    mem[7] = 32'h00438393; // addi x7, x7, 4
+    mem[8] = 32'hFE731EE3; // bne x6, x7, -4
+    mem[9] = 32'hFEDFF06F; // jal x0, -20
+   end
+   
 
    always @(posedge i_wb_clk)
      if (i_wb_rst)

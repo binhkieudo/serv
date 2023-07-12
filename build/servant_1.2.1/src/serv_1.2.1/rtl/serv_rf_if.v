@@ -107,12 +107,15 @@ module serv_rf_if
     */
    wire sel_rs2 = !(i_trap | i_mret | i_csr_en);
    
-   assign o_rreg1[5]   = ~sel_rs2;
-   assign o_rreg1[4:2] = i_rs2_raddr[4:2] & {3{sel_rs2}};
-   assign o_rreg1[1:0] = {1'b0,i_trap} |
-                         {i_mret,1'b0} |
-                         ({2{i_csr_en}} & i_csr_addr) |
-                         ({2{sel_rs2}} & i_rs2_raddr[1:0]);
+//   assign o_rreg1[5]   = ~sel_rs2;
+//   assign o_rreg1[4:2] = i_rs2_raddr[4:2] & {3{sel_rs2}};
+//   assign o_rreg1[1:0] = {1'b0,i_trap} |
+//                         {i_mret,1'b0} |
+//                         ({2{i_csr_en}} & i_csr_addr) |
+//                         ({2{sel_rs2}} & i_rs2_raddr[1:0]);
+       assign o_rreg1 = {~sel_rs2,
+		     i_rs2_raddr[4:2] & {3{sel_rs2}},
+		     {1'b0,i_trap} | {i_mret,1'b0} | ({2{i_csr_en}} & i_csr_addr) | ({2{sel_rs2}} & i_rs2_raddr[1:0])};
    assign o_rs1 = i_rdata0;
    assign o_rs2 = i_rdata1;
    assign o_csr = i_rdata1 & i_csr_en;

@@ -2,17 +2,20 @@ module serv_rf_top
 #(
     parameter RESET_PC = 32'd0,
     parameter RF_WIDTH = 8,
-//	parameter RF_L2D   = $clog2((32+4)*32/RF_WIDTH)
-    parameter RF_L2D   = $clog2(32*32/RF_WIDTH)
+	parameter RF_L2D   = $clog2((32+4)*32/RF_WIDTH)
+//    parameter RF_L2D   = $clog2(32*32/RF_WIDTH)
 )
 (
     input  wire 	    clk,
     input  wire 	    i_rst,
+    // Interrupts
     input  wire 	    i_timer_irq,
+    // Instruction bus
     output wire [31:0]  o_ibus_adr,
     output wire 	    o_ibus_cyc,
     input  wire [31:0]  i_ibus_rdt,
     input  wire 	    i_ibus_ack,
+    // Data bus
     output wire [31:0]  o_dbus_adr,
     output wire [31:0]  o_dbus_dat,
     output wire [3:0]   o_dbus_sel,
@@ -39,11 +42,11 @@ module serv_rf_top
     wire 	            rdata1;
 
     wire [RF_L2D-1:0]   waddr;
-    wire [1:0]          wdata;
+    wire [RF_WIDTH-1:0] wdata;
     wire 	            wen;
     wire [RF_L2D-1:0]   raddr;
     wire 	            ren;
-    wire [1:0]          rdata;
+    wire [RF_WIDTH-1:0] rdata;
 
    serv_top #(
      .RESET_PC (RESET_PC)
