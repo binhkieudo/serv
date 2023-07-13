@@ -1,0 +1,20 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap amm_axi_bridge_v1_0_13 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/amm_axi_bridge_v1_0_13 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:22 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work amm_axi_bridge_v1_0_13 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/amm_axi_bridge_v1_0_13/.cxl.verilog.amm_axi_bridge_v1_0_13.amm_axi_bridge_v1_0_13.lin64.cmf 
+-- Compiling module amm_axi_bridge_v1_0_13_read_top
+-- Compiling module amm_axi_bridge_v1_0_13_read_multi
+-- Compiling module amm_axi_bridge_v1_0_13_read_demux
+-- Compiling module amm_axi_bridge_v1_0_13_write_top
+-- Compiling module amm_axi_bridge_v1_0_13_write_multi
+-- Compiling module amm_axi_bridge_v1_0_13_write_mux
+-- Compiling module amm_axi_bridge_v1_0_13_top
+-- Compiling module amm_axi_bridge_v1_0_13_fifo
+-- Compiling module amm_axi_bridge_v1_0_13_arbitration
+
+Top level modules:
+	amm_axi_bridge_v1_0_13_top
+End time: 11:33:23 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

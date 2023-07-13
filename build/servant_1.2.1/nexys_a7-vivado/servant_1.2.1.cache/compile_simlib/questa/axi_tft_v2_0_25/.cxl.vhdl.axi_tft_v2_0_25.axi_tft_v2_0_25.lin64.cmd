@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_tft_v2_0_25
+/tools/questasim/linux_x86_64/vmap axi_tft_v2_0_25 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_tft_v2_0_25
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work axi_tft_v2_0_25 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_tft_v2_0_25/.cxl.vhdl.axi_tft_v2_0_25.axi_tft_v2_0_25.lin64.cmf

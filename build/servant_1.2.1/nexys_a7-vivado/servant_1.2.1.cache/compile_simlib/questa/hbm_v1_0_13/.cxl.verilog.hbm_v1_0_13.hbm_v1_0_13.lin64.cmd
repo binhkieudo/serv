@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hbm_v1_0_13
+/tools/questasim/linux_x86_64/vmap hbm_v1_0_13 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hbm_v1_0_13
+/tools/questasim/linux_x86_64/vlog  -64 -L hbm_v1_0_13 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work hbm_v1_0_13 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hbm_v1_0_13/.cxl.systemverilog.hbm_v1_0_13.hbm_v1_0_13.lin64.cmf

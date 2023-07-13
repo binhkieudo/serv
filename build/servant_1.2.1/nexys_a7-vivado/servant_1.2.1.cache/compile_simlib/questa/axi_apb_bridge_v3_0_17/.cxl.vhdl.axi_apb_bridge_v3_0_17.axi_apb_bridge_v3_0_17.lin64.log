@@ -1,0 +1,37 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_apb_bridge_v3_0_17 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_apb_bridge_v3_0_17 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:11 on Jul 13,2023
+vcom -64 -93 -work axi_apb_bridge_v3_0_17 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_apb_bridge_v3_0_17/.cxl.vhdl.axi_apb_bridge_v3_0_17.axi_apb_bridge_v3_0_17.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pselect_f
+-- Compiling architecture imp of pselect_f
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity pselect_f
+-- Compiling entity psel_decoder
+-- Compiling architecture RTL of psel_decoder
+-- Compiling entity multiplexor
+-- Compiling architecture RTL of multiplexor
+-- Loading package lib_pkg
+-- Loading entity counter_f
+-- Compiling entity axilite_sif
+-- Compiling architecture RTL of axilite_sif
+-- Compiling entity apb_mif
+-- Compiling architecture RTL of apb_mif
+-- Compiling entity axi_apb_bridge
+-- Compiling architecture RTL of axi_apb_bridge
+-- Loading entity psel_decoder
+-- Loading entity multiplexor
+-- Loading entity axilite_sif
+-- Loading entity apb_mif
+End time: 11:33:11 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

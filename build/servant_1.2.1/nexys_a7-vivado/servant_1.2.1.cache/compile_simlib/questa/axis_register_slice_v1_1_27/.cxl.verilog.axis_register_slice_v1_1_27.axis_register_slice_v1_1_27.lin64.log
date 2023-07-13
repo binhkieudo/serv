@@ -1,0 +1,26 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axis_register_slice_v1_1_27 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_register_slice_v1_1_27 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:43 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axis_register_slice_v1_1_27 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_register_slice_v1_1_27/.cxl.verilog.axis_register_slice_v1_1_27.axis_register_slice_v1_1_27.lin64.cmf 
+-- Compiling module axis_register_slice_v1_1_27_tdm_sample
+-- Compiling module axis_register_slice_v1_1_27_test_master
+-- Compiling module axis_register_slice_v1_1_27_test_slave
+-- Compiling module axis_register_slice_v1_1_27_multi_slr
+-- Compiling module axis_register_slice_v1_1_27_middle_region_slr
+-- Compiling module axis_register_slice_v1_1_27_source_region_slr
+-- Compiling module axis_register_slice_v1_1_27_dest_region_slr
+-- Compiling module axis_register_slice_v1_1_27_single_slr
+-- Compiling module axis_register_slice_v1_1_27_axic_reg_srl_fifo
+-- Compiling module axis_register_slice_v1_1_27_srl_rtl
+-- Compiling module axis_register_slice_v1_1_27_auto_slr
+-- Compiling module axis_register_slice_v1_1_27_auto_src
+-- Compiling module axis_register_slice_v1_1_27_auto_dest
+-- Compiling module axis_register_slice_v1_1_27_axisc_register_slice
+-- Compiling module axis_register_slice_v1_1_27_axis_register_slice
+
+Top level modules:
+	axis_register_slice_v1_1_27_axis_register_slice
+End time: 11:32:43 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

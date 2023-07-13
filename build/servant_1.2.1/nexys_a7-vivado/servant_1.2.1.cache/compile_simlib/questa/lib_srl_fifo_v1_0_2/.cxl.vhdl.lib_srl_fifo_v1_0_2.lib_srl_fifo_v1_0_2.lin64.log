@@ -1,0 +1,27 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap lib_srl_fifo_v1_0_2 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_srl_fifo_v1_0_2 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:14 on Jul 13,2023
+vcom -64 -93 -work lib_srl_fifo_v1_0_2 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_srl_fifo_v1_0_2/.cxl.vhdl.lib_srl_fifo_v1_0_2.lib_srl_fifo_v1_0_2.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity cntr_incr_decr_addn_f
+-- Loading package NUMERIC_STD
+-- Compiling architecture imp of cntr_incr_decr_addn_f
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package lib_pkg
+-- Compiling entity dynshreg_f
+-- Compiling architecture behavioral of dynshreg_f
+-- Loading package lib_pkg
+-- Compiling entity srl_fifo_rbu_f
+-- Compiling architecture imp of srl_fifo_rbu_f
+-- Loading entity cntr_incr_decr_addn_f
+-- Loading entity dynshreg_f
+-- Compiling entity srl_fifo_f
+-- Compiling architecture imp of srl_fifo_f
+-- Loading entity srl_fifo_rbu_f
+End time: 11:32:14 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

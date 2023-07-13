@@ -1,0 +1,18 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_vdma_v6_3_15 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_vdma_v6_3_15 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:34:38 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_vdma_v6_3_15 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_vdma_v6_3_15/.cxl.verilog.axi_vdma_v6_3_15.axi_vdma_v6_3_15.lin64.cmf 
+-- Compiling module axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector
+-- Compiling module axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis
+-- Compiling module axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice
+-- Compiling module axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice
+-- Compiling module axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer
+-- Compiling module axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer
+-- Compiling module axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter
+
+Top level modules:
+	axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter
+End time: 11:34:38 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

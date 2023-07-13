@@ -1,0 +1,25 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap blk_mem_gen_v8_3_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/blk_mem_gen_v8_3_6 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:32 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work blk_mem_gen_v8_3_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/blk_mem_gen_v8_3_6/.cxl.verilog.blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6.lin64.cmf 
+-- Compiling module STATE_LOGIC_v8_3
+-- Compiling module beh_vlog_muxf7_v8_3
+-- Compiling module beh_vlog_ff_clr_v8_3
+-- Compiling module beh_vlog_ff_pre_v8_3
+-- Compiling module beh_vlog_ff_ce_clr_v8_3
+-- Compiling module write_netlist_v8_3
+-- Compiling module read_netlist_v8_3
+-- Compiling module blk_mem_axi_write_wrapper_beh_v8_3
+-- Compiling module blk_mem_axi_read_wrapper_beh_v8_3
+-- Compiling module blk_mem_axi_regs_fwd_v8_3
+-- Compiling module blk_mem_gen_v8_3_6_output_stage
+-- Compiling module blk_mem_gen_v8_3_6_softecc_output_reg_stage
+-- Compiling module blk_mem_gen_v8_3_6_mem_module
+-- Compiling module blk_mem_gen_v8_3_6
+
+Top level modules:
+	blk_mem_gen_v8_3_6
+End time: 11:27:32 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

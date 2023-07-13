@@ -1,0 +1,44 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap pcie_qdma_mailbox_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pcie_qdma_mailbox_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:51 on Jul 13,2023
+vlog -64 -L pcie_qdma_mailbox_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work pcie_qdma_mailbox_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pcie_qdma_mailbox_v1_0_0/.cxl.systemverilog.pcie_qdma_mailbox_v1_0_0.pcie_qdma_mailbox_v1_0_0.lin64.cmf 
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+-- Compiling package pcie_qdma_mailbox_v1_0_vl_rfs_sv_unit
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/pcie_qdma_mailbox_v1_0/hdl/pcie_qdma_mailbox_v1_0_vl_rfs.sv(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+-- Compiling module pcie_qdma_mailbox_v1_0_0_GenericFIFO
+
+Top level modules:
+End time: 11:27:51 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 32

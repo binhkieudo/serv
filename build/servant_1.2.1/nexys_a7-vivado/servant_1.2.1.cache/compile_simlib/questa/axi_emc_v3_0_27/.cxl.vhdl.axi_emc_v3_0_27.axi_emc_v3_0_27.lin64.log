@@ -1,0 +1,45 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_emc_v3_0_27 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_emc_v3_0_27 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:34:50 on Jul 13,2023
+vcom -64 -93 -work axi_emc_v3_0_27 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_emc_v3_0_27/.cxl.vhdl.axi_emc_v3_0_27.axi_emc_v3_0_27.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package emc_pkg
+-- Compiling package body emc_pkg
+-- Loading package emc_pkg
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Compiling entity pselect_f
+-- Compiling architecture imp of pselect_f
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Compiling entity axi_emc_addr_gen
+-- Compiling architecture imp of axi_emc_addr_gen
+-- Loading package emc_pkg
+-- Compiling entity axi_emc_address_decode
+-- Compiling architecture imp of axi_emc_address_decode
+-- Loading entity pselect_f
+-- Compiling entity axi_emc_native_interface
+-- Compiling architecture imp of axi_emc_native_interface
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_emc_v3_0/hdl/axi_emc_v3_0_vh_rfs.vhd(2527): (vcom-1445) Duplicate signal "single_transfer_cmb" found in sensitivity list.
+-- Loading entity axi_emc_addr_gen
+-- Loading entity axi_emc_address_decode
+-- Loading package lib_pkg
+-- Loading entity srl_fifo_rbu_f
+-- Loading entity counter_f
+-- Compiling entity startup_wrapper
+-- Compiling architecture startup_arch of startup_wrapper
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity axi_emc
+-- Compiling architecture imp of axi_emc
+-- Loading entity axi_emc_native_interface
+-- Loading entity EMC
+-- Loading entity startup_wrapper
+End time: 11:34:51 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1

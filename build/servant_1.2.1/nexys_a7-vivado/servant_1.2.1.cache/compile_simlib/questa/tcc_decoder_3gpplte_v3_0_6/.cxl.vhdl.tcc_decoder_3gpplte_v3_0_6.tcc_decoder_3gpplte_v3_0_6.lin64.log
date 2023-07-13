@@ -1,0 +1,26 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap tcc_decoder_3gpplte_v3_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gpplte_v3_0_6 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:28 on Jul 13,2023
+vcom -64 -93 -work tcc_decoder_3gpplte_v3_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gpplte_v3_0_6/.cxl.vhdl.tcc_decoder_3gpplte_v3_0_6.tcc_decoder_3gpplte_v3_0_6.lin64.cmf 
+-- Loading package STANDARD
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "GLB_compress_BIN_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_BSM2DSM_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_WENG2RENG_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "GLB_compress_Thread_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "GLB_compress_Thread_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_lifo".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_fifo_win".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_fifo_siso".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "GLB_compress_IPU2MSEQ_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "OPU_compress_Block_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "OPU_compress_IPU2OPU_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "OPU_compress_MSEQ2OPU_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "OPU_compress_BMAN2READ_to_slv".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gpplte_v3_0/hdl/tcc_decoder_3gpplte_v3_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "GLB_compress_BOUT_to_slv".
+End time: 11:29:30 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 17

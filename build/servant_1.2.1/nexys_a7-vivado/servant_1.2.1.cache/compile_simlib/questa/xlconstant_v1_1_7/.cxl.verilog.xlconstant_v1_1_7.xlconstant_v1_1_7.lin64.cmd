@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xlconstant_v1_1_7
+/tools/questasim/linux_x86_64/vmap xlconstant_v1_1_7 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xlconstant_v1_1_7
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work xlconstant_v1_1_7 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xlconstant_v1_1_7/.cxl.verilog.xlconstant_v1_1_7.xlconstant_v1_1_7.lin64.cmf

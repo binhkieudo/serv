@@ -1,0 +1,15 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap videoaxi4s_bridge_v1_0_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/videoaxi4s_bridge_v1_0_5 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:34:16 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work videoaxi4s_bridge_v1_0_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/videoaxi4s_bridge_v1_0_5/.cxl.verilog.videoaxi4s_bridge_v1_0_5.videoaxi4s_bridge_v1_0_5.lin64.cmf 
+-- Compiling module videoaxi4s_bridge_v1_0_5
+-- Compiling module videoaxi4s_bridge_v1_0_5_axis
+-- Compiling module videoaxi4s_bridge_v1_0_5_sub
+-- Compiling module videoaxi4s_bridge_v1_0_5_dsc_fifo
+
+Top level modules:
+	videoaxi4s_bridge_v1_0_5
+End time: 11:34:16 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

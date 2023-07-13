@@ -1,0 +1,436 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap aie_xtlm_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/aie_xtlm_v1_0_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -DBOOST_SYSTEM_NO_DEPRECATED -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/systemc/protected/aie_cluster_v1_0_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0 -Wall -fPIC -Wall -fPIC -std=gnu++14 -Wno-reorder -Wno-sign-compare -Wno-deprecated-declarations -DUSE_FST -DNO_TCL -DSC_INCLUDE_DYNAMIC_PROCESSES -O3 -DNDEBUG -work aie_xtlm_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/aie_xtlm_v1_0_0/.cxl.systemc.aie_xtlm_v1_0_0.aie_xtlm_v1_0_0.lin64.cmf 
+Start time: 11:26:34 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logical.cpp:51:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_xtlm.h:54:10: fatal error: me_axi_stream.h: No such file or directory
+ #include "me_axi_stream.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:50:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/systemc:87:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:50:
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_config.cpp:536:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:48:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/systemc:87:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:48:
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/math_engine_globals.cpp:61:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_logger.h:55,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:2:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:3:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/file_system.h: In function 'bool xilinx::filesystem::is_directory(const char*)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/file_system.h:14:29: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+             struct stat sb; if (stat(dirPath, &sb) == 0 && S_ISDIR(sb.st_mode))
+                             ^~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/file_system.h:15:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+                 return true; return false;
+                              ^~~~~~
+In file included from /tools/questasim/include/systemc/systemc:87:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_logger.h:55,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:2:
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_logger.cpp:72:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.h:50,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_axis_bridges.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:48:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp: In member function 'virtual tlm::tlm_sync_enum xsc::aie::pl2aie_128_64_bridge::nb_transport_fw(xtlm::axis_payload&, tlm::tlm_phase&, sc_core::sc_time&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:91:24: warning: unused variable 'data_len' [-Wunused-variable]
+         unsigned int   data_len[2];
+                        ^~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:140:22: warning: unused variable 'data_len64' [-Wunused-variable]
+         unsigned int data_len64 = 8;
+                      ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp: In member function 'virtual tlm::tlm_sync_enum xsc::aie::pl2aie_64_64_bridge::nb_transport_fw(xtlm::axis_payload&, tlm::tlm_phase&, sc_core::sc_time&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:369:22: warning: unused variable 'data_len' [-Wunused-variable]
+        unsigned int  data_len;
+                      ^~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:397:21: warning: unused variable 'data_len64' [-Wunused-variable]
+        unsigned int data_len64 = 8; //Send always 8 bytes, the AIE models ignores invalid bytes depending on tkeep value
+                     ^~~~~~~~~~
+In file included from /tools/questasim/include/systemc/systemc:87:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_sockets/xtlm_axis_simple_initiator_socket_tagged.h:50,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_axis_bridges.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:48:
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_axis_bridges.cpp:653:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:54:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/systemc:87:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:54:
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_bit]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_logic]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_signed]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::read(T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:354:10: warning: unused variable 'read_success' [-Wunused-variable]
+     bool read_success = sc_fifo<T>::nb_read(val_);
+          ^~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_fifo.h: In instantiation of 'void sc_core::sc_fifo<IF>::write(const T&) [with T = sc_dt::sc_unsigned]':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:155:1:   required from here
+/tools/questasim/include/systemc/sc_fifo.h:399:10: warning: unused variable 'write_success' [-Wunused-variable]
+     bool write_success = sc_fifo<T>::nb_write(val_);
+          ^~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_shim_sol_parser.cpp:50:0:
+/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0/boost/range/algorithm/remove_if.hpp: At global scope:
+/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0/boost/range/algorithm/remove_if.hpp:32:1: warning: mangled name for 'typename boost::range_iterator<C>::type boost::range::remove_if(ForwardRange&, UnaryPredicate) [with ForwardRange = std::__cxx11::basic_string<char>; UnaryPredicate = int (*)(int) throw ()]' will change in C++17 because the exception specification is part of a function type [-Wnoexcept-type]
+ remove_if(ForwardRange& rng, UnaryPredicate pred)
+ ^~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/src/aie_xtlm.cpp:57:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_xtlm/aie_xtlm_v1_0_0/include/aie_xtlm.h:54:10: fatal error: me_axi_stream.h: No such file or directory
+ #include "me_axi_stream.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+** Error: (sccom-6142) Compilation failed.
+End time: 11:26:44 on Jul 13,2023, Elapsed time: 0:00:10
+Errors: 1, Warnings: 0

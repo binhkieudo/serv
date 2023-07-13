@@ -1,0 +1,75 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap mdm_v3_2_23 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mdm_v3_2_23 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:45 on Jul 13,2023
+vcom -64 -93 -work mdm_v3_2_23 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mdm_v3_2_23/.cxl.vhdl.mdm_v3_2_23.mdm_v3_2_23.lin64.cmf 
+-- Loading package STANDARD
+-- Compiling package mdm_funcs
+-- Compiling package body mdm_funcs
+-- Loading package mdm_funcs
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xil_scan_reset_control
+-- Compiling architecture IMP of xil_scan_reset_control
+-- Loading package mdm_funcs
+-- Compiling entity MB_BSCANE2
+-- Compiling architecture IMP of MB_BSCANE2
+-- Compiling entity MB_BUFG
+-- Compiling architecture IMP of MB_BUFG
+-- Compiling entity MB_BUFGCE_1
+-- Compiling architecture IMP of MB_BUFGCE_1
+-- Compiling entity MB_BUFGCTRL
+-- Compiling architecture IMP of MB_BUFGCTRL
+-- Compiling entity MB_FDRE
+-- Compiling architecture IMP of MB_FDRE
+-- Compiling entity MB_PLLE2_BASE
+-- Compiling architecture IMP of MB_PLLE2_BASE
+-- Compiling entity MB_FDC_1
+-- Compiling architecture IMP of MB_FDC_1
+-- Compiling entity MB_FDRE_1
+-- Compiling architecture IMP of MB_FDRE_1
+-- Compiling entity MB_SRL16E
+-- Compiling architecture IMP of MB_SRL16E
+-- Compiling entity MB_FDRSE
+-- Compiling architecture IMP of MB_FDRSE
+-- Compiling entity MB_MUXCY_XORCY
+-- Compiling architecture IMP of MB_MUXCY_XORCY
+-- Compiling entity MB_MUXCY
+-- Compiling architecture IMP of MB_MUXCY
+-- Compiling entity MB_XORCY
+-- Compiling architecture IMP of MB_XORCY
+-- Compiling entity MB_SRLC32E
+-- Compiling architecture IMP of MB_SRLC32E
+-- Compiling entity carry_and
+-- Compiling architecture IMP of carry_and
+-- Compiling entity carry_or_vec
+-- Compiling architecture IMP of carry_or_vec
+-- Compiling entity carry_or
+-- Compiling architecture IMP of carry_or
+-- Compiling entity select_bit
+-- Compiling architecture IMP of select_bit
+-- Compiling entity MB_LUT1
+-- Compiling architecture IMP of MB_LUT1
+-- Compiling entity Arbiter
+-- Compiling architecture IMP of Arbiter
+-- Compiling entity SRL_FIFO
+-- Compiling architecture IMP of SRL_FIFO
+-- Compiling entity bus_master
+-- Compiling architecture IMP of bus_master
+-- Compiling entity JTAG_CONTROL
+-- Loading entity SRL_FIFO
+-- Loading entity xil_scan_reset_control
+-- Compiling architecture IMP of JTAG_CONTROL
+-- Compiling entity MDM_Core
+-- Compiling architecture IMP of MDM_CORE
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Compiling entity MDM
+-- Compiling architecture IMP of MDM
+End time: 11:33:46 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

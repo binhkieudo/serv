@@ -1,0 +1,59 @@
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 18:15:39 on Jul 13,2023
+vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl -o tb_opt 
+
+Top level modules:
+	tb
+	glbl
+
+Analyzing design...
+-- Loading module tb
+-- Loading module glbl
+-- Loading module servant
+-- Loading module servant_arbiter
+-- Loading module servant_mux
+-- Loading module servant_ram
+-- Loading module servant_gpio
+-- Loading module serv_rf_top
+-- Loading module serv_top
+-- Loading module serv_state
+-- Loading module serv_decode
+-- Loading module serv_immdec
+-- Loading module serv_bufreg
+-- Loading module serv_bufreg2
+-- Loading module serv_ctrl
+-- Loading module serv_alu
+-- Loading module serv_rf_if
+-- Loading module serv_mem_if
+-- Loading module serv_csr
+-- Loading module serv_rf_ram_if
+-- Loading module serv_rf_ram
+-- Loading module servant_timer
+Incremental compilation check found 1 design-unit (out of 22) may be reused.
+Optimizing 21 design-units (inlining 0/22 module instances):
+-- Optimizing module serv_decode(fast)
+-- Optimizing module serv_top(fast)
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(203): (vopt-2685) [TFMPC] - Too few port connections for 'decode'.  Expected 48, found 47.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(203): (vopt-2718) [TFMPC] - Missing connection for port 'o_ext_funct3'.
+-- Optimizing module serv_rf_ram_if(fast)
+-- Optimizing module serv_immdec(fast)
+-- Optimizing module serv_state(fast)
+-- Optimizing module serv_csr(fast)
+-- Optimizing module serv_rf_if(fast)
+-- Optimizing module servant(fast)
+-- Optimizing module serv_mem_if(fast)
+-- Optimizing module servant_ram(fast)
+-- Optimizing module serv_ctrl(fast)
+-- Optimizing module serv_alu(fast)
+-- Optimizing module serv_rf_top(fast)
+-- Optimizing module serv_bufreg2(fast)
+-- Optimizing module servant_mux(fast)
+-- Optimizing module serv_bufreg(fast)
+-- Optimizing module serv_rf_ram(fast)
+-- Optimizing module servant_timer(fast)
+-- Optimizing module servant_arbiter(fast)
+-- Optimizing module tb(fast)
+-- Optimizing module servant_gpio(fast)
+Optimized design name is tb_opt
+End time: 18:15:39 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2

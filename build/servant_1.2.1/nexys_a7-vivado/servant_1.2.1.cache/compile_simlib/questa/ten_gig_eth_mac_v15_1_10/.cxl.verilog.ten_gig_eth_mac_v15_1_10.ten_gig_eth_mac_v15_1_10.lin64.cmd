@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ten_gig_eth_mac_v15_1_10
+/tools/questasim/linux_x86_64/vmap ten_gig_eth_mac_v15_1_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ten_gig_eth_mac_v15_1_10
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work ten_gig_eth_mac_v15_1_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ten_gig_eth_mac_v15_1_10/.cxl.verilog.ten_gig_eth_mac_v15_1_10.ten_gig_eth_mac_v15_1_10.lin64.cmf

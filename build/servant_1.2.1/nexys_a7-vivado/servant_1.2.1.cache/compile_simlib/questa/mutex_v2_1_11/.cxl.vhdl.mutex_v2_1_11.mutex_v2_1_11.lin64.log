@@ -1,0 +1,30 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap mutex_v2_1_11 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mutex_v2_1_11 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:49 on Jul 13,2023
+vcom -64 -93 -work mutex_v2_1_11 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mutex_v2_1_11/.cxl.vhdl.mutex_v2_1_11.mutex_v2_1_11.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity pselect
+-- Compiling architecture imp of pselect
+-- Compiling entity Gen_DRAM
+-- Compiling architecture syn of Gen_DRAM
+-- Loading package NUMERIC_STD
+-- Loading entity Gen_DRAM
+-- Compiling entity multi_channel_register
+-- Compiling architecture IMP of multi_channel_register
+-- Loading entity multi_channel_register
+-- Compiling entity multi_channel_mutex
+-- Compiling architecture IMP of multi_channel_mutex
+-- Compiling entity mutex_core
+-- Compiling architecture IMP of mutex_core
+-- Compiling entity axi_decode
+-- Compiling architecture IMP of axi_decode
+-- Compiling entity mutex
+-- Compiling architecture IMP of mutex
+End time: 11:29:50 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

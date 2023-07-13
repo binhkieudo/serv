@@ -1,0 +1,36 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap mailbox_v2_1_15 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mailbox_v2_1_15 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:27 on Jul 13,2023
+vcom -64 -93 -work mailbox_v2_1_15 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mailbox_v2_1_15/.cxl.vhdl.mailbox_v2_1_15.mailbox_v2_1_15.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SRL_FIFO
+-- Compiling architecture IMP of SRL_FIFO
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Sync_BRAM
+-- Compiling architecture syn of Sync_BRAM
+-- Compiling entity Sync_DPRAM
+-- Compiling architecture syn of Sync_DPRAM
+-- Compiling entity Sync_FIFO
+-- Compiling architecture VHDL_RTL of Sync_FIFO
+-- Compiling entity Async_FIFO
+-- Compiling architecture IMP of Async_FIFO
+-- Loading entity Sync_FIFO
+-- Loading entity Async_FIFO
+-- Compiling entity fsl_v20
+-- Compiling architecture IMP of fsl_v20
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Compiling entity if_decode
+-- Compiling architecture IMP of if_decode
+-- Compiling entity mailbox
+-- Compiling architecture IMP of mailbox
+End time: 11:31:28 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

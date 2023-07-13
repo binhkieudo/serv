@@ -1,0 +1,16 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_infrastructure_v1_1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_infrastructure_v1_1_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:53 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_infrastructure_v1_1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_infrastructure_v1_1_0/.cxl.verilog.axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0.lin64.cmf 
+-- Compiling module axi_infrastructure_v1_1_0_axi2vector
+-- Compiling module axi_infrastructure_v1_1_0_axic_srl_fifo
+-- Compiling module axi_infrastructure_v1_1_0_vector2axi
+
+Top level modules:
+	axi_infrastructure_v1_1_0_axi2vector
+	axi_infrastructure_v1_1_0_axic_srl_fifo
+	axi_infrastructure_v1_1_0_vector2axi
+End time: 11:30:53 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

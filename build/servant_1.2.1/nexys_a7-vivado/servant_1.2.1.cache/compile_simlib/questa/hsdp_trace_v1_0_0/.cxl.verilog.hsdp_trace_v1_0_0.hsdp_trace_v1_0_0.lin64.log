@@ -1,0 +1,15 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap hsdp_trace_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hsdp_trace_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:02 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work hsdp_trace_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hsdp_trace_v1_0_0/.cxl.verilog.hsdp_trace_v1_0_0.hsdp_trace_v1_0_0.lin64.cmf 
+-- Compiling module hsdp_trace_v1_0_0_arbiter
+-- Compiling module hsdp_trace_v1_0_0_hsdp_trace
+-- Compiling module hsdp_trace_v1_0_0_input_stream
+-- Compiling module hsdp_trace_v1_0_0_output_stream
+
+Top level modules:
+	hsdp_trace_v1_0_0_hsdp_trace
+End time: 11:31:02 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

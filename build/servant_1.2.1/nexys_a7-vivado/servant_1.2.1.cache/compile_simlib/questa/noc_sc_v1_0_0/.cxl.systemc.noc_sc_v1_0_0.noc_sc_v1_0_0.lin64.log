@@ -1,0 +1,64 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap noc_sc_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc_sc_v1_0_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/systemc/protected/noc_v1_0_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0 -Wall -fPIC -Wall -fPIC -std=gnu++14 -Wno-reorder -Wno-deprecated-declarations -Wno-unused-function -DSC_INCLUDE_DYNAMIC_PROCESSES -DBOOST_SYSTEM_NO_DEPRECATED -DNDEBUG -O3 -work noc_sc_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc_sc_v1_0_0/.cxl.systemc.noc_sc_v1_0_0.noc_sc_v1_0_0.lin64.cmf 
+Start time: 11:25:39 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCMasterUnitTlm.cxx:9:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCMasterUnitTlm.h:15:10: fatal error: NOCNppTypes.h: No such file or directory
+ #include "NOCNppTypes.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCDbgScTrace.cxx:11:10: fatal error: NOCDbgTrace.h: No such file or directory
+ #include "NOCDbgTrace.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCMasterUnitXtlm.cxx:10:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCPktTransportTypes.h:13:10: fatal error: NOCPktTypes.h: No such file or directory
+ #include "NOCPktTypes.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreXtlm.h:14:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCDdrMcXtlm.cxx:10:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreTlmBase.h:18:10: fatal error: NOCFlatAssembly.h: No such file or directory
+ #include "NOCFlatAssembly.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCSlaveUnitTlm.cxx:9:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCSlaveUnitTlm.h:16:10: fatal error: NOCNppTypes.h: No such file or directory
+ #include "NOCNppTypes.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreTlm.h:14:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCCoreTlm.cxx:10:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreTlmBase.h:18:10: fatal error: NOCFlatAssembly.h: No such file or directory
+ #include "NOCFlatAssembly.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreXtlm.h:14:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCCoreXtlm.cxx:10:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreTlmBase.h:18:10: fatal error: NOCFlatAssembly.h: No such file or directory
+ #include "NOCFlatAssembly.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCDDRTlm.cxx:9:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCDDRTlm.h:17:10: fatal error: NOCNppTypes.h: No such file or directory
+ #include "NOCNppTypes.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCPktTransportTypes.cxx:15:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCPktTransportTypes.h:13:10: fatal error: NOCPktTypes.h: No such file or directory
+ #include "NOCPktTypes.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreXtlm.h:14:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/src/NOCSlaveUnitXtlm.cxx:10:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/noc_sc/noc_sc_v1_0_0/include/NOCCoreTlmBase.h:18:10: fatal error: NOCFlatAssembly.h: No such file or directory
+ #include "NOCFlatAssembly.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+** Error: (sccom-6142) Compilation failed.
+End time: 11:25:40 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0

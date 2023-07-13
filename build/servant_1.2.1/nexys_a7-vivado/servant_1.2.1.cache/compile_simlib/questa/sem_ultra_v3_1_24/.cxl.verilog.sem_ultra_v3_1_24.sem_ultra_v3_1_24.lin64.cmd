@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sem_ultra_v3_1_24
+/tools/questasim/linux_x86_64/vmap sem_ultra_v3_1_24 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sem_ultra_v3_1_24
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work sem_ultra_v3_1_24 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sem_ultra_v3_1_24/.cxl.verilog.sem_ultra_v3_1_24.sem_ultra_v3_1_24.lin64.cmf

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/etrnic_v1_1_5
+/tools/questasim/linux_x86_64/vmap etrnic_v1_1_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/etrnic_v1_1_5
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work etrnic_v1_1_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/etrnic_v1_1_5/.cxl.verilog.etrnic_v1_1_5.etrnic_v1_1_5.lin64.cmf

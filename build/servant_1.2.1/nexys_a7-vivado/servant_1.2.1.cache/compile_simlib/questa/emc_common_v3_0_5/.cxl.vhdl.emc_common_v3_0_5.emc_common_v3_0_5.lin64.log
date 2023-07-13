@@ -1,0 +1,43 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap emc_common_v3_0_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emc_common_v3_0_5 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:17 on Jul 13,2023
+vcom -64 -93 -work emc_common_v3_0_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emc_common_v3_0_5/.cxl.vhdl.emc_common_v3_0_5.emc_common_v3_0_5.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ld_arith_reg
+-- Loading package NUMERIC_STD
+-- Compiling architecture imp of ld_arith_reg
+-- Loading package std_logic_arith
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ipic_if
+-- Compiling architecture imp of ipic_if
+-- Loading entity ld_arith_reg
+-- Compiling entity io_registers
+-- Compiling architecture imp of io_registers
+-- Compiling entity counters
+-- Compiling architecture imp of counters
+-- Compiling entity mem_state_machine
+-- Compiling architecture imp of mem_state_machine
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity select_param
+-- Compiling architecture imp of select_param
+-- Compiling entity addr_counter_mux
+-- Compiling architecture imp of addr_counter_mux
+-- Compiling entity mem_steer
+-- Compiling architecture imp of mem_steer
+-- Compiling entity EMC
+-- Compiling architecture imp of EMC
+-- Loading entity ipic_if
+-- Loading entity mem_state_machine
+-- Loading entity addr_counter_mux
+-- Loading entity counters
+-- Loading entity select_param
+-- Loading entity mem_steer
+-- Loading entity io_registers
+End time: 11:31:18 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gig_ethernet_pcs_pma_v16_2_9
+/tools/questasim/linux_x86_64/vmap gig_ethernet_pcs_pma_v16_2_9 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gig_ethernet_pcs_pma_v16_2_9
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work gig_ethernet_pcs_pma_v16_2_9 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gig_ethernet_pcs_pma_v16_2_9/.cxl.vhdl.gig_ethernet_pcs_pma_v16_2_9.gig_ethernet_pcs_pma_v16_2_9.lin64.cmf

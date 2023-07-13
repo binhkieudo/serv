@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_dual_splitter_v1_0_9
+/tools/questasim/linux_x86_64/vmap v_dual_splitter_v1_0_9 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_dual_splitter_v1_0_9
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work v_dual_splitter_v1_0_9 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_dual_splitter_v1_0_9/.cxl.vhdl.v_dual_splitter_v1_0_9.v_dual_splitter_v1_0_9.lin64.cmf

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/polar_v1_0_10
+/tools/questasim/linux_x86_64/vmap polar_v1_0_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/polar_v1_0_10
+/tools/questasim/linux_x86_64/vlog  -64 -L fec_5g_common_v1_1_1 -L polar_v1_0_10 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work polar_v1_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/polar_v1_0_10/.cxl.systemverilog.polar_v1_0_10.polar_v1_0_10.lin64.cmf

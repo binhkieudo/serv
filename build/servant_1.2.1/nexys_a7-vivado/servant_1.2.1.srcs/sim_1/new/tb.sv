@@ -30,6 +30,8 @@ module tb(
 
     servant udt (.*);
     
+    wire [31:0] ibus_address = udt.cpu.o_ibus_adr >> 2;
+    
     always #1 wb_clk = ~wb_clk;
     
     initial begin

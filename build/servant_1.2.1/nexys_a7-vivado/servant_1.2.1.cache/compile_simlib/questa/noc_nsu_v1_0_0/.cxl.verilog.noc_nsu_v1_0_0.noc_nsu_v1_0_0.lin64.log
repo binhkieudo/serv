@@ -1,0 +1,90 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap noc_nsu_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc_nsu_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:32 on Jul 13,2023
+vlog -64 -L noc_nsu_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work noc_nsu_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc_nsu_v1_0_0/.cxl.systemverilog.noc_nsu_v1_0_0.noc_nsu_v1_0_0.lin64.cmf 
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(32): (vlog-2263) Redefinition of macro: 'MEM_DEPTH' (previously defined near /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)) .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(58): (vlog-2263) Redefinition of macro: 'NOC_NPP_AXRSVD0_WIDTH' (previously defined near /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/nsu_noc_define.vh(542), old value '(`NOC_NPP_DATA_WIDTH-`NOC_NPP_AXADDR_WIDTH-`NOC_NPP_AXLEN_WIDTH-`NOC_NPP_AXSIZE_WIDTH-`NOC_NPP_AXBURST_WIDTH-`NOC_NPP_AXLOCK_WIDTH-`NOC_NPP_AXCACHE_WIDTH-`NOC_NPP_AXPROT_WIDTH-`NOC_NPP_AXQOS_WIDTH-`NOC_NPP_AXID_WIDTH-`NOC_NPP_AXUSER_WIDTH)', new value '(`NOC_NPP_DATA_WIDTH-`NOC_NPP_AXADDR_WIDTH-`NOC_NPP_AXLEN_WIDTH-`NOC_NPP_AXSIZE_WIDTH-`NOC_NPP_AXBURST_WIDTH-`NOC_NPP_AXLOCK_WIDTH-`NOC_NPP_AXCACHE_WIDTH-`NOC_NPP_AXPROT_WIDTH-`NOC_NPP_AXQOS_WIDTH-`NOC_NPP_AXID_WIDTH-`NOC_NPP_AXUSER_WIDTH-`NOC_NPP_POISON_WIDTH)') .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(75): (vlog-2263) Redefinition of macro: 'NOC_NPP_PKT_CTRL_WIDTH' (previously defined near /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/nsu_noc_define.vh(559), old value '(`NOC_NPP_PKT_TYPE_WIDTH + `NOC_NPP_MISC_CTRL_WIDTH + `NOC_NPP_TAG_WIDTH + `NOC_NPP_SRC_WIDTH + `NOC_NPP_DST_WIDTH + `NOC_NPP_DST_PAR_WIDTH + `NOC_NPP_PRI_WIDTH + `NOC_NPP_LAST_WIDTH + `NOC_NPP_ECC_WIDTH + `NOC_NPP_POISON_WIDTH + `NOC_NPP_TLAST_WIDTH + `NOC_NPP_DBI_WIDTH)', new value '(`NOC_NPP_PKT_TYPE_WIDTH + `NOC_NPP_MISC_CTRL_WIDTH + `NOC_NPP_TAG_WIDTH + `NOC_NPP_SRC_WIDTH + `NOC_NPP_DST_WIDTH + `NOC_NPP_DST_PAR_WIDTH + `NOC_NPP_PRI_WIDTH + `NOC_NPP_LAST_WIDTH + `NOC_NPP_ECC_WIDTH+ `NOC_NPP_POISON_WIDTH + `NOC_NPP_TLAST_WIDTH + `NOC_NPP_DBI_WIDTH)') .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(100): (vlog-2263) Redefinition of macro: 'NOC_NPP_TAG' (previously defined near /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/nsu_noc_define.vh(582), old value '141:134', new value '141:134  ') .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(101): (vlog-2263) Redefinition of macro: 'NOC_NPP_SRC' (previously defined near /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/nsu_noc_define.vh(583), old value '153:142', new value '153:142  ') .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_defines_nsu.vh(102): (vlog-2263) Redefinition of macro: 'NOC_NPP_DST' (previously defined near /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/nsu_noc_define.vh(584), old value '165:154', new value '165:154  ') .
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/noc_nsu_v1_0/hdl/noc_nsu_v1_0_vl_rfs.sv(87)
+** while parsing file included at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_sb_nsu.sv(87): (vlog-2263) Redefinition of macro: <protected>.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc_npp_mon_nsu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+
+Top level modules:
+End time: 11:28:33 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 66

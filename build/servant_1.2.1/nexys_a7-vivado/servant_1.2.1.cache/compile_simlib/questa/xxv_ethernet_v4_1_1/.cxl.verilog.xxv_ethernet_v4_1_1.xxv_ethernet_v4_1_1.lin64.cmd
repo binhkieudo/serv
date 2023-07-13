@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xxv_ethernet_v4_1_1
+/tools/questasim/linux_x86_64/vmap xxv_ethernet_v4_1_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xxv_ethernet_v4_1_1
+/tools/questasim/linux_x86_64/vlog  -64 -L xxv_ethernet_v4_1_1 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work xxv_ethernet_v4_1_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xxv_ethernet_v4_1_1/.cxl.systemverilog.xxv_ethernet_v4_1_1.xxv_ethernet_v4_1_1.lin64.cmf

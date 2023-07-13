@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_amm_bridge_v1_0_17
+/tools/questasim/linux_x86_64/vmap axi_amm_bridge_v1_0_17 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_amm_bridge_v1_0_17
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work axi_amm_bridge_v1_0_17 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_amm_bridge_v1_0_17/.cxl.verilog.axi_amm_bridge_v1_0_17.axi_amm_bridge_v1_0_17.lin64.cmf

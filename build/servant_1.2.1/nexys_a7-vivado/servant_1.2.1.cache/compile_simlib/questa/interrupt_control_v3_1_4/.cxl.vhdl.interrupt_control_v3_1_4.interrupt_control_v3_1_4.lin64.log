@@ -1,0 +1,19 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap interrupt_control_v3_1_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/interrupt_control_v3_1_4 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:34 on Jul 13,2023
+vcom -64 -93 -work interrupt_control_v3_1_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/interrupt_control_v3_1_4/.cxl.vhdl.interrupt_control_v3_1_4.interrupt_control_v3_1_4.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ipif_pkg
+-- Compiling entity interrupt_control
+-- Compiling architecture implementation of interrupt_control
+End time: 11:31:34 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

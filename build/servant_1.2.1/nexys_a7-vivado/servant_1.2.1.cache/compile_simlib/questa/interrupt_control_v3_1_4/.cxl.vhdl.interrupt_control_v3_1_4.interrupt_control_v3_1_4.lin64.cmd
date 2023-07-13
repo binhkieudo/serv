@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/interrupt_control_v3_1_4
+/tools/questasim/linux_x86_64/vmap interrupt_control_v3_1_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/interrupt_control_v3_1_4
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work interrupt_control_v3_1_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/interrupt_control_v3_1_4/.cxl.vhdl.interrupt_control_v3_1_4.interrupt_control_v3_1_4.lin64.cmf

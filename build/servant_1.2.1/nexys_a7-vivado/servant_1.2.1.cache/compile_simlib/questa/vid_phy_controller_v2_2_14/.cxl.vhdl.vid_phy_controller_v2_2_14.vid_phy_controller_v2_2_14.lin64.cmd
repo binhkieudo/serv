@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_2_14
+/tools/questasim/linux_x86_64/vmap vid_phy_controller_v2_2_14 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_2_14
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work vid_phy_controller_v2_2_14 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_2_14/.cxl.vhdl.vid_phy_controller_v2_2_14.vid_phy_controller_v2_2_14.lin64.cmf

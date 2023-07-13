@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/srio_gen2_v4_1_15
+/tools/questasim/linux_x86_64/vmap srio_gen2_v4_1_15 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/srio_gen2_v4_1_15
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work srio_gen2_v4_1_15 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/srio_gen2_v4_1_15/.cxl.vhdl.srio_gen2_v4_1_15.srio_gen2_v4_1_15.lin64.cmf

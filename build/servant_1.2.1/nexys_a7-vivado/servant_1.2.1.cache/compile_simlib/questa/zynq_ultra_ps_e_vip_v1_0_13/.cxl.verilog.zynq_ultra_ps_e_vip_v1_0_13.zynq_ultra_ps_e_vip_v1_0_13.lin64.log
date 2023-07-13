@@ -1,0 +1,33 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap zynq_ultra_ps_e_vip_v1_0_13 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/zynq_ultra_ps_e_vip_v1_0_13 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:29 on Jul 13,2023
+vlog -64 -L axi_vip_v1_1_13 -L zynq_ultra_ps_e_vip_v1_0_13 -L xilinx_vip "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work zynq_ultra_ps_e_vip_v1_0_13 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/zynq_ultra_ps_e_vip_v1_0_13/.cxl.systemverilog.zynq_ultra_ps_e_vip_v1_0_13.zynq_ultra_ps_e_vip_v1_0_13.lin64.cmf 
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_arb_wr
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_arb_rd
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_arb_wr_6
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_arb_rd_6
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_arb_rd_wr
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_sparse_mem
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_reg_map
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_ocm_mem
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_regc
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_ocmc
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_interconnect_model
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_ddr_interconnect_model
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_gen_reset
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_gen_clock
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_ddrc
+-- Compiling package zynq_ultra_ps_e_vip_v1_0_vl_rfs_sv_unit
+-- Importing package xilinx_vip.axi_vip_pkg
+-- Importing package xilinx_vip.xil_common_vip_pkg
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_axi_slave
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_axi_slave_acp
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13_axi_master
+-- Compiling module zynq_ultra_ps_e_vip_v1_0_13
+
+Top level modules:
+	zynq_ultra_ps_e_vip_v1_0_13
+End time: 11:31:30 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

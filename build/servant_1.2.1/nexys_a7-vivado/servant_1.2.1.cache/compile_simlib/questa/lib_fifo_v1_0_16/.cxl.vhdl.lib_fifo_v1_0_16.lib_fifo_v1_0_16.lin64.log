@@ -1,0 +1,21 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap lib_fifo_v1_0_16 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_fifo_v1_0_16 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:05 on Jul 13,2023
+vcom -64 -93 -work lib_fifo_v1_0_16 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_fifo_v1_0_16/.cxl.vhdl.lib_fifo_v1_0_16.lib_fifo_v1_0_16.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package VCOMPONENTS
+-- Compiling entity async_fifo_fg
+-- Compiling architecture implementation of async_fifo_fg
+-- Compiling entity sync_fifo_fg
+-- Compiling architecture implementation of sync_fifo_fg
+End time: 11:32:06 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_pipe_v3_0_6
+/tools/questasim/linux_x86_64/vmap xbip_pipe_v3_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_pipe_v3_0_6
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work xbip_pipe_v3_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_pipe_v3_0_6/.cxl.vhdl.xbip_pipe_v3_0_6.xbip_pipe_v3_0_6.lin64.cmf

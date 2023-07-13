@@ -1,0 +1,12 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap zynq_ultra_ps_e_v3_3_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/zynq_ultra_ps_e_v3_3_8 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_c_v4/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -work zynq_ultra_ps_e_v3_3_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/zynq_ultra_ps_e_v3_3_8/.cxl.systemc.zynq_ultra_ps_e_v3_3_8.zynq_ultra_ps_e_v3_3_8.lin64.cmf 
+Start time: 11:28:24 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+** Warning: (sccom-6102) The object "s_axi_hpm_fpd" is not debuggable. (/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/zynq_ultra_ps_e_v3_3/sim_tlm/xilinx_zynqmp.h, 125)
+** Warning: (sccom-6102) The object "user_master" is not debuggable. (/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/zynq_ultra_ps_e_v3_3/sim_tlm/xilinx_zynqmp.h, 167)
+End time: 11:28:26 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 2

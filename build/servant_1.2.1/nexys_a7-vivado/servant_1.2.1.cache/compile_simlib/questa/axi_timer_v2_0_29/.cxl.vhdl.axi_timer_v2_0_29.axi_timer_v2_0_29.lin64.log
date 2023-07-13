@@ -1,0 +1,39 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_timer_v2_0_29 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_timer_v2_0_29 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:35:07 on Jul 13,2023
+vcom -64 -93 -work axi_timer_v2_0_29 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_timer_v2_0_29/.cxl.vhdl.axi_timer_v2_0_29.axi_timer_v2_0_29.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Compiling entity mux_onehot_f
+-- Compiling architecture imp of mux_onehot_f
+-- Compiling package TC_Types
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ipif_pkg
+-- Loading package lib_pkg
+-- Loading package TC_Types
+-- Compiling entity timer_control
+-- Compiling architecture imp of timer_control
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity cdc_sync
+-- Compiling entity count_module
+-- Compiling architecture imp of count_module
+-- Loading entity counter_f
+-- Compiling entity tc_core
+-- Compiling architecture imp of tc_core
+-- Loading entity mux_onehot_f
+-- Loading entity count_module
+-- Loading entity timer_control
+-- Compiling entity axi_timer
+-- Compiling architecture imp of axi_timer
+-- Loading entity tc_core
+-- Loading entity axi_lite_ipif
+End time: 11:35:08 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

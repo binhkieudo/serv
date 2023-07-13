@@ -1,0 +1,16 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap lib_pkg_v1_0_2 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_pkg_v1_0_2 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:50 on Jul 13,2023
+vcom -64 -93 -work lib_pkg_v1_0_2 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lib_pkg_v1_0_2/.cxl.vhdl.lib_pkg_v1_0_2.lib_pkg_v1_0_2.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package lib_pkg
+-- Compiling package body lib_pkg
+-- Loading package lib_pkg
+End time: 11:27:50 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

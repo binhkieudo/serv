@@ -1,0 +1,65 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap rld3_pl_v1_0_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rld3_pl_v1_0_10 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:39 on Jul 13,2023
+vlog -64 -L rld3_pl_v1_0_10 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work rld3_pl_v1_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rld3_pl_v1_0_10/.cxl.verilog.rld3_pl_v1_0_10.rld3_pl_v1_0_10.lin64.cmf 
+-- Compiling module rld3_pl_v1_0_10_cal_init_bfm
+
+Top level modules:
+	rld3_pl_v1_0_10_cal_init_bfm
+End time: 11:27:39 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:39 on Jul 13,2023
+vlog -64 -L rld3_pl_v1_0_10 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work rld3_pl_v1_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rld3_pl_v1_0_10/.cxl.systemverilog.rld3_pl_v1_0_10.rld3_pl_v1_0_10.lin64.cmf 
+-- Compiling module rld3_pl_v1_0_10_cal
+-- Compiling module rld3_pl_v1_0_10_cal_addr_decode
+-- Compiling module rld3_pl_v1_0_10_cal_bfifo
+-- Compiling module rld3_pl_v1_0_10_cal_config_rom
+-- Compiling module rld3_pl_v1_0_10_cal_cplx
+-- Compiling module rld3_pl_v1_0_10_cal_cplx_data
+-- Compiling module rld3_pl_v1_0_10_cal_debug_microblaze
+-- Compiling module rld3_pl_v1_0_10_cal_mc_odt
+-- Compiling module rld3_pl_v1_0_10_cal_odt
+-- Compiling module rld3_pl_v1_0_10_cal_pi
+-- Compiling module rld3_pl_v1_0_10_cal_rd_en
+-- Compiling module rld3_pl_v1_0_10_cal_read
+-- Compiling module rld3_pl_v1_0_10_cal_sync
+-- Compiling module rld3_pl_v1_0_10_cal_top
+-- Compiling module rld3_pl_v1_0_10_cal_wr_bit
+-- Compiling module rld3_pl_v1_0_10_cal_wr_byte
+-- Compiling module rld3_pl_v1_0_10_cal_write
+-- Compiling module rld3_pl_v1_0_10_cal_xsdb_arbiter
+-- Compiling module rld3_pl_v1_0_10_cal_xsdb_bram
+-- Compiling module rld3_pl_v1_0_10_bank_queue
+-- Compiling module rld3_pl_v1_0_10_bank_queue_mapper
+-- Compiling module rld3_pl_v1_0_10_ch_data_queue
+-- Compiling module rld3_pl_v1_0_10_ch_tag_reorder
+-- Compiling module rld3_pl_v1_0_10_cmd_addr_pi
+-- Compiling module rld3_pl_v1_0_10_cmd_data_queue
+-- Compiling module rld3_pl_v1_0_10_cmd_rotater
+-- Compiling module rld3_pl_v1_0_10_cmd_time_gen
+-- Compiling module rld3_pl_v1_0_10_data_pi
+-- Compiling module rld3_pl_v1_0_10_floping
+-- Compiling module rld3_pl_v1_0_10_mc
+-- Compiling module rld3_pl_v1_0_10_rd_data_pipe
+-- Compiling module rld3_pl_v1_0_10_rd_data_queue
+-- Compiling module rld3_pl_v1_0_10_rd_tag_queue
+-- Compiling module rld3_pl_v1_0_10_sync_fifo
+-- Compiling module rld3_pl_v1_0_10_sync_fifo_4_1
+-- Compiling module rld3_pl_v1_0_10_wr_cmd_queue
+-- Compiling module rld3_pl_v1_0_10_wr_data_pipe
+
+Top level modules:
+	rld3_pl_v1_0_10_cal_bfifo
+	rld3_pl_v1_0_10_cal_odt
+	rld3_pl_v1_0_10_cal_top
+	rld3_pl_v1_0_10_cal_xsdb_bram
+	rld3_pl_v1_0_10_cmd_addr_pi
+	rld3_pl_v1_0_10_cmd_rotater
+	rld3_pl_v1_0_10_data_pi
+	rld3_pl_v1_0_10_floping
+	rld3_pl_v1_0_10_mc
+End time: 11:27:39 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

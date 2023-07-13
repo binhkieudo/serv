@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/g975_efec_i4_v1_0_19
+/tools/questasim/linux_x86_64/vmap g975_efec_i4_v1_0_19 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/g975_efec_i4_v1_0_19
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work g975_efec_i4_v1_0_19 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/g975_efec_i4_v1_0_19/.cxl.vhdl.g975_efec_i4_v1_0_19.g975_efec_i4_v1_0_19.lin64.cmf

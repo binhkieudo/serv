@@ -1,0 +1,392 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap sim_ddr_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_ddr_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -std=c++11 -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/ext/protobuf/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xscl/include -Wall -fPIC -Wall -fPIC -std=gnu++14 -Wno-reorder -Wno-deprecated-declarations -Wno-unused-function -DSC_INCLUDE_DYNAMIC_PROCESSES -O3 -work sim_ddr_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_ddr_v1_0/.cxl.systemc.sim_ddr_v1_0.sim_ddr_v1_0.lin64.cmf 
+Start time: 11:26:45 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/ddr3_fmodel_base.h:63,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx:48:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx: In member function 'void ddr3_fmodel_base::write_strb(uint64_t, uint64_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx:243:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i = startIndex; i<= endIndex; i++) {
+                                  ~^~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx: In member function 'void ddr3_fmodel_base::check_strb(uint64_t, uint64_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx:321:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i=startIndex+1; i < endIndex; i++) {
+                             ~~^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_base.cxx:366:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = startIndex; i<= endIndex; i++) {
+                                ~^~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/ddr3_fmodel_base.h:63,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/ddr3_axi_ram_fmodel.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx:48:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx: In member function 'virtual unsigned int ddr3_axi_ram_fmodel::writeDevMem(uint64_t, void*, unsigned int)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx:137:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < size; i++) {
+                   ~~^~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx: In member function 'virtual unsigned char* ddr3_axi_ram_fmodel::get_page(uint64_t, std::__cxx11::string&, uint64_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx:219:11: warning: unused variable 'pFile' [-Wunused-variable]
+     FILE* pFile = NULL;
+           ^~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_axi_ram_fmodel.cxx:269:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/ddr3_fmodel_base.h:63,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/ddr3_fmodel_shared_memory.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx:48:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx: In member function 'virtual unsigned int ddr3_fmodel_shared_memory::writeDevMem(uint64_t, void*, unsigned int)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx:141:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int i = 0; i < size;i++){
+                        ~~^~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx: In member function 'virtual unsigned int ddr3_fmodel_shared_memory::readDevMem(uint64_t, void*, unsigned int, bool)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx:194:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int i = 0; i < size;i++){
+                        ~~^~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx: In member function 'virtual bool ddr3_fmodel_shared_memory::copyBO(uint64_t, std::__cxx11::string, uint64_t, uint64_t, uint64_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/ddr3_fmodel_shared_memory.cxx:250:12: warning: unused variable 'read_bytes' [-Wunused-variable]
+   uint64_t read_bytes = 0;
+            ^~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/axi_app_xtlm.h:49,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/axi_app_xtlm.cpp:49:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/axi_app_xtlm.cpp: In member function 'void xsc::sim_ddr_v1_0::axi_app_xtlm::process_read()':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/axi_app_xtlm.cpp:321:27: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+  addr = (addr >> C_AXSIZE - 3) & P_MC_BURST_MASK;
+                  ~~~~~~~~~^~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/axi_app_xtlm.cpp: In member function 'void xsc::sim_ddr_v1_0::axi_app_xtlm::process_write()':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/axi_app_xtlm.cpp:417:27: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+  addr = (addr >> C_AXSIZE - 3) & P_MC_BURST_MASK;
+                  ~~~~~~~~~^~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/app_ddrx_xtlm.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/sim_ddrx.h:6,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/sim_ddrx.cpp:1:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:55:0: warning: "SC_INCLUDE_DYNAMIC_PROCESSES" redefined
+ #define SC_INCLUDE_DYNAMIC_PROCESSES
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/sim_ddrx.h:4,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/sim_ddrx.cpp:1:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/app_ddrx_xtlm.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/sim_ddrx.h:6,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/sim_ddrx.cpp:1:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h: In constructor 'fsm_model::fsm_model(xsc::common_cpp::properties, xsc::common_cpp::report_handler*)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:218:13: warning: unused variable 'curr_state' [-Wunused-variable]
+   fsm_state curr_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:219:13: warning: unused variable 'prev_state' [-Wunused-variable]
+   fsm_state prev_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:220:13: warning: unused variable 'next_state' [-Wunused-variable]
+   fsm_state next_state = idle;
+             ^~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/app_ddrx_xtlm.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:47:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:55:0: warning: "SC_INCLUDE_DYNAMIC_PROCESSES" redefined
+ #define SC_INCLUDE_DYNAMIC_PROCESSES
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/app_ddrx_xtlm.h:49,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:47:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/app_ddrx_xtlm.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:47:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h: In constructor 'fsm_model::fsm_model(xsc::common_cpp::properties, xsc::common_cpp::report_handler*)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:218:13: warning: unused variable 'curr_state' [-Wunused-variable]
+   fsm_state curr_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:219:13: warning: unused variable 'prev_state' [-Wunused-variable]
+   fsm_state prev_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:220:13: warning: unused variable 'next_state' [-Wunused-variable]
+   fsm_state next_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp: In member function 'unsigned int xsc::sim_ddr_v1_0::app_ddrx_xtlm::cal_write_latency(xtlm::aximm_payload&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:380:15: warning: unused variable 'data_width' [-Wunused-variable]
+  unsigned int data_width = 72;
+               ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:381:15: warning: unused variable 'burst_length' [-Wunused-variable]
+  unsigned int burst_length = 8;
+               ^~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp: In member function 'unsigned int xsc::sim_ddr_v1_0::app_ddrx_xtlm::cal_read_latency(xtlm::aximm_payload&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:429:15: warning: unused variable 'data_width' [-Wunused-variable]
+  unsigned int data_width = 72;
+               ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:430:15: warning: unused variable 'burst_length' [-Wunused-variable]
+  unsigned int burst_length = 8;
+               ^~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp: In member function 'void xsc::sim_ddr_v1_0::app_ddrx_xtlm::spendtx_delay()':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:577:23: warning: unused variable 'status' [-Wunused-variable]
+    tlm::tlm_sync_enum status = (*wr_skt)->nb_transport_bw(*trans,
+                       ^~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:604:23: warning: unused variable 'status' [-Wunused-variable]
+    tlm::tlm_sync_enum status = (*rd_skt)->nb_transport_bw(*trans,
+                       ^~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp: In member function 'void xsc::sim_ddr_v1_0::app_ddrx_xtlm::spendcmd2cmd_delay()':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/app_ddrx_xtlm.cpp:532:38: warning: 'fsm_latency' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  tx_latency_event.notify(fsm_latency * ddr_timeperiod);
+                          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/fsm_model.cpp:47:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:55:0: warning: "SC_INCLUDE_DYNAMIC_PROCESSES" redefined
+ #define SC_INCLUDE_DYNAMIC_PROCESSES
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/fsm_model.cpp:47:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/fsm_model.cpp:47:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h: In constructor 'fsm_model::fsm_model(xsc::common_cpp::properties, xsc::common_cpp::report_handler*)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:218:13: warning: unused variable 'curr_state' [-Wunused-variable]
+   fsm_state curr_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:219:13: warning: unused variable 'prev_state' [-Wunused-variable]
+   fsm_state prev_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/include/fsm_model.h:220:13: warning: unused variable 'next_state' [-Wunused-variable]
+   fsm_state next_state = idle;
+             ^~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/fsm_model.cpp: In member function 'bool fsm_model::activate_bank(int)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ddr/sim_ddr_v1_0/src/fsm_model.cpp:742:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (active_banks[k] == ((unsigned int) (-1))) {
+       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+End time: 11:26:59 on Jul 13,2023, Elapsed time: 0:00:14
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -linkshared -lib sim_ddr_v1_0 -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0 -lcommon_cpp_v1_0 -lib xtlm -lib xscl -work sim_ddr_v1_0 
+Start time: 11:26:59 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find -lcommon_cpp_v1_0
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_ddr_v1_0/systemc.so failed.
+End time: 11:26:59 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

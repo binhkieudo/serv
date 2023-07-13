@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tsn_endpoint_ethernet_mac_block_v1_0_12
+/tools/questasim/linux_x86_64/vmap tsn_endpoint_ethernet_mac_block_v1_0_12 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tsn_endpoint_ethernet_mac_block_v1_0_12
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work tsn_endpoint_ethernet_mac_block_v1_0_12 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tsn_endpoint_ethernet_mac_block_v1_0_12/.cxl.vhdl.tsn_endpoint_ethernet_mac_block_v1_0_12.tsn_endpoint_ethernet_mac_block_v1_0_12.lin64.cmf

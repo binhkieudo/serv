@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gtwizard_ultrascale_v1_5_4
+/tools/questasim/linux_x86_64/vmap gtwizard_ultrascale_v1_5_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gtwizard_ultrascale_v1_5_4
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work gtwizard_ultrascale_v1_5_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gtwizard_ultrascale_v1_5_4/.cxl.verilog.gtwizard_ultrascale_v1_5_4.gtwizard_ultrascale_v1_5_4.lin64.cmf

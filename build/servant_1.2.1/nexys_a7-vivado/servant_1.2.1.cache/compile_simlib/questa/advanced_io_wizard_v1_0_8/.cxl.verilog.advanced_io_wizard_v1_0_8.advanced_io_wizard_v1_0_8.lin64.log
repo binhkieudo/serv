@@ -1,0 +1,18 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap advanced_io_wizard_v1_0_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/advanced_io_wizard_v1_0_8 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:52 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work advanced_io_wizard_v1_0_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/advanced_io_wizard_v1_0_8/.cxl.verilog.advanced_io_wizard_v1_0_8.advanced_io_wizard_v1_0_8.lin64.cmf 
+-- Compiling module advanced_io_wizard_v1_0_8_clk_scheme
+-- Compiling module advanced_io_wizard_v1_0_8_mipi_tx_cal
+-- Compiling module advanced_io_wizard_v1_0_8_bidirectional_state_machine
+-- Compiling module advanced_io_wizard_v1_0_8_bidirectional_state_machine_simpleriu
+
+Top level modules:
+	advanced_io_wizard_v1_0_8_clk_scheme
+	advanced_io_wizard_v1_0_8_mipi_tx_cal
+	advanced_io_wizard_v1_0_8_bidirectional_state_machine
+	advanced_io_wizard_v1_0_8_bidirectional_state_machine_simpleriu
+End time: 11:27:52 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

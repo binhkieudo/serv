@@ -1,0 +1,395 @@
+m255
+K4
+z2
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+vadvanced_io_wizard_phy_v1_0_0_bank_wrapper
+Z1 !s105 advanced_io_wizard_phy_v1_0_rfs_sv_unit
+Z2 DXx4 work 39 advanced_io_wizard_phy_v1_0_rfs_sv_unit 0 22 ^WJ2Mlb6jXDWCFZ8KB`Z<0
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1689215449
+!i10b 1
+!s100 @eNYDo@27bXXVCeGaXgO?1
+I6BdSlMVhb4RabgXZ21A;B3
+S1
+R0
+Z5 w1665757242
+Z6 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/advanced_io_wizard_phy_v1_0/hdl/advanced_io_wizard_phy_v1_0_rfs.sv
+Z7 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/advanced_io_wizard_phy_v1_0/hdl/advanced_io_wizard_phy_v1_0_rfs.sv
+!i122 0
+L0 619 928
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z10 !s108 1689215449.000000
+!s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/advanced_io_wizard_phy_v1_0/hdl/advanced_io_wizard_phy_v1_0_rfs.sv|
+Z11 !s90 -64|-L|advanced_io_wizard_phy_v1_0_0|+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl|-sv|-svinputport=relaxed|-work|advanced_io_wizard_phy_v1_0_0|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/advanced_io_wizard_phy_v1_0_0/.cxl.systemverilog.advanced_io_wizard_phy_v1_0_0.advanced_io_wizard_phy_v1_0_0.lin64.cmf|
+!i113 0
+Z12 o-64 -L advanced_io_wizard_phy_v1_0_0 -sv -svinputport=relaxed -work advanced_io_wizard_phy_v1_0_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -64 -L advanced_io_wizard_phy_v1_0_0 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work advanced_io_wizard_phy_v1_0_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 tCvgOpt 0
+vadvanced_io_wizard_phy_v1_0_0_BitSlipInLogic_4b
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 _Tc1I:V:k2IC=JZSKc35_0
+Ii;Fh5iG8@iYL^Zhg@YkQ>2
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 3955 279
+R9
+31
+R10
+Z15 !s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/advanced_io_wizard_phy_v1_0/hdl/advanced_io_wizard_phy_v1_0_rfs.sv|
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@bit@slip@in@logic_4b
+vadvanced_io_wizard_phy_v1_0_0_BitSlipInLogic_8b
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 FPc^^kaK=HoY:`;2<oSM]3
+ILi8S740[:j`4IHB6mB4j=3
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 3631 273
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@bit@slip@in@logic_8b
+vadvanced_io_wizard_phy_v1_0_0_BitSlipInLogic_Toplevel
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 8^olgM<n[2;B27V0aIL]a2
+IZ7K9zXJjE^Q8IIh5ISIS`3
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 4285 153
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@bit@slip@in@logic_@toplevel
+vadvanced_io_wizard_phy_v1_0_0_C2BCEtc
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 oU0]SaZS4_[OzcCI252[P3
+I^]TJO2NT:jAOiMS04fZj_1
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 4768 59
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@c2@b@c@etc
+vadvanced_io_wizard_phy_v1_0_0_C3BCEtc
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 Ia::8<KFelL<Q>JeecITV2
+I3ecm[DdlVCN>U>kQJDd000
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 4655 62
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@c3@b@c@etc
+vadvanced_io_wizard_phy_v1_0_0_Fdcr
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 S8^SaSWmh]>Pi]JIhd:TY1
+I3=eSn]WbzP5nUolL;Kk[S3
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 4566 39
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@fdcr
+vadvanced_io_wizard_phy_v1_0_0_GenPulse
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 cEG0B8ZHJP7Fzf84iJ_Y60
+I9dcRllZWf3NA<Pc@XW29e2
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 4488 27
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+nadvanced_io_wizard_phy_v1_0_0_@gen@pulse
+Yadvanced_io_wizard_phy_v1_0_0_reset_if
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 A0T;fz_9[cb]9=Z42?4=?2
+I3AIeVo:A]c4LW092XX:Rz3
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 548 0
+R8
+R9
+r1
+!s85 0
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+vadvanced_io_wizard_phy_v1_0_0_reset_sm
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 iQj^56c6I09oXC^X3koPK0
+I;kYoS`j<]b7oYDX]1DL2P0
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 173 325
+R8
+R9
+r1
+!s85 0
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+vadvanced_io_wizard_phy_v1_0_0_rx_versal_deskew_main
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 dWa_TH^iHD5I6GBLgebOJ1
+ICz>Cic6Pd8P1j0M2=RX3`2
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 1662 1385
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+vadvanced_io_wizard_phy_v1_0_0_rx_versal_deskew_top
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 9OI9:80HR@eck=J@b<FQm3
+IhXSBie;5;Yd<?m1BTf[Y91
+R1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 3117 464
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+vadvanced_io_wizard_phy_v1_0_0_sync_cell
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 A=1g4kRdIe0j>l[CH1N:h2
+IKI;3fV_OBL]Pm?CzXEM;H1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 49 72
+R8
+R9
+r1
+!s85 0
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14
+Xadvanced_io_wizard_phy_v1_0_rfs_sv_unit
+R3
+R4
+V^WJ2Mlb6jXDWCFZ8KB`Z<0
+r1
+!s85 0
+!i10b 1
+!s100 @4nR?ZEB6e78cI3oo^Nj00
+I^WJ2Mlb6jXDWCFZ8KB`Z<0
+!i103 1
+S1
+R0
+R5
+R6
+R7
+!i122 0
+L0 1616 0
+R9
+31
+R10
+R15
+R11
+!i113 0
+R12
+R13
+R14

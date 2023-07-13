@@ -1,0 +1,29 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap ats_switch_v1_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ats_switch_v1_0_6 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:45 on Jul 13,2023
+vlog -64 -L ats_switch_v1_0_6 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work ats_switch_v1_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ats_switch_v1_0_6/.cxl.systemverilog.ats_switch_v1_0_6.ats_switch_v1_0_6.lin64.cmf 
+-- Compiling module ats_switch_v1_0_6_rq_interconnect
+-- Compiling module ats_switch_v1_0_6_rc_interconnect
+-- Compiling module ats_switch_v1_0_6_cq_interconnect
+-- Compiling module ats_switch_v1_0_6_cc_interconnect
+-- Compiling module ats_switch_v1_0_6_axilite
+-- Compiling module ats_switch_v1_0_6_cc
+-- Compiling module ats_switch_v1_0_6_cq
+-- Compiling module ats_switch_v1_0_6_header_extract
+-- Compiling module ats_switch_v1_0_6_rc
+-- Compiling module ats_switch_v1_0_6_reg
+-- Compiling module ats_switch_v1_0_6_rq
+-- Compiling module ats_switch_v1_0_6_tdest_cq
+-- Compiling module ats_switch_v1_0_6_tdest_rc
+-- Compiling module ats_switch_v1_0_6_tdest_rc_straddle_512
+-- Compiling module ats_switch_v1_0_6_top
+-- Compiling module ats_switch_v1_0_6_tdest_rc_straddle_1024
+-- Compiling module ats_switch_v1_0_6_tdest_cq_straddle_1024
+-- Compiling module ats_switch_v1_0_6_tdest_cq_straddle_512
+
+Top level modules:
+	ats_switch_v1_0_6_top
+End time: 11:32:45 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

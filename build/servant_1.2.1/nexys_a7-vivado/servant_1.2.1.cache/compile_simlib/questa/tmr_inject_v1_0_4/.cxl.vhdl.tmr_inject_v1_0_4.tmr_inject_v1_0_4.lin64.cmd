@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_inject_v1_0_4
+/tools/questasim/linux_x86_64/vmap tmr_inject_v1_0_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_inject_v1_0_4
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work tmr_inject_v1_0_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_inject_v1_0_4/.cxl.vhdl.tmr_inject_v1_0_4.tmr_inject_v1_0_4.lin64.cmf

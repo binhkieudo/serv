@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mipi_dphy_v4_3_5
+/tools/questasim/linux_x86_64/vmap mipi_dphy_v4_3_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mipi_dphy_v4_3_5
+/tools/questasim/linux_x86_64/vlog  -64 -L mipi_dphy_v4_3_5 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work mipi_dphy_v4_3_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mipi_dphy_v4_3_5/.cxl.systemverilog.mipi_dphy_v4_3_5.mipi_dphy_v4_3_5.lin64.cmf

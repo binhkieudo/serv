@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/qdma_v5_0_0
+/tools/questasim/linux_x86_64/vmap qdma_v5_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/qdma_v5_0_0
+/tools/questasim/linux_x86_64/vlog  -64 -L qdma_v5_0_0 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work qdma_v5_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/qdma_v5_0_0/.cxl.systemverilog.qdma_v5_0_0.qdma_v5_0_0.lin64.cmf

@@ -1,0 +1,23 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_crossbar_v2_1_28 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_crossbar_v2_1_28 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:53 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_crossbar_v2_1_28 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_crossbar_v2_1_28/.cxl.verilog.axi_crossbar_v2_1_28.axi_crossbar_v2_1_28.lin64.cmf 
+-- Compiling module axi_crossbar_v2_1_28_addr_arbiter_sasd
+-- Compiling module axi_crossbar_v2_1_28_addr_arbiter
+-- Compiling module axi_crossbar_v2_1_28_addr_decoder
+-- Compiling module axi_crossbar_v2_1_28_arbiter_resp
+-- Compiling module axi_crossbar_v2_1_28_crossbar_sasd
+-- Compiling module axi_crossbar_v2_1_28_crossbar
+-- Compiling module axi_crossbar_v2_1_28_decerr_slave
+-- Compiling module axi_crossbar_v2_1_28_si_transactor
+-- Compiling module axi_crossbar_v2_1_28_splitter
+-- Compiling module axi_crossbar_v2_1_28_wdata_mux
+-- Compiling module axi_crossbar_v2_1_28_wdata_router
+-- Compiling module axi_crossbar_v2_1_28_axi_crossbar
+
+Top level modules:
+	axi_crossbar_v2_1_28_axi_crossbar
+End time: 11:31:53 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

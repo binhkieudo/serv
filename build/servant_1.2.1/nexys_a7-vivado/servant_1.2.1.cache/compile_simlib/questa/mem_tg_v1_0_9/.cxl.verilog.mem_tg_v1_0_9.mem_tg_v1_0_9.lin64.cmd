@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mem_tg_v1_0_9
+/tools/questasim/linux_x86_64/vmap mem_tg_v1_0_9 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mem_tg_v1_0_9
+/tools/questasim/linux_x86_64/vlog  -64 -L axis_vio_v1_0_7 -L mem_tg_v1_0_9 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work mem_tg_v1_0_9 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mem_tg_v1_0_9/.cxl.systemverilog.mem_tg_v1_0_9.mem_tg_v1_0_9.lin64.cmf

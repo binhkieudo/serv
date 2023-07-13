@@ -1,0 +1,57 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap stm_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/stm_v1_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:41 on Jul 13,2023
+vlog -64 -L stm_v1_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work stm_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/stm_v1_0/.cxl.systemverilog.stm_v1_0.stm_v1_0.lin64.cmf 
+-- Compiling module stma_v1_0_0_fifo_lut
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(236): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(237): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(238): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(239): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(240): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(240): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(241): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(242): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(243): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(246): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(249): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(256): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(258): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(267): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(269): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(270): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(287): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(288): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(290): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(293): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(296): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(297): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(298): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(314): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(317): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(320): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(321): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(468): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(469): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(470): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(470): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(472): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(473): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module stma_v1_0_0_fifo_bram
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(741): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(742): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(743): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(778): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/stma_v1_0/hdl/stma_v1_0_rfs.sv(779): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module stma_v1_0_0_simple_dport_bram_rst
+-- Compiling module stma_v1_0_0_c2h
+-- Compiling module stma_v1_0_0_h2c
+-- Compiling module stma_v1_0_0_top
+
+Top level modules:
+	stma_v1_0_0_top
+End time: 11:29:41 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 40

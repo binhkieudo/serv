@@ -1,0 +1,46 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap mem_tg_v1_0_9 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mem_tg_v1_0_9 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:23 on Jul 13,2023
+vlog -64 -L axis_vio_v1_0_7 -L mem_tg_v1_0_9 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work mem_tg_v1_0_9 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mem_tg_v1_0_9/.cxl.systemverilog.mem_tg_v1_0_9.mem_tg_v1_0_9.lin64.cmf 
+-- Compiling module apb_to_register
+-- Compiling module cfg_reg_rw
+-- Compiling module read_write_request_counter
+-- Compiling module app2axi
+-- Compiling module simple_tg
+-- Compiling module atg_axi_hw_tg
+-- Compiling module axic_register_slice
+-- Compiling module atg_axi_tg_2to1_converter
+-- Compiling module atg_axi_tg_addr_prbs
+-- Compiling module atg_axi_tg_arbiter
+-- Compiling module atg_axi_tg_data_prbs_seed
+-- Compiling module atg_axi_tg_data_prbs
+-- Compiling module atg_axi_tg_errchk
+-- Compiling module atg_axi_tg_fifo
+-- Compiling module atg_axi_tg_instr_bram
+-- Compiling module atg_axi_tg_mpfifo
+-- Compiling module atg_axi_tg_pattern_gen_addr
+-- Compiling module atg_axi_tg_pattern_gen_data_bram
+-- Compiling module atg_axi_tg_pattern_gen_data_cal_cplx
+-- Compiling module atg_axi_tg_pattern_gen_data
+-- Compiling module atg_axi_tg_pattern_gen_exp_data
+-- Compiling module atg_axi_tg_prbs_gen
+-- Compiling module atg_axi_tg_top
+-- Compiling module atg_axi_tg_victim_data
+-- Compiling module burst_length_gen
+-- Compiling module register_space_reg_rd
+-- Compiling module register_space_reg
+-- Compiling module led_display_driver
+
+Top level modules:
+	apb_to_register
+	read_write_request_counter
+	app2axi
+	simple_tg
+	atg_axi_hw_tg
+	register_space_reg_rd
+	register_space_reg
+	led_display_driver
+End time: 11:33:24 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

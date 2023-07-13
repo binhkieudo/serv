@@ -1,0 +1,41 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap ahblite_axi_bridge_v3_0_22 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ahblite_axi_bridge_v3_0_22 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:49 on Jul 13,2023
+vcom -64 -93 -work ahblite_axi_bridge_v3_0_22 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ahblite_axi_bridge_v3_0_22/.cxl.vhdl.ahblite_axi_bridge_v3_0_22.ahblite_axi_bridge_v3_0_22.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package ahblite_axi_bridge_pkg
+-- Compiling package body ahblite_axi_bridge_pkg
+-- Loading package ahblite_axi_bridge_pkg
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Compiling entity time_out
+-- Compiling architecture RTL of time_out
+-- Loading entity counter_f
+-- Loading package ahblite_axi_bridge_pkg
+-- Compiling entity axi_wchannel
+-- Compiling architecture RTL of axi_wchannel
+-- Compiling entity axi_rchannel
+-- Compiling architecture RTL of axi_rchannel
+-- Compiling entity ahb_if
+-- Compiling architecture RTL of ahb_if
+-- Compiling entity ahb_data_counter
+-- Compiling architecture RTL of ahb_data_counter
+-- Compiling entity ahblite_axi_control
+-- Compiling architecture RTL of ahblite_axi_control
+-- Compiling entity ahblite_axi_bridge
+-- Compiling architecture RTL of ahblite_axi_bridge
+-- Loading entity ahblite_axi_control
+-- Loading entity ahb_if
+-- Loading entity ahb_data_counter
+-- Loading entity axi_wchannel
+-- Loading entity axi_rchannel
+-- Loading entity time_out
+End time: 11:28:49 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

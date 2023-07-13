@@ -1,0 +1,6 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap common_cpp_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0 
+Modifying modelsim.ini
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find crti.o: No such file or directory
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find -lm
+collect2: error: ld returned 1 exit status

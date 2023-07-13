@@ -1,0 +1,511 @@
+m255
+K4
+z2
+!s11e vcom 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+Eaxi_uart16550
+Z1 w1665757247
+Z2 DPx8 synopsys 10 attributes 0 22 iThS5<O8gHDP?YiMiccE>3
+Z3 DPx4 ieee 14 std_logic_misc 0 22 j4Ca:YPSgnCRYmKlN0[Uj0
+Z4 DEx20 axi_lite_ipif_v3_0_4 13 axi_lite_ipif 0 22 C@:2Ph7;IGLbHe2l@iF9B0
+Z5 DPx20 axi_lite_ipif_v3_0_4 8 ipif_pkg 0 22 QY1GMlWOO]F<M]NPV0;PG3
+Z6 DPx6 unisim 11 vcomponents 0 22 UUc0I>8^8hG;`De:DHJfn2
+Z7 DPx14 lib_pkg_v1_0_2 7 lib_pkg 0 22 QP:`ST7Am`B05z6NR4P3M0
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z10 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z11 DEx21 axi_uart16550_v2_0_29 5 xuart 0 22 kd79ARl_J2d4Gj2M`^1?S2
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z14 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uart16550_v2_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd
+Z15 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uart16550_v2_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd
+l0
+L4662 1
+VBI2eI7z?mGXTDCEH8RX?f1
+!s100 HV?XXKMidLd[m_`BM_jE:0
+Z16 OL;C;2021.2_1;73
+31
+Z17 !s110 1689215704
+!i10b 1
+Z18 !s108 1689215703.000000
+Z19 !s90 -64|-93|-work|axi_uart16550_v2_0_29|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_uart16550_v2_0_29/.cxl.vhdl.axi_uart16550_v2_0_29.axi_uart16550_v2_0_29.lin64.cmf|
+!s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uart16550_v2_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd|
+!i113 0
+Z20 o-64 -93 -work axi_uart16550_v2_0_29
+Z21 tExplicit 1 CvgOpt 0
+Artl
+R11
+R4
+R2
+R3
+R5
+R6
+R7
+R8
+R9
+R10
+R12
+R13
+DEx4 work 13 axi_uart16550 0 22 BI2eI7z?mGXTDCEH8RX?f1
+!i122 0
+l4788
+L4737 174
+VC9BW6J]gUjRHchI1J0lHn3
+!s100 `WbB^lJH2:iJBb:M0f<oa2
+R16
+31
+R17
+!i10b 1
+R18
+R19
+Z22 !s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uart16550_v2_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd|
+!i113 0
+R20
+R21
+Eipic_if
+R1
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L3915 1
+V^Kz=61TC1ni3IBBB7eV6P2
+!s100 XPkjX`g1H@Kieze4Y8GeJ1
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimp
+R12
+R13
+DEx4 work 7 ipic_if 0 22 ^Kz=61TC1ni3IBBB7eV6P2
+!i122 0
+l3967
+L3939 127
+VKSg3bGLO2HcQPESM]Q;:f1
+!s100 X5R7:4X:@e98XBLL9?P<A2
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Erx16550
+R1
+R10
+R9
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L1277 1
+V8g6cGS;i6KB2_X5QQaEDH0
+!s100 :Dhl>[=_Y0aRN5i>cl>TW1
+R16
+31
+Z23 !s110 1689215703
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R10
+R9
+R12
+R13
+DEx4 work 7 rx16550 0 22 8g6cGS;i6KB2_X5QQaEDH0
+!i122 0
+l1388
+L1303 860
+VXBA9SQhFmLZobF]2bn1RM2
+!s100 hOP>V]]ch[Q4R3YQW0_b[1
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Erx_fifo_block
+R1
+R9
+R10
+R7
+R8
+Z24 DEx19 lib_srl_fifo_v1_0_2 14 srl_fifo_rbu_f 0 22 oCCSJKHb?h@nBXhikOFMG2
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L1102 1
+VYf6LTlKagE`a<L0zgJa=M1
+!s100 XLK[?8RN8QOlTZbgKJL_]2
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R24
+DEx21 axi_uart16550_v2_0_29 15 rx_fifo_control 0 22 T;RdKPGZTlXVLK]=2zWNn1
+R9
+R10
+R7
+R8
+R12
+R13
+DEx4 work 13 rx_fifo_block 0 22 Yf6LTlKagE`a<L0zgJa=M1
+!i122 0
+l1144
+L1129 68
+VOZ7RS>OWdiC2:i`jWPEeM3
+!s100 iSR44ddiPM:?@Q`VlKco_2
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Erx_fifo_control
+R1
+R10
+R9
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L80 1
+VT;RdKPGZTlXVLK]=2zWNn1
+!s100 KUWieTPV:O_g6Ujij5^072
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R10
+R9
+R12
+R13
+DEx4 work 15 rx_fifo_control 0 22 T;RdKPGZTlXVLK]=2zWNn1
+!i122 0
+l120
+L104 110
+V_7>Ez>cVRClceXOAl;ahU0
+!s100 ^UQfH;;i@Oc<:iIDi36lk1
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Etx16550
+R1
+R10
+R9
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L658 1
+V0GnSO_<OmPZHJ86c;o5?90
+!s100 35Rj?@9a1n2^_E;0a5<7E0
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R10
+R9
+R12
+R13
+DEx4 work 7 tx16550 0 22 0GnSO_<OmPZHJ86c;o5?90
+!i122 0
+l717
+L681 329
+VWXKZ;g>[NIiLdz@><dK7I2
+!s100 ;hZTc7@AhFJLiWDl;2Mna3
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Etx_fifo_block
+R1
+R9
+R10
+R7
+R8
+R24
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L522 1
+VB@:8O5o0kzL>A31mmD70O3
+!s100 TLG1TK7JJ:Ln115CMgZhg3
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R24
+R9
+R10
+R7
+R8
+R12
+R13
+DEx4 work 13 tx_fifo_block 0 22 B@:8O5o0kzL>A31mmD70O3
+!i122 0
+l552
+L542 37
+VDk<U0Tj9Tba4f1^RARSVU1
+!s100 UQYdW04C7Y<bAg]E30f1E1
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Euart16550
+R1
+R6
+Z25 DEx21 axi_uart16550_v2_0_29 13 rx_fifo_block 0 22 Yf6LTlKagE`a<L0zgJa=M1
+R7
+R8
+Z26 DEx21 axi_uart16550_v2_0_29 13 tx_fifo_block 0 22 B@:8O5o0kzL>A31mmD70O3
+Z27 DEx21 axi_uart16550_v2_0_29 7 tx16550 0 22 0GnSO_<OmPZHJ86c;o5?90
+Z28 DEx21 axi_uart16550_v2_0_29 7 rx16550 0 22 8g6cGS;i6KB2_X5QQaEDH0
+Z29 DEx21 axi_uart16550_v2_0_29 16 xuart_tx_load_sm 0 22 LTPMhELBejl:6z3T8eO332
+R9
+R10
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L2269 1
+VJcl6[]:HHLW[BlnM:WUP_0
+!s100 fa^oV[1_de94fW:S8:UI=3
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R25
+R26
+R27
+R28
+R29
+R6
+R7
+R8
+R9
+R10
+R12
+R13
+DEx4 work 9 uart16550 0 22 Jcl6[]:HHLW[BlnM:WUP_0
+!i122 0
+l2502
+L2318 1496
+VaZbJoXk4R3YAk[jfkI?IY2
+!s100 J1<V9`6Mg?PCMK;GMfJki0
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Exuart
+R1
+Z30 DEx21 axi_uart16550_v2_0_29 7 ipic_if 0 22 ^Kz=61TC1ni3IBBB7eV6P2
+R6
+R7
+R8
+R9
+R10
+Z31 DEx21 axi_uart16550_v2_0_29 9 uart16550 0 22 Jcl6[]:HHLW[BlnM:WUP_0
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L4209 1
+Vkd79ARl_J2d4Gj2M`^1?S2
+!s100 A9fdgoBI1H:X7VK7n]6S[1
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimp
+R2
+R3
+DEx14 lib_cdc_v1_0_2 8 cdc_sync 0 22 IKUmIBRVig`LR@ZnI[GG92
+R30
+R31
+R6
+R7
+R8
+R9
+R10
+R12
+R13
+DEx4 work 5 xuart 0 22 kd79ARl_J2d4Gj2M`^1?S2
+!i122 0
+l4288
+L4264 223
+VXFM8fP[fM2BIIfUdz0ozP1
+!s100 H2HioEGmlX2MgIfobQYNQ1
+R16
+31
+R17
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Exuart_tx_load_sm
+R1
+R12
+R13
+!i122 0
+R0
+R14
+R15
+l0
+L294 1
+VLTPMhELBejl:6z3T8eO332
+!s100 `S<jD`5B<mLTPO5AKcWhz1
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21
+Aimplementation
+R12
+R13
+DEx4 work 16 xuart_tx_load_sm 0 22 LTPMhELBejl:6z3T8eO332
+!i122 0
+l325
+L310 125
+Vg63HAM7fO7Z:`zBo7Za_02
+!s100 bmefNdH092m@6NRS8DJ7W2
+R16
+31
+R23
+!i10b 1
+R18
+R19
+R22
+!i113 0
+R20
+R21

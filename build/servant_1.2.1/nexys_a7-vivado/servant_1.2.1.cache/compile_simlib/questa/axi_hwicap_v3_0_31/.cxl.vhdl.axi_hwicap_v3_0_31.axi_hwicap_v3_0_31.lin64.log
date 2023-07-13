@@ -1,0 +1,40 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_hwicap_v3_0_31 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_hwicap_v3_0_31 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:26 on Jul 13,2023
+vcom -64 -93 -work axi_hwicap_v3_0_31 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_hwicap_v3_0_31/.cxl.vhdl.axi_hwicap_v3_0_31.axi_hwicap_v3_0_31.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package VCOMPONENTS
+-- Loading entity async_fifo_fg
+-- Loading package lib_pkg
+-- Compiling entity ipic_if
+-- Compiling architecture imp of ipic_if
+-- Loading entity cdc_sync
+-- Loading package ipif_pkg
+-- Compiling entity icap_statemachine
+-- Compiling architecture imp of icap_statemachine
+-- Compiling entity icap_statemachine_shared
+-- Compiling architecture imp of icap_statemachine_shared
+-- Compiling entity hwicap
+-- Compiling architecture imp of hwicap
+-- Loading entity ipic_if
+-- Loading entity icap_statemachine
+-- Compiling entity hwicap_shared
+-- Compiling architecture imp of hwicap_shared
+-- Loading entity icap_statemachine_shared
+-- Loading entity axi_lite_ipif
+-- Loading entity interrupt_control
+-- Loading entity hwicap
+-- Compiling entity axi_hwicap
+-- Compiling architecture implementation of axi_hwicap
+-- Loading entity hwicap_shared
+End time: 11:32:27 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

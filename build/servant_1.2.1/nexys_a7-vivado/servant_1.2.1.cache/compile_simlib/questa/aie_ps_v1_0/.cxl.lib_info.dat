@@ -1,0 +1,5 @@
+Name:aie_ps_v1_0
+Type:SystemC
+Link_SYSTEMC:xtlm,pl_fileio_v1_0_0,xtlm_ap_ctrl_v1_0
+Link_CPP:common_cpp_v1_0
+Link_C:empty

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/microblaze_v9_5_4
+/tools/questasim/linux_x86_64/vmap microblaze_v9_5_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/microblaze_v9_5_4
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work microblaze_v9_5_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/microblaze_v9_5_4/.cxl.vhdl.microblaze_v9_5_4.microblaze_v9_5_4.lin64.cmf

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/flexo_100g_rs_fec_v1_0_23
+/tools/questasim/linux_x86_64/vmap flexo_100g_rs_fec_v1_0_23 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/flexo_100g_rs_fec_v1_0_23
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work flexo_100g_rs_fec_v1_0_23 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/flexo_100g_rs_fec_v1_0_23/.cxl.verilog.flexo_100g_rs_fec_v1_0_23.flexo_100g_rs_fec_v1_0_23.lin64.cmf

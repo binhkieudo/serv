@@ -1,0 +1,180 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jul 13 00:11:07 2023
+# Process ID: 20063
+# Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+# Command line: vivado servant_1.2.1.xpr
+# Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.log
+# Journal file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.jou
+# Running On: binhkieudo-asus, OS: Linux, CPU Frequency: 1400.000 MHz, CPU Physical cores: 16, Host memory: 33036 MB
+#-----------------------------------------------------------
+start_gui
+open_project servant_1.2.1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top servant [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+file mkdir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sim_1/new/tb.sv w ]
+add_files -fileset sim_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sim_1/new/tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {-all} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+launch_simulation
+source tb.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/i_rst}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/o_ibus_adr}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/clk}} {{/tb/udt/cpu/i_rst}} {{/tb/udt/cpu/i_timer_irq}} {{/tb/udt/cpu/o_ibus_adr}} {{/tb/udt/cpu/o_ibus_cyc}} {{/tb/udt/cpu/i_ibus_rdt}} {{/tb/udt/cpu/i_ibus_ack}} {{/tb/udt/cpu/o_dbus_adr}} {{/tb/udt/cpu/o_dbus_dat}} {{/tb/udt/cpu/o_dbus_sel}} {{/tb/udt/cpu/o_dbus_we}} {{/tb/udt/cpu/o_dbus_cyc}} {{/tb/udt/cpu/i_dbus_rdt}} {{/tb/udt/cpu/i_dbus_ack}} {{/tb/udt/cpu/rf_wreq}} {{/tb/udt/cpu/rf_rreq}} {{/tb/udt/cpu/wreg0}} {{/tb/udt/cpu/wreg1}} {{/tb/udt/cpu/wen0}} {{/tb/udt/cpu/wen1}} {{/tb/udt/cpu/wdata0}} {{/tb/udt/cpu/wdata1}} {{/tb/udt/cpu/rreg0}} {{/tb/udt/cpu/rreg1}} {{/tb/udt/cpu/rf_ready}} {{/tb/udt/cpu/rdata0}} {{/tb/udt/cpu/rdata1}} {{/tb/udt/cpu/waddr}} {{/tb/udt/cpu/wdata}} {{/tb/udt/cpu/wen}} {{/tb/udt/cpu/raddr}} {{/tb/udt/cpu/ren}} {{/tb/udt/cpu/rdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/rf_ram_if/i_clk}} {{/tb/udt/cpu/rf_ram_if/i_rst}} {{/tb/udt/cpu/rf_ram_if/i_rreq}} {{/tb/udt/cpu/rf_ram_if/i_wreq}} {{/tb/udt/cpu/rf_ram_if/o_ready}} {{/tb/udt/cpu/rf_ram_if/i_wreg0}} {{/tb/udt/cpu/rf_ram_if/i_wreg1}} {{/tb/udt/cpu/rf_ram_if/i_wen0}} {{/tb/udt/cpu/rf_ram_if/i_wen1}} {{/tb/udt/cpu/rf_ram_if/i_wdata0}} {{/tb/udt/cpu/rf_ram_if/i_wdata1}} {{/tb/udt/cpu/rf_ram_if/i_rreg0}} {{/tb/udt/cpu/rf_ram_if/i_rreg1}} {{/tb/udt/cpu/rf_ram_if/o_rdata0}} {{/tb/udt/cpu/rf_ram_if/o_rdata1}} {{/tb/udt/cpu/rf_ram_if/o_waddr}} {{/tb/udt/cpu/rf_ram_if/o_wdata}} {{/tb/udt/cpu/rf_ram_if/o_wen}} {{/tb/udt/cpu/rf_ram_if/o_raddr}} {{/tb/udt/cpu/rf_ram_if/o_ren}} {{/tb/udt/cpu/rf_ram_if/i_rdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/rf_ram/i_clk}} {{/tb/udt/cpu/rf_ram/i_waddr}} {{/tb/udt/cpu/rf_ram/i_wdata}} {{/tb/udt/cpu/rf_ram/i_wen}} {{/tb/udt/cpu/rf_ram/i_raddr}} {{/tb/udt/cpu/rf_ram/i_ren}} {{/tb/udt/cpu/rf_ram/o_rdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/rf_ram/memory}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/clk}} {{/tb/udt/cpu/cpu/i_rst}} {{/tb/udt/cpu/cpu/i_timer_irq}} {{/tb/udt/cpu/cpu/o_rf_rreq}} {{/tb/udt/cpu/cpu/o_rf_wreq}} {{/tb/udt/cpu/cpu/i_rf_ready}} {{/tb/udt/cpu/cpu/o_wreg0}} {{/tb/udt/cpu/cpu/o_wreg1}} {{/tb/udt/cpu/cpu/o_wen0}} {{/tb/udt/cpu/cpu/o_wen1}} {{/tb/udt/cpu/cpu/o_wdata0}} {{/tb/udt/cpu/cpu/o_wdata1}} {{/tb/udt/cpu/cpu/o_rreg0}} {{/tb/udt/cpu/cpu/o_rreg1}} {{/tb/udt/cpu/cpu/i_rdata0}} {{/tb/udt/cpu/cpu/i_rdata1}} {{/tb/udt/cpu/cpu/o_ibus_adr}} {{/tb/udt/cpu/cpu/o_ibus_cyc}} {{/tb/udt/cpu/cpu/i_ibus_rdt}} {{/tb/udt/cpu/cpu/i_ibus_ack}} {{/tb/udt/cpu/cpu/o_dbus_adr}} {{/tb/udt/cpu/cpu/o_dbus_dat}} {{/tb/udt/cpu/cpu/o_dbus_sel}} {{/tb/udt/cpu/cpu/o_dbus_we}} {{/tb/udt/cpu/cpu/o_dbus_cyc}} {{/tb/udt/cpu/cpu/i_dbus_rdt}} {{/tb/udt/cpu/cpu/i_dbus_ack}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_trap}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_mret}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/mtval}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/rd}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_ctrl_rd}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_rd_alu_en}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_rd_csr_en}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_rd_mem_en}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_alu_rd}} {{/tb/udt/cpu/cpu/rf_if/i_csr_rd}} {{/tb/udt/cpu/cpu/rf_if/i_mem_rd}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/ctrl/i_cnt0}} {{/tb/udt/cpu/cpu/ctrl/i_jump}} {{/tb/udt/cpu/cpu/ctrl/i_trap}} {{/tb/udt/cpu/cpu/ctrl/i_csr_pc}} {{/tb/udt/cpu/cpu/ctrl/pc_plus_4}} {{/tb/udt/cpu/cpu/ctrl/pc_plus_offset_aligned}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/mret}} {{/tb/udt/cpu/cpu/trap}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/ram/i_wb_clk}} {{/tb/udt/ram/i_wb_rst}} {{/tb/udt/ram/i_wb_adr}} {{/tb/udt/ram/i_wb_dat}} {{/tb/udt/ram/i_wb_sel}} {{/tb/udt/ram/i_wb_we}} {{/tb/udt/ram/i_wb_cyc}} {{/tb/udt/ram/o_wb_rdt}} {{/tb/udt/ram/o_wb_ack}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/arbiter/i_wb_cpu_dbus_adr}} {{/tb/udt/arbiter/i_wb_cpu_dbus_dat}} {{/tb/udt/arbiter/i_wb_cpu_dbus_sel}} {{/tb/udt/arbiter/i_wb_cpu_dbus_we}} {{/tb/udt/arbiter/i_wb_cpu_dbus_cyc}} {{/tb/udt/arbiter/o_wb_cpu_dbus_rdt}} {{/tb/udt/arbiter/o_wb_cpu_dbus_ack}} {{/tb/udt/arbiter/i_wb_cpu_ibus_adr}} {{/tb/udt/arbiter/i_wb_cpu_ibus_cyc}} {{/tb/udt/arbiter/o_wb_cpu_ibus_rdt}} {{/tb/udt/arbiter/o_wb_cpu_ibus_ack}} {{/tb/udt/arbiter/o_wb_cpu_adr}} {{/tb/udt/arbiter/o_wb_cpu_dat}} {{/tb/udt/arbiter/o_wb_cpu_sel}} {{/tb/udt/arbiter/o_wb_cpu_we}} {{/tb/udt/arbiter/o_wb_cpu_cyc}} {{/tb/udt/arbiter/i_wb_cpu_rdt}} {{/tb/udt/arbiter/i_wb_cpu_ack}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/ctrl/i_jump}} {{/tb/udt/cpu/cpu/ctrl/i_trap}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/state/o_init}} {{/tb/udt/cpu/cpu/state/o_cnt_done}} {{/tb/udt/cpu/cpu/state/take_branch}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/state/i_alu_cmp}} {{/tb/udt/cpu/cpu/state/i_bne_or_bge}} {{/tb/udt/cpu/cpu/state/i_cond_branch}} {{/tb/udt/cpu/cpu/state/i_branch_op}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb/udt/cpu/cpu/alu/i_cmp_eq}} 
+relaunch_sim
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb/udt/cpu/cpu/o_ibus_adr}} {{/tb/udt/cpu/cpu/o_ibus_cyc}} {{/tb/udt/cpu/cpu/i_ibus_rdt}} {{/tb/udt/cpu/cpu/i_ibus_ack}} 
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb/udt/cpu/cpu/o_ibus_adr}} {{/tb/udt/cpu/cpu/o_ibus_cyc}} {{/tb/udt/cpu/cpu/i_ibus_rdt}} {{/tb/udt/cpu/cpu/i_ibus_ack}} 
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/o_ibus_adr}} {{/tb/udt/cpu/cpu/o_ibus_cyc}} {{/tb/udt/cpu/cpu/i_ibus_rdt}} {{/tb/udt/cpu/cpu/i_ibus_ack}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/rf_ram/memory}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/state/i_alu_cmp}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/state/o_cnt_done}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/alu/o_cmp}} {{/tb/udt/cpu/cpu/alu/i_cmp_eq}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/ctrl/i_jump}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/alu/i_rs1}} {{/tb/udt/cpu/cpu/alu/i_op_b}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/rf_ram/i_clk}} {{/tb/udt/cpu/rf_ram/i_waddr}} {{/tb/udt/cpu/rf_ram/i_wdata}} {{/tb/udt/cpu/rf_ram/i_wen}} {{/tb/udt/cpu/rf_ram/i_raddr}} {{/tb/udt/cpu/rf_ram/i_ren}} {{/tb/udt/cpu/rf_ram/o_rdata}} {{/tb/udt/cpu/rf_ram/memory}} {{/tb/udt/cpu/rf_ram/rdata}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/rf_ram_if/i_clk}} {{/tb/udt/cpu/rf_ram_if/i_rst}} {{/tb/udt/cpu/rf_ram_if/i_rreq}} {{/tb/udt/cpu/rf_ram_if/i_wreq}} {{/tb/udt/cpu/rf_ram_if/o_ready}} {{/tb/udt/cpu/rf_ram_if/i_wreg0}} {{/tb/udt/cpu/rf_ram_if/i_wreg1}} {{/tb/udt/cpu/rf_ram_if/i_wen0}} {{/tb/udt/cpu/rf_ram_if/i_wen1}} {{/tb/udt/cpu/rf_ram_if/i_wdata0}} {{/tb/udt/cpu/rf_ram_if/i_wdata1}} {{/tb/udt/cpu/rf_ram_if/i_rreg0}} {{/tb/udt/cpu/rf_ram_if/i_rreg1}} {{/tb/udt/cpu/rf_ram_if/o_rdata0}} {{/tb/udt/cpu/rf_ram_if/o_rdata1}} {{/tb/udt/cpu/rf_ram_if/o_waddr}} {{/tb/udt/cpu/rf_ram_if/o_wdata}} {{/tb/udt/cpu/rf_ram_if/o_wen}} {{/tb/udt/cpu/rf_ram_if/o_raddr}} {{/tb/udt/cpu/rf_ram_if/o_ren}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_rs1_raddr}} {{/tb/udt/cpu/cpu/rf_if/i_rs2_raddr}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/rf_ram_if/wreg}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/rf_ram_if/i_rreg0}} {{/tb/udt/cpu/rf_ram_if/i_rreg1}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/o_rreg0}} {{/tb/udt/cpu/cpu/o_rreg1}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/rf_if/sel_rs2}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/rf_if/i_trap}} {{/tb/udt/cpu/cpu/rf_if/i_mret}} {{/tb/udt/cpu/cpu/rf_if/i_csr_en}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/state/o_ctrl_trap}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb/udt/cpu/cpu/state/i_new_irq}} {{/tb/udt/cpu/cpu/state/i_e_op}} {{/tb/udt/cpu/cpu/state/misalign_trap_sync}} 
+relaunch_sim

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/roe_framer_v3_0_4
+/tools/questasim/linux_x86_64/vmap roe_framer_v3_0_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/roe_framer_v3_0_4
+/tools/questasim/linux_x86_64/vlog  -64 -L roe_framer_v3_0_4 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work roe_framer_v3_0_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/roe_framer_v3_0_4/.cxl.systemverilog.roe_framer_v3_0_4.roe_framer_v3_0_4.lin64.cmf

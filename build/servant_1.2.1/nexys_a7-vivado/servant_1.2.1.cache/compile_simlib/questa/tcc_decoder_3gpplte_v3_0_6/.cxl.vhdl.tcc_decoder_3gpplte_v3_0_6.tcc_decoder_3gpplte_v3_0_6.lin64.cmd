@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gpplte_v3_0_6
+/tools/questasim/linux_x86_64/vmap tcc_decoder_3gpplte_v3_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gpplte_v3_0_6
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work tcc_decoder_3gpplte_v3_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gpplte_v3_0_6/.cxl.vhdl.tcc_decoder_3gpplte_v3_0_6.tcc_decoder_3gpplte_v3_0_6.lin64.cmf

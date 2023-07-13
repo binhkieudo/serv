@@ -1,0 +1,51 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap vid_phy_controller_v2_1_14 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_1_14 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:30 on Jul 13,2023
+vlog -64 -L vid_phy_controller_v2_1_14 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work vid_phy_controller_v2_1_14 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_1_14/.cxl.verilog.vid_phy_controller_v2_1_14.vid_phy_controller_v2_1_14.lin64.cmf 
+-- Compiling module vid_phy_controller_v2_1_14_sync_block
+-- Compiling module vid_phy_controller_v2_1_14_sync_pulse
+-- Compiling module vid_phy_controller_v2_1_14_cpll_railing
+-- Compiling module vid_phy_controller_v2_1_14_axi4lite
+-- Compiling module vid_phy_controller_v2_1_14_drp_control
+-- Compiling module vid_phy_controller_v2_1_14_drp_control_8series
+-- Compiling module vid_phy_controller_v2_1_14_drp_control_hdmi
+-- Compiling module vid_phy_controller_v2_1_14_interrupts
+-- Compiling module vid_phy_controller_v2_1_14_gtp_common
+
+Top level modules:
+	vid_phy_controller_v2_1_14_sync_block
+	vid_phy_controller_v2_1_14_sync_pulse
+	vid_phy_controller_v2_1_14_cpll_railing
+	vid_phy_controller_v2_1_14_axi4lite
+	vid_phy_controller_v2_1_14_drp_control
+	vid_phy_controller_v2_1_14_drp_control_8series
+	vid_phy_controller_v2_1_14_drp_control_hdmi
+	vid_phy_controller_v2_1_14_gtp_common
+End time: 11:27:30 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:31 on Jul 13,2023
+vlog -64 -L vid_phy_controller_v2_1_14 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work vid_phy_controller_v2_1_14 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_1_14/.cxl.systemverilog.vid_phy_controller_v2_1_14.vid_phy_controller_v2_1_14.lin64.cmf 
+-- Compiling module vid_phy_controller_v2_1_14_lib_rst_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_sync_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_cap_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_edge_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_cda_gray_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_fifo_sc_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_fifo_dc_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_lib_div_v1_0
+-- Compiling module vid_phy_controller_v2_1_14_datawidth_conv
+-- Compiling module vid_phy_controller_v2_1_14_dru
+
+Top level modules:
+	vid_phy_controller_v2_1_14_lib_sync_v1_0
+	vid_phy_controller_v2_1_14_lib_cap_v1_0
+	vid_phy_controller_v2_1_14_lib_edge_v1_0
+	vid_phy_controller_v2_1_14_lib_fifo_sc_v1_0
+	vid_phy_controller_v2_1_14_lib_div_v1_0
+	vid_phy_controller_v2_1_14_datawidth_conv
+	vid_phy_controller_v2_1_14_dru
+End time: 11:27:31 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

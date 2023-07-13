@@ -1,0 +1,51 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap qdriv_pl_v1_0_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/qdriv_pl_v1_0_8 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:58 on Jul 13,2023
+vlog -64 -L qdriv_pl_v1_0_8 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work qdriv_pl_v1_0_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/qdriv_pl_v1_0_8/.cxl.systemverilog.qdriv_pl_v1_0_8.qdriv_pl_v1_0_8.lin64.cmf 
+-- Compiling module qdriv_pl_v1_0_8_comparison
+-- Compiling module qdriv_pl_v1_0_8_cal_cplx
+-- Compiling module qdriv_pl_v1_0_8_cal_cplx_data
+-- Compiling module qdriv_pl_v1_0_8_cal_cplx_top
+-- Compiling module qdriv_pl_v1_0_8_cal_f2r_sync
+-- Compiling module qdriv_pl_v1_0_8_cal_r2f_sync
+-- Compiling module qdriv_pl_v1_0_8_cmd_gen
+-- Compiling module qdriv_pl_v1_0_8_config_rom
+-- Compiling module qdriv_pl_v1_0_8_reg_set
+-- Compiling module qdriv_pl_v1_0_8_slip_updater
+-- Compiling module qdriv_pl_v1_0_8_xsdb_bram
+-- Compiling module qdriv_pl_v1_0_8_floping
+-- Compiling module qdriv_pl_v1_0_8_cal_adr_decode
+-- Compiling module qdriv_pl_v1_0_8_rvalid_gen
+-- Compiling module qdriv_pl_v1_0_8_bitslip_path
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(636): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(637): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(638): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(639): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(640): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(641): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(642): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(643): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(646): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(647): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(648): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(649): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(650): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(651): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(652): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/qdriv_pl_v1_0/hdl/cal/qdriv_pl_v1_0_bitslip_path.sv(653): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module qdriv_pl_v1_0_8_rw_control
+-- Compiling module qdriv_pl_v1_0_8_ctrl
+-- Compiling module qdriv_pl_v1_0_8_ctrl_cmd_mapper
+
+Top level modules:
+	qdriv_pl_v1_0_8_cal_f2r_sync
+	qdriv_pl_v1_0_8_cal_r2f_sync
+	qdriv_pl_v1_0_8_config_rom
+	qdriv_pl_v1_0_8_xsdb_bram
+	qdriv_pl_v1_0_8_cal_adr_decode
+	qdriv_pl_v1_0_8_bitslip_path
+	qdriv_pl_v1_0_8_ctrl
+End time: 11:29:58 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 16

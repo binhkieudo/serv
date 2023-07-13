@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_lmb_bridge_v1_0_1
+/tools/questasim/linux_x86_64/vmap axi_lmb_bridge_v1_0_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_lmb_bridge_v1_0_1
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work axi_lmb_bridge_v1_0_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_lmb_bridge_v1_0_1/.cxl.vhdl.axi_lmb_bridge_v1_0_1.axi_lmb_bridge_v1_0_1.lin64.cmf

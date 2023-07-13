@@ -1,0 +1,32 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap secureip /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/secureip 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:23:17 on Jul 13,2023
+vlog -source -64 -work secureip -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/secureip/.cxl.verilog.secureip.secureip.lin64.cmf 
+-- Compiling module PCIE_2_1_WRAP
+-- Compiling module ISERDESE2_WRAP
+-- Compiling module B_ISERDESE2
+-- Compiling module OSERDESE2_WRAP
+-- Compiling module B_OSERDESE2
+-- Compiling module SIP_IN_FIFO
+-- Compiling module SIP_OUT_FIFO
+-- Compiling module SIP_PHY_CONTROL
+-- Compiling module SIP_PHASER_IN
+-- Compiling module SIP_PHASER_OUT
+-- Compiling module GTPE2_CHANNEL_WRAP
+-- Compiling module GTPE2_COMMON_WRAP
+
+Top level modules:
+	PCIE_2_1_WRAP
+	ISERDESE2_WRAP
+	OSERDESE2_WRAP
+	SIP_IN_FIFO
+	SIP_OUT_FIFO
+	SIP_PHY_CONTROL
+	SIP_PHASER_IN
+	SIP_PHASER_OUT
+	GTPE2_CHANNEL_WRAP
+	GTPE2_COMMON_WRAP
+End time: 11:23:22 on Jul 13,2023, Elapsed time: 0:00:05
+Errors: 0, Warnings: 0

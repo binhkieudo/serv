@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_utils_v3_0_10
+/tools/questasim/linux_x86_64/vmap xbip_utils_v3_0_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_utils_v3_0_10
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work xbip_utils_v3_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xbip_utils_v3_0_10/.cxl.vhdl.xbip_utils_v3_0_10.xbip_utils_v3_0_10.lin64.cmf

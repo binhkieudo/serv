@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_accelerator_adapter_v2_1_16
+/tools/questasim/linux_x86_64/vmap axis_accelerator_adapter_v2_1_16 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_accelerator_adapter_v2_1_16
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work axis_accelerator_adapter_v2_1_16 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_accelerator_adapter_v2_1_16/.cxl.vhdl.axis_accelerator_adapter_v2_1_16.axis_accelerator_adapter_v2_1_16.lin64.cmf

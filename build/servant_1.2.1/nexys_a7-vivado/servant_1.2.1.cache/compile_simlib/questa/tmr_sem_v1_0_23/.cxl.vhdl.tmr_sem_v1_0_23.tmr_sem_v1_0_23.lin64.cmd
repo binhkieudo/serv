@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_sem_v1_0_23
+/tools/questasim/linux_x86_64/vmap tmr_sem_v1_0_23 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_sem_v1_0_23
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work tmr_sem_v1_0_23 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_sem_v1_0_23/.cxl.vhdl.tmr_sem_v1_0_23.tmr_sem_v1_0_23.lin64.cmf

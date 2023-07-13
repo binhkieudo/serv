@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emb_mem_gen_v1_0_6
+/tools/questasim/linux_x86_64/vmap emb_mem_gen_v1_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emb_mem_gen_v1_0_6
+/tools/questasim/linux_x86_64/vlog  -64 -L emb_mem_gen_v1_0_6 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work emb_mem_gen_v1_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emb_mem_gen_v1_0_6/.cxl.systemverilog.emb_mem_gen_v1_0_6.emb_mem_gen_v1_0_6.lin64.cmf

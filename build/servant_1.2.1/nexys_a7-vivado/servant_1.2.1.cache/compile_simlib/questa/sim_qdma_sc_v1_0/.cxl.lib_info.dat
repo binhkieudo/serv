@@ -1,0 +1,5 @@
+Name:sim_qdma_sc_v1_0
+Type:SystemC
+Link_SYSTEMC:xtlm
+Link_CPP:common_cpp_v1_0,protobuf,common_rpc_v1,sim_qdma_cpp_v1_0
+Link_C:empty

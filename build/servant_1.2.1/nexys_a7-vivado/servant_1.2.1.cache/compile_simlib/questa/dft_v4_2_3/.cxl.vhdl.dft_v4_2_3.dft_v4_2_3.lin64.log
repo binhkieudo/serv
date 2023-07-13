@@ -1,0 +1,9 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap dft_v4_2_3 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dft_v4_2_3 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:12 on Jul 13,2023
+vcom -64 -93 -work dft_v4_2_3 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dft_v4_2_3/.cxl.vhdl.dft_v4_2_3.dft_v4_2_3.lin64.cmf 
+-- Loading package STANDARD
+End time: 11:32:14 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0

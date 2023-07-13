@@ -1,0 +1,19 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap common_rpc_v1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1 
+Modifying modelsim.ini
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/src/rpc_messages.pb.cpp:4:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/include/rpc_messages.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/src/xaxi_profiler.cpp:54:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/include/xaxi_profiler.h:53:10: fatal error: google/protobuf/message_lite.h: No such file or directory
+ #include <google/protobuf/message_lite.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/include/xaxi_profiler_instmgr.h:55:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/src/xaxi_profiler_instmgr.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/common_rpc/common_rpc_v1/include/xaxi_profiler.h:53:10: fatal error: google/protobuf/message_lite.h: No such file or directory
+ #include <google/protobuf/message_lite.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.

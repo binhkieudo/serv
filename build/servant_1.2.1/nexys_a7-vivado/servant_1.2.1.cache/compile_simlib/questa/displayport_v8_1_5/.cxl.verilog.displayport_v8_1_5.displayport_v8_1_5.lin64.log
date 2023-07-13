@@ -1,0 +1,14 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap displayport_v8_1_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/displayport_v8_1_5 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:46 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work displayport_v8_1_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/displayport_v8_1_5/.cxl.verilog.displayport_v8_1_5.displayport_v8_1_5.lin64.cmf 
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/displayport_v8_1/hdl/displayport_v8_1_rfs.v(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/displayport_v8_1_5_rx_dpcd_defs.v(87): (vlog-2263) Redefinition of macro: <protected>.
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/displayport_v8_1/hdl/displayport_v8_1_rfs.v(87)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/displayport_v8_1_5_rx_dpcd_defs.v(87): (vlog-2263) Redefinition of macro: <protected>.
+
+Top level modules:
+End time: 11:27:50 on Jul 13,2023, Elapsed time: 0:00:04
+Errors: 0, Warnings: 2

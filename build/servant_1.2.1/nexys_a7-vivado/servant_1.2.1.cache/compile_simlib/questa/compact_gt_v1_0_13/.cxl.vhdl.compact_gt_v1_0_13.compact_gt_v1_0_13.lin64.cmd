@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/compact_gt_v1_0_13
+/tools/questasim/linux_x86_64/vmap compact_gt_v1_0_13 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/compact_gt_v1_0_13
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work compact_gt_v1_0_13 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/compact_gt_v1_0_13/.cxl.vhdl.compact_gt_v1_0_13.compact_gt_v1_0_13.lin64.cmf

@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pr_decoupler_v1_0_10
+/tools/questasim/linux_x86_64/vmap pr_decoupler_v1_0_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pr_decoupler_v1_0_10
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work pr_decoupler_v1_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pr_decoupler_v1_0_10/.cxl.vhdl.pr_decoupler_v1_0_10.pr_decoupler_v1_0_10.lin64.cmf

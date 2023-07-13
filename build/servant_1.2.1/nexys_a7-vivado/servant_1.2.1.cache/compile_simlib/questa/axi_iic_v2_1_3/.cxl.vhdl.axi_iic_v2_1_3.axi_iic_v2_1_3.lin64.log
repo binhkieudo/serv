@@ -1,0 +1,59 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_iic_v2_1_3 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_iic_v2_1_3 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:37 on Jul 13,2023
+vcom -64 -93 -work axi_iic_v2_1_3 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_iic_v2_1_3/.cxl.vhdl.axi_iic_v2_1_3.axi_iic_v2_1_3.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity soft_reset
+-- Compiling architecture implementation of soft_reset
+-- Compiling entity SRL_FIFO
+-- Compiling architecture IMP of SRL_FIFO
+-- Loading package std_logic_arith
+-- Compiling entity upcnt_n
+-- Compiling architecture RTL of upcnt_n
+-- Compiling entity shift8
+-- Compiling architecture RTL of shift8
+-- Compiling package iic_pkg
+-- Compiling package body iic_pkg
+-- Loading package iic_pkg
+-- Compiling entity debounce
+-- Compiling architecture RTL of debounce
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity cdc_sync
+-- Loading package iic_pkg
+-- Compiling entity reg_interface
+-- Compiling architecture RTL of reg_interface
+-- Loading entity upcnt_n
+-- Loading entity shift8
+-- Compiling entity iic_control
+-- Compiling architecture RTL of iic_control
+-- Loading entity debounce
+-- Compiling entity filter
+-- Compiling architecture RTL of filter
+-- Compiling entity dynamic_master
+-- Compiling architecture RTL of dynamic_master
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Compiling entity axi_ipif_ssp1
+-- Compiling architecture RTL of axi_ipif_ssp1
+-- Loading entity interrupt_control
+-- Loading entity soft_reset
+-- Compiling entity iic
+-- Compiling architecture RTL of iic
+-- Loading entity axi_ipif_ssp1
+-- Loading entity reg_interface
+-- Loading entity filter
+-- Loading entity iic_control
+-- Loading entity SRL_FIFO
+-- Loading entity dynamic_master
+-- Compiling entity axi_iic
+-- Compiling architecture RTL of axi_iic
+-- Loading entity iic
+End time: 11:33:38 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,128 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap xtlm_ipc_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -std=c++11 -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/ext/protobuf/include -I /tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0 -Wall -fPIC -Wall -fPIC -O3 -work xtlm_ipc_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/.cxl.systemc.xtlm_ipc_v1_0.xtlm_ipc_v1_0.lin64.cmf 
+Start time: 11:27:00 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/thread_safe_event.h:52,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc_port.h:52,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc_port.cpp:55:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_wr_t.h:59:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_t.h:51,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:126,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/thread_safe_event.h:52,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc_port.h:52,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc_port.cpp:55:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h: In constructor 'xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::xtlm_adaptor_log_utils(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:65:34: warning: 'xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_report_handler' will be initialized after [-Wreorder]
+  xsc::common_cpp::report_handler m_report_handler;
+                                  ^~~~~~~~~~~~~~~~
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:61:7: warning:   'bool xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_enable_aximm_logs' [-Wreorder]
+  bool m_enable_aximm_logs;
+       ^~~~~~~~~~~~~~~~~~~
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:67:5: warning:   when initialized here [-Wreorder]
+     xtlm_adaptor_log_utils(const std::string module_name,
+     ^~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc_port.cpp: In member function 'bool xsc::ipc_port::read_data(unsigned char*, unsigned int&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc_port.cpp:94:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  } while ((sampled_len > 0) && (received_len < requested_len));
+                                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc_port.cpp:123:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (received_len == requested_len)
+      ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/xtlm_ipc_aximm.pb.cc:4:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_aximm.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/xtlm_ipc_axis.pb.cc:4:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_axis.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/xtlm_ipc_common.pb.cc:4:0:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc.pb.h:3:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/axi2ipc_socket.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/axi2ipc_socket.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc2axi_socket.cpp:47:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc2axis_socket.h:50,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc2axis_socket.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc.pb.h:3:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/axi2ipc_socket.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/axis2ipc_socket.h:49,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/axis2ipc_socket.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/ipc2aximm_socket.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc.pb.h:3:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/axi2ipc_socket.h:51,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/aximm2ipc_socket.h:49,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/src/aximm2ipc_socket.cpp:48:
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/xtlm_ipc/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+** Error: (sccom-6142) Compilation failed.
+End time: 11:27:05 on Jul 13,2023, Elapsed time: 0:00:05
+Errors: 1, Warnings: 0

@@ -1,0 +1,19 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap sim_trig_v1_0_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_trig_v1_0_8 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:48 on Jul 13,2023
+vlog -64 -L sim_trig_v1_0_8 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work sim_trig_v1_0_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_trig_v1_0_8/.cxl.systemverilog.sim_trig_v1_0_8.sim_trig_v1_0_8.lin64.cmf 
+-- Compiling module APB_to_VIO2
+-- Compiling module sim_trig_pulse_stretcher
+-- Compiling module sim_trig_pulse_generator
+-- Compiling module bridge_logic
+-- Compiling module sim_trig_synchronizer
+
+Top level modules:
+	sim_trig_pulse_stretcher
+	sim_trig_pulse_generator
+	bridge_logic
+	sim_trig_synchronizer
+End time: 11:29:49 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,9 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap floating_point_v7_1_15 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/floating_point_v7_1_15 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:52 on Jul 13,2023
+vcom -64 -93 -work floating_point_v7_1_15 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/floating_point_v7_1_15/.cxl.vhdl.floating_point_v7_1_15.floating_point_v7_1_15.lin64.cmf 
+-- Loading package STANDARD
+End time: 11:33:54 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0

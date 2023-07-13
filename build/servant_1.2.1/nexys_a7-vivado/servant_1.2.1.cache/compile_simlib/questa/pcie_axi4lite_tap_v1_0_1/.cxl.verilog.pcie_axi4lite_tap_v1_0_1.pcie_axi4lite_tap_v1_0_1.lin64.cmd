@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pcie_axi4lite_tap_v1_0_1
+/tools/questasim/linux_x86_64/vmap pcie_axi4lite_tap_v1_0_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pcie_axi4lite_tap_v1_0_1
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work pcie_axi4lite_tap_v1_0_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pcie_axi4lite_tap_v1_0_1/.cxl.verilog.pcie_axi4lite_tap_v1_0_1.pcie_axi4lite_tap_v1_0_1.lin64.cmf

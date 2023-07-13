@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/l_ethernet_v3_3_1
+/tools/questasim/linux_x86_64/vmap l_ethernet_v3_3_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/l_ethernet_v3_3_1
+/tools/questasim/linux_x86_64/vlog  -64 -L l_ethernet_v3_3_1 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work l_ethernet_v3_3_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/l_ethernet_v3_3_1/.cxl.systemverilog.l_ethernet_v3_3_1.l_ethernet_v3_3_1.lin64.cmf

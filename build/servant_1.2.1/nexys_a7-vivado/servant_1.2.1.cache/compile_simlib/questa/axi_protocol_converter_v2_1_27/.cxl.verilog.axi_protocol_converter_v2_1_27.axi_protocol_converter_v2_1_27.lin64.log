@@ -1,0 +1,30 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_protocol_converter_v2_1_27 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_protocol_converter_v2_1_27 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:20 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_protocol_converter_v2_1_27 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_protocol_converter_v2_1_27/.cxl.verilog.axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27.lin64.cmf 
+-- Compiling module axi_protocol_converter_v2_1_27_a_axi3_conv
+-- Compiling module axi_protocol_converter_v2_1_27_axi3_conv
+-- Compiling module axi_protocol_converter_v2_1_27_axilite_conv
+-- Compiling module axi_protocol_converter_v2_1_27_r_axi3_conv
+-- Compiling module axi_protocol_converter_v2_1_27_w_axi3_conv
+-- Compiling module axi_protocol_converter_v2_1_27_b_downsizer
+-- Compiling module axi_protocol_converter_v2_1_27_decerr_slave
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_simple_fifo
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_wrap_cmd
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_incr_cmd
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_cmd_translator
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_b_channel
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_r_channel
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_aw_channel
+-- Compiling module axi_protocol_converter_v2_1_27_b2s_ar_channel
+-- Compiling module axi_protocol_converter_v2_1_27_b2s
+-- Compiling module axi_protocol_converter_v2_1_27_axi_protocol_converter
+
+Top level modules:
+	axi_protocol_converter_v2_1_27_axi_protocol_converter
+End time: 11:32:20 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

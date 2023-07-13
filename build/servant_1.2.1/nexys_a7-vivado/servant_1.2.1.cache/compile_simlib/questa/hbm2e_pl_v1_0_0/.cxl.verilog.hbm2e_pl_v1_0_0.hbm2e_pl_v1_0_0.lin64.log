@@ -1,0 +1,137 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap hbm2e_pl_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hbm2e_pl_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:03 on Jul 13,2023
+vlog -64 -L hbm2e_pl_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work hbm2e_pl_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/hbm2e_pl_v1_0_0/.cxl.systemverilog.hbm2e_pl_v1_0_0.hbm2e_pl_v1_0_0.lin64.cmf 
+-- Compiling package LCL_DTYPE
+-- Compiling package hbm2e_pl_v1_0_axi2lbus_top_sv_unit
+-- Importing package LCL_DTYPE
+-- Compiling module hbm2e_pl_v1_0_0_axi2lbus_top
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_axi_fifo.sv(70)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_axi_fifo_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_axi_fifo
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_axi_port.sv(83)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_axi_port_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_axi_port
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_cmd_arb.sv(74)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_cmd_arb_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_cmd_arb
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_cmd_fifo.sv(68)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_cmd_fifo_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_cmd_fifo
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_lbus_cmd_gen.sv(83)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_lbus_cmd_gen_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_lbus_cmd_gen
+-- Compiling module hbm2e_pl_v1_0_0_mc_2t1_rr
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_4h_8h_arb.sv(73)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_4h_8h_arb_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_mc_4h_8h_arb
+-- Compiling module hbm2e_pl_v1_0_0_mc_8t4_arbiter_4t2
+-- Compiling module hbm2e_pl_v1_0_0_mc_axi2lbus_wdata_wrapper
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_cmd_arbiter.sv(70)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_cmd_arbiter_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_mc_cmd_arbiter
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_cmd_gen.sv(82)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_cmd_gen_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_cmd_gen
+-- Compiling module hbm2e_pl_v1_0_0_mc_cmd_scheduler
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_refresh.sv(73)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_refresh_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_mc_refresh
+-- Compiling module hbm2e_pl_v1_0_0_mc_data_path
+-- Compiling module hbm2e_pl_v1_0_0_mc_dbi_wrt_gen
+-- Compiling module hbm2e_pl_v1_0_0_mc_dbi_gen_8bit
+-- Compiling interface intf_axis_bus
+-- Compiling interface inf_lbus_cmd
+-- Compiling interface inf_lbus_data
+-- Compiling interface dfi_hbm2e
+-- Compiling interface intf_dfi_dw_wrt
+-- Compiling interface intf_dfi_dw_rd
+-- Compiling interface intf_dfi_aw
+-- Compiling interface wrt_dport_slot
+-- Compiling module hbm2e_pl_v1_0_0_mem_init
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_pc_wrapper.sv(66)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_pc_wrapper_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_mc_pc_wrapper
+-- Compiling module hbm2e_pl_v1_0_0_mc_safe_timer
+-- Compiling module hbm2e_pl_v1_0_0_mc_safe_timer_act
+-- Compiling module hbm2e_pl_v1_0_0_mc_safe_timer_wrt2rd
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(67)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_mc_top_wrapper_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_mc_top_wrapper
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(670): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(671): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(672): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(673): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(674): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(675): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(676): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(678): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(679): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(680): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(681): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(682): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(683): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(684): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(686): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(687): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(688): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(689): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(690): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(691): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(692): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(694): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(695): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(696): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(697): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(698): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(699): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(700): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(702): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(703): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(704): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(705): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(706): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(707): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(709): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(710): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(711): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(712): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(713): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/shmc_rtl/hbm2e_pl_v1_0_mc_top_wrapper.sv(714): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+-- Compiling module hbm2e_pl_v1_0_0_rr_arb
+-- Compiling package LCL_DTYPE
+** Warning: ** while parsing file included at /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/hbm2e_pl_v1_0/hdl/lbus_rtl/hbm2e_pl_v1_0_tdp.sv(70)
+** at /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/hbm2e_pl_v1_0_0_mc_lcl_package.sv(67): (vlog-2275) Existing package 'LCL_DTYPE' at line 67 will be overwritten.
+-- Compiling package hbm2e_pl_v1_0_tdp_sv_unit
+-- Compiling module hbm2e_pl_v1_0_0_tdp
+-- Compiling module hbm2e_pl_v1_0_0_mc_8t2_arbiter
+
+Top level modules:
+	hbm2e_pl_v1_0_0_mc_top_wrapper
+	hbm2e_pl_v1_0_0_mc_8t2_arbiter
+End time: 11:31:03 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 52

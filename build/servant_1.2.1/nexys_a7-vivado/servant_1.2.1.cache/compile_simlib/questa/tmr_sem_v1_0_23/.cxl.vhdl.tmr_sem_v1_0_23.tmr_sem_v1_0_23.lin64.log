@@ -1,0 +1,30 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap tmr_sem_v1_0_23 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_sem_v1_0_23 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:30 on Jul 13,2023
+vcom -64 -93 -work tmr_sem_v1_0_23 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_sem_v1_0_23/.cxl.vhdl.tmr_sem_v1_0_23.tmr_sem_v1_0_23.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SRL_FIFO
+-- Compiling architecture IMP of SRL_FIFO
+-- Compiling entity Divide_part
+-- Compiling architecture VHDL_RTL of Divide_part
+-- Compiling entity FIT_Module
+-- Compiling architecture VHDL_RTL of FIT_Module
+-- Compiling entity UART_Receive
+-- Compiling architecture IMP of UART_Receive
+-- Compiling entity UART_Transmit
+-- Compiling architecture IMP of UART_Transmit
+-- Compiling entity tmr_sem
+-- Loading package VCOMPONENTS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Compiling architecture imp of tmr_sem
+End time: 11:32:31 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

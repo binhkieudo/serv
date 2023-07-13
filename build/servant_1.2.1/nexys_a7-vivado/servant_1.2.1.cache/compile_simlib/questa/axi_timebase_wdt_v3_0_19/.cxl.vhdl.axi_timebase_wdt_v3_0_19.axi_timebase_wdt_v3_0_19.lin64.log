@@ -1,0 +1,36 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_timebase_wdt_v3_0_19 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_timebase_wdt_v3_0_19 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:20 on Jul 13,2023
+vcom -64 -93 -work axi_timebase_wdt_v3_0_19 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_timebase_wdt_v3_0_19/.cxl.vhdl.axi_timebase_wdt_v3_0_19.axi_timebase_wdt_v3_0_19.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity window_wdt_counter
+-- Compiling architecture wc_imp of window_wdt_counter
+-- Compiling entity window_wdt_fail_cnt
+-- Compiling architecture fc_imp of window_wdt_fail_cnt
+-- Compiling entity timebase_wdt_core
+-- Compiling architecture imp of timebase_wdt_core
+-- Loading package NUMERIC_STD
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity cdc_sync
+-- Loading package ipif_pkg
+-- Compiling entity axi_timebase_wdt
+-- Compiling architecture imp of axi_timebase_wdt
+-- Loading entity timebase_wdt_core
+-- Loading entity axi_lite_ipif
+-- Compiling entity axi_window_wdt
+-- Compiling architecture imp of axi_window_wdt
+-- Loading entity window_wdt_counter
+-- Loading entity window_wdt_fail_cnt
+-- Compiling entity axi_timebase_wdt_top
+-- Compiling architecture top_arch of axi_timebase_wdt_top
+-- Loading entity axi_timebase_wdt
+-- Loading entity axi_window_wdt
+End time: 11:33:21 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,41 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap generic_baseblocks_v2_1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/generic_baseblocks_v2_1_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:45 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work generic_baseblocks_v2_1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/generic_baseblocks_v2_1_0/.cxl.verilog.generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0.lin64.cmf 
+-- Compiling module generic_baseblocks_v2_1_0_carry_and
+-- Compiling module generic_baseblocks_v2_1_0_carry_latch_and
+-- Compiling module generic_baseblocks_v2_1_0_carry_latch_or
+-- Compiling module generic_baseblocks_v2_1_0_carry_or
+-- Compiling module generic_baseblocks_v2_1_0_carry
+-- Compiling module generic_baseblocks_v2_1_0_command_fifo
+-- Compiling module generic_baseblocks_v2_1_0_comparator_mask_static
+-- Compiling module generic_baseblocks_v2_1_0_comparator_mask
+-- Compiling module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+-- Compiling module generic_baseblocks_v2_1_0_comparator_sel_mask
+-- Compiling module generic_baseblocks_v2_1_0_comparator_sel_static
+-- Compiling module generic_baseblocks_v2_1_0_comparator_sel
+-- Compiling module generic_baseblocks_v2_1_0_comparator_static
+-- Compiling module generic_baseblocks_v2_1_0_comparator
+-- Compiling module generic_baseblocks_v2_1_0_mux_enc
+-- Compiling module generic_baseblocks_v2_1_0_mux
+-- Compiling module generic_baseblocks_v2_1_0_nto1_mux
+
+Top level modules:
+	generic_baseblocks_v2_1_0_carry_latch_and
+	generic_baseblocks_v2_1_0_carry_or
+	generic_baseblocks_v2_1_0_carry
+	generic_baseblocks_v2_1_0_command_fifo
+	generic_baseblocks_v2_1_0_comparator_mask_static
+	generic_baseblocks_v2_1_0_comparator_mask
+	generic_baseblocks_v2_1_0_comparator_sel_mask_static
+	generic_baseblocks_v2_1_0_comparator_sel_mask
+	generic_baseblocks_v2_1_0_comparator_sel_static
+	generic_baseblocks_v2_1_0_comparator_sel
+	generic_baseblocks_v2_1_0_comparator_static
+	generic_baseblocks_v2_1_0_comparator
+	generic_baseblocks_v2_1_0_mux_enc
+	generic_baseblocks_v2_1_0_nto1_mux
+End time: 11:28:45 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

@@ -1,0 +1,22 @@
+<SIMMODEL_NAME>:sim_ipc_multi_intf
+<LIBRARY_NAME>:sim_ipc_multi_intf_v1_0
+<LIBRARY_TYPE>:SystemC
+<OUTPUT_FORMAT>:library
+<SYSTEMC_SOURCES>:systemc/simlibs/sim_ipc_multi_intf/sim_ipc_multi_intf_v1_0/src/sim_ipc_axis_multi_intf_impl.cpp
+<SYSTEMC_INCLUDE_DIRS>:simlibs/sim_ipc_multi_intf_v1_0/include,simlibs/common_cpp_v1_0/include,simlibs/xtlm/include,simlibs/xtlm_ipc_v1_0/include,$xv_ext_lib_path/protobuf/include
+<OSCI_INCLUDE_DIRS>:/data/osci_systemc/include
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-g -fPIC -DXTLM_DLL
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_COMPILE_DEBUG_FLAGS>:-g -O0
+<SCCOM_COMPILE_FLAGS>:-std=c++11
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<LDLIBS>:-lib xtlm,-Lquesta_lib/common_cpp_v1_0,-lib xtlm_ipc_v1_0,-lcommon_cpp_v1_0
+<MORE_XSC_OPTIONS>:-v
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:sim_ipc_multi_intf_v1_0
+<SIMULATOR_PLATFORM>:linux

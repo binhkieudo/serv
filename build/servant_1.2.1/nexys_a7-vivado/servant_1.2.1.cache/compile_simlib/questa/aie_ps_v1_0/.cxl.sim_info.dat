@@ -1,0 +1,21 @@
+<SIMMODEL_NAME>:aie_ps
+<LIBRARY_NAME>:aie_ps_v1_0
+<LIBRARY_TYPE>:SystemC
+<OUTPUT_FORMAT>:library
+<SYSTEMC_SOURCES>:systemc/simlibs/aie_ps/aie_ps_v1_0/src/aie_ps.cpp
+<SYSTEMC_INCLUDE_DIRS>:simlibs/aie_ps_v1_0/include,simlibs/xtlm/include,simlibs/common_cpp_v1_0/include,simlibs/xtlm_ap_ctrl_v1_0/include,simlibs/pl_fileio_v1_0_0/include
+<OSCI_INCLUDE_DIRS>:/data/osci_systemc/include
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-fPIC -std=c++11 -DREMOTEPORT_SC_DLL
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<LDLIBS>:-lib xtlm,-Lquesta_lib/common_cpp_v1_0,-lib xtlm_ap_ctrl_v1_0,-lib pl_fileio_v1_0_0,-lcommon_cpp_v1_0
+<LDLIBS_WIN64>:-lws2_32 -lwinmm
+<MORE_XSC_OPTIONS>:-v
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:aie_ps_v1_0
+<SIMULATOR_PLATFORM>:all

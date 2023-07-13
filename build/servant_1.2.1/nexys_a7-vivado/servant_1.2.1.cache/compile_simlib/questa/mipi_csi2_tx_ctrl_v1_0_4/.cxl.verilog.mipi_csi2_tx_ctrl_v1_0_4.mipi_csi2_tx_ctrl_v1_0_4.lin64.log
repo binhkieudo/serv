@@ -1,0 +1,10 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap mipi_csi2_tx_ctrl_v1_0_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mipi_csi2_tx_ctrl_v1_0_4 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:54 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work mipi_csi2_tx_ctrl_v1_0_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/mipi_csi2_tx_ctrl_v1_0_4/.cxl.verilog.mipi_csi2_tx_ctrl_v1_0_4.mipi_csi2_tx_ctrl_v1_0_4.lin64.cmf 
+
+Top level modules:
+End time: 11:28:55 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

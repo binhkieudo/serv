@@ -1,0 +1,12 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap ai_noc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ai_noc 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:56 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work ai_noc -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ai_noc/.cxl.verilog.ai_noc.ai_noc.lin64.cmf 
+-- Compiling module ai_noc_v1_0_0_ai_noc
+
+Top level modules:
+	ai_noc_v1_0_0_ai_noc
+End time: 11:30:56 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

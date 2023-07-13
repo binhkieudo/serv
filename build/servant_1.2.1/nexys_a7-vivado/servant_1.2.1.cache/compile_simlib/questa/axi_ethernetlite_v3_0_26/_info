@@ -1,0 +1,1295 @@
+m255
+K4
+z2
+!s11e vcom 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+Eaxi_ethernetlite
+Z1 w1665757245
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx6 unisim 11 vcomponents 0 22 UUc0I>8^8hG;`De:DHJfn2
+Z4 DPx8 synopsys 10 attributes 0 22 iThS5<O8gHDP?YiMiccE>3
+Z5 DPx4 ieee 14 std_logic_misc 0 22 j4Ca:YPSgnCRYmKlN0[Uj0
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z8 DEx24 axi_ethernetlite_v3_0_26 13 axi_interface 0 22 BHEYM>cc1zKG]@E7Jm5Dm3
+Z9 DPx24 axi_ethernetlite_v3_0_26 7 mac_pkg 0 22 BeJUOFGmX3dKLc5[LgIcK3
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z12 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_ethernetlite_v3_0/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd
+Z13 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_ethernetlite_v3_0/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd
+l0
+L13414 1
+VhRKibETdm=V;MB?1QNz8A2
+!s100 CG1On^WeP5QGNOcko[]TW0
+Z14 OL;C;2021.2_1;73
+31
+Z15 !s110 1689215651
+!i10b 1
+Z16 !s108 1689215650.000000
+Z17 !s90 -64|-93|-work|axi_ethernetlite_v3_0_26|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_ethernetlite_v3_0_26/.cxl.vhdl.axi_ethernetlite_v3_0_26.axi_ethernetlite_v3_0_26.lin64.cmf|
+!s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_ethernetlite_v3_0/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd|
+!i113 0
+Z18 o-64 -93 -work axi_ethernetlite_v3_0_26
+Z19 tExplicit 1 CvgOpt 0
+Aimp
+R8
+DEx24 axi_ethernetlite_v3_0_26 5 xemac 0 22 ?cHYD8k@ZfiVo>HVSz_:F2
+Z20 DEx14 lib_cdc_v1_0_2 8 cdc_sync 0 22 IKUmIBRVig`LR@ZnI[GG92
+R2
+R3
+R4
+R5
+R6
+R7
+R9
+R10
+R11
+DEx4 work 16 axi_ethernetlite 0 22 hRKibETdm=V;MB?1QNz8A2
+!i122 0
+l13648
+L13523 673
+Vj3gecbBn9_FcC^>KlWCCg0
+!s100 [8L6YOno=[[<Fk4A2oQA;1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+Z21 !s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_ethernetlite_v3_0/hdl/axi_ethernetlite_v3_0_vh_rfs.vhd|
+!i113 0
+R18
+R19
+Eaxi_interface
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L12421 1
+VBHEYM>cc1zKG]@E7Jm5Dm3
+!s100 OC4;bM5RY`2``BQLCA0Y?2
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Artl
+R2
+R3
+R4
+R5
+R6
+R7
+R10
+R11
+DEx4 work 13 axi_interface 0 22 BHEYM>cc1zKG]@E7Jm5Dm3
+!i122 0
+l12538
+L12495 665
+VfjAC>zPhUn4;Ynf6ld@`>3
+!s100 kQo;:>[=VIVWnCOc4RU?=1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ebocntr
+R1
+R9
+R7
+R6
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L7155 1
+V@KOi2NK9UMEcRcGb2NlSL3
+!s100 ef^Vid_9?2N`^ckLiC6C^1
+R14
+31
+Z22 !s110 1689215650
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R2
+R3
+DEx24 axi_ethernetlite_v3_0_26 6 lfsr16 0 22 [dBhgLTO[hMkCG70;zBDM1
+R9
+R7
+R6
+R10
+R11
+DEx4 work 6 bocntr 0 22 @KOi2NK9UMEcRcGb2NlSL3
+!i122 0
+l7216
+L7175 299
+VCWiTc4MnSC5E[j<4<kcR>2
+!s100 8acEUmKG>Ef_Q;88iS]j21
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ecntr5bit
+R1
+R9
+R2
+R7
+R6
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L2106 1
+V4^aY0KYTZa?_aJG`?WhgT3
+!s100 eZXW3R]FiN0An]1L:88hz3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R9
+R2
+R7
+R6
+R10
+R11
+DEx4 work 8 cntr5bit 0 22 4^aY0KYTZa?_aJG`?WhgT3
+!i122 0
+l2135
+L2119 57
+V;XkJ92a:KlO@M6E52^Md=2
+!s100 :@L6UTWJV0K[BnOVXZT9A1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ecrcgenrx
+R1
+R9
+R2
+R7
+R6
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L6882 1
+V5[j^0hde7RR0kdDn^d1K41
+!s100 65o=iOm=KZeT=QjFonjg?0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aarch1
+R9
+R2
+R7
+R6
+R10
+R11
+DEx4 work 8 crcgenrx 0 22 5[j^0hde7RR0kdDn^d1K41
+!i122 0
+l6968
+L6895 108
+V=AhbX@h`PgBFYTU0_[^aA0
+!s100 TzK23=]4YQ9^Yh`Af>aSn3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ecrcgentx
+R1
+R9
+R2
+R7
+R6
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L6534 1
+Vb^Yk_E;Lc8UB7V`Y5ZKWA1
+!s100 WW>4N>iA<nAO_DgGROzbQ3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aarch1
+DEx24 axi_ethernetlite_v3_0_26 14 crcnibshiftreg 0 22 ZPhh<UoCE1ISm1X^Z]X6l0
+R9
+R2
+R7
+R6
+R10
+R11
+DEx4 work 8 crcgentx 0 22 b^Yk_E;Lc8UB7V`Y5ZKWA1
+!i122 0
+l6647
+L6549 138
+V^@ML`::ZV7M:a3eVEP>kj1
+!s100 ZV[eS3O__<CzXXC:XFf@J1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ecrcnibshiftreg
+R1
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L1905 1
+VZPhh<UoCE1ISm1X^Z]X6l0
+!s100 b?k7FK6N]1[<DPE8S><^M0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R10
+R11
+DEx4 work 14 crcnibshiftreg 0 22 ZPhh<UoCE1ISm1X^Z]X6l0
+!i122 0
+l1929
+L1918 44
+VjH1BmYDeMT>`ncPYJ3^U_0
+!s100 G]d8mVh;NXa[Hhf;989YW2
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Edefer_state
+R1
+R9
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L1625 1
+V^eROzO@0RGeK::^6QEn9_3
+!s100 1OL<PX:Wm8G>eO;E0]4Sn3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R9
+R10
+R11
+DEx4 work 11 defer_state 0 22 ^eROzO@0RGeK::^6QEn9_3
+!i122 0
+l1674
+L1651 121
+V[Og@UlQ>RWIo0VVQaHQkn3
+!s100 ?<gf=USGlC>oSYk^D?KdG1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Edeferral
+R1
+R9
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L6226 1
+V4I`7=DC]ZhT8RKF32;No13
+!s100 gGT_Sn^>4mSJBOdEc=42m0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+DEx24 axi_ethernetlite_v3_0_26 11 defer_state 0 22 ^eROzO@0RGeK::^6QEn9_3
+R2
+R7
+R6
+Z23 DEx24 axi_ethernetlite_v3_0_26 8 cntr5bit 0 22 4^aY0KYTZa?_aJG`?WhgT3
+R9
+R10
+R11
+DEx4 work 8 deferral 0 22 4I`7=DC]ZhT8RKF32;No13
+!i122 0
+l6268
+L6251 72
+VSR=RRRQjYzQnC[3U2<6e83
+!s100 Zgd=g29DaDcEB1LEm<EJm3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Eemac
+R1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L10424 1
+Va4kj7k974nieQ;L@_JbeN0
+!s100 UDz?VQ`?3^c0Zfzm3Rd[11
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R4
+R5
+R20
+DEx24 axi_ethernetlite_v3_0_26 10 macaddrram 0 22 gmEX_zKD=n`PSb8B0LgCP3
+DEx24 axi_ethernetlite_v3_0_26 8 transmit 0 22 IKYY6^K;Ad?[ahP;^?LX22
+DEx24 axi_ethernetlite_v3_0_26 7 receive 0 22 `]cnHGMkDhT;II6a_H3>:2
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+DEx4 work 4 emac 0 22 a4kj7k974nieQ;L@_JbeN0
+!i122 0
+l10516
+L10466 292
+Vgfin14M9dmfd@m@ViAO083
+!s100 8TGgE6QJhQDKzgga>cGeG1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Eemac_dpram
+R1
+R3
+R9
+R7
+R6
+R2
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L9650 1
+Vm@FeEjW>X;3QWVN@@?@W_3
+!s100 iob?<^hgb@OGF<5HL4cRW2
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+Z24 DPx3 xpm 11 vcomponents 0 22 ;6NJKV3i<0JDkzocaY9E90
+DEx15 lib_bmg_v1_0_14 19 blk_mem_gen_wrapper 0 22 KIJ]1]Tn>K_z5zKAd<m7e3
+R3
+R9
+R7
+R6
+R2
+R10
+R11
+DEx4 work 10 emac_dpram 0 22 m@FeEjW>X;3QWVN@@?@W_3
+!i122 0
+l9820
+L9677 566
+V5@_R;8B[M6N8O0I?`SBnN1
+!s100 JN6<S<TzJk6kAG;0o@KQU1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Eld_arith_reg
+R1
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L113 1
+Vi[J]c;hKWCSH_=OABjC<Y3
+!s100 T6gMMSDWIVdC[DS<P6W4F0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+DEx4 work 12 ld_arith_reg 0 22 i[J]c;hKWCSH_=OABjC<Y3
+R11
+R10
+R2
+!i122 0
+l211
+L161 180
+VBoX2hM7b4N[2IG4<QRRXB2
+!s100 7oEL[OOJHM7bSkW_370BY1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Elfsr16
+R1
+R9
+R2
+R3
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L1365 1
+V[dBhgLTO[hMkCG70;zBDM1
+!s100 Z2YPnPm>LS@D6QzZ8MGj90
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R9
+R2
+R3
+R6
+R7
+R10
+R11
+DEx4 work 6 lfsr16 0 22 [dBhgLTO[hMkCG70;zBDM1
+!i122 0
+l1423
+L1382 95
+V=Ph@RQfH>E6Ph<I^Vm0DK3
+!s100 =D4PLV=V?BRoVIBkP<@O52
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Pmac_pkg
+R10
+R11
+!i122 0
+R1
+R0
+R12
+R13
+l0
+L738 1
+VBeJUOFGmX3dKLc5[LgIcK3
+!s100 T5?LTZ?ZmC[2;PMBOY32L1
+R14
+31
+b1
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Bbody
+DPx4 work 7 mac_pkg 0 22 BeJUOFGmX3dKLc5[LgIcK3
+R10
+R11
+!i122 0
+l0
+L862 1
+VfEo`7EIUoUn]4oGa2?f=83
+!s100 ]JY8AWDhOL@G8>8MhAz^d3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Emacaddrram
+R1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L8872 1
+VgmEX_zKD=n`PSb8B0LgCP3
+!s100 C`L0IO05<NObbNQo;`V=U2
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+DEx24 axi_ethernetlite_v3_0_26 7 ram16x4 0 22 >Q9bn<Die>:T5N1LHJXB_1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+DEx4 work 10 macaddrram 0 22 gmEX_zKD=n`PSb8B0LgCP3
+!i122 0
+l8919
+L8887 50
+V0SHaHbJfih1Pi4`EcQXJR1
+!s100 ie@o:zND4HA5KF6n2_5AW0
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Emdio_if
+R1
+R7
+R2
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L9081 1
+VMYPV8OEoU_nz?Y2eNd^:b2
+!s100 K@V8d6^cdd]gh;PEV3e`K2
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R7
+R2
+R10
+R11
+DEx4 work 7 mdio_if 0 22 MYPV8OEoU_nz?Y2eNd^:b2
+!i122 0
+l9144
+L9106 379
+V7NGAGZNo8]Eg8W0>6V>Oz2
+!s100 Ji?`WJ9ja0PRD2NY9f<=o1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Emsh_cnt
+R1
+R3
+R2
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L5865 1
+VZMbfI1S@Uk_9nM4>lHhz11
+!s100 I8d8]?Dg0C:f`ZzZ6LdkN0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R3
+R2
+R6
+R7
+R10
+R11
+DEx4 work 7 msh_cnt 0 22 ZMbfI1S@Uk_9nM4>lHhz11
+!i122 0
+l5961
+L5895 184
+Vmmz7^7]ziBT_PJoM5^?<[2
+!s100 O0SE39gI`1AaRa_`_419l0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Emux_onehot_f
+R1
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L490 1
+VBkS1?HULm3f:QhI>E<VeP2
+!s100 Q;1kQ1JzHR0EgIb6KV0`;1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R10
+R11
+DEx4 work 12 mux_onehot_f 0 22 BkS1?HULm3f:QhI>E<VeP2
+!i122 0
+l541
+L503 117
+VzfLmzWo;X5j7OfZVLk]G03
+!s100 `f[CJ2QJ11Be1BoA:Lm=>3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Eram16x4
+R1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L5595 1
+V>Q9bn<Die>:T5N1LHJXB_1
+!s100 [VDDR;RNocP>o5V[L6Iln2
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+DEx4 work 7 ram16x4 0 22 >Q9bn<Die>:T5N1LHJXB_1
+!i122 0
+l5651
+L5614 93
+Va0d7gVcM@@:Y=DgbW9dYQ2
+!s100 b`?i^T@X33<i8zGSo?81o3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Ereceive
+R1
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L8535 1
+V`]cnHGMkDhT;II6a_H3>:2
+!s100 zgkoY>PcSDNXJhmUiJmQA0
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R9
+R7
+R6
+DEx24 axi_ethernetlite_v3_0_26 8 crcgenrx 0 22 5[j^0hde7RR0kdDn^d1K41
+DEx24 axi_ethernetlite_v3_0_26 10 rx_intrfce 0 22 fh>TiAQe2Q4?2VIKi9Aj@3
+R3
+R2
+DEx24 axi_ethernetlite_v3_0_26 15 rx_statemachine 0 22 MEG=a_Chg?53N1FzkPL@70
+R10
+R11
+DEx4 work 7 receive 0 22 `]cnHGMkDhT;II6a_H3>:2
+!i122 0
+l8600
+L8569 130
+V7E=@=6gTjTbkfXol7g=Eg3
+!s100 h07DLV^CdbE@jcZ4^Cg>M3
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Erx_intrfce
+R1
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L5276 1
+Vfh>TiAQe2Q4?2VIKi9Aj@3
+!s100 N@YcZ4;PFnQcYV36EkLCb3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R24
+R7
+R6
+Z25 DEx16 lib_fifo_v1_0_16 13 async_fifo_fg 0 22 hYOoLn<^]LCXM260cTPKk3
+R3
+R4
+R5
+R2
+R20
+R10
+R11
+DEx4 work 10 rx_intrfce 0 22 fh>TiAQe2Q4?2VIKi9Aj@3
+!i122 0
+l5350
+L5306 139
+VgIY;1YU0I06ON;XAem=VC0
+!s100 dkZ_Vk]W];gk`YNO4hEaG1
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Erx_statemachine
+R1
+R3
+R2
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L4253 1
+VMEG=a_Chg?53N1FzkPL@70
+!s100 A583>][djm>lUHCeUhjEP3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R3
+R2
+R10
+R11
+DEx4 work 15 rx_statemachine 0 22 MEG=a_Chg?53N1FzkPL@70
+!i122 0
+l4405
+L4291 826
+VY0h=8iLQU3[9GEdJ4MAem0
+!s100 e3h?<_4D8h8G5F@[ZGz;93
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Etransmit
+R1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L7649 1
+VIKYY6^K;Ad?[ahP;^?LX22
+!s100 :RTo2>J2Jg]n><6jcJN>30
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+R4
+R5
+R20
+DEx24 axi_ethernetlite_v3_0_26 6 bocntr 0 22 @KOi2NK9UMEcRcGb2NlSL3
+DEx24 axi_ethernetlite_v3_0_26 7 msh_cnt 0 22 ZMbfI1S@Uk_9nM4>lHhz11
+DEx24 axi_ethernetlite_v3_0_26 8 deferral 0 22 4I`7=DC]ZhT8RKF32;No13
+DEx24 axi_ethernetlite_v3_0_26 15 tx_statemachine 0 22 8<nf5D469zi9:lF7j9nkm3
+DEx24 axi_ethernetlite_v3_0_26 12 ld_arith_reg 0 22 i[J]c;hKWCSH_=OABjC<Y3
+DEx24 axi_ethernetlite_v3_0_26 12 mux_onehot_f 0 22 BkS1?HULm3f:QhI>E<VeP2
+DEx24 axi_ethernetlite_v3_0_26 10 tx_intrfce 0 22 <]1KC=z^bC2iIReiOZ5<01
+DEx24 axi_ethernetlite_v3_0_26 8 crcgentx 0 22 b^Yk_E;Lc8UB7V`Y5ZKWA1
+R2
+R3
+R9
+R6
+R7
+R10
+R11
+DEx4 work 8 transmit 0 22 IKYY6^K;Ad?[ahP;^?LX22
+!i122 0
+l7807
+L7693 682
+VcVA9JX5DWOhhXAG8?lleY1
+!s100 c=6H4SN3LB63AbH`X9N2W1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Etx_intrfce
+R1
+R2
+R3
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L3910 1
+V<]1KC=z^bC2iIReiOZ5<01
+!s100 lGA>9OeG_HT1<^XX3S7VY3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R20
+R24
+R7
+R6
+R4
+R5
+R25
+R2
+R3
+R10
+R11
+DEx4 work 10 tx_intrfce 0 22 <]1KC=z^bC2iIReiOZ5<01
+!i122 0
+l3980
+L3931 146
+V6KD4B]gW[cV5=k;TimKO^2
+!s100 E@cQLk3]lg?39=cco0MSC0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Etx_statemachine
+R1
+R2
+R3
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L2371 1
+V8<nf5D469zi9:lF7j9nkm3
+!s100 3?MBWNKRlLA6:e<PX?le?0
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimplementation
+R9
+R7
+R6
+R23
+R2
+R3
+R10
+R11
+DEx4 work 15 tx_statemachine 0 22 8<nf5D469zi9:lF7j9nkm3
+!i122 0
+l2648
+L2440 1308
+V9<Q6AeNSQD@K[9>>gIj]k0
+!s100 clSJ1TV]16XY_^;GkS5MU3
+R14
+31
+R22
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Exemac
+R1
+R3
+R2
+R7
+R10
+R11
+!i122 0
+R0
+R12
+R13
+l0
+L10949 1
+V?cHYD8k@ZfiVo>HVSz_:F2
+!s100 ]Ki43K5Efo7:6k5mQ1RbM0
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19
+Aimp
+DEx24 axi_ethernetlite_v3_0_26 7 mdio_if 0 22 MYPV8OEoU_nz?Y2eNd^:b2
+DEx24 axi_ethernetlite_v3_0_26 10 emac_dpram 0 22 m@FeEjW>X;3QWVN@@?@W_3
+R9
+R6
+DEx24 axi_ethernetlite_v3_0_26 4 emac 0 22 a4kj7k974nieQ;L@_JbeN0
+R3
+R2
+R7
+R10
+R11
+DEx4 work 5 xemac 0 22 ?cHYD8k@ZfiVo>HVSz_:F2
+!i122 0
+l11172
+L11005 1226
+Vhh7:?SbAIcZh:HLV31Uhm1
+!s100 HgC[T?zBaEPz8j^OahM_A3
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R21
+!i113 0
+R18
+R19

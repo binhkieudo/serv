@@ -1,0 +1,24 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap vfb_v1_0_21 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vfb_v1_0_21 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:42 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work vfb_v1_0_21 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vfb_v1_0_21/.cxl.verilog.vfb_v1_0_21.vfb_v1_0_21.lin64.cmf 
+-- Compiling module vfb_v1_0_21_arst_ff
+-- Compiling module vfb_v1_0_21_reorder
+-- Compiling module vfb_v1_0_21_rst_gen
+-- Compiling module vfb_v1_0_21_line_selector
+-- Compiling module vfb_v1_0_21_line_detector
+-- Compiling module vfb_v1_0_21_ydconverter
+-- Compiling module vfb_v1_0_21_op_inf
+
+Top level modules:
+	vfb_v1_0_21_arst_ff
+	vfb_v1_0_21_reorder
+	vfb_v1_0_21_rst_gen
+	vfb_v1_0_21_line_selector
+	vfb_v1_0_21_line_detector
+	vfb_v1_0_21_ydconverter
+	vfb_v1_0_21_op_inf
+End time: 11:30:42 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

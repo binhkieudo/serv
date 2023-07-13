@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/viterbi_v9_1_13
+/tools/questasim/linux_x86_64/vmap viterbi_v9_1_13 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/viterbi_v9_1_13
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work viterbi_v9_1_13 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/viterbi_v9_1_13/.cxl.vhdl.viterbi_v9_1_13.viterbi_v9_1_13.lin64.cmf

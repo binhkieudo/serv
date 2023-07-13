@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/cic_compiler_v4_0_16
+/tools/questasim/linux_x86_64/vmap cic_compiler_v4_0_16 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/cic_compiler_v4_0_16
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work cic_compiler_v4_0_16 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/cic_compiler_v4_0_16/.cxl.vhdl.cic_compiler_v4_0_16.cic_compiler_v4_0_16.lin64.cmf

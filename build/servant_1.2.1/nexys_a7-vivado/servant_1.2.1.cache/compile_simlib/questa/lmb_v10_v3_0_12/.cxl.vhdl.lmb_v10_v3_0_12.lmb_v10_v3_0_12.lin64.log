@@ -1,0 +1,13 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap lmb_v10_v3_0_12 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lmb_v10_v3_0_12 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:34 on Jul 13,2023
+vcom -64 -93 -work lmb_v10_v3_0_12 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lmb_v10_v3_0_12/.cxl.vhdl.lmb_v10_v3_0_12.lmb_v10_v3_0_12.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lmb_v10
+-- Compiling architecture IMP of lmb_v10
+End time: 11:30:34 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

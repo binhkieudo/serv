@@ -1,0 +1,88 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap iomodule_v3_1_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/iomodule_v3_1_8 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:01 on Jul 13,2023
+vcom -64 -93 -work iomodule_v3_1_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/iomodule_v3_1_8/.cxl.vhdl.iomodule_v3_1_8.iomodule_v3_1_8.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package IOModule_Vote_Pkg
+-- Compiling package body IOModule_Vote_Pkg
+-- Loading package IOModule_Vote_Pkg
+-- Compiling package iomodule_funcs
+-- Loading package NUMERIC_STD
+-- Compiling package body iomodule_funcs
+-- Loading package iomodule_funcs
+-- Compiling entity xil_scan_reset_control
+-- Compiling architecture IMP of xil_scan_reset_control
+-- Loading package iomodule_funcs
+-- Compiling entity XIL_SRL16E
+-- Compiling architecture IMP of XIL_SRL16E
+-- Compiling entity XIL_SRLC16E
+-- Compiling architecture IMP of XIL_SRLC16E
+-- Compiling entity MB_MUXCY
+-- Compiling architecture IMP of MB_MUXCY
+-- Compiling entity MB_XORCY
+-- Compiling architecture IMP of MB_XORCY
+-- Compiling entity MB_MUXCY_XORCY
+-- Compiling architecture IMP of MB_MUXCY_XORCY
+-- Compiling entity MB_FDR
+-- Compiling architecture IMP of MB_FDR
+-- Compiling entity MB_FDRE
+-- Compiling architecture IMP of MB_FDRE
+-- Compiling entity MB_FDSE
+-- Compiling architecture IMP of MB_FDSE
+-- Compiling entity MB_MULT_AND
+-- Compiling architecture IMP of MB_MULT_AND
+-- Compiling entity MB_LUT3
+-- Compiling architecture IMP of MB_LUT3
+-- Compiling entity MB_MUXF5
+-- Compiling architecture IMP of MB_MUXF5
+-- Compiling entity MB_MUXF6
+-- Compiling architecture IMP of MB_MUXF6
+-- Compiling entity mb_sync_bit
+-- Loading entity xil_scan_reset_control
+-- Compiling architecture IMP of mb_sync_bit
+-- Loading entity mb_sync_bit
+-- Compiling entity mb_sync_vec
+-- Compiling architecture IMP of mb_sync_vec
+-- Compiling entity mb_sync_reset
+-- Compiling architecture IMP of mb_sync_reset
+-- Loading package IOModule_Vote_Pkg
+-- Compiling entity pulse_sync
+-- Compiling architecture IMP of pulse_sync
+-- Compiling entity Divide_part
+-- Compiling architecture VHDL_RTL of Divide_part
+-- Compiling entity FIT_Module
+-- Compiling architecture VHDL_RTL of FIT_Module
+-- Compiling entity GPI_Module
+-- Compiling architecture IMP of GPI_Module
+-- Compiling entity GPO_Module
+-- Compiling architecture IMP of GPO_Module
+-- Compiling entity intr_ctrl
+-- Compiling architecture IMP of intr_ctrl
+-- Compiling entity PIT_Module
+-- Compiling architecture IMP of PIT_Module
+-- Compiling entity Uart_Control_Status
+-- Compiling architecture IMP of Uart_Control_Status
+-- Compiling entity UART_Receive
+-- Compiling architecture IMP of UART_Receive
+-- Compiling entity UART_Transmit
+-- Compiling architecture IMP of UART_Transmit
+-- Compiling entity UART_Core
+-- Compiling architecture IMP of UART_Core
+-- Compiling entity UART
+-- Compiling architecture IMP of Uart
+-- Compiling entity Iomodule_core
+-- Compiling architecture IMP of iomodule_core
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity pselect_mask
+-- Compiling architecture imp of pselect_mask
+-- Loading entity Iomodule_core
+-- Loading entity pselect_mask
+-- Compiling entity iomodule
+-- Compiling architecture IMP of iomodule
+End time: 11:29:02 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

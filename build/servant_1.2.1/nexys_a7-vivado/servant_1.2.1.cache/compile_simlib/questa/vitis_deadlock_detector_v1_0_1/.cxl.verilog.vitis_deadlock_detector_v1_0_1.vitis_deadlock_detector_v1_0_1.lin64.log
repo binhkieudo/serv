@@ -1,0 +1,14 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap vitis_deadlock_detector_v1_0_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vitis_deadlock_detector_v1_0_1 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:55 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work vitis_deadlock_detector_v1_0_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vitis_deadlock_detector_v1_0_1/.cxl.verilog.vitis_deadlock_detector_v1_0_1.vitis_deadlock_detector_v1_0_1.lin64.cmf 
+-- Compiling module AXI_LITE_IF
+-- Compiling module deadlock_register
+-- Compiling module vitis_deadlock_detector
+
+Top level modules:
+	vitis_deadlock_detector
+End time: 11:30:56 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

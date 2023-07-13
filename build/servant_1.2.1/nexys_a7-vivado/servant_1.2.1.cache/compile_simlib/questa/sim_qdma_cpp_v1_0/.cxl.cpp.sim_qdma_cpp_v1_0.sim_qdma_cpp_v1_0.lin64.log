@@ -1,0 +1,13 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap sim_qdma_cpp_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_qdma_cpp_v1_0 
+Modifying modelsim.ini
+In file included from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include/xaxi_profiler_instmgr.h:55:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_cpp/sim_qdma_cpp_v1_0/src/xcl_api_resp.cxx:45:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include/xaxi_profiler.h:53:10: fatal error: google/protobuf/message_lite.h: No such file or directory
+ #include <google/protobuf/message_lite.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_cpp/sim_qdma_cpp_v1_0/src/xcl_api.cxx: In function 'void xclAllocDeviceBufferStandalone(uint64_t, uint64_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_cpp/sim_qdma_cpp_v1_0/src/xcl_api.cxx:129:16: warning: unused variable 'uSize' [-Wunused-variable]
+   unsigned int uSize = size;
+                ^~~~~

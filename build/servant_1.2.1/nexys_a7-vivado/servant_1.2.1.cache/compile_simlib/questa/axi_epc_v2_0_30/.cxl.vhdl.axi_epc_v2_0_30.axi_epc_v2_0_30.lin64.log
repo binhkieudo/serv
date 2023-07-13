@@ -1,0 +1,51 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_epc_v2_0_30 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_epc_v2_0_30 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:32 on Jul 13,2023
+vcom -64 -93 -work axi_epc_v2_0_30 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_epc_v2_0_30/.cxl.vhdl.axi_epc_v2_0_30.axi_epc_v2_0_30.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ld_arith_reg
+-- Loading package NUMERIC_STD
+-- Compiling architecture imp of ld_arith_reg
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package lib_pkg
+-- Compiling entity async_statemachine
+-- Compiling architecture imp of async_statemachine
+-- Loading entity ld_arith_reg
+-- Compiling entity async_counters
+-- Compiling architecture imp of async_counters
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package ipif_pkg
+-- Compiling entity sync_cntl
+-- Compiling architecture imp of sync_cntl
+-- Compiling entity ipic_if_decode
+-- Compiling architecture imp of ipic_if_decode
+-- Compiling entity data_steer
+-- Compiling architecture imp of data_steer
+-- Loading entity async_statemachine
+-- Loading entity async_counters
+-- Compiling entity async_cntl
+-- Compiling architecture imp of async_cntl
+-- Compiling entity address_gen
+-- Compiling architecture imp of address_gen
+-- Compiling entity access_mux
+-- Compiling architecture imp of access_mux
+-- Compiling entity epc_core
+-- Compiling architecture imp of epc_core
+-- Loading entity ipic_if_decode
+-- Loading entity sync_cntl
+-- Loading entity async_cntl
+-- Loading entity address_gen
+-- Loading entity data_steer
+-- Loading entity access_mux
+-- Compiling entity axi_epc
+-- Compiling architecture imp of axi_epc
+-- Loading entity axi_lite_ipif
+-- Loading entity epc_core
+End time: 11:33:33 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

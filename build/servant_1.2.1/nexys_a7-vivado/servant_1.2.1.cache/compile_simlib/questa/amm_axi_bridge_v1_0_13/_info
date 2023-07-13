@@ -1,0 +1,218 @@
+m255
+K4
+z2
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+vamm_axi_bridge_v1_0_13_arbitration
+Z1 !s110 1689215603
+!i10b 1
+!s100 lCQomWAA?VUiiDJkf`eBE0
+I9F:5MZ5?WOeT5;a0693V22
+R0
+Z2 w1665757242
+Z3 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/amm_axi_bridge_v1_0/hdl/amm_axi_bridge_v1_0_rfs.v
+Z4 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/amm_axi_bridge_v1_0/hdl/amm_axi_bridge_v1_0_rfs.v
+!i122 0
+L0 1991 136
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z7 !s108 1689215602.000000
+!s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/amm_axi_bridge_v1_0/hdl/amm_axi_bridge_v1_0_rfs.v|
+Z8 !s90 -64|+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl|-work|amm_axi_bridge_v1_0_13|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/amm_axi_bridge_v1_0_13/.cxl.verilog.amm_axi_bridge_v1_0_13.amm_axi_bridge_v1_0_13.lin64.cmf|
+!i113 0
+Z9 o-64 -work amm_axi_bridge_v1_0_13 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work amm_axi_bridge_v1_0_13 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vamm_axi_bridge_v1_0_13_fifo
+R1
+!i10b 1
+!s100 L41cj>o]]Zok56g:VDjH11
+I?WQo]JWjJBl6;4;ahI?W^2
+R0
+R2
+R3
+R4
+!i122 0
+L0 1870 118
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z12 !s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/amm_axi_bridge_v1_0/hdl/amm_axi_bridge_v1_0_rfs.v|
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_read_demux
+R1
+!i10b 1
+!s100 0MiRBcA[a6dFJ0VAi@3dD3
+IElc?mmFTSV5eMD7V99[ke1
+R0
+R2
+R3
+R4
+!i122 0
+L0 435 130
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_read_multi
+R1
+!i10b 1
+!s100 NkJ`i@oF_MK]_iP1lMdmn1
+Io0>XKb43jUZJWPCl2N01;1
+R0
+R2
+R3
+R4
+!i122 0
+L0 157 274
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_read_top
+R1
+!i10b 1
+!s100 U4?bGn`NLGfPi5j>^Gbnh0
+InhCQ8?3NG47EABocZH:_[2
+R0
+R2
+R3
+R4
+!i122 0
+L0 3 151
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_top
+R1
+!i10b 1
+!s100 QEbHcI1g1DBJOkJF_fY:30
+IXe6LUI35eM]@oB9]2<oV:2
+R0
+R2
+R3
+R4
+!i122 0
+L0 1253 613
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_write_multi
+R1
+!i10b 1
+!s100 Kb3XbYkEa3>4DG_<Gij>A1
+IdmkQ@DdCjKif0CdHzV:JU1
+R0
+R2
+R3
+R4
+!i122 0
+L0 834 263
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_write_mux
+R1
+!i10b 1
+!s100 nY?MOLOM^X4H]3[3:8m=e3
+I@H:ne>WKbD4JLHlE4KOEU1
+R0
+R2
+R3
+R4
+!i122 0
+L0 1101 128
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vamm_axi_bridge_v1_0_13_write_top
+R1
+!i10b 1
+!s100 9HKNYiP7m<A1EaPgHWnb=3
+IRSz;oRo?N^22zG1:TEH6_2
+R0
+R2
+R3
+R4
+!i122 0
+L0 569 261
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11

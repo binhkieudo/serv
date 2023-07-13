@@ -1,0 +1,50 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap lmb_bram_if_cntlr_v4_0_21 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lmb_bram_if_cntlr_v4_0_21 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:16 on Jul 13,2023
+vcom -64 -93 -work lmb_bram_if_cntlr_v4_0_21 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/lmb_bram_if_cntlr_v4_0_21/.cxl.vhdl.lmb_bram_if_cntlr_v4_0_21.lmb_bram_if_cntlr_v4_0_21.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package lmb_bram_if_funcs
+-- Loading package NUMERIC_STD
+-- Compiling package body lmb_bram_if_funcs
+-- Loading package lmb_bram_if_funcs
+-- Loading package lmb_bram_if_funcs
+-- Compiling entity MB_LUT6
+-- Compiling architecture IMP of MB_LUT6
+-- Compiling entity MB_MUXCY
+-- Compiling architecture IMP of MB_MUXCY
+-- Compiling entity MB_XORCY
+-- Compiling architecture IMP of MB_XORCY
+-- Compiling entity MB_MUXF7
+-- Compiling architecture IMP of MB_MUXF7
+-- Compiling entity MB_MUXF8
+-- Compiling architecture IMP of MB_MUXF8
+-- Compiling entity MB_FDRE
+-- Compiling architecture IMP of MB_FDRE
+-- Compiling entity XOR18
+-- Compiling architecture IMP of XOR18
+-- Compiling entity Parity
+-- Compiling architecture IMP of Parity
+-- Compiling entity ParityEnable
+-- Compiling architecture IMP of ParityEnable
+-- Compiling entity checkbit_handler
+-- Compiling architecture IMP of checkbit_handler
+-- Compiling entity Correct_One_Bit
+-- Compiling architecture IMP of Correct_One_Bit
+-- Compiling entity Correct_One_Bit_64
+-- Compiling architecture IMP of Correct_One_Bit_64
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity pselect_mask
+-- Compiling architecture imp of pselect_mask
+-- Compiling entity axi_interface
+-- Compiling architecture IMP of axi_interface
+-- Compiling entity lmb_mux
+-- Compiling architecture imp of lmb_mux
+-- Compiling entity lmb_bram_if_cntlr
+-- Compiling architecture imp of lmb_bram_if_cntlr
+End time: 11:28:17 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

@@ -1,0 +1,12 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_pcie3_v3_0_23 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_pcie3_v3_0_23 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:52 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_pcie3_v3_0_23 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_pcie3_v3_0_23/.cxl.verilog.axi_pcie3_v3_0_23.axi_pcie3_v3_0_23.lin64.cmf 
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_pcie3_v3_0/hdl/axi_pcie3_v3_0_vl_rfs.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_pcie3_v3_0/hdl/axi_pcie3_v3_0_vl_rfs.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+End time: 11:29:52 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2

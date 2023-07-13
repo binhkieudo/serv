@@ -1,0 +1,462 @@
+m255
+K4
+z2
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+vddr4_pl_v1_0_9_bram_tdp
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1689215401
+!i10b 1
+!s100 VOOBVALYgoOe5`hb6Nkf51
+If6WfW^MMZZ]D?LaBM9zkM2
+S1
+R0
+Z3 w1665757255
+Z4 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/xsdb/ddr4_pl_v1_0_dp_AB9.sv
+Z5 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/xsdb/ddr4_pl_v1_0_dp_AB9.sv
+!i122 0
+L0 174 72
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z8 !s108 1689215401.000000
+!s107 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/ddr4_pl_v1_0_9_cal_assert.vh|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/xsdb/ddr4_pl_v1_0_dp_AB9.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_bram.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_arbiter.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_write.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_byte.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_bit.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_top.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_sync.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_read.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_rd_en.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_pi.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_mc_odt.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx_data.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_config_rom.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_addr_decode.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal.sv|
+Z9 !s90 -64|-L|ddr4_pl_v1_0_9|+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl|-sv|-svinputport=relaxed|-work|ddr4_pl_v1_0_9|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ddr4_pl_v1_0_9/.cxl.systemverilog.ddr4_pl_v1_0_9.ddr4_pl_v1_0_9.lin64.cmf|
+!i113 0
+Z10 o-64 -L ddr4_pl_v1_0_9 -sv -svinputport=relaxed -work ddr4_pl_v1_0_9 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -64 -L ddr4_pl_v1_0_9 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work ddr4_pl_v1_0_9 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
+vddr4_pl_v1_0_9_cal
+R1
+R2
+!i10b 1
+!s100 dY]zz`maUNj27Qhj^?0bj0
+IGK=;m8LQcWl3Y1gU37fdm0
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal.sv
+!i122 0
+L0 71 2122
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/ddr4_pl_v1_0_9_cal_assert.vh|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/xsdb/ddr4_pl_v1_0_dp_AB9.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_bram.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_arbiter.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_write.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_byte.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_bit.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_top.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_sync.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_read.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_rd_en.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_pi.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_mc_odt.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx_data.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_config_rom.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_addr_decode.sv|/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal.sv|
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_addr_decode
+R1
+R2
+!i10b 1
+!s100 Ze5^91W_c7T^X3QWM7GNK3
+I1`Gn7GXn^nbJhfR<;?N<Q3
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_addr_decode.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_addr_decode.sv
+!i122 0
+L0 91 2695
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_config_rom
+R1
+R2
+!i10b 1
+!s100 GVGL@b5AiD^<EX1;g558P1
+Iz`g>jVfa0P@Gb@5W?9X9K2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_config_rom.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_config_rom.sv
+!i122 0
+L0 68 167
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_cplx
+R1
+R2
+!i10b 1
+!s100 ]lLEkKBNPCHbaCoY84gX>0
+IC3R6SDOSi=X<n[mPDzTiS0
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx.sv
+!i122 0
+L0 68 883
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_cplx_data
+R1
+R2
+!i10b 1
+!s100 iVOGX1_z04Dm[7@D[>mE51
+IkEPgR5[]OaZl;]l8WcEfI2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx_data.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_cplx_data.sv
+!i122 0
+L0 71 448
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_mc_odt
+R1
+R2
+!i10b 1
+!s100 a2WV2`35?2V4HVdjFcD<R3
+IAzzT<D>[a2SQ1EdHa0^A91
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_mc_odt.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_mc_odt.sv
+!i122 0
+L0 68 120
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_pi
+R1
+R2
+!i10b 1
+!s100 DOV@Z]X^^=[:HTN^A3YjV3
+I8D;G9IfSIV6@FJ9fO5aiT0
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_pi.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_pi.sv
+!i122 0
+L0 68 209
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_rd_en
+R1
+R2
+!i10b 1
+!s100 d@UXgO0A8QMXbH<lz;`lh1
+IjnVMJL_eAXUWbGbiz463D3
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_rd_en.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_rd_en.sv
+!i122 0
+L0 68 347
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_read
+R1
+R2
+!i10b 1
+!s100 R6VW_O?e9zoWQK9ihmOgF3
+IPZ6AD1BS62NJ7cO2B9Y5T2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_read.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_read.sv
+!i122 0
+L0 68 123
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_sync
+R1
+R2
+!i10b 1
+!s100 ^dn:AW0JjV78NH0Z2<Hl12
+IN4HHSPM_J<YQ<j6]HO<Fk2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_sync.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_sync.sv
+!i122 0
+L0 68 48
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_top
+R1
+R2
+!i10b 1
+!s100 =4bm0MVHefEEoJC0IFho?1
+IWhB3gZG8VcfF2UGdJEL6L0
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_top.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_top.sv
+F/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/ddr4_pl_v1_0_9_cal_assert.vh
+!i122 0
+L0 71 2106
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_wr_bit
+R1
+R2
+!i10b 1
+!s100 FMb9o=>hjcL[Q@6R_Cjf?2
+IDgPb;E1cii>2PjkE:2<WS0
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_bit.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_bit.sv
+!i122 0
+L0 68 55
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_wr_byte
+R1
+R2
+!i10b 1
+!s100 fJME_K1SFKXWABgXg[oH@1
+ISQaLoj:geicaSDc2VD_5g1
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_byte.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_wr_byte.sv
+!i122 0
+L0 68 60
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_write
+R1
+R2
+!i10b 1
+!s100 l>^FQaRRzLDVYfhgkoMUB3
+IeIQF]JD_72a>hDHWU<65^2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_write.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_write.sv
+!i122 0
+L0 68 362
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_xsdb_arbiter
+R1
+R2
+!i10b 1
+!s100 @ScW`PeK7==D<eJ2cjI@X3
+IE8zm1iQIGofVUMFA^23dV2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_arbiter.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_arbiter.sv
+!i122 0
+L0 68 212
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cal_xsdb_bram
+R1
+R2
+!i10b 1
+!s100 VDPJCi?;3Z:A8BndCTK1A2
+IMXOceik?c5HLmK27zn0=_2
+S1
+R0
+R3
+8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_bram.sv
+F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/ddr4_pl_v1_0/hdl/cal/ddr4_pl_v1_0_cal_xsdb_bram.sv
+!i122 0
+L0 69 436
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vddr4_pl_v1_0_9_cfg_mem_mod
+R1
+R2
+!i10b 1
+!s100 Q7E9B]f@D_Y9lRz5M3@Je1
+IK995EbWQUGzfjhWHQBMdN1
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 66 107
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12

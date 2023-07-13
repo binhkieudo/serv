@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fifo_generator_v13_2_7
+/tools/questasim/linux_x86_64/vmap fifo_generator_v13_2_7 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fifo_generator_v13_2_7
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work fifo_generator_v13_2_7 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fifo_generator_v13_2_7/.cxl.vhdl.fifo_generator_v13_2_7.fifo_generator_v13_2_7.lin64.cmf

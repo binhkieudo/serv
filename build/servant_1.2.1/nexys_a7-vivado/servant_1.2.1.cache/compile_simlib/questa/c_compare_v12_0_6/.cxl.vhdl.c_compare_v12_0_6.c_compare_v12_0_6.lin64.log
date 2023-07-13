@@ -1,0 +1,9 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap c_compare_v12_0_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/c_compare_v12_0_6 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:43 on Jul 13,2023
+vcom -64 -93 -work c_compare_v12_0_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/c_compare_v12_0_6/.cxl.vhdl.c_compare_v12_0_6.c_compare_v12_0_6.lin64.cmf 
+-- Loading package STANDARD
+End time: 11:31:44 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

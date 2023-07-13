@@ -1,0 +1,30 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap sim_qdma_sc_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_qdma_sc_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -std=c++11 -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_qdma_cpp_v1_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/ext/protobuf/include -I /tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0 -Wall -fPIC -Wall -fPIC -O3 -DNDEBUG -work sim_qdma_sc_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_qdma_sc_v1_0/.cxl.systemc.sim_qdma_sc_v1_0.sim_qdma_sc_v1_0.lin64.cmf 
+Start time: 11:26:27 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/include/sim_qdma_core.h:21:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma_helper.cxx:40:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include/rpc_messages.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/include/sim_qdma_core.h:21:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma_core.cpp:2:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include/rpc_messages.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/include/sim_qdma_core.h:21:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/include/sim_qdma.h:15,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma.cpp:2:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_rpc_v1/include/rpc_messages.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+** Error: (sccom-6142) Compilation failed.
+End time: 11:26:29 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 1, Warnings: 0

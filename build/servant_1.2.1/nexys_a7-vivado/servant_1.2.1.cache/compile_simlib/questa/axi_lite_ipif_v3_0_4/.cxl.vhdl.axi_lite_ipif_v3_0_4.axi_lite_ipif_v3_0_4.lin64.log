@@ -1,0 +1,31 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_lite_ipif_v3_0_4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_lite_ipif_v3_0_4 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:27 on Jul 13,2023
+vcom -64 -93 -work axi_lite_ipif_v3_0_4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_lite_ipif_v3_0_4/.cxl.vhdl.axi_lite_ipif_v3_0_4.axi_lite_ipif_v3_0_4.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package ipif_pkg
+-- Compiling package body ipif_pkg
+-- Loading package ipif_pkg
+-- Compiling entity pselect_f
+-- Compiling architecture imp of pselect_f
+-- Loading package NUMERIC_STD
+-- Loading package ipif_pkg
+-- Compiling entity address_decoder
+-- Compiling architecture IMP of address_decoder
+-- Loading entity pselect_f
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Compiling entity slave_attachment
+-- Compiling architecture imp of slave_attachment
+-- Loading entity address_decoder
+-- Compiling entity axi_lite_ipif
+-- Compiling architecture imp of axi_lite_ipif
+-- Loading entity slave_attachment
+End time: 11:29:27 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

@@ -1,0 +1,207 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap remote_port_sc_v4 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_c_v4/include -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -Wall -fPIC -fPIC -std=c++11 -DREMOTEPORT_SC_DLL -O3 -work remote_port_sc_v4 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/.cxl.systemc.remote_port_sc_v4.remote_port_sc_v4.lin64.cmf 
+Start time: 11:25:42 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp:32:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp: In function 'void remote_port_ns::print_time()':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp:129:18: warning: unused variable 'ms' [-Wunused-variable]
+         long int ms = tp.tv_sec * 1000 + tp.tv_usec / 1000;
+                  ^~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp: In member function 'bool remoteport_tlm::rp_process(bool)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm.cpp:401:13: warning: unused variable 'r' [-Wunused-variable]
+     ssize_t r;
+             ^
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_wires.cpp:32:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:32:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp: In member function 'virtual void remoteport_tlm_memory_slave::b_transport(tlm::tlm_generic_payload&, sc_core::sc_time&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:194:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:205:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:265:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:274:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_slave.cpp:146:10: warning: unused variable 'resp_ready' [-Wunused-variable]
+     bool resp_ready;
+          ^~~~~~~~~~
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:32:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp: In member function 'sc_core::sc_time remoteport_tlm_memory_master::rp_bus_access(rp_pkt&, bool, tlm::tlm_command, unsigned char*, std::size_t)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:93:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:104:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:142:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:141:17: warning: unused variable 'leng' [-Wunused-variable]
+             int leng = tr.get_data_length();
+                 ^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:154:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0; i<len; i++){
+                          ~^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:153:17: warning: unused variable 'leng' [-Wunused-variable]
+             int leng = tr.get_data_length();
+                 ^~~~
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp: In member function 'void remoteport_tlm_memory_master::dummy_b_transport(tlm::tlm_generic_payload&, sc_core::sc_time&)':
+/tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/remote_port_sc/remote_port_sc_v4/src/remote_port_tlm_memory_master.cpp:228:18: warning: unused variable 'addr' [-Wunused-variable]
+     unsigned int addr = trans.get_address();
+                  ^~~~
+End time: 11:25:49 on Jul 13,2023, Elapsed time: 0:00:07
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -linkshared -lib remote_port_sc_v4 -v -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_c_v4 -lremote_port_c_v4 -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0 -lcommon_cpp_v1_0 -work remote_port_sc_v4 
+Start time: 11:25:49 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+Using built-in specs.
+COLLECT_GCC=/tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++
+COLLECT_LTO_WRAPPER=/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../gcc-7.4.0/configure --prefix=/u/prod_dev/gnu/gcc/20190523/tmp.install.gcc.linux_x86_64/gcc-7.4.0-linux_x86_64 --with-local-prefix=/u/prod_dev/gnu/gcc/20190523/tmp.install.gcc.linux_x86_64/gcc-7.4.0-linux_x86_64 --disable-gnu-unique-object --disable-nls --enable-languages=c,c++ --with-gnu-as --with-as=/u/prod_dev/gnu/gcc/20190523/tmp.build.gcc.linux_x86_64/binutils-2.31.1-linux_x86_64/bin/as --with-gnu-ld --with-ld=/u/prod_dev/gnu/gcc/20190523/tmp.build.gcc.linux_x86_64/binutils-2.31.1-linux_x86_64/bin/ld
+Thread model: posix
+gcc version 7.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/x86_64-linux-gnu/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_c_v4' '-L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0' '-shared' '-o' '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/systemc.so' '-L/tools/questasim/linux_x86_64' '-B' '/usr/lib/x86_64-linux-gnu' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/collect2 -plugin /tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/liblto_plugin.so -plugin-opt=/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNKhJZ4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -shared -o /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/systemc.so /usr/lib/x86_64-linux-gnu/crti.o /tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/crtbeginS.o -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_c_v4 -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0 -L/tools/questasim/linux_x86_64 -L/usr/lib/x86_64-linux-gnu -L/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0 -L/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc -L/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/../../.. -lremote_port_c_v4 -lcommon_cpp_v1_0 -E -R /tools/questasim/linux_x86_64 --allow-shlib-undefined /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm.o /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_memory_master.o /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_memory_slave.o /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/_sc/linux_x86_64_gcc-7.4.0/remote_port_tlm_wires.o -lstdc++ -lm -lgcc_s -lc -lgcc_s /tools/questasim/gcc-7.4.0-linux_x86_64/bin/../lib/gcc/x86_64-pc-linux-gnu/7.4.0/crtendS.o /usr/lib/x86_64-linux-gnu/crtn.o
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find -lremote_port_c_v4
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find -lcommon_cpp_v1_0
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/remote_port_sc_v4/systemc.so failed.
+End time: 11:25:49 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

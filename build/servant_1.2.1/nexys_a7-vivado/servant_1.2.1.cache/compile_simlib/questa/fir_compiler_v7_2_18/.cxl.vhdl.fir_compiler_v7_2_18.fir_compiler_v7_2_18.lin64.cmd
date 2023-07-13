@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fir_compiler_v7_2_18
+/tools/questasim/linux_x86_64/vmap fir_compiler_v7_2_18 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fir_compiler_v7_2_18
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work fir_compiler_v7_2_18 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/fir_compiler_v7_2_18/.cxl.vhdl.fir_compiler_v7_2_18.fir_compiler_v7_2_18.lin64.cmf

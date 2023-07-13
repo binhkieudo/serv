@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ldpc_v2_0_11
+/tools/questasim/linux_x86_64/vmap ldpc_v2_0_11 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ldpc_v2_0_11
+/tools/questasim/linux_x86_64/vlog  -64 -L fec_5g_common_v1_1_1 -L ldpc_v2_0_11 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work ldpc_v2_0_11 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/ldpc_v2_0_11/.cxl.systemverilog.ldpc_v2_0_11.ldpc_v2_0_11.lin64.cmf

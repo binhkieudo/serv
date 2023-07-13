@@ -1,0 +1,77 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap aie_ps_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/aie_ps_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ap_ctrl_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pl_fileio_v1_0_0/include -Wall -fPIC -fPIC -std=c++11 -DREMOTEPORT_SC_DLL -O3 -work aie_ps_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/aie_ps_v1_0/.cxl.systemc.aie_ps_v1_0.aie_ps_v1_0.lin64.cmf 
+Start time: 11:27:26 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /tools/questasim/include/systemc/sc_signal_ports.h:2301:0,
+                 from /tools/questasim/include/systemc/sc_clock_ports.h:31,
+                 from /tools/questasim/include/systemc/systemc:84,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/utils/xtlm_cmnhdr.h:77,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/include/aie_ps.h:54,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/src/aie_ps.cpp:50:
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:121:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:123:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_in<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:500:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:502:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_logic>::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:651:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:653:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h: In member function 'void sc_core::sc_inout<sc_dt::sc_lv<W> >::mti_initialize_boundary_port()':
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1035:5: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+     else
+     ^~~~
+/tools/questasim/include/systemc/sc_signal_ports_mti.h:1037:2: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  mti_is_creating_dummy_signal = false;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_wr_t.h:59:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xaximm_pin2xtlm_t.h:51,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm.h:126,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/include/aie_ps.h:54,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/src/aie_ps.cpp:50:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h: In constructor 'xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::xtlm_adaptor_log_utils(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:65:34: warning: 'xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_report_handler' will be initialized after [-Wreorder]
+  xsc::common_cpp::report_handler m_report_handler;
+                                  ^~~~~~~~~~~~~~~~
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:61:7: warning:   'bool xtlm::xtlm_adaptor::xtlm_adaptor_log_utils::m_enable_aximm_logs' [-Wreorder]
+  bool m_enable_aximm_logs;
+       ^~~~~~~~~~~~~~~~~~~
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include/xtlm_adaptors/xtlm_adaptors_utils.h:67:5: warning:   when initialized here [-Wreorder]
+     xtlm_adaptor_log_utils(const std::string module_name,
+     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pl_fileio_v1_0_0/include/me_ip_block.h:53:0,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/include/aie_ps.h:56,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/aie_ps/aie_ps_v1_0/src/aie_ps.cpp:50:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pl_fileio_v1_0_0/include/me_pl_channels.h: In member function 'virtual void _PL_to_ME_base_channel::put_vector(std::vector<unsigned int>, bool)':
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/pl_fileio_v1_0_0/include/me_pl_channels.h:276:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < data.size() - 1; i++) {
+                   ~~^~~~~~~~~~~~~~~~~
+End time: 11:27:29 on Jul 13,2023, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -linkshared -lib aie_ps_v1_0 -lib xtlm -L/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0 -lib xtlm_ap_ctrl_v1_0 -lib pl_fileio_v1_0_0 -lcommon_cpp_v1_0 -work aie_ps_v1_0 
+Start time: 11:27:29 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+/tools/questasim/gcc-7.4.0-linux_x86_64/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.4.0/ld: cannot find -lcommon_cpp_v1_0
+collect2: error: ld returned 1 exit status
+** Error: (sccom-6126) Linking failed. Creation of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/aie_ps_v1_0/systemc.so failed.
+End time: 11:27:29 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

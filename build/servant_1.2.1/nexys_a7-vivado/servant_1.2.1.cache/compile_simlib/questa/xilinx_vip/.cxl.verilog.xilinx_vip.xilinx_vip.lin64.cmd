@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xilinx_vip
+/tools/questasim/linux_x86_64/vmap xilinx_vip /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xilinx_vip
+/tools/questasim/linux_x86_64/vlog -sv -64 +incdir+/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include -work xilinx_vip -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xilinx_vip/.cxl.systemverilog.xilinx_vip.xilinx_vip.lin64.cmf

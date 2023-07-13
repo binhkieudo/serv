@@ -1,0 +1,43 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_perf_mon_v5_0_29 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_perf_mon_v5_0_29 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:18 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_perf_mon_v5_0_29 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_perf_mon_v5_0_29/.cxl.verilog.axi_perf_mon_v5_0_29.axi_perf_mon_v5_0_29.lin64.cmf 
+-- Compiling module axi_perf_mon_v5_0_29_dff_async_reset
+-- Compiling module axi_perf_mon_v5_0_29_async_fifo
+-- Compiling module axi_perf_mon_v5_0_29_sync_fifo
+-- Compiling module axi_perf_mon_v5_0_29_acc_n_incr
+-- Compiling module axi_perf_mon_v5_0_29_async_stream_fifo
+-- Compiling module axi_perf_mon_v5_0_29_axi_interface
+-- Compiling module axi_perf_mon_v5_0_29_counter
+-- Compiling module axi_perf_mon_v5_0_29_counter_ovf
+-- Compiling module axi_perf_mon_v5_0_29_cdc_sync
+-- Compiling module axi_perf_mon_v5_0_29_flags_gen
+-- Compiling module axi_perf_mon_v5_0_29_glbl_clk_cnt
+-- Compiling module axi_perf_mon_v5_0_29_interrupt_module
+-- Compiling module axi_perf_mon_v5_0_29_intr_sync
+-- Compiling module axi_perf_mon_v5_0_29_metric_calc
+-- Compiling module axi_perf_mon_v5_0_29_metric_counters
+-- Compiling module axi_perf_mon_v5_0_29_metric_sel_n_cnt
+-- Compiling module axi_perf_mon_v5_0_29_mon_fifo
+-- Compiling module axi_perf_mon_v5_0_29_ext_calc
+-- Compiling module axi_perf_mon_v5_0_29_register_module
+-- Compiling module axi_perf_mon_v5_0_29_samp_intl_cnt
+-- Compiling module axi_perf_mon_v5_0_29_samp_metrics_data
+-- Compiling module axi_perf_mon_v5_0_29_strm_fifo_wr_logic
+-- Compiling module axi_perf_mon_v5_0_29_throttle
+-- Compiling module axi_perf_mon_v5_0_29_postTriggerMarker
+-- Compiling module axi_perf_mon_v5_0_29_advanced
+-- Compiling module axi_perf_mon_v5_0_29_profile
+-- Compiling module axi_perf_mon_v5_0_29_acc_sample_profile
+-- Compiling module axi_perf_mon_v5_0_29_register_module_profile
+-- Compiling module axi_perf_mon_v5_0_29_metric_calc_profile
+-- Compiling module axi_perf_mon_v5_0_29_metric_counters_profile
+-- Compiling module axi_perf_mon_v5_0_29_flags_gen_trace
+-- Compiling module axi_perf_mon_v5_0_29_top
+
+Top level modules:
+	axi_perf_mon_v5_0_29_top
+End time: 11:31:18 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

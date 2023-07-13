@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/videoaxi4s_bridge_v1_0_5
+/tools/questasim/linux_x86_64/vmap videoaxi4s_bridge_v1_0_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/videoaxi4s_bridge_v1_0_5
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work videoaxi4s_bridge_v1_0_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/videoaxi4s_bridge_v1_0_5/.cxl.verilog.videoaxi4s_bridge_v1_0_5.videoaxi4s_bridge_v1_0_5.lin64.cmf

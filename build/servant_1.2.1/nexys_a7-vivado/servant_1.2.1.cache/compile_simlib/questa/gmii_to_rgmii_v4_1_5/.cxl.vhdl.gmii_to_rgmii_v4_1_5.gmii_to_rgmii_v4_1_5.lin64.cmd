@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gmii_to_rgmii_v4_1_5
+/tools/questasim/linux_x86_64/vmap gmii_to_rgmii_v4_1_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gmii_to_rgmii_v4_1_5
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work gmii_to_rgmii_v4_1_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gmii_to_rgmii_v4_1_5/.cxl.vhdl.gmii_to_rgmii_v4_1_5.gmii_to_rgmii_v4_1_5.lin64.cmf

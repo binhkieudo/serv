@@ -1,0 +1,66 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap noc2_nmu_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc2_nmu_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:53 on Jul 13,2023
+vlog -64 -L noc2_nmu_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work noc2_nmu_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/noc2_nmu_v1_0_0/.cxl.systemverilog.noc2_nmu_v1_0_0.noc2_nmu_v1_0_0.lin64.cmf 
+-- Compiling package noc2_nmu_v1_0_vl_rfs_sv_unit
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc2_nmu_read_reorder_buffer.sv(87): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: (vlog-13361) <protected>(<protected>): No trigger event inferred in disable expression.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/noc2_nmu_axi_monitor.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+** Warning: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl/en_checks_noc2_nmu.sv(87): (vlog-2240) Treating stand-alone use of function '<protected>' as an implicit VOID cast.
+
+Top level modules:
+End time: 11:29:53 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 55

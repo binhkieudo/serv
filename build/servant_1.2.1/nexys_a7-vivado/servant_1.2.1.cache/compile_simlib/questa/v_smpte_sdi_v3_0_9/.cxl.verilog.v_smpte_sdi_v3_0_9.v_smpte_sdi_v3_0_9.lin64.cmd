@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_smpte_sdi_v3_0_9
+/tools/questasim/linux_x86_64/vmap v_smpte_sdi_v3_0_9 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_smpte_sdi_v3_0_9
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work v_smpte_sdi_v3_0_9 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_smpte_sdi_v3_0_9/.cxl.verilog.v_smpte_sdi_v3_0_9.v_smpte_sdi_v3_0_9.lin64.cmf

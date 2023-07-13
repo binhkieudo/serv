@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/floating_point_v7_1_15
+/tools/questasim/linux_x86_64/vmap floating_point_v7_1_15 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/floating_point_v7_1_15
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work floating_point_v7_1_15 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/floating_point_v7_1_15/.cxl.vhdl.floating_point_v7_1_15.floating_point_v7_1_15.lin64.cmf

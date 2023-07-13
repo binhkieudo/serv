@@ -1,0 +1,22 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap uhdsdi_gt_v2_1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/uhdsdi_gt_v2_1_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:36 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work uhdsdi_gt_v2_1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/uhdsdi_gt_v2_1_0/.cxl.verilog.uhdsdi_gt_v2_1_0.uhdsdi_gt_v2_1_0.lin64.cmf 
+-- Compiling module uhdsdi_gt_v2_1_0_drp_control
+-- Compiling module uhdsdi_gt_v2_1_0_rate_detect
+-- Compiling module uhdsdi_gt_v2_1_0_control
+-- Compiling module uhdsdi_gt_v2_1_0_rx_control
+-- Compiling module uhdsdi_gt_v2_1_0_tx_control
+-- Compiling module uhdsdi_gt_v2_1_0_sync_block
+-- Compiling module uhdsdi_gt_v2_1_0_drp_control_fsm
+-- Compiling module uhdsdi_gt_v2_1_0_gthe4_common
+-- Compiling module uhdsdi_gt_v2_1_0_gtwizard_ultrascale_v1_7_14_gtye4_common
+
+Top level modules:
+	uhdsdi_gt_v2_1_0_control
+	uhdsdi_gt_v2_1_0_gthe4_common
+	uhdsdi_gt_v2_1_0_gtwizard_ultrascale_v1_7_14_gtye4_common
+End time: 11:29:36 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

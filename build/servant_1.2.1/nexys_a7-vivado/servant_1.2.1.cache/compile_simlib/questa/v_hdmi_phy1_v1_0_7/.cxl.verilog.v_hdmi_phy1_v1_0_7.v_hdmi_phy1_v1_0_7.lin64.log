@@ -1,0 +1,53 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap v_hdmi_phy1_v1_0_7 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_hdmi_phy1_v1_0_7 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:22 on Jul 13,2023
+vlog -64 -L v_hdmi_phy1_v1_0_7 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work v_hdmi_phy1_v1_0_7 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_hdmi_phy1_v1_0_7/.cxl.verilog.v_hdmi_phy1_v1_0_7.v_hdmi_phy1_v1_0_7.lin64.cmf 
+-- Compiling module v_hdmi_phy1_v1_0_7_sync_block
+-- Compiling module v_hdmi_phy1_v1_0_7_sync_pulse
+-- Compiling module v_hdmi_phy1_v1_0_7_cpll_railing
+-- Compiling module v_hdmi_phy1_v1_0_7_axi4lite
+-- Compiling module v_hdmi_phy1_v1_0_7_drp_control
+-- Compiling module v_hdmi_phy1_v1_0_7_drp_control_8series
+-- Compiling module v_hdmi_phy1_v1_0_7_drp_control_hdmi
+-- Compiling module v_hdmi_phy1_v1_0_7_interrupts
+-- Compiling module v_hdmi_phy1_v1_0_7_gtp_common
+
+Top level modules:
+	v_hdmi_phy1_v1_0_7_sync_block
+	v_hdmi_phy1_v1_0_7_sync_pulse
+	v_hdmi_phy1_v1_0_7_cpll_railing
+	v_hdmi_phy1_v1_0_7_axi4lite
+	v_hdmi_phy1_v1_0_7_drp_control
+	v_hdmi_phy1_v1_0_7_drp_control_8series
+	v_hdmi_phy1_v1_0_7_drp_control_hdmi
+	v_hdmi_phy1_v1_0_7_gtp_common
+End time: 11:29:23 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:23 on Jul 13,2023
+vlog -64 -L v_hdmi_phy1_v1_0_7 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work v_hdmi_phy1_v1_0_7 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_hdmi_phy1_v1_0_7/.cxl.systemverilog.v_hdmi_phy1_v1_0_7.v_hdmi_phy1_v1_0_7.lin64.cmf 
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_rst_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_sync_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_cap_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_edge_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_cda_gray_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_fifo_sc_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_fifo_dc_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_lib_div_v1_0
+-- Compiling module v_hdmi_phy1_v1_0_7_datawidth_conv
+-- Compiling module v_hdmi_phy1_v1_0_7_gt_tx_tmdsclk_patgen
+-- Compiling module v_hdmi_phy1_v1_0_7_dru
+
+Top level modules:
+	v_hdmi_phy1_v1_0_7_lib_sync_v1_0
+	v_hdmi_phy1_v1_0_7_lib_cap_v1_0
+	v_hdmi_phy1_v1_0_7_lib_edge_v1_0
+	v_hdmi_phy1_v1_0_7_lib_fifo_sc_v1_0
+	v_hdmi_phy1_v1_0_7_lib_div_v1_0
+	v_hdmi_phy1_v1_0_7_datawidth_conv
+	v_hdmi_phy1_v1_0_7_gt_tx_tmdsclk_patgen
+	v_hdmi_phy1_v1_0_7_dru
+End time: 11:29:23 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

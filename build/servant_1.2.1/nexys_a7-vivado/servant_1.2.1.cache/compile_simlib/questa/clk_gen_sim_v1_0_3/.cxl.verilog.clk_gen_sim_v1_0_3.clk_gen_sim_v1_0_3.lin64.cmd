@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/clk_gen_sim_v1_0_3
+/tools/questasim/linux_x86_64/vmap clk_gen_sim_v1_0_3 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/clk_gen_sim_v1_0_3
+/tools/questasim/linux_x86_64/vlog  -64 -L clk_gen_sim_v1_0_3 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work clk_gen_sim_v1_0_3 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/clk_gen_sim_v1_0_3/.cxl.systemverilog.clk_gen_sim_v1_0_3.clk_gen_sim_v1_0_3.lin64.cmf

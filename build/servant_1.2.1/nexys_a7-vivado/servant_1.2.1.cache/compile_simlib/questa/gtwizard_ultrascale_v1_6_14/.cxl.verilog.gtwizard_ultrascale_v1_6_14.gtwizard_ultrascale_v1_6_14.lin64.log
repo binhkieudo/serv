@@ -1,0 +1,45 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap gtwizard_ultrascale_v1_6_14 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gtwizard_ultrascale_v1_6_14 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:51 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work gtwizard_ultrascale_v1_6_14 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/gtwizard_ultrascale_v1_6_14/.cxl.verilog.gtwizard_ultrascale_v1_6_14.gtwizard_ultrascale_v1_6_14.lin64.cmf 
+-- Compiling module gtwizard_ultrascale_v1_6_14_bit_synchronizer
+-- Compiling module gtwizard_ultrascale_v1_6_14_gte4_drp_arb
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe4_delay_powergood
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtye4_delay_powergood
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe3_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe3_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe4_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe4_cpll_cal_rx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe4_cpll_cal_tx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gthe4_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtye4_cpll_cal
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtye4_cpll_cal_rx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtye4_cpll_cal_tx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtye4_cpll_cal_freq_counter
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_buffbypass_rx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_buffbypass_tx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_reset
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_userclk_rx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_userclk_tx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_userdata_rx
+-- Compiling module gtwizard_ultrascale_v1_6_14_gtwiz_userdata_tx
+-- Compiling module gtwizard_ultrascale_v1_6_14_reset_synchronizer
+-- Compiling module gtwizard_ultrascale_v1_6_14_reset_inv_synchronizer
+
+Top level modules:
+	gtwizard_ultrascale_v1_6_14_gthe4_delay_powergood
+	gtwizard_ultrascale_v1_6_14_gtye4_delay_powergood
+	gtwizard_ultrascale_v1_6_14_gthe3_cpll_cal
+	gtwizard_ultrascale_v1_6_14_gthe4_cpll_cal
+	gtwizard_ultrascale_v1_6_14_gtye4_cpll_cal
+	gtwizard_ultrascale_v1_6_14_gtwiz_buffbypass_rx
+	gtwizard_ultrascale_v1_6_14_gtwiz_buffbypass_tx
+	gtwizard_ultrascale_v1_6_14_gtwiz_reset
+	gtwizard_ultrascale_v1_6_14_gtwiz_userclk_rx
+	gtwizard_ultrascale_v1_6_14_gtwiz_userclk_tx
+	gtwizard_ultrascale_v1_6_14_gtwiz_userdata_rx
+	gtwizard_ultrascale_v1_6_14_gtwiz_userdata_tx
+End time: 11:29:51 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

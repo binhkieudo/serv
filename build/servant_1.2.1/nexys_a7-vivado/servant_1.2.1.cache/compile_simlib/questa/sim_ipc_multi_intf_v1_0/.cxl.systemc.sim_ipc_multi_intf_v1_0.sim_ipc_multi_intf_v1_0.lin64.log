@@ -1,0 +1,20 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap sim_ipc_multi_intf_v1_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_ipc_multi_intf_v1_0 
+Modifying modelsim.ini
+sccom -64 -cpppath /tools/questasim/gcc-7.4.0-linux_x86_64/bin/g++ -nodebug -std=c++11 -I /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ipc_multi_intf/sim_ipc_multi_intf_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/common_cpp_v1_0/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm/include -I /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/include -I /tools/Xilinx/Vivado/2022.2/data/simmodels/questa/2021.2_1/lnx64/7.4.0/ext/protobuf/include -Wall -fPIC -g -fPIC -DXTLM_DLL -O3 -work sim_ipc_multi_intf_v1_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_ipc_multi_intf_v1_0/.cxl.systemc.sim_ipc_multi_intf_v1_0.sim_ipc_multi_intf_v1_0.lin64.cmf 
+Start time: 11:27:25 on Jul 13,2023
+
+QuestaSim-64 sccom 2021.2_1 compiler 2021.05 May 15 2021
+
+In file included from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/include/xtlm_ipc.pb.h:3:0,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/include/axi2ipc_socket.h:51,
+                 from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/include/axis2ipc_socket.h:49,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ipc_multi_intf/sim_ipc_multi_intf_v1_0/include/sim_ipc_axis_multi_intf_impl.h:54,
+                 from /tools/Xilinx/Vivado/2022.2/data/systemc/simlibs/sim_ipc_multi_intf/sim_ipc_multi_intf_v1_0/src/sim_ipc_axis_multi_intf_impl.cpp:49:
+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:10:10: fatal error: google/protobuf/port_def.inc: No such file or directory
+ #include <google/protobuf/port_def.inc>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+** Error: (sccom-6142) Compilation failed.
+End time: 11:27:26 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0

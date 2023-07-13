@@ -1,0 +1,181 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_bram_ctrl_v4_1_7 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_bram_ctrl_v4_1_7 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:39 on Jul 13,2023
+vcom -64 -93 -work axi_bram_ctrl_v4_1_7 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_bram_ctrl_v4_1_7/.cxl.vhdl.axi_bram_ctrl_v4_1_7.axi_bram_ctrl_v4_1_7.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SRL_FIFO
+-- Compiling architecture IMP of SRL_FIFO
+-- Compiling package axi_bram_ctrl_funcs
+-- Loading package NUMERIC_STD
+-- Compiling package body axi_bram_ctrl_funcs
+-- Loading package axi_bram_ctrl_funcs
+-- Compiling entity axi_lite_if
+-- Compiling architecture IMP of axi_lite_if
+-- Compiling entity checkbit_handler_64
+-- Compiling architecture IMP of checkbit_handler_64
+-- Compiling entity checkbit_handler
+-- Compiling architecture IMP of checkbit_handler
+-- Compiling entity Correct_One_Bit_64
+-- Compiling architecture IMP of Correct_One_Bit_64
+-- Compiling entity Correct_One_Bit
+-- Compiling architecture IMP of Correct_One_Bit
+-- Compiling entity XOR18
+-- Compiling architecture IMP of XOR18
+-- Compiling entity Parity
+-- Compiling architecture IMP of Parity
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ecc_gen
+-- Compiling architecture trans of ecc_gen
+-- Loading entity axi_lite_if
+-- Loading package axi_bram_ctrl_funcs
+-- Compiling entity lite_ecc_reg
+-- Compiling architecture implementation of lite_ecc_reg
+-- Loading entity lite_ecc_reg
+-- Loading entity Parity
+-- Loading entity checkbit_handler
+-- Loading entity Correct_One_Bit
+-- Loading entity ecc_gen
+-- Compiling entity axi_lite
+-- Compiling architecture implementation of axi_lite
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(6916): Nonresolved signal 'lite_sm_cs' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10622):Process LITE_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10628)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(8421):Process LITE_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(8427)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(6916): Nonresolved signal 'lite_sm_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10368):Process LITE_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10383)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10078):Process LITE_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(10094)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(8187):Process LITE_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(8199)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(7929):Process LITE_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(7943)
+-- Compiling entity sng_port_arb
+-- Compiling architecture implementation of sng_port_arb
+-- Compiling entity ua_narrow
+-- Compiling architecture implementation of ua_narrow
+-- Loading package axi_bram_ctrl_funcs
+-- Compiling entity wrap_brst
+-- Compiling architecture implementation of wrap_brst
+-- Compiling entity wrap_brst_rd
+-- Compiling architecture implementation of wrap_brst_rd
+-- Loading entity wrap_brst
+-- Loading entity ua_narrow
+-- Loading entity checkbit_handler_64
+-- Loading entity Correct_One_Bit_64
+-- Compiling entity rd_chnl
+-- Compiling architecture implementation of rd_chnl
+-- Loading entity wrap_brst_rd
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(14874): Nonresolved signal 'rd_addr_sm_cs' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22571):Process RD_ADDR_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22575)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16908):Process RD_ADDR_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16919)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(14874): Nonresolved signal 'rd_addr_sm_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22452):Process RD_ADDR_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22461)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22399):Process RD_ADDR_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22408)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22324):Process RD_ADDR_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22333)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16734):Process RD_ADDR_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16746)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16571):Process RD_ADDR_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(16584)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(15035): Nonresolved signal 'rd_data_sm_cs' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22922):Process RD_DATA_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22926)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(19889):Process RD_DATA_SM_REG_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(19895)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(15035): Nonresolved signal 'rd_data_sm_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22825):Process RD_DATA_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22836)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22731):Process RD_DATA_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22742)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22644):Process RD_DATA_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22656)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(18734):Process RD_DATA_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(18767)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(17419):Process RD_DATA_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(17454)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(15154): Nonresolved signal 'rlast_sm_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(21424):Process RLAST_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(21438)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(21287):Process RLAST_SM_CMB_PROCESS_RL
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(21304)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(15209): Nonresolved signal 'rl_count' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22626):Process line__22626
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(22630)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(20313):Process line__20313
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(20317)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(20056):Process line__20056
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(20060)
+-- Loading entity SRL_FIFO
+-- Loading package axi_bram_ctrl_funcs
+-- Loading entity wrap_brst
+-- Loading entity ua_narrow
+-- Compiling entity wr_chnl
+-- Compiling architecture implementation of wr_chnl
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(24404): Nonresolved signal 'wr_data_ecc_sm_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(26569):Process WR_DATA_ECC_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(26582)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(26321):Process WR_DATA_ECC_SM_CMB_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_bram_ctrl_v4_1/hdl/axi_bram_ctrl_v4_1_rfs.vhd(26335)
+-- Loading entity lite_ecc_reg
+-- Loading entity sng_port_arb
+-- Loading entity wr_chnl
+-- Loading entity rd_chnl
+-- Compiling entity full_axi
+-- Compiling architecture implementation of full_axi
+-- Loading entity axi_lite
+-- Loading entity full_axi
+-- Compiling entity axi_bram_ctrl_top
+-- Compiling architecture implementation of axi_bram_ctrl_top
+-- Loading package VCOMPONENTS
+-- Loading entity axi_bram_ctrl_top
+-- Compiling entity axi_bram_ctrl
+-- Compiling architecture implementation of axi_bram_ctrl
+End time: 11:28:40 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 9

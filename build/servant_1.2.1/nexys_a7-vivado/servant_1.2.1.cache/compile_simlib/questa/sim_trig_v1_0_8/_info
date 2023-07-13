@@ -1,0 +1,137 @@
+m255
+K4
+z2
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
+vAPB_to_VIO2
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1689215389
+!i10b 1
+!s100 Rnh6jJXEbPQ955X@@o4`@0
+IhXIOZ[7_5bo@To2l`z9[^0
+S1
+R0
+Z3 w1665757278
+Z4 8/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/sim_trig_v1_0/hdl/sim_trig_v1_0_vl_rfs.sv
+Z5 F/tools/Xilinx/Vivado/2022.2/data/ip/xilinx/sim_trig_v1_0/hdl/sim_trig_v1_0_vl_rfs.sv
+!i122 0
+L0 23 80
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z8 !s108 1689215388.000000
+!s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/sim_trig_v1_0/hdl/sim_trig_v1_0_vl_rfs.sv|
+Z9 !s90 -64|-L|sim_trig_v1_0_8|+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl|-sv|-svinputport=relaxed|-work|sim_trig_v1_0_8|-f|/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/sim_trig_v1_0_8/.cxl.systemverilog.sim_trig_v1_0_8.sim_trig_v1_0_8.lin64.cmf|
+!i113 0
+Z10 o-64 -L sim_trig_v1_0_8 -sv -svinputport=relaxed -work sim_trig_v1_0_8 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -64 -L sim_trig_v1_0_8 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -sv -svinputport=relaxed -work sim_trig_v1_0_8 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 tCvgOpt 0
+n@a@p@b_to_@v@i@o2
+vbridge_logic
+R1
+R2
+!i10b 1
+!s100 N[?[CBJJ^^T[E;ESn6[6f3
+I]Tg_ALQ>Q5VL>]6Co32F`3
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 427 140
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/sim_trig_v1_0/hdl/sim_trig_v1_0_vl_rfs.sv|
+R9
+!i113 0
+R10
+R11
+R12
+vsim_trig_pulse_generator
+R1
+R2
+!i10b 1
+!s100 ld^jD^eM4;=mO3Gj=P>>Z3
+IWjd>G@m3o@Gg^o;KM?boj1
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 329 74
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vsim_trig_pulse_stretcher
+R1
+R2
+!i10b 1
+!s100 Ji@RKkPX[`G_XQcLRU^OC2
+IbN7Cj?^z_QP0VVD`4ez110
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 179 73
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12
+vsim_trig_synchronizer
+R1
+R2
+!i10b 1
+!s100 9GQFH[37ELe0GITTW1kQ<2
+IOUL^_Rn_YVc3:Gk[^5FhJ2
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 640 28
+R6
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 0
+R10
+R11
+R12

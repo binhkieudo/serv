@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_pcie_v2_9_8
+/tools/questasim/linux_x86_64/vmap axi_pcie_v2_9_8 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_pcie_v2_9_8
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work axi_pcie_v2_9_8 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_pcie_v2_9_8/.cxl.vhdl.axi_pcie_v2_9_8.axi_pcie_v2_9_8.lin64.cmf

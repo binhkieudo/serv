@@ -1,0 +1,20 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap v_smpte_uhdsdi_rx_v1_0_1 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_smpte_uhdsdi_rx_v1_0_1 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:30 on Jul 13,2023
+vcom -64 -93 -work v_smpte_uhdsdi_rx_v1_0_1 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_smpte_uhdsdi_rx_v1_0_1/.cxl.vhdl.v_smpte_uhdsdi_rx_v1_0_1.v_smpte_uhdsdi_rx_v1_0_1.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package VCOMPONENTS
+-- Compiling entity cross_clk_reg
+-- Compiling architecture rtl of cross_clk_reg
+-- Compiling entity cross_clk_bus
+-- Compiling architecture rtl of cross_clk_bus
+-- Compiling entity map_pulse
+-- Compiling architecture struct of map_pulse
+End time: 11:29:30 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

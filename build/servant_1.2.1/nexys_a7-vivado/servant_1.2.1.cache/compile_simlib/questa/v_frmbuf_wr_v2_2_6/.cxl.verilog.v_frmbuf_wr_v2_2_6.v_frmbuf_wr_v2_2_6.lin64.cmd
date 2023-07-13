@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_frmbuf_wr_v2_2_6
+/tools/questasim/linux_x86_64/vmap v_frmbuf_wr_v2_2_6 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_frmbuf_wr_v2_2_6
+/tools/questasim/linux_x86_64/vlog  -64 +incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl -work v_frmbuf_wr_v2_2_6 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/v_frmbuf_wr_v2_2_6/.cxl.verilog.v_frmbuf_wr_v2_2_6.v_frmbuf_wr_v2_2_6.lin64.cmf

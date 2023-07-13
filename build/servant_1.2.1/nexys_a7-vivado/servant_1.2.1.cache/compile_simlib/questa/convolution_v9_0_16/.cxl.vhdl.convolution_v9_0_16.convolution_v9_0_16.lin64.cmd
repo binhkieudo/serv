@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/convolution_v9_0_16
+/tools/questasim/linux_x86_64/vmap convolution_v9_0_16 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/convolution_v9_0_16
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work convolution_v9_0_16 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/convolution_v9_0_16/.cxl.vhdl.convolution_v9_0_16.convolution_v9_0_16.lin64.cmf

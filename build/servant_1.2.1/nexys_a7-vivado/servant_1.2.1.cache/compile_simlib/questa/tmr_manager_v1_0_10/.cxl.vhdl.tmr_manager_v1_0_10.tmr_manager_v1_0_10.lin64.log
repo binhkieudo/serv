@@ -1,0 +1,28 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap tmr_manager_v1_0_10 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_manager_v1_0_10 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:45 on Jul 13,2023
+vcom -64 -93 -work tmr_manager_v1_0_10 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tmr_manager_v1_0_10/.cxl.vhdl.tmr_manager_v1_0_10.tmr_manager_v1_0_10.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mb_sync_bit
+-- Compiling architecture IMP of mb_sync_bit
+-- Loading entity mb_sync_bit
+-- Compiling entity mb_sync_vec
+-- Compiling architecture IMP of mb_sync_vec
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity pselect_mask
+-- Compiling architecture imp of pselect_mask
+-- Compiling entity temporal_bit
+-- Compiling architecture IMP of temporal_bit
+-- Loading package NUMERIC_STD
+-- Compiling entity tmr_manager
+-- Compiling architecture imp of tmr_manager
+-- Loading entity temporal_bit
+-- Loading entity pselect_mask
+-- Loading entity mb_sync_vec
+End time: 11:27:45 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

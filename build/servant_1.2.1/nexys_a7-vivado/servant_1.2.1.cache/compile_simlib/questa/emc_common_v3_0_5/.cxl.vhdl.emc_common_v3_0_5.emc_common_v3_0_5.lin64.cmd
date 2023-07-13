@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emc_common_v3_0_5
+/tools/questasim/linux_x86_64/vmap emc_common_v3_0_5 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emc_common_v3_0_5
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work emc_common_v3_0_5 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/emc_common_v3_0_5/.cxl.vhdl.emc_common_v3_0_5.emc_common_v3_0_5.lin64.cmf

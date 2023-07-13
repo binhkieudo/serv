@@ -1,0 +1,33 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_ahblite_bridge_v3_0_24 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_ahblite_bridge_v3_0_24 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:05 on Jul 13,2023
+vcom -64 -93 -work axi_ahblite_bridge_v3_0_24 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_ahblite_bridge_v3_0_24/.cxl.vhdl.axi_ahblite_bridge_v3_0_24.axi_ahblite_bridge_v3_0_24.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity time_out
+-- Compiling architecture RTL of time_out
+-- Loading entity counter_f
+-- Compiling entity ahb_skid_buf
+-- Compiling architecture implementation of ahb_skid_buf
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Compiling entity axi_slv_if
+-- Compiling architecture RTL of axi_slv_if
+-- Compiling entity ahb_mstr_if
+-- Compiling architecture RTL of ahb_mstr_if
+-- Compiling entity axi_ahblite_bridge
+-- Compiling architecture RTL of axi_ahblite_bridge
+-- Loading entity ahb_skid_buf
+-- Loading entity axi_slv_if
+-- Loading entity ahb_mstr_if
+-- Loading entity time_out
+End time: 11:29:05 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

@@ -1,0 +1,14 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap tcc_decoder_3gppmm_v2_0_24 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gppmm_v2_0_24 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:32:35 on Jul 13,2023
+vcom -64 -93 -work tcc_decoder_3gppmm_v2_0_24 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/tcc_decoder_3gppmm_v2_0_24/.cxl.vhdl.tcc_decoder_3gppmm_v2_0_24.tcc_decoder_3gppmm_v2_0_24.lin64.cmf 
+-- Loading package STANDARD
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gppmm_v2_0/hdl/tcc_decoder_3gppmm_v2_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gppmm_v2_0/hdl/tcc_decoder_3gppmm_v2_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_lifo".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gppmm_v2_0/hdl/tcc_decoder_3gppmm_v2_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_fifo_win".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gppmm_v2_0/hdl/tcc_decoder_3gppmm_v2_0_vh_rfs.vhd(87): (vcom-1515) Prefix of predefined attribute "length" is function call "compress_fifo_siso".
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/tcc_decoder_3gppmm_v2_0/hdl/tcc_decoder_3gppmm_v2_0_vh_rfs.vhd(87): (vcom-1626) TO_INTEGER function paramater's size (64) is out of range (>32 bits). Result is truncated.
+End time: 11:32:37 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 5

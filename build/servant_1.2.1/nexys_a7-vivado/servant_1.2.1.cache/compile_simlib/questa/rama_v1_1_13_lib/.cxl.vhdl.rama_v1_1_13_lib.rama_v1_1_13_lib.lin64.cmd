@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rama_v1_1_13_lib
+/tools/questasim/linux_x86_64/vmap rama_v1_1_13_lib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rama_v1_1_13_lib
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work rama_v1_1_13_lib -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/rama_v1_1_13_lib/.cxl.vhdl.rama_v1_1_13_lib.rama_v1_1_13_lib.lin64.cmf

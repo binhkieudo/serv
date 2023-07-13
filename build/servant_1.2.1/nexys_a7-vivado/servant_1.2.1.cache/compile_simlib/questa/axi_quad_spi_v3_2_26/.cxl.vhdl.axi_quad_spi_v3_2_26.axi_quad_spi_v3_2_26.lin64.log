@@ -1,0 +1,329 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_quad_spi_v3_2_26 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_quad_spi_v3_2_26 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:11 on Jul 13,2023
+vcom -64 -93 -work axi_quad_spi_v3_2_26 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_quad_spi_v3_2_26/.cxl.vhdl.axi_quad_spi_v3_2_26.axi_quad_spi_v3_2_26.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package comp_defs
+-- Compiling entity pselect_f
+-- Compiling architecture imp of pselect_f
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_f
+-- Compiling architecture imp of counter_f
+-- Compiling entity soft_reset
+-- Compiling architecture implementation of soft_reset
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Loading package VCOMPONENTS
+-- Loading entity async_fifo_fg
+-- Loading entity cdc_sync
+-- Compiling entity xip_cross_clk_sync
+-- Compiling architecture imp of xip_cross_clk_sync
+-- Compiling entity reset_sync_module
+-- Compiling architecture imp of reset_sync_module
+-- Compiling entity qspi_status_slave_sel_reg
+-- Compiling architecture imp of qspi_status_slave_sel_reg
+-- Compiling entity qspi_startup_block
+-- Compiling architecture imp of qspi_startup_block
+-- Loading package lib_pkg
+-- Compiling entity qspi_receive_transmit_reg
+-- Compiling architecture imp of qspi_receive_transmit_reg
+-- Compiling entity qspi_occupancy_reg
+-- Compiling architecture imp of qspi_occupancy_reg
+-- Compiling entity qspi_mode_control_logic
+-- Compiling architecture imp of qspi_mode_control_logic
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(3915): Nonresolved signal 'qspi_cntrl_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7783):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7829)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7475):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7521)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7167):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(7213)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6886):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6930)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6618):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6662)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6338):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6382)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6060):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(6107)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(5836):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(5881)
+-- Compiling entity qspi_mode_0_module
+-- Compiling architecture imp of qspi_mode_0_module
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(8934): Nonresolved signal 'spi_cntrl_ps' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9220):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9226)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9073):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9079)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(8935): Nonresolved signal 'spi_cntrl_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9235):Process SPI_STATE_MACHINE_P
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9256)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9088):Process SPI_STATE_MACHINE_P
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(9106)
+-- Loading package comp_defs
+-- Compiling entity qspi_look_up_logic
+-- Compiling architecture imp of qspi_look_up_logic
+-- Loading package vl_types
+-- Loading entity dist_mem_gen_v8_0_13
+-- Compiling entity qspi_fifo_ifmodule
+-- Compiling architecture imp of qspi_fifo_ifmodule
+-- Compiling entity qspi_cntrl_reg
+-- Compiling architecture imp of qspi_cntrl_reg
+-- Compiling entity qspi_address_decoder
+-- Compiling architecture imp of qspi_address_decoder
+-- Loading entity pselect_f
+-- Compiling entity qspi_dual_quad_mode
+-- Compiling architecture work of qspi_dual_quad_mode
+-- Loading entity qspi_startup_block
+-- Compiling entity cross_clk_sync_fifo_1
+-- Compiling architecture imp of cross_clk_sync_fifo_1
+-- Compiling entity cross_clk_sync_fifo_0
+-- Compiling architecture imp of cross_clk_sync_fifo_0
+-- Compiling entity xip_status_reg
+-- Compiling architecture imp of xip_status_reg
+-- Compiling entity xip_cntrl_reg
+-- Compiling architecture imp of xip_cntrl_reg
+-- Loading entity srl_fifo_f
+-- Compiling entity qspi_core_interface
+-- Compiling architecture imp of qspi_core_interface
+-- Loading entity reset_sync_module
+-- Loading entity qspi_receive_transmit_reg
+-- Loading entity cross_clk_sync_fifo_0
+-- Loading entity cross_clk_sync_fifo_1
+-- Loading entity counter_f
+-- Loading entity qspi_fifo_ifmodule
+-- Loading entity qspi_occupancy_reg
+-- Loading entity qspi_mode_0_module
+-- Loading entity qspi_look_up_logic
+-- Loading entity qspi_mode_control_logic
+-- Loading entity qspi_cntrl_reg
+-- Loading entity qspi_status_slave_sel_reg
+-- Loading entity soft_reset
+-- Loading entity interrupt_control
+-- Compiling entity axi_qspi_xip_if
+-- Compiling architecture imp of axi_qspi_xip_if
+-- Loading entity qspi_address_decoder
+-- Loading entity xip_cross_clk_sync
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22758): Nonresolved signal 'nm_wr_en_cntrl_ps' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29903):Process MX_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29909)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29396):Process NM_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29402)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28888):Process NM_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28894)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28094):Process MX_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28100)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27576):Process NM_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27582)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27058):Process NM_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27064)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26388):Process MX_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26394)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25932):Process SP_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25938)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25423):Process NM_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25429)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22759): Nonresolved signal 'nm_wr_en_cntrl_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29922):Process MX_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29944)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29415):Process NM_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29437)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28907):Process NM_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28929)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28113):Process MX_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28135)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27595):Process NM_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27617)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27077):Process NM_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27099)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26407):Process MX_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26429)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25951):Process SP_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25973)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25442):Process NM_WR_EN_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25464)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22772): Nonresolved signal 'nm_sm_4_byte_addr_ps' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29965):Process MX_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29971)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29458):Process NM_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29464)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28950):Process NM_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28956)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28156):Process MX_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28162)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27638):Process NM_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27644)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27120):Process NM_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27126)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26450):Process MX_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26456)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25994):Process SP_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26000)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25485):Process NM_4_BYTE_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25491)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22773): Nonresolved signal 'nm_sm_4_byte_addr_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29989):Process MX_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(30009)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29482):Process NM_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(29502)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28974):Process NM_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28994)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28180):Process MX_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28200)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27662):Process NM_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27682)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27144):Process NM_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(27164)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26474):Process MX_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26494)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26018):Process SP_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26038)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25509):Process NM_4_BYTE_ADDR_EN_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(25529)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22819): Nonresolved signal 'qspi_cntrl_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(33078):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(33137)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32776):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32835)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32475):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32534)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32172):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32228)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31899):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31950)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31627):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31678)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31355):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31406)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31126):Process QSPI_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31178)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22820): Nonresolved signal 'qspi_cntrl_ps' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(33054):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(33060)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32752):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32758)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32451):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32457)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32148):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(32154)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31875):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31881)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31603):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31609)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31331):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31337)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31101):Process PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(31107)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22827): Nonresolved signal 'wb_cntrl_ns' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28596):Process WB_DUAL_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28616)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26824):Process WB_DUAL_CNTRL_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26845)
+** Warning: /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(22828): Nonresolved signal 'wb_cntrl_ps' may have multiple sources.
+  Drivers:
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28580):Process WB_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(28586)
+    /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26808):Process WB_PS_TO_NS_PROCESS
+       Driven at:
+          /tools/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_quad_spi_v3_2/hdl/axi_quad_spi_v3_2_rfs.vhd(26814)
+-- Compiling entity axi_qspi_enhanced_mode
+-- Compiling architecture imp of axi_qspi_enhanced_mode
+-- Compiling entity axi_quad_spi_top
+-- Compiling architecture imp of axi_quad_spi_top
+-- Loading entity qspi_core_interface
+-- Loading entity axi_qspi_enhanced_mode
+-- Loading entity xip_cntrl_reg
+-- Loading entity xip_status_reg
+-- Loading entity axi_qspi_xip_if
+-- Compiling entity axi_quad_spi
+-- Compiling architecture imp of axi_quad_spi
+-- Loading entity axi_quad_spi_top
+-- Loading entity qspi_dual_quad_mode
+End time: 11:33:13 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 11

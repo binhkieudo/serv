@@ -1,0 +1,26 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap audio_tpg_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/audio_tpg_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:00 on Jul 13,2023
+vlog -64 -L audio_tpg_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work audio_tpg_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/audio_tpg_v1_0_0/.cxl.verilog.audio_tpg_v1_0_0.audio_tpg_v1_0_0.lin64.cmf 
+-- Compiling module apg_async_fifo
+-- Compiling module audio_incremental_checker
+-- Compiling module axi_interface
+-- Compiling module axi_registers
+-- Compiling module audio_tpg_v1_0_0
+
+Top level modules:
+	apg_async_fifo
+	audio_tpg_v1_0_0
+End time: 11:29:01 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:29:01 on Jul 13,2023
+vlog -64 -L audio_tpg_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work audio_tpg_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/audio_tpg_v1_0_0/.cxl.systemverilog.audio_tpg_v1_0_0.audio_tpg_v1_0_0.lin64.cmf 
+-- Compiling module pat_gen_engine
+
+Top level modules:
+	pat_gen_engine
+End time: 11:29:01 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

@@ -1,0 +1,23 @@
+<SIMMODEL_NAME>:sim_qdma_sc
+<LIBRARY_NAME>:sim_qdma_sc_v1_0
+<LIBRARY_TYPE>:SystemC
+<OUTPUT_FORMAT>:library
+<SYSTEMC_SOURCES>:systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma_helper.cxx
+<SYSTEMC_SOURCES>:systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma_core.cpp
+<SYSTEMC_SOURCES>:systemc/simlibs/sim_qdma_sc/sim_qdma_sc_v1_0/src/sim_qdma.cpp
+<SYSTEMC_INCLUDE_DIRS>:simlibs/sim_qdma_sc_v1_0/include,simlibs/common_rpc_v1/include,simlibs/xtlm/include,simlibs/common_cpp_v1_0/include,simlibs/sim_qdma_cpp_v1_0/include,$xv_ext_lib_path/protobuf/include,/tps/boost_1_72_0
+<OSCI_INCLUDE_DIRS>:/data/osci_systemc/include
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-Wall -fPIC
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3 -DNDEBUG
+<G++_COMPILE_DEBUG_FLAGS>:-g -O0
+<SCCOM_COMPILE_FLAGS>:-std=c++11
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<MORE_XSC_OPTIONS>:-v
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:sim_qdma_sc_v1_0
+<SIMULATOR_PLATFORM>:linux

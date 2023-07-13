@@ -1,0 +1,18 @@
+<SIMMODEL_NAME>:sim_qdma_cpp
+<LIBRARY_NAME>:sim_qdma_cpp_v1_0
+<LIBRARY_TYPE>:CPP
+<OUTPUT_FORMAT>:library
+<CPP_SOURCES>:systemc/simlibs/sim_qdma_cpp/sim_qdma_cpp_v1_0/src/xcl_api_resp.cxx
+<CPP_SOURCES>:systemc/simlibs/sim_qdma_cpp/sim_qdma_cpp_v1_0/src/xcl_api.cxx
+<CPP_INCLUDE_DIRS>:simlibs/sim_qdma_cpp_v1_0/include/,simlibs/common_rpc_v1/include,$xv_ext_lib_path/protobuf/include,simlibs/xtlm/include,simlibs/common_cpp_v1_0/include,simlibs/emu_perf_common_v1_0/include
+<SYSTEMC_COMPILE_OPTION>:-nodebug
+<CPP_COMPILE_OPTION>:-Wall -fPIC
+<C_COMPILE_OPTION>:-Wall -fPIC
+<G++_COMPILE_FLAGS>:-fPIC -std=c++11
+<G++_COMPILE_OPTIMIZE_FLAGS>:-O3
+<G++_LDFLAGS_OPTION>:
+<GCC_LDFLAGS_OPTION>:
+<G++_LDLIBS_OPTION>:
+<GCC_LDLIBS_OPTION>:
+<SHARED_LIBRARY>:sim_qdma_cpp_v1_0
+<SIMULATOR_PLATFORM>:linux

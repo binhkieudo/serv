@@ -1,0 +1,18 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axis_mem_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_mem_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:28:43 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axis_mem_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axis_mem_v1_0_0/.cxl.verilog.axis_mem_v1_0_0.axis_mem_v1_0_0.lin64.cmf 
+-- Compiling module axis_mem_v1_0_0_generic_mux
+-- Compiling module axis_mem_v1_0_0_generic_memrd
+-- Compiling module axis_mem_v1_0_0_mem
+-- Compiling module axis_mem_v1_0_0_axis_mem
+-- Compiling module dfff
+-- Compiling module axis_mem_v1_0_0_trace_header
+-- Compiling module dff
+
+Top level modules:
+	axis_mem_v1_0_0_axis_mem
+End time: 11:28:45 on Jul 13,2023, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0

@@ -1,0 +1,20 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_data_fifo_v2_1_26 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_data_fifo_v2_1_26 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:31:52 on Jul 13,2023
+vlog -64 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -work axi_data_fifo_v2_1_26 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_data_fifo_v2_1_26/.cxl.verilog.axi_data_fifo_v2_1_26.axi_data_fifo_v2_1_26.lin64.cmf 
+-- Compiling module axi_data_fifo_v2_1_26_axic_fifo
+-- Compiling module axi_data_fifo_v2_1_26_fifo_gen
+-- Compiling module axi_data_fifo_v2_1_26_axic_srl_fifo
+-- Compiling module axi_data_fifo_v2_1_26_axic_reg_srl_fifo
+-- Compiling module axi_data_fifo_v2_1_26_ndeep_srl
+-- Compiling module axi_data_fifo_v2_1_26_axi_data_fifo
+
+Top level modules:
+	axi_data_fifo_v2_1_26_axic_fifo
+	axi_data_fifo_v2_1_26_axic_srl_fifo
+	axi_data_fifo_v2_1_26_axic_reg_srl_fifo
+	axi_data_fifo_v2_1_26_axi_data_fifo
+End time: 11:31:53 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

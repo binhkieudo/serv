@@ -1,0 +1,10 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap dprx_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dprx_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:34:04 on Jul 13,2023
+vlog -64 -L dprx_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work dprx_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dprx_v1_0_0/.cxl.systemverilog.dprx_v1_0_0.dprx_v1_0_0.lin64.cmf 
+
+Top level modules:
+End time: 11:34:07 on Jul 13,2023, Elapsed time: 0:00:03
+Errors: 0, Warnings: 0

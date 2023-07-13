@@ -1,0 +1,38 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap axi_uartlite_v2_0_31 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_uartlite_v2_0_31 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:33:27 on Jul 13,2023
+vcom -64 -93 -work axi_uartlite_v2_0_31 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/axi_uartlite_v2_0_31/.cxl.vhdl.axi_uartlite_v2_0_31.axi_uartlite_v2_0_31.lin64.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package lib_pkg
+-- Compiling entity dynshreg_i_f
+-- Compiling architecture behavioral of dynshreg_i_f
+-- Loading package lib_pkg
+-- Loading entity srl_fifo_f
+-- Compiling entity uartlite_tx
+-- Compiling architecture RTL of uartlite_tx
+-- Loading package ATTRIBUTES
+-- Loading package std_logic_misc
+-- Loading entity cdc_sync
+-- Compiling entity uartlite_rx
+-- Compiling architecture RTL of uartlite_rx
+-- Compiling entity baudrate
+-- Compiling architecture RTL of baudrate
+-- Loading entity baudrate
+-- Loading entity uartlite_rx
+-- Loading entity uartlite_tx
+-- Compiling entity uartlite_core
+-- Compiling architecture RTL of uartlite_core
+-- Loading package ipif_pkg
+-- Loading entity axi_lite_ipif
+-- Loading entity uartlite_core
+-- Compiling entity axi_uartlite
+-- Compiling architecture RTL of axi_uartlite
+End time: 11:33:28 on Jul 13,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

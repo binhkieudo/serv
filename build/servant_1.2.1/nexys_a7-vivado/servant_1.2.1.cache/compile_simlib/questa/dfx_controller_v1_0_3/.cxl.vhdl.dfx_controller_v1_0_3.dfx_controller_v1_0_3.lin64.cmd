@@ -1,0 +1,3 @@
+/tools/questasim/linux_x86_64/vlib /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dfx_controller_v1_0_3
+/tools/questasim/linux_x86_64/vmap dfx_controller_v1_0_3 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dfx_controller_v1_0_3
+/tools/questasim/linux_x86_64/vcom  -64 -93 -work dfx_controller_v1_0_3 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/dfx_controller_v1_0_3/.cxl.vhdl.dfx_controller_v1_0_3.dfx_controller_v1_0_3.lin64.cmf

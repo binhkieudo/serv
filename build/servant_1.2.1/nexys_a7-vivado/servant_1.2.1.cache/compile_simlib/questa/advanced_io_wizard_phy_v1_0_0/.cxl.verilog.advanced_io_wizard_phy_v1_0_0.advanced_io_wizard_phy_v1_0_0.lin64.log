@@ -1,0 +1,29 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap advanced_io_wizard_phy_v1_0_0 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/advanced_io_wizard_phy_v1_0_0 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:30:49 on Jul 13,2023
+vlog -64 -L advanced_io_wizard_phy_v1_0_0 "+incdir+/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/.cxl.ip/incl" -sv -svinputport=relaxed -work advanced_io_wizard_phy_v1_0_0 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/advanced_io_wizard_phy_v1_0_0/.cxl.systemverilog.advanced_io_wizard_phy_v1_0_0.advanced_io_wizard_phy_v1_0_0.lin64.cmf 
+-- Compiling module advanced_io_wizard_phy_v1_0_0_sync_cell
+-- Compiling module advanced_io_wizard_phy_v1_0_0_reset_sm
+-- Compiling interface advanced_io_wizard_phy_v1_0_0_reset_if
+-- Compiling module advanced_io_wizard_phy_v1_0_0_bank_wrapper
+-- Compiling package advanced_io_wizard_phy_v1_0_rfs_sv_unit
+-- Compiling module advanced_io_wizard_phy_v1_0_0_rx_versal_deskew_main
+-- Compiling module advanced_io_wizard_phy_v1_0_0_rx_versal_deskew_top
+-- Compiling module advanced_io_wizard_phy_v1_0_0_BitSlipInLogic_8b
+-- Compiling module advanced_io_wizard_phy_v1_0_0_BitSlipInLogic_4b
+-- Compiling module advanced_io_wizard_phy_v1_0_0_BitSlipInLogic_Toplevel
+-- Compiling module advanced_io_wizard_phy_v1_0_0_GenPulse
+-- Compiling module advanced_io_wizard_phy_v1_0_0_Fdcr
+-- Compiling module advanced_io_wizard_phy_v1_0_0_C3BCEtc
+-- Compiling module advanced_io_wizard_phy_v1_0_0_C2BCEtc
+
+Top level modules:
+	advanced_io_wizard_phy_v1_0_0_sync_cell
+	advanced_io_wizard_phy_v1_0_0_reset_sm
+	advanced_io_wizard_phy_v1_0_0_bank_wrapper
+	advanced_io_wizard_phy_v1_0_0_rx_versal_deskew_top
+	advanced_io_wizard_phy_v1_0_0_BitSlipInLogic_Toplevel
+End time: 11:30:49 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

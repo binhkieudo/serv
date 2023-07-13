@@ -1,0 +1,17 @@
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap vid_phy_controller_v2_1_14 /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_1_14 
+Modifying modelsim.ini
+QuestaSim-64 vcom 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 11:27:30 on Jul 13,2023
+vcom -64 -93 -work vid_phy_controller_v2_1_14 -f /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/vid_phy_controller_v2_1_14/.cxl.vhdl.vid_phy_controller_v2_1_14.vid_phy_controller_v2_1_14.lin64.cmf 
+-- Loading package STANDARD
+-- Compiling entity bs_flex
+-- Compiling architecture behavior of bs_flex
+-- Compiling entity control
+-- Compiling architecture behavior of control
+-- Compiling entity rotwdt
+-- Compiling architecture behavior of rotwdt
+-- Compiling entity nidru_20_wrapper
+-- Compiling architecture Behavioral of nidru_20_wrapper
+End time: 11:27:30 on Jul 13,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
