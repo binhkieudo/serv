@@ -156,28 +156,34 @@ module serv_decode
    wire co_alu_sub = funct3[1] | funct3[0] | (opcode[3] & imm30) | opcode[4];
 
    /*
-    Bits 26, 22, 21 and 20 are enough to uniquely identify the eight supported CSR regs
+    Bits 30, 26, 22, 21 and 20 are enough to uniquely identify the eight supported CSR regs
     mtvec, mscratch, mepc and mtval are stored externally (normally in the RF) and are
     treated differently from mstatus, mie and mcause which are stored in serv_csr.
 
     The former get a 2-bit address as seen below while the latter get a
     one-hot enable signal each.
 
-    Hex|2 222|Reg     |csr
-    adr|6 210|name    |addr
-    ---|-----|--------|----
-    300|0_000|mstatus | xx
-    304|0_100|mie     | xx
-    305|0_101|mtvec   | 01
-    340|1_000|mscratch| 00
-    341|1_001|mepc    | 10
-    342|1_010|mcause  | xx
-    343|1_011|mtval   | 11
-
+    Hex|32 222|Reg      |csr
+    adr|06 210|name     |addr
+    ---|------|---------|----
+    300|00_000|mstatus  | xxx
+    301|00_001|misa     | xxx
+    304|00_100|mie      | xxx
+    305|00_101|mtvec    | 001
+    340|01_000|mscratch | 000
+    341|01_001|mepc     | 010
+    342|01_010|mcause   | xxx
+    343|01_011|mtval    | 011
+    344|01_100|mip      | xxx
+    7b0|10_000|dcsr     | 100
+    7b1|10_001|dpc      | 101
+    7b2|10_010|dscratch0| 110
+    f14|10_100|mhartid  | xxx
+  
     */
 
-   //true  for mtvec,mscratch,mepc and mtval
-   //false for mstatus, mie, mcause
+   //true  for mtvec,mscratch,mepc and mtval, dcsr, dpc, dscratch0
+   //false for mstatus, mie, mcause, mip, mhartid
    wire csr_valid = op20 | (op26 & !op21);
 
    wire co_rd_csr_en = csr_op;

@@ -222,6 +222,14 @@ add wave -group serv_cpu -group serv_state -group control -color pink -radix bin
 add wave -group serv_cpu -group serv_state -group control -color pink -radix binary sim:/tb/udt/cpu/cpu/state/i_e_op
 add wave -group serv_cpu -group serv_state -group control -color pink -radix binary sim:/tb/udt/cpu/cpu/state/i_rd_op
 
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt0to3
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt12to31
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt0
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt1
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt2
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt3
+add wave -group serv_cpu -group serv_state -group count -color yellow -radix unsigned sim:/tb/udt/cpu/cpu/state/o_cnt7
+
 #================================================================================================================== SERV_CPU_CTRL
 #add wave -divider -height 30 "SERV_CPU_CTRL"
 add wave -group serv_cpu -group serv_ctrl -radix binary sim:/tb/udt/cpu/cpu/ctrl/clk
@@ -373,9 +381,11 @@ add wave -group serv -group serv_rf_if -group ram_ctrl -color white -radix hex 	
 #add wave -divider -height 30 "SERV_RF_RAM"
 add wave -group serv -group serv_rf_ram -radix binary 	sim:/tb/udt/cpu/rf_ram/i_clk
 add wave -group serv -group serv_rf_ram -radix unsigned 	sim:/tb/udt/cpu/rf_ram/i_waddr
+add wave -group serv -group serv_rf_ram -radix unsigned 	sim:/tb/udt/cpu/rf_ram/half_waddr
 add wave -group serv -group serv_rf_ram -radix hex 		sim:/tb/udt/cpu/rf_ram/i_wdata
 add wave -group serv -group serv_rf_ram -radix binary 	sim:/tb/udt/cpu/rf_ram/i_wen
 add wave -group serv -group serv_rf_ram -radix unsigned 	sim:/tb/udt/cpu/rf_ram/i_raddr
+add wave -group serv -group serv_rf_ram -radix unsigned 	sim:/tb/udt/cpu/rf_ram/half_raddr
 add wave -group serv -group serv_rf_ram -radix binary 	sim:/tb/udt/cpu/rf_ram/i_ren
 add wave -group serv -group serv_rf_ram -radix hex 		sim:/tb/udt/cpu/rf_ram/o_rdata
 add wave -group serv -group serv_rf_ram -radix hex 		sim:/tb/udt/cpu/rf_ram/memory
