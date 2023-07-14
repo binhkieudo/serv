@@ -30,6 +30,7 @@ module serv_decode
    output reg       o_ctrl_utype,
    output reg       o_ctrl_pc_rel,
    output reg       o_ctrl_mret,
+   output reg       o_ctrl_dret,
    //To alu
    output reg       o_alu_sub,
    output reg [1:0] o_alu_bool_op,
@@ -47,6 +48,8 @@ module serv_decode
    output reg       o_csr_mstatus_en,
    output reg       o_csr_mie_en,
    output reg       o_csr_mcause_en,
+   output reg       o_csr_misa_en,
+   output reg       o_csr_mhartid_en,
    output reg [1:0] o_csr_source,
    output reg       o_csr_d_sel,
    output reg       o_csr_imm_en,
@@ -67,7 +70,10 @@ module serv_decode
    reg        op21;
    reg        op22;
    reg        op26;
-
+   reg        op29;
+   reg        op31;
+   
+   
    reg       imm25;
    reg       imm30;
 
@@ -135,6 +141,7 @@ module serv_decode
    //opcode & funct3 & op21
 
    wire co_ctrl_mret = opcode[4] & opcode[2] & op21 & !(|funct3);
+   wire co_ctrl_dret = opcode[4] & opcode[2] & !(|funct3) & imm30;
    //Matches system opcodes except CSR accesses (funct3 == 0)
    //and mret (!op21)
    wire co_e_op = opcode[4] & opcode[2] & !op21 & !(|funct3);
@@ -165,34 +172,48 @@ module serv_decode
 
     Hex|32 222|Reg      |csr
     adr|06 210|name     |addr
-    ---|------|---------|----
+    -- Process in serv_csr --
     300|00_000|mstatus  | xxx
-    301|00_001|misa     | xxx
     304|00_100|mie      | xxx
+    342|01_010|mcause   | xxx
+    ---> For debugger
+    301|00_001|misa     | xxx
+    344|01_100|mip      | xxx
+    f14|10_100|mhartid  | xxx
+    ---- RF registers--------
     305|00_101|mtvec    | 001
     340|01_000|mscratch | 000
     341|01_001|mepc     | 010
-    342|01_010|mcause   | xxx
     343|01_011|mtval    | 011
-    344|01_100|mip      | xxx
+    ---> For debugger
     7b0|10_000|dcsr     | 100
     7b1|10_001|dpc      | 101
     7b2|10_010|dscratch0| 110
-    f14|10_100|mhartid  | xxx
-  
+    
+    
     */
 
    //true  for mtvec,mscratch,mepc and mtval, dcsr, dpc, dscratch0
-   //false for mstatus, mie, mcause, mip, mhartid
-   wire csr_valid = op20 | (op26 & !op21);
-
+   //false for mstatus, mie, mcause, mip, mhartid, misa
+//   wire csr_valid = op(op26 & !op21) | op20;
+//   wire csr_valid = imm30 | (op26 & !op22 & !op21) | op20;
+   wire csr_ivalid = (op20  & ~|{op22, op26, imm30})     || // misa
+                     (!op20 & op21 & op26)               || // mcause
+                     (!op20 & !op21 & op22)              || // mie, mip, mhartid 
+                     (~|{op20, op21, op22, op26, imm30});   // mstatus
+   wire csr_valid = !csr_ivalid;
+   
    wire co_rd_csr_en = csr_op;
-
+   
+   // for valid csr (stored in rf)
    wire co_csr_en         = csr_op & csr_valid;
+   // for invalid csr (process in serv_csr)
    wire co_csr_mstatus_en = csr_op & !op26 & !op22;
    wire co_csr_mie_en     = csr_op & !op26 &  op22 & !op20;
    wire co_csr_mcause_en  = csr_op         &  op21 & !op20;
-
+   wire co_csr_misa_en    = csr_op & op20 & !op22 & !op26 & !imm30;
+   wire co_csr_mhartid_en = csr_op & op22 & op26 & imm30;
+  
    wire [1:0] co_csr_source = funct3[1:0];
    wire co_csr_d_sel = funct3[2];
    wire co_csr_imm_en = opcode[4] & opcode[2] & funct3[2];
@@ -244,6 +265,8 @@ module serv_decode
             op21   <= 1'b0;
             op22   <= 1'b0;
             op26   <= 1'b0;
+            op29   <= 1'b0;
+            op31   <= 1'b0;
         end
         else if (i_wb_en) begin
             funct3 <= i_wb_rdt[14:12];
@@ -254,6 +277,8 @@ module serv_decode
             op21   <= i_wb_rdt[21];
             op22   <= i_wb_rdt[22];
             op26   <= i_wb_rdt[26];
+            op29   <= i_wb_rdt[29];
+            op31   <= i_wb_rdt[31];
         end
     end
     
@@ -278,6 +303,7 @@ module serv_decode
         o_ctrl_utype       = co_ctrl_utype;
         o_ctrl_pc_rel      = co_ctrl_pc_rel;
         o_ctrl_mret        = co_ctrl_mret;
+        o_ctrl_dret        = co_ctrl_dret;
         o_alu_sub          = co_alu_sub;
         o_alu_bool_op      = co_alu_bool_op;
         o_alu_cmp_eq       = co_alu_cmp_eq;
@@ -292,6 +318,8 @@ module serv_decode
         o_csr_mstatus_en   = co_csr_mstatus_en;
         o_csr_mie_en       = co_csr_mie_en;
         o_csr_mcause_en    = co_csr_mcause_en;
+        o_csr_misa_en      = co_csr_misa_en;
+        o_csr_mhartid_en   = co_csr_mhartid_en;
         o_csr_source       = co_csr_source;
         o_csr_d_sel        = co_csr_d_sel;
         o_csr_imm_en       = co_csr_imm_en;

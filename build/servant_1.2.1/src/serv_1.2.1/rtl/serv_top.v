@@ -67,6 +67,7 @@ module serv_top
    wire      jal_or_jalr;
    wire      utype;
    wire 	 mret;
+   wire      dret;
    wire      imm;
    wire 	 trap;
    wire 	 pc_rel;
@@ -122,6 +123,8 @@ module serv_top
    wire 	    csr_mstatus_en;
    wire 	    csr_mie_en;
    wire 	    csr_mcause_en;
+   wire         csr_misa_en;
+   wire         csr_mhartid_en;
    wire [1:0]	csr_source;
    wire 	    csr_imm;
    wire 	    csr_d_sel;
@@ -230,6 +233,7 @@ module serv_top
       .o_ctrl_utype       (utype            ),
       .o_ctrl_pc_rel      (pc_rel           ),
       .o_ctrl_mret        (mret             ),
+      .o_ctrl_dret        (dret             ),
       //To alu
       .o_alu_sub          (alu_sub          ),
       .o_alu_bool_op      (alu_bool_op      ),
@@ -247,6 +251,8 @@ module serv_top
       .o_csr_mstatus_en   (csr_mstatus_en   ),
       .o_csr_mie_en       (csr_mie_en       ),
       .o_csr_mcause_en    (csr_mcause_en    ),
+      .o_csr_misa_en      (csr_misa_en      ),
+      .o_csr_mhartid_en   (csr_mhartid_en   ),
       .o_csr_source       (csr_source       ),
       .o_csr_d_sel        (csr_d_sel        ),
       .o_csr_imm_en       (csr_imm_en       ),
