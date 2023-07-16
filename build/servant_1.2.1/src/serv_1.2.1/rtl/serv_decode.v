@@ -70,6 +70,7 @@ module serv_decode
    reg        op21;
    reg        op22;
    reg        op26;
+   reg        op27;
    reg        op29;
    reg        op31;
    
@@ -170,35 +171,25 @@ module serv_decode
     The former get a 2-bit address as seen below while the latter get a
     one-hot enable signal each.
 
-                         csr
+                         hex
                          addr
     Hex|32 222|Reg      |2222|
-    adr|06 210|name     |7621|
+    adr|06 210|name     |7210|
     ---|------|---------|----|
     300|00_000|mstatus  |xxxx|
     304|00_100|mie      |xxxx|
     342|01_010|mcause   |xxxx|
-    301|00_001|misa     |xxxx|
-    344|01_100|mip      |xxxx|
-    f14|10_100|mhartid  |xxxx|
-    ---|------|---------|----|
-    305|00_101|mtvec    |0001|
-    340|01_000|mscratch |0100|
-    341|01_001|mepc     |0101|
-    343|01_011|mtval    |0111|
-    7b0|10_000|dcsr     |1000|
-    7b1|10_001|dpc      |1001|
-    7b2|10_010|dscratch0|1010|
-    
-    2222 222
-    7654 321
-    0100_000 -- mscratch
-    0000_101 -- mtevec
-    1011_000 -- dcsr
-    0100_001 -- mepc
-    1011_010 -- dscratch0
-    0100_011 -- mtval
-    1011_001 -- dpc
+    301|00_001|misa     |xxxx|    |op22|!op21|
+    344|01_100|mip      |xxxx|    |or  |and  |csr
+    f14|10_100|mhartid  |xxxx|op27|op21|op20 |addr
+    ---|------|---------|----|----|----|-----|---- 
+    305|00_101|mtvec    |0101| 0  | 1  | 1   | 3
+    340|01_000|mscratch |0000| 0  | 0  | 0   | 0
+    341|01_001|mepc     |0001| 0  | 0  | 1   | 1
+    343|01_011|mtval    |0011| 0  | 1  | 0   | 2
+    7b0|10_000|dcsr     |1000| 1  | 0  | 0   | 4
+    7b1|10_001|dpc      |1001| 1  | 0  | 1   | 5
+    7b2|10_010|dscratch0|1010| 1  | 1  | 0   | 6
     
     */
 
@@ -215,17 +206,17 @@ module serv_decode
    // for valid csr (stored in rf)
    wire co_csr_en         = csr_op & csr_valid;
    // for invalid csr (process in serv_csr)
-   wire co_csr_mstatus_en = csr_op & !op26 & !op22;
-   wire co_csr_mie_en     = csr_op & !op26 &  op22 & !op20;
-   wire co_csr_mcause_en  = csr_op         &  op21 & !op20;
-   wire co_csr_misa_en    = csr_op & op20 & !op22 & !op26 & !imm30;
-   wire co_csr_mhartid_en = csr_op & op22 & op26 & imm30;
+   wire co_csr_mstatus_en = csr_op & !op22  & !op21 & !op20;
+   wire co_csr_mie_en     = csr_op & !imm30 & !op26 &  op22;
+   wire co_csr_mcause_en  = csr_op &  op21  & !op20;
+   wire co_csr_misa_en    = csr_op &  op20;
+   wire co_csr_mhartid_en = csr_op &  imm30;
   
    wire [1:0] co_csr_source = funct3[1:0];
    wire co_csr_d_sel = funct3[2];
    wire co_csr_imm_en = opcode[4] & opcode[2] & funct3[2];
-   wire [2:0] co_csr_addr = {op26 & op20, !op26 | op21};
-
+//   wire [2:0] co_csr_addr = {op26 & op20, !op26 | op21};
+   wire [2:0] co_csr_addr = {op27, op22 | op21, !op21 & op20};
    wire co_alu_cmp_eq = funct3[2:1] == 2'b00;
 
    wire co_alu_cmp_sig = ~((funct3[0] & funct3[1]) | (funct3[1] & funct3[2]));
@@ -272,6 +263,7 @@ module serv_decode
             op21   <= 1'b0;
             op22   <= 1'b0;
             op26   <= 1'b0;
+            op27   <= 1'b0;
             op29   <= 1'b0;
             op31   <= 1'b0;
         end
@@ -284,6 +276,7 @@ module serv_decode
             op21   <= i_wb_rdt[21];
             op22   <= i_wb_rdt[22];
             op26   <= i_wb_rdt[26];
+            op27   <= i_wb_rdt[27];
             op29   <= i_wb_rdt[29];
             op31   <= i_wb_rdt[31];
         end

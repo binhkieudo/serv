@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Fri Jul 14 03:50:53 2023
-| Host         : binhkieudo-asus running 64-bit Ubuntu 20.04.6 LTS
+| Date         : Sun Jul 16 21:51:20 2023
+| Host         : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file servant_utilization_synth.rpt -pb servant_utilization_synth.pb
 | Design       : servant
 | Device       : xc7vx485tffg1157-1
@@ -156,9 +156,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  206 |        Flop & Latch |
-| LUT6     |   66 |                 LUT |
-| LUT5     |   57 |                 LUT |
-| LUT4     |   47 |                 LUT |
+| LUT6     |   65 |                 LUT |
+| LUT5     |   58 |                 LUT |
+| LUT4     |   46 |                 LUT |
 | LUT3     |   30 |                 LUT |
 | LUT2     |   10 |                 LUT |
 | FDSE     |    3 |        Flop & Latch |
