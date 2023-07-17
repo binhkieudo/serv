@@ -129,7 +129,7 @@ module serv_top
    wire 	    csr_imm;
    wire 	    csr_d_sel;
    wire 	    csr_en;
-   wire [1:0] 	csr_addr;
+   wire [2:0] 	csr_addr;
    wire 	    csr_pc;
    wire 	    csr_imm_en;
    wire 	    csr_in;
@@ -336,29 +336,29 @@ module serv_top
    serv_ctrl #(
        .RESET_PC (RESET_PC)
    ) ctrl (
-      .clk           (clk           ),
-      .i_rst         (i_rst         ),
+      .clk           (clk                ),
+      .i_rst         (i_rst              ),
       //State
-      .i_pc_en       (ctrl_pc_en    ),
-      .i_cnt12to31   (cnt12to31     ),
-      .i_cnt0        (cnt0          ),
-      .i_cnt1        (cnt1          ),
-      .i_cnt2        (cnt2          ),
+      .i_pc_en       (ctrl_pc_en         ),
+      .i_cnt12to31   (cnt12to31          ),
+      .i_cnt0        (cnt0               ),
+      .i_cnt1        (cnt1               ),
+      .i_cnt2        (cnt2               ),
       //Control
-      .i_jump        (jump          ),
-      .i_jal_or_jalr (jal_or_jalr),
-      .i_utype       (utype         ),
-      .i_pc_rel      (pc_rel        ),
-      .i_trap        (trap | mret   ),
+      .i_jump        (jump               ),
+      .i_jal_or_jalr (jal_or_jalr        ),
+      .i_utype       (utype              ),
+      .i_pc_rel      (pc_rel             ),
+      .i_trap        (trap | mret | dret ),
       .i_iscomp      (iscomp),
       //Data
-      .i_imm         (imm           ),
-      .i_buf         (bufreg_q      ),
-      .i_csr_pc      (csr_pc        ),
-      .o_rd          (ctrl_rd       ),
-      .o_bad_pc      (bad_pc        ),
+      .i_imm         (imm                ),
+      .i_buf         (bufreg_q           ),
+      .i_csr_pc      (csr_pc             ),
+      .o_rd          (ctrl_rd            ),
+      .o_bad_pc      (bad_pc             ),
       //External
-      .o_ibus_adr    (wb_ibus_adr   )
+      .o_ibus_adr    (wb_ibus_adr        )
    );
 
    serv_alu alu (
@@ -397,6 +397,7 @@ module serv_top
       //Trap interface
       .i_trap      (trap            ),
       .i_mret      (mret            ),
+      .i_dret      (dret            ),
       .i_mepc      (wb_ibus_adr[0]  ),
       .i_mtval_pc  (mtval_pc        ),
       .i_bufreg_q  (bufreg_q        ),
@@ -447,35 +448,37 @@ module serv_top
    );
 
    serv_csr csr (
-	    .i_clk        (clk),
-	    .i_rst        (i_rst),
+	    .i_clk        (clk            ),
+	    .i_rst        (i_rst          ),
 	    //State
-	    .i_init       (init),
-	    .i_en         (cnt_en),
-	    .i_cnt0to3    (cnt0to3),
-	    .i_cnt3       (cnt3),
-	    .i_cnt7       (cnt7),
-	    .i_cnt_done   (cnt_done),
-	    .i_mem_op     (!mtval_pc),
-	    .i_mtip       (i_timer_irq),
-	    .i_trap       (trap),
-	    .o_new_irq    (new_irq),
+	    .i_init       (init           ),
+	    .i_en         (cnt_en         ),
+	    .i_cnt0to3    (cnt0to3        ),
+	    .i_cnt3       (cnt3           ),
+	    .i_cnt7       (cnt7           ),
+	    .i_cnt_done   (cnt_done       ),
+	    .i_mem_op     (!mtval_pc      ),
+	    .i_mtip       (i_timer_irq    ),
+	    .i_trap       (trap           ),
+	    .o_new_irq    (new_irq        ),
 	    //Control
-	    .i_e_op       (e_op),
-	    .i_ebreak     (ebreak),
-	    .i_mem_cmd    (o_dbus_we),
-	    .i_mstatus_en (csr_mstatus_en),
-	    .i_mie_en     (csr_mie_en    ),
-	    .i_mcause_en  (csr_mcause_en ),
-	    .i_csr_source (csr_source),
-	    .i_mret       (mret),
-	    .i_csr_d_sel  (csr_d_sel),
+	    .i_e_op       (e_op           ),
+	    .i_ebreak     (ebreak         ),
+	    .i_mem_cmd    (o_dbus_we      ),
+	    .i_mstatus_en (csr_mstatus_en ),
+	    .i_mie_en     (csr_mie_en     ),
+	    .i_mcause_en  (csr_mcause_en  ),
+	    .i_misa_en    (csr_misa_en    ),
+	    .i_mhartid_en (csr_mhartid_en ),
+	    .i_csr_source (csr_source     ),
+	    .i_mret       (mret           ),
+	    .i_csr_d_sel  (csr_d_sel      ),
 	    //Data
-	    .i_rf_csr_out (rf_csr_out),
-	    .o_csr_in     (csr_in),
-	    .i_csr_imm    (csr_imm),
-	    .i_rs1        (rs1),
-	    .o_q          (csr_rd)
+	    .i_rf_csr_out (rf_csr_out     ),
+	    .o_csr_in     (csr_in         ),
+	    .i_csr_imm    (csr_imm        ),
+	    .i_rs1        (rs1            ),
+	    .o_q          (csr_rd         )
     );
    
 endmodule

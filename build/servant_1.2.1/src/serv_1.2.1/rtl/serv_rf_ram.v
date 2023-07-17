@@ -6,10 +6,10 @@ module serv_rf_ram #(
 (
     input  wire                      i_clk,
     input  wire                      i_rst,
-    input  wire [$clog2(depth):0]    i_waddr, // registers + csr
+    input  wire [$clog2(depth)-1:0]  i_waddr, // 16 GPRs + 7 CSRs
     input  wire [width-1:0] 	     i_wdata,
     input  wire 			         i_wen,
-    input  wire [$clog2(depth):0]    i_raddr, // registers + csr
+    input  wire [$clog2(depth)-1:0]  i_raddr, // 16 GPRs + 7 CSRs
     input  wire			             i_ren,
     output wire [width-1:0] 	     o_rdata
 );
@@ -18,8 +18,8 @@ module serv_rf_ram #(
    reg [width-1:0] memory [0:depth-1];
    reg [width-1:0] rdata ;
    
-   wire [$clog2(depth)-1:0] half_waddr = {1'b0, i_waddr[$clog2(depth)], i_waddr[$clog2(depth)-2:0]};
-   wire [$clog2(depth)-1:0] half_raddr = {1'b0, i_raddr[$clog2(depth)], i_raddr[$clog2(depth)-2:0]};
+//   wire [$clog2(depth)-1:0] half_waddr = {1'b0, i_waddr[$clog2(depth)], i_waddr[$clog2(depth)-2:0]};
+//   wire [$clog2(depth)-1:0] half_raddr = {1'b0, i_raddr[$clog2(depth)], i_raddr[$clog2(depth)-2:0]};
    
    integer i;
    initial begin
@@ -28,8 +28,8 @@ module serv_rf_ram #(
    end
    
    always @(posedge i_clk) begin
-      if (i_wen) memory[half_waddr] <= i_wdata;
-      rdata <= memory[half_raddr];
+      if (i_wen) memory[i_waddr] <= i_wdata;
+      rdata <= memory[i_raddr];
    end
    
    /* Reads from reg x0 needs to return 0

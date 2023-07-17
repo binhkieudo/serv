@@ -21,6 +21,8 @@ module serv_csr
    input  wire 	     i_mstatus_en,
    input  wire 	     i_mie_en,
    input  wire 	     i_mcause_en,
+   input  wire       i_misa_en,
+   input  wire       i_mhartid_en,
    input  wire [1:0] i_csr_source,
    input  wire 	     i_mret,
    input  wire 	     i_csr_d_sel,

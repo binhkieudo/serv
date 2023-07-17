@@ -16,6 +16,7 @@ module serv_rf_if
    //Trap interface
    input  wire 		 i_trap,
    input  wire 		 i_mret,
+   input  wire       i_dret,
    input  wire 		 i_mepc,
    input  wire 		 i_mtval_pc,
    input  wire 		 i_bufreg_q,
@@ -23,7 +24,7 @@ module serv_rf_if
    output wire 		 o_csr_pc,
    //CSR interface
    input  wire 		 i_csr_en,
-   input  wire [1:0] i_csr_addr,
+   input  wire [2:0] i_csr_addr,
    input  wire 		 i_csr,
    output wire 		 o_csr,
    //RD write port
@@ -71,9 +72,14 @@ module serv_rf_if
     * mtval    100011
     */
 
-   assign o_wreg0 = i_trap ? {6'b100011} : {1'b0,i_rd_waddr};
-   assign o_wreg1 = i_trap ? {6'b100010} : {4'b1000,i_csr_addr};
+//   assign o_wreg0 = i_trap ? {6'b100011} : {1'b0,i_rd_waddr};
+//   assign o_wreg1 = i_trap ? {6'b100010} : {3'b010,i_csr_addr};
 
+   assign o_wreg0 = i_trap ? {6'b010010} : // mtval
+                             {1'b0,i_rd_waddr};
+   assign o_wreg1 = i_trap ? {6'b010001} : // mepc
+                             {3'b010,i_csr_addr};
+   
    assign o_wen0 = i_cnt_en & (i_trap | rd_wen);
    assign o_wen1 = i_cnt_en & (i_trap | i_csr_en);
 
@@ -94,6 +100,7 @@ module serv_rf_if
     CSR access        : i_csr_addr
     trap              : MTVEC
     mret              : MEPC
+    dret              : DPC
 
     Address 0-31 in the RF are assigned to the GPRs. After that follows the four
     CSRs on addresses 32-35
@@ -105,7 +112,7 @@ module serv_rf_if
 
     The expression below is an optimized version of this logic
     */
-   wire sel_rs2 = !(i_trap | i_mret | i_csr_en);
+   wire sel_rs2 = !(i_trap | i_mret | i_dret | i_csr_en);
    
 //   assign o_rreg1[5]   = ~sel_rs2;
 //   assign o_rreg1[4:2] = i_rs2_raddr[4:2] & {3{sel_rs2}};
@@ -113,9 +120,21 @@ module serv_rf_if
 //                         {i_mret,1'b0} |
 //                         ({2{i_csr_en}} & i_csr_addr) |
 //                         ({2{sel_rs2}} & i_rs2_raddr[1:0]);
-       assign o_rreg1 = {~sel_rs2,
-		     i_rs2_raddr[4:2] & {3{sel_rs2}},
-		     {1'b0,i_trap} | {i_mret,1'b0} | ({2{i_csr_en}} & i_csr_addr) | ({2{sel_rs2}} & i_rs2_raddr[1:0])};
+//       assign o_rreg1 = {~sel_rs2,
+//		                 i_rs2_raddr[4:2] & {3{sel_rs2}}, // [4:2]
+//		                 // [1:0]
+//		                 {1'b0, i_trap} | // mtvec
+//		                 {i_mret,1'b0}  | // mepc
+		                 
+//		                 ({2{i_csr_en}} & i_csr_addr) | 
+//		                 ({2{sel_rs2}} & i_rs2_raddr[1:0])}; // [1:0]
+   assign o_rreg1[5] = 1'b0; // only use 32 registers
+   assign o_rreg1[4] =  ~sel_rs2; // 1 if csr is selected
+   assign o_rreg1[3] =   sel_rs2 & i_rs2_raddr[3]; // select rs2 if not csr
+   assign o_rreg1[2] =  (sel_rs2 & i_rs2_raddr[2]) | i_dret; // select rs2 or dpc
+   assign o_rreg1[1] =  (sel_rs2 & i_rs2_raddr[1]) | i_trap; // select rs2 or mtvec
+   assign o_rreg1[0] = ~(sel_rs2 & i_rs2_raddr[0]); // 1 if csr is selected; rs2 otherwise
+   
    assign o_rs1 = i_rdata0;
    assign o_rs2 = i_rdata1;
    assign o_csr = i_rdata1 & i_csr_en;
