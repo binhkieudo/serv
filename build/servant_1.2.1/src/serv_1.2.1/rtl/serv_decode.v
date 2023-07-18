@@ -50,6 +50,7 @@ module serv_decode
    output reg       o_csr_mcause_en,
    output reg       o_csr_misa_en,
    output reg       o_csr_mhartid_en,
+   output reg       o_csr_dcsr_en,
    output reg [1:0] o_csr_source,
    output reg       o_csr_d_sel,
    output reg       o_csr_imm_en,
@@ -179,6 +180,7 @@ module serv_decode
     300|00_000|mstatus  |xxxx|
     304|00_100|mie      |xxxx|
     342|01_010|mcause   |xxxx|
+    7b0|10_000|dcsr     |xxxx|
     301|00_001|misa     |xxxx|    |op22|!op21|
     344|01_100|mip      |xxxx|    |or  |and  |csr
     f14|10_100|mhartid  |xxxx|op27|op21|op20 |addr
@@ -187,18 +189,17 @@ module serv_decode
     340|01_000|mscratch |0000| 0  | 0  | 0   | 0 -- 010_000
     341|01_001|mepc     |0001| 0  | 0  | 1   | 1 -- 010_001
     343|01_011|mtval    |0011| 0  | 1  | 0   | 2 -- 010_010
-    7b0|10_000|dcsr     |1000| 1  | 0  | 0   | 4 -- 010_100
     7b1|10_001|dpc      |1001| 1  | 0  | 1   | 5 -- 010_101
     7b2|10_010|dscratch0|1010| 1  | 1  | 0   | 6 -- 010_110
     
     */
 
-   //true  for mtvec,mscratch,mepc and mtval, dcsr, dpc, dscratch0
-   //false for mstatus, mie, mcause, mip, mhartid, misa
+   //true  for mtvec,mscratch,mepc and mtval, dpc, dscratch0
+   //false for mstatus, mie, mcause, mip, dcsr, mhartid, misa
 //   wire csr_valid = op(op26 & !op21) | op20;
 //   wire csr_valid = imm30 | (op26 & !op22 & !op21) | op20;
-   wire csr_valid = (imm30 & !op22)        | // dcsr, dpc, dscratch0
-                    ((op26 | op22) & op20) | // mtvec, mepc, mtval
+   wire csr_valid = (imm30 & (op21 | op20)) | // dpc, dscratch0
+                    ((op26 | op22) & op20)  | // mtvec, mepc, mtval
                     (op26 & !(op22 | op21));  // mscratch
    
    wire co_rd_csr_en = csr_op;
@@ -210,7 +211,8 @@ module serv_decode
    wire co_csr_mie_en     = csr_op & !imm30 & !op26 &  op22;
    wire co_csr_mcause_en  = csr_op &  op21  & !op20;
    wire co_csr_misa_en    = csr_op &  op20;
-   wire co_csr_mhartid_en = csr_op &  imm30;
+   wire co_csr_mhartid_en = csr_op &  imm30 & op22;
+   wire co_csr_dcsr_en    = csr_op &  imm30 & !op22;
   
    wire [1:0] co_csr_source = funct3[1:0];
    wire co_csr_d_sel = funct3[2];
@@ -320,6 +322,7 @@ module serv_decode
         o_csr_mcause_en    = co_csr_mcause_en;
         o_csr_misa_en      = co_csr_misa_en;
         o_csr_mhartid_en   = co_csr_mhartid_en;
+        o_csr_dcsr_en      = co_csr_dcsr_en;
         o_csr_source       = co_csr_source;
         o_csr_d_sel        = co_csr_d_sel;
         o_csr_imm_en       = co_csr_imm_en;

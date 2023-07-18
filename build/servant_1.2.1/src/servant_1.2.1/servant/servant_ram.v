@@ -21,20 +21,29 @@ module servant_ram
 
    wire [aw-3:0] 	addr = i_wb_adr[aw-1:2];
    
+   
    integer i;
    initial begin
     for (i = 0; i < depth/4; i = i + 1)
         mem[i] = 32'd0;
-        mem[0] = 32'h00800413; // addi x8, x0, 8
-        mem[1] = 32'h7b241073; // csrrw x0, dscratch0,    x8
-        mem[2] = 32'h00000413; // addi x8, x0, 0
-        mem[3] = 32'h7b2414f3; // csrrw x9, dscratch0, x8
+//          mem[0] = 32'h00000413; // addi x8, x0, 0
+//          mem[1] = 32'h30141473; //csrrw x8, misa, x8
+          
+//        mem[0] = 32'h00800413; // addi x8, x0, 8
+//        mem[1] = 32'h7b141073; // csrrw x0, dscratch0,    x8
+//        mem[2] = 32'h00900413; // addi x8, x0, 9
+//        mem[3] = 32'h7b1414f3; // csrrw x9, dscratch0, x8
+        
 //        mem[2] = 32'h34041073; // csrrw x0, mscratch, x8
 //        mem[3] = 32'h34141073; // csrrw x0, mepc,     x8
 //        mem[4] = 32'h34341073; // csrrw x0, mtval,    x8
 //        mem[5] = 32'h7b041073; // csrrw x0, dcsr,     x8
 //        mem[6] = 32'h7b141073; // csrrw x0, dpc,      x8
 //        mem[7] = 32'h7b241073; // csrrw x0, dscratch0,x8
+
+          mem[0] = 32'h00400413; // addi x8, x0, 4 -- set step bit in dcsr
+          mem[1] = 32'h7b041073; // csrrw x0, dcsr, x8
+          
    end
    
 

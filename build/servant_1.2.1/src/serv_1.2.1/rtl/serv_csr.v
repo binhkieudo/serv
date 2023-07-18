@@ -3,12 +3,18 @@ module serv_csr
 (
    input  wire 	     i_clk,
    input  wire 	     i_rst,
+   input  wire       i_dbg_halt,
    //State
    input  wire 	     i_init,
    input  wire 	     i_en,
    input  wire 	     i_cnt0to3,
+   input  wire       i_cnt2,
    input  wire 	     i_cnt3,
+   input  wire       i_cnt4,
+   input  wire       i_cnt6,
    input  wire 	     i_cnt7,
+   input  wire       i_cnt8,
+   input  wire       i_cnt30,
    input  wire 	     i_cnt_done,
    input  wire 	     i_mem_op,
    input  wire 	     i_mtip,
@@ -23,8 +29,10 @@ module serv_csr
    input  wire 	     i_mcause_en,
    input  wire       i_misa_en,
    input  wire       i_mhartid_en,
+   input  wire       i_dcsr_en,
    input  wire [1:0] i_csr_source,
    input  wire 	     i_mret,
+   input  wire       i_dret,
    input  wire 	     i_csr_d_sel,
    //Data
    input  wire 	     i_rf_csr_out,
@@ -50,6 +58,8 @@ module serv_csr
    wire 	csr_in;
    wire 	csr_out;
 
+   reg      dcsr_step;
+   
    reg 		timer_irq_r;
 
    wire 	d = i_csr_d_sel ? i_csr_imm : i_rs1;
@@ -60,7 +70,14 @@ module serv_csr
 		           (i_csr_source == CSR_SOURCE_CSR) ? csr_out : 1'b0;
 
    assign csr_out = (i_mstatus_en & mstatus_mie & i_cnt3) |
-		             i_rf_csr_out |
+                    (i_misa_en & i_cnt4)                  | // support E extension
+                    (i_misa_en & i_cnt30)                 | // 32-bit
+//                    (!i_mhartid_en)                       | // only one hart -> return zeros
+                    (i_dcsr_en & i_cnt30)                 | // adapt to sepc 1.0 
+                    (i_dcsr_en & i_cnt8 & dcsr_step)      | // dcsr.cause: debug cause is step highest priority
+                    (i_dcsr_en & i_cnt7 & !(dcsr_step | i_ebreak) & i_dbg_halt) | // dcsr.cause: debug from external (lowest priority)    
+                    (i_dcsr_en & i_cnt6 & !dcsr_step & (i_ebreak | i_dbg_halt)) | // dcsr.cause: debug from ebreak /halt
+		            (i_rf_csr_out)                        |
 		            (i_mcause_en & i_en & mcause);
 
    assign o_q = csr_out;
@@ -139,7 +156,11 @@ module serv_csr
             
       if (i_mcause_en & i_cnt_done | i_trap)
 	     mcause31 <= i_trap ? o_new_irq : csr_in;
-
+      
+      if (i_rst)
+         dcsr_step <= 1'b0;
+      else if (i_dcsr_en & i_cnt2)
+         dcsr_step <= csr_in;
    end
 
 endmodule

@@ -128,12 +128,12 @@ module serv_rf_if
 		                 
 //		                 ({2{i_csr_en}} & i_csr_addr) | 
 //		                 ({2{sel_rs2}} & i_rs2_raddr[1:0])}; // [1:0]
-   assign o_rreg1[5] = 1'b0; // only use 32 registers
-   assign o_rreg1[4] =  ~sel_rs2; // 1 if csr is selected
-   assign o_rreg1[3] =   sel_rs2 & i_rs2_raddr[3]; // select rs2 if not csr
-   assign o_rreg1[2] =  (sel_rs2 & i_rs2_raddr[2]) | i_dret; // select rs2 or dpc
-   assign o_rreg1[1] =  (sel_rs2 & i_rs2_raddr[1]) | i_trap; // select rs2 or mtvec
-   assign o_rreg1[0] = ~(sel_rs2 & i_rs2_raddr[0]); // 1 if csr is selected; rs2 otherwise
+   assign o_rreg1[5]   = 1'b0; // only use 32 registers
+   assign o_rreg1[4]   =  ~sel_rs2; // 1 if csr is selected
+   assign o_rreg1[3]   =   sel_rs2 & i_rs2_raddr[3]; // select rs2 if not csr, otherwise zero
+   assign o_rreg1[2:0] =  {i_dret, i_trap, i_trap | i_mret | i_dret} |
+                          ({3{~sel_rs2}} & i_csr_addr) |
+                          ({3{sel_rs2}} & i_rs2_raddr[2:0]);
    
    assign o_rs1 = i_rdata0;
    assign o_rs2 = i_rdata1;

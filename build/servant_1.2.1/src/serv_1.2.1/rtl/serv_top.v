@@ -81,7 +81,11 @@ module serv_top
    wire      cnt1;
    wire      cnt2;
    wire      cnt3;
+   wire      cnt4;
+   wire      cnt6;
    wire      cnt7;
+   wire      cnt8;
+   wire      cnt30;
 
    wire 	 cnt_done;
 
@@ -125,6 +129,7 @@ module serv_top
    wire 	    csr_mcause_en;
    wire         csr_misa_en;
    wire         csr_mhartid_en;
+   wire         csr_dcsr_en;
    wire [1:0]	csr_source;
    wire 	    csr_imm;
    wire 	    csr_d_sel;
@@ -169,7 +174,11 @@ module serv_top
       .o_cnt1         (cnt1         ),
       .o_cnt2         (cnt2         ),
       .o_cnt3         (cnt3         ),
+      .o_cnt4         (cnt4         ),
+      .o_cnt6         (cnt6         ),
       .o_cnt7         (cnt7         ),
+      .o_cnt8         (cnt8         ),        
+      .o_cnt30        (cnt30        ),
       .o_cnt_done     (cnt_done     ),
       .o_bufreg_en    (bufreg_en    ),
       .o_ctrl_pc_en   (ctrl_pc_en   ),
@@ -253,6 +262,7 @@ module serv_top
       .o_csr_mcause_en    (csr_mcause_en    ),
       .o_csr_misa_en      (csr_misa_en      ),
       .o_csr_mhartid_en   (csr_mhartid_en   ),
+      .o_csr_dcsr_en      (csr_dcsr_en      ),
       .o_csr_source       (csr_source       ),
       .o_csr_d_sel        (csr_d_sel        ),
       .o_csr_imm_en       (csr_imm_en       ),
@@ -454,8 +464,13 @@ module serv_top
 	    .i_init       (init           ),
 	    .i_en         (cnt_en         ),
 	    .i_cnt0to3    (cnt0to3        ),
+	    .i_cnt2       (cnt2           ),
 	    .i_cnt3       (cnt3           ),
+	    .i_cnt4       (cnt4           ),
+	    .i_cnt6       (cnt6           ),
 	    .i_cnt7       (cnt7           ),
+	    .i_cnt8       (cnt8           ),
+	    .i_cnt30      (cnt30          ),
 	    .i_cnt_done   (cnt_done       ),
 	    .i_mem_op     (!mtval_pc      ),
 	    .i_mtip       (i_timer_irq    ),
@@ -470,8 +485,10 @@ module serv_top
 	    .i_mcause_en  (csr_mcause_en  ),
 	    .i_misa_en    (csr_misa_en    ),
 	    .i_mhartid_en (csr_mhartid_en ),
+	    .i_dcsr_en    (csr_dcsr_en    ),
 	    .i_csr_source (csr_source     ),
 	    .i_mret       (mret           ),
+	    .i_dret       (dret           ),
 	    .i_csr_d_sel  (csr_d_sel      ),
 	    //Data
 	    .i_rf_csr_out (rf_csr_out     ),

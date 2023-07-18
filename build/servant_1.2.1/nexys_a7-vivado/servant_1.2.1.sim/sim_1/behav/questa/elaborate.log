@@ -1,5 +1,5 @@
 QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 10:36:23 on Jul 17,2023
+Start time: 16:57:06 on Jul 18,2023
 vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl -o tb_opt 
 
 Top level modules:
@@ -29,9 +29,16 @@ Analyzing design...
 -- Loading module serv_rf_ram_if
 -- Loading module serv_rf_ram
 -- Loading module servant_timer
-Incremental compilation check found 21 design-units (out of 22) may be reused.
-Optimizing 1 design-unit (inlining 0/22 module instances):
+Incremental compilation check found 18 design-units (out of 22) may be reused.
+Optimizing 4 design-units (inlining 0/22 module instances):
 -- Optimizing module serv_decode(fast)
+-- Optimizing module serv_top(fast)
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(215): (vopt-2685) [TFMPC] - Too few port connections for 'decode'.  Expected 52, found 51.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(215): (vopt-2718) [TFMPC] - Missing connection for port 'o_ext_funct3'.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(460): (vopt-2685) [TFMPC] - Too few port connections for 'csr'.  Expected 36, found 35.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(460): (vopt-2718) [TFMPC] - Missing connection for port 'i_dbg_halt'.
+-- Optimizing module serv_state(fast)
+-- Optimizing module serv_csr(fast)
 Optimized design name is tb_opt
-End time: 10:36:23 on Jul 17,2023, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
+End time: 16:57:07 on Jul 18,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 4

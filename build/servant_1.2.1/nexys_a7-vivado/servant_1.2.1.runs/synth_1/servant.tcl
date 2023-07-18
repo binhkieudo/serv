@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.tcl"
+  variable script "/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,37 +76,37 @@ create_project -in_memory -part xc7vx485tffg1157-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/wt [current_project]
-set_property parent.project_path /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.xpr [current_project]
+set_property webtalk.parent_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/wt [current_project]
+set_property parent.project_path /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/ip [current_project]
+set_property ip_output_repo /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-set_property include_dirs /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado [current_fileset]
+set_property include_dirs /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado [current_fileset]
 set_property generic {memfile=/home/binhkieudo/Workspace/XRPIX/serv/sw/blinky.hex memsize=8192 frequency=32} [current_fileset]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_alu.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_bufreg.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_bufreg2.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_csr.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_ctrl.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_immdec.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_mem_if.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_if.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram_if.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_top.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_state.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_top.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_arbiter.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_gpio.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_mux.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_ram.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_timer.v
-  /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_alu.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_bufreg.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_bufreg2.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_csr.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_ctrl.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_immdec.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_mem_if.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_if.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_ram_if.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_rf_top.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_state.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_top.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_arbiter.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_gpio.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_mux.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_ram.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant_timer.v
+  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -117,12 +117,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc
-set_property used_in_implementation false [get_files /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc]
+read_xdc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc
+set_property used_in_implementation false [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/binhkieudo/Public/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp
+read_checkpoint -auto_incremental -incremental /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
