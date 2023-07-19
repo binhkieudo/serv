@@ -142,7 +142,9 @@ module serv_state
         ibus_cyc      <= (i_ibus_ack | o_cnt_done)? o_ctrl_pc_en: ibus_cyc;
       end
 
-    assign o_ctrl_trap = i_e_op || i_new_irq || misalign_trap_sync;
+    assign o_ctrl_trap = i_e_op             || // ebreak
+                         i_new_irq          || // timer interrupt 
+                         misalign_trap_sync;
 
     
     wire trap_pending = ((take_branch && i_ctrl_misalign) ||

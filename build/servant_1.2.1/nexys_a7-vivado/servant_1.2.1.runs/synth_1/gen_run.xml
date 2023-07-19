@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1689666641" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/servix.dcp">
-  <File Type="VDS-TIMING-PB" Name="servant_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="servant_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="servant.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="servant_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="servant_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="servant_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="servant.vds"/>
   <File Type="REPORTS-TCL" Name="servant_reports.tcl"/>
   <File Type="PA-TCL" Name="servant.tcl"/>
+  <File Type="RDS-DCP" Name="servant.dcp"/>
+  <File Type="RDS-UTIL" Name="servant_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="servant_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../src/serv_1.2.1/rtl/serv_alu.v">

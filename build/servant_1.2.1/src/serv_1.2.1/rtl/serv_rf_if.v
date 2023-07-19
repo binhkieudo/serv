@@ -132,7 +132,7 @@ module serv_rf_if
    assign o_rreg1[4]   =  ~sel_rs2; // 1 if csr is selected
    assign o_rreg1[3]   =   sel_rs2 & i_rs2_raddr[3]; // select rs2 if not csr, otherwise zero
    assign o_rreg1[2:0] =  {i_dret, i_trap, i_trap | i_mret | i_dret} |
-                          ({3{~sel_rs2}} & i_csr_addr) |
+                          ({3{i_csr_en}} & i_csr_addr) |
                           ({3{sel_rs2}} & i_rs2_raddr[2:0]);
    
    assign o_rs1 = i_rdata0;

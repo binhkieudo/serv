@@ -20,6 +20,21 @@ module serv_rf_ram #(
    
 //   wire [$clog2(depth)-1:0] half_waddr = {1'b0, i_waddr[$clog2(depth)], i_waddr[$clog2(depth)-2:0]};
 //   wire [$clog2(depth)-1:0] half_raddr = {1'b0, i_raddr[$clog2(depth)], i_raddr[$clog2(depth)-2:0]};
+   /*
+   
+   hex |ram  |csr 
+   addr|addr |name
+   ----|-----|----------
+   340 |16   |mscrath
+   341 |17   |mepc
+   343 |18   |mtval
+   305 |19   |mtvec
+   xxx |20   |reserved
+   7b1 |21   |dpc
+   7b2 |22   |dscratch0
+   xxx |22-31|reserved
+   
+   */
    
    integer i;
    initial begin

@@ -22,7 +22,10 @@ module serv_rf_top
     output wire 	    o_dbus_we ,
     output wire 	    o_dbus_cyc,
     input  wire [31:0]  i_dbus_rdt,
-    input  wire 	    i_dbus_ack
+    input  wire 	    i_dbus_ack,
+    // Debug signals
+    input  wire         i_dbg_req_ack, // halt
+    output wire         o_dbg_resp_ack // set whenever CPU in debug mode (halt, ebreak, step)
 );
    
     localparam CSR_REGS = 4;
