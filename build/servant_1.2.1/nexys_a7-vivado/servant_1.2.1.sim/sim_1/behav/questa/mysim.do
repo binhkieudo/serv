@@ -185,6 +185,7 @@ add wave -group serv_cpu -group serv_state -group state -color yellow -radix bin
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt_en
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt0to3
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt12to31
+add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt11to31
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt0
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt1
 add wave -group serv_cpu -group serv_state -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/state/o_cnt2
@@ -244,12 +245,14 @@ add wave -group serv_cpu -group serv_ctrl -group state -color yellow -radix bina
 add wave -group serv_cpu -group serv_ctrl -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_cnt0
 add wave -group serv_cpu -group serv_ctrl -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_cnt1
 add wave -group serv_cpu -group serv_ctrl -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_cnt2
+add wave -group serv_cpu -group serv_ctrl -group state -color yellow -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_cnt3
 
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_jump
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_jal_or_jalr
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_utype
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_pc_rel
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_trap
+add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_ebreak
 add wave -group serv_cpu -group serv_ctrl -group control -color white -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_iscomp
 
 add wave -group serv_cpu -group serv_ctrl -group data -color cyan -radix binary sim:/tb/udt/cpu/cpu/ctrl/i_imm
@@ -259,10 +262,12 @@ add wave -group serv_cpu -group serv_ctrl -group data -color cyan -radix binary 
 add wave -group serv_cpu -group serv_ctrl -group data -color cyan -radix binary sim:/tb/udt/cpu/cpu/ctrl/o_bad_pc
 
 add wave -group serv_cpu -group serv_ctrl -group external -color pink -radix hex sim:/tb/udt/cpu/cpu/ctrl/o_ibus_adr
+add wave -group serv_cpu -group serv_ctrl -group external -color pink -radix hex sim:/tb/udt/cpu/cpu/ctrl/o_ibus_nxtadr
 
 #================================================================================================================== SERV_CPU_RF_IF
 #add wave -divider -height 30 "SERV_CPU_RF_IF"
 add wave -group serv_cpu -group serv_rf_if -group rf_if -radix binary   sim:/tb/udt/cpu/cpu/rf_if/i_cnt_en
+add wave -group serv_cpu -group serv_rf_if -group rf_if -radix binary   sim:/tb/udt/cpu/cpu/rf_if/i_cnt_11to31
 add wave -group serv_cpu -group serv_rf_if -group rf_if -radix binary   sim:/tb/udt/cpu/cpu/rf_if/o_wen0
 add wave -group serv_cpu -group serv_rf_if -group rf_if -radix unsigned sim:/tb/udt/cpu/cpu/rf_if/o_wreg0
 add wave -group serv_cpu -group serv_rf_if -group rf_if -radix binary   sim:/tb/udt/cpu/cpu/rf_if/o_wdata0
@@ -275,8 +280,10 @@ add wave -group serv_cpu -group serv_rf_if -group rf_if -radix unsigned sim:/tb/
 add wave -group serv_cpu -group serv_rf_if -group rf_if -radix binary   sim:/tb/udt/cpu/cpu/rf_if/i_rdata1
 
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_trap
+add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_ebreak
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_mret
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_mepc
+add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_pcnext
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_mtval_pc
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_bufreg_q
 add wave -group serv_cpu -group serv_rf_if -group trap_if -color yellow -radix binary sim:/tb/udt/cpu/cpu/rf_if/i_bad_pc

@@ -137,7 +137,7 @@ module serv_decode
 
 
    //op20
-   wire co_ebreak = op20;
+   wire co_ebreak = &{op20, opcode[4:2]};
 
 
    //opcode & funct3 & op21

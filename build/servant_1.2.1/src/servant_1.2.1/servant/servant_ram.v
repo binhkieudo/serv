@@ -44,7 +44,16 @@ module servant_ram
 //          mem[0] = 32'h04000413; // addi x8, x0, 64 -- set step bit in dcsr
 //          mem[1] = 32'h7b141073; // csrrw x0, dpc, x8
 //          mem[2] = 32'h7b200073; // dret
-          mem[0] = 32'h00100073; // ebreak
+          mem[0] = 32'h00000413; // addi x8, x0, 0
+          mem[1] = 32'h00000413; // addi x8, x0, 0
+          mem[2] = 32'h00000413; // addi x8, x0, 0
+          mem[3] = 32'h00000413; // addi x8, x0, 0
+          mem[4] = 32'h00000413; // addi x8, x0, 0
+          mem[5] = 32'h00000413; // addi x8, x0, 0
+          mem[6] = 32'h00000413; // addi x8, x0, 0
+          mem[7] = 32'h00000413; // addi x8, x0, 0
+          mem[8] = 32'h00100073; // ebreak
+          mem[9] = 32'h7b200073; // dret
           
    end
    

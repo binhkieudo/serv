@@ -77,6 +77,7 @@ module serv_top
    wire      cnt_en;
    wire 	 cnt0to3;
    wire 	 cnt12to31;
+   wire 	 cnt11to31;
    wire      cnt0;
    wire      cnt1;
    wire      cnt2;
@@ -148,6 +149,7 @@ module serv_top
    wire [31:0]  i_wb_rdt;
 
    wire [31:0]  wb_ibus_adr;
+   wire         wb_ibus_adr_nxt;
    wire         wb_ibus_cyc;
    wire [31:0]  wb_ibus_rdt;
    wire         wb_ibus_ack;
@@ -170,6 +172,7 @@ module serv_top
       .o_cnt_en       (cnt_en       ),
       .o_cnt0to3      (cnt0to3      ),
       .o_cnt12to31    (cnt12to31    ),
+      .o_cnt11to31    (cnt11to31    ),
       .o_cnt0         (cnt0         ),
       .o_cnt1         (cnt1         ),
       .o_cnt2         (cnt2         ),
@@ -354,12 +357,14 @@ module serv_top
       .i_cnt0        (cnt0               ),
       .i_cnt1        (cnt1               ),
       .i_cnt2        (cnt2               ),
+      .i_cnt3        (cnt3               ),
       //Control
       .i_jump        (jump               ),
       .i_jal_or_jalr (jal_or_jalr        ),
       .i_utype       (utype              ),
       .i_pc_rel      (pc_rel             ),
       .i_trap        (trap | mret | dret ),
+      .i_ebreak      (ebreak             ),
       .i_iscomp      (iscomp),
       //Data
       .i_imm         (imm                ),
@@ -368,7 +373,8 @@ module serv_top
       .o_rd          (ctrl_rd            ),
       .o_bad_pc      (bad_pc             ),
       //External
-      .o_ibus_adr    (wb_ibus_adr        )
+      .o_ibus_adr    (wb_ibus_adr        ),
+      .o_ibus_nxtadr (wb_ibus_adr_nxt    )
    );
 
    serv_alu alu (
@@ -394,6 +400,7 @@ module serv_top
    serv_rf_if rf_if (
       //RF interface
       .i_cnt_en    (cnt_en          ),
+      .i_cnt_11to31(cnt11to31       ),
       .o_wreg0     (o_wreg0         ),
       .o_wreg1     (o_wreg1         ),
       .o_wen0      (o_wen0          ),
@@ -406,9 +413,11 @@ module serv_top
       .i_rdata1    (i_rdata1        ),
       //Trap interface
       .i_trap      (trap            ),
+      .i_ebreak    (ebreak          ),
       .i_mret      (mret            ),
       .i_dret      (dret            ),
       .i_mepc      (wb_ibus_adr[0]  ),
+      .i_pcnext    (wb_ibus_adr_nxt ),
       .i_mtval_pc  (mtval_pc        ),
       .i_bufreg_q  (bufreg_q        ),
       .i_bad_pc    (bad_pc          ),
@@ -424,7 +433,7 @@ module serv_top
       .i_alu_rd    (alu_rd          ),
       .i_rd_alu_en (rd_alu_en       ),
       .i_csr_rd    (csr_rd          ),
-      .i_rd_csr_en (rd_csr_en       ),
+      .i_rd_csr_en (rd_csr_en | ebreak),
       .i_mem_rd    (mem_rd          ),
       .i_rd_mem_en (rd_mem_en       ),
       //RS1 read port
@@ -476,6 +485,7 @@ module serv_top
 	    .i_mtip       (i_timer_irq    ),
 	    .i_trap       (trap           ),
 	    .o_new_irq    (new_irq        ),
+	    .o_dbg_step   ( ),
 	    //Control
 	    .i_e_op       (e_op           ),
 	    .i_ebreak     (ebreak         ),

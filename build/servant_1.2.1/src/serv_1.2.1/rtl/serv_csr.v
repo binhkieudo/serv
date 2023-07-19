@@ -20,6 +20,7 @@ module serv_csr
    input  wire 	     i_mtip,
    input  wire 	     i_trap,
    output reg 	     o_new_irq,
+   output wire       o_dbg_step,
    //Control
    input  wire 	     i_e_op,
    input  wire 	     i_ebreak,
@@ -118,7 +119,7 @@ module serv_csr
       if ((i_trap && i_cnt_done) || (i_mstatus_en && i_cnt3) || i_mret)
 	       mstatus_mie <= !i_trap & (i_mret ?  mstatus_mpie : csr_in);
 
-      /*
+      /*o_dbg_step
        Note: To save resources mstatus_mpie (mstatus bit 7) is not
        readable or writable from sw
        */
@@ -162,5 +163,7 @@ module serv_csr
       else if (i_dcsr_en & i_cnt2)
          dcsr_step <= csr_in;
    end
-
+    
+   assign o_dbg_step = dcsr_step;
+   
 endmodule

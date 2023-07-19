@@ -2,6 +2,7 @@ module serv_rf_if
 (
    //RF Interface
    input  wire 		 i_cnt_en,
+   input  wire       i_cnt_11to31,
    output wire [5:0] o_wreg0,
    output wire [5:0] o_wreg1,
    output wire 		 o_wen0,
@@ -15,9 +16,11 @@ module serv_rf_if
 
    //Trap interface
    input  wire 		 i_trap,
+   input  wire       i_ebreak,
    input  wire 		 i_mret,
    input  wire       i_dret,
    input  wire 		 i_mepc,
+   input  wire       i_pcnext,
    input  wire 		 i_mtval_pc,
    input  wire 		 i_bufreg_q,
    input  wire 		 i_bad_pc,
@@ -59,7 +62,8 @@ module serv_rf_if
    wire mtval = i_mtval_pc ? i_bad_pc : i_bufreg_q;
 
    assign o_wdata0 = i_trap ? mtval  : rd;
-   assign o_wdata1 = i_trap ? i_mepc : i_csr;
+   assign o_wdata1 = i_ebreak? i_pcnext:
+                     i_trap ? i_mepc : i_csr;
 
    /* Port 0 handles writes to mtval during traps and rd otherwise
     * Port 1 handles writes to mepc during traps and csr accesses otherwise
@@ -77,11 +81,13 @@ module serv_rf_if
 
    assign o_wreg0 = i_trap ? {6'b010010} : // mtval
                              {1'b0,i_rd_waddr};
-   assign o_wreg1 = i_trap ? {6'b010001} : // mepc
+                             
+   assign o_wreg1 = i_ebreak ? {6'b010101} : // dpc
+                    i_trap   ? {6'b010001} : // mepc
                              {3'b010,i_csr_addr};
    
-   assign o_wen0 = i_cnt_en & (i_trap | rd_wen);
-   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en);
+   assign o_wen0 = i_cnt_en & (i_trap | rd_wen) & !i_ebreak;
+   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak);
 
    /*
     ********** Read side ***********
@@ -138,6 +144,6 @@ module serv_rf_if
    assign o_rs1 = i_rdata0;
    assign o_rs2 = i_rdata1;
    assign o_csr = i_rdata1 & i_csr_en;
-   assign o_csr_pc = i_rdata1;
+   assign o_csr_pc = i_ebreak? (i_cnt_en & i_cnt_11to31): i_rdata1;
 
 endmodule
