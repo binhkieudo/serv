@@ -32,7 +32,11 @@ module serv_top
    output wire 		  o_dbus_we ,
    output wire 		  o_dbus_cyc,
    input  wire [31:0] i_dbus_rdt,
-   input  wire 		  i_dbus_ack
+   input  wire 		  i_dbus_ack,
+   // Debug interface
+   input  wire        i_dbg_halt,
+   input  wire        i_dbg_reset,
+   output wire        o_dbg_process
 );
 
    wire [4:0]    rd_addr;
@@ -154,6 +158,8 @@ module serv_top
    wire [31:0]  wb_ibus_rdt;
    wire         wb_ibus_ack;
 
+   wire         dbg_step;
+   
    assign o_ibus_adr  = wb_ibus_adr;
    assign o_ibus_cyc  = wb_ibus_cyc;
    assign wb_ibus_rdt = i_ibus_rdt;
@@ -164,7 +170,7 @@ module serv_top
 
    serv_state state (
       .i_clk          (clk          ),
-      .i_rst          (i_rst        ),
+      .i_rst          (i_rst | i_dbg_reset),
       //State
       .i_new_irq      (new_irq      ),
       .i_alu_cmp      (alu_cmp      ),
@@ -208,7 +214,7 @@ module serv_top
       .i_dbus_ack     (i_dbus_ack   ),
       .o_ibus_cyc     (wb_ibus_cyc  ),
       .i_ibus_ack     (wb_ibus_ack  ),
-      //RF Interface
+      //RF Interface| i_dbg_reset
       .o_rf_rreq      (o_rf_rreq    ),
       .o_rf_wreq      (o_rf_wreq    ),
       .i_rf_ready     (i_rf_ready   ),
@@ -217,10 +223,11 @@ module serv_top
 
    serv_decode decode (
       .clk                (clk              ),
-      .i_rst              (i_rst            ),
+      .i_rst              (i_rst | i_dbg_reset),
       //Input
       .i_wb_rdt           (i_wb_rdt[31:2]   ),
       .i_wb_en            (wb_ibus_ack      ),
+      .i_cnt_done         (cnt_done         ),
       //To state
       .o_bne_or_bge       (bne_or_bge       ),
       .o_cond_branch      (cond_branch      ),
@@ -276,7 +283,12 @@ module serv_top
       //To RF IF
       .o_rd_mem_en        (rd_mem_en        ),
       .o_rd_csr_en        (rd_csr_en        ),
-      .o_rd_alu_en        (rd_alu_en        )
+      .o_rd_alu_en        (rd_alu_en        ),
+      // Debug interface
+      .i_dbg_halt         (i_dbg_halt       ),
+      .i_dbg_step         (dbg_step         ),
+      .o_dbg_process      (o_dbg_process    ),
+      .o_dbg_delay        ( )
    );
 
    serv_immdec immdec (
@@ -284,7 +296,7 @@ module serv_top
       //State
       .i_cnt_en     (cnt_en         ),
       .i_cnt_done   (cnt_done       ),
-      //Control
+      //Controli_cnt_11to31
       .i_immdec_en  (immdec_en      ),
       .i_csr_imm_en (csr_imm_en     ),
       .i_ctrl       (immdec_ctrl    ),
@@ -301,7 +313,7 @@ module serv_top
 
    serv_bufreg bufreg (
       .i_clk        (clk              ),
-      .i_rst        (i_rst            ),
+      .i_rst        (i_rst | i_dbg_reset),
       //State
       .i_cnt0       (cnt0             ),
       .i_cnt1       (cnt1             ),
@@ -323,7 +335,7 @@ module serv_top
 
    serv_bufreg2 bufreg2 (
       .i_clk        (clk        ),
-      .i_rst        (i_rst      ),
+      .i_rst        (i_rst | i_dbg_reset),
       //State
       .i_en         (cnt_en     ),
       .i_init       (init       ),
@@ -342,15 +354,15 @@ module serv_top
       .o_q          (bufreg2_q  ),
       //External
       .o_dat        (o_dbus_dat ),
-      .i_load       (dbus_ack   ),
-      .i_dat        (dbus_rdt   )
+      .i_load       (i_dbus_ack   ),
+      .i_dat        (i_dbus_rdt   )
    );
 
    serv_ctrl #(
        .RESET_PC (RESET_PC)
    ) ctrl (
       .clk           (clk                ),
-      .i_rst         (i_rst              ),
+      .i_rst         (i_rst | i_dbg_reset),
       //State
       .i_pc_en       (ctrl_pc_en         ),
       .i_cnt12to31   (cnt12to31          ),
@@ -365,7 +377,8 @@ module serv_top
       .i_pc_rel      (pc_rel             ),
       .i_trap        (trap | mret | dret ),
       .i_ebreak      (ebreak             ),
-      .i_iscomp      (iscomp),
+      .i_halt        (i_dbg_halt | dbg_step ),
+      .i_iscomp      (iscomp             ),
       //Data
       .i_imm         (imm                ),
       .i_buf         (bufreg_q           ),
@@ -379,7 +392,7 @@ module serv_top
 
    serv_alu alu (
       .clk        (clk          ),
-      .i_rst      (i_rst        ),
+      .i_rst      (i_rst | i_dbg_reset),
       //State
       .i_en       (cnt_en       ),
       .i_cnt0     (cnt0         ),
@@ -449,7 +462,7 @@ module serv_top
    serv_mem_if mem_if
    (
       .i_clk        (clk            ),
-      .i_rst        (i_rst          ),
+      .i_rst        (i_rst | i_dbg_reset),
       //State
       .i_bytecnt    (mem_bytecnt    ),
       .i_lsb        (lsb            ),
@@ -469,6 +482,8 @@ module serv_top
    serv_csr csr (
 	    .i_clk        (clk            ),
 	    .i_rst        (i_rst          ),
+	    .i_dbg_halt   (i_dbg_halt     ),
+	    .i_dbg_reset  (i_dbg_reset    ),
 	    //State
 	    .i_init       (init           ),
 	    .i_en         (cnt_en         ),
@@ -485,7 +500,7 @@ module serv_top
 	    .i_mtip       (i_timer_irq    ),
 	    .i_trap       (trap           ),
 	    .o_new_irq    (new_irq        ),
-	    .o_dbg_step   ( ),
+	    .o_dbg_step   (dbg_step       ),
 	    //Control
 	    .i_e_op       (e_op           ),
 	    .i_ebreak     (ebreak         ),

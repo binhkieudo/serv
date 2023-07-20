@@ -6,6 +6,7 @@ module serv_decode
    //Input
    input wire [31:2] i_wb_rdt,
    input wire        i_wb_en,
+   input wire        i_cnt_done,
    //To state
    output reg       o_sh_right,
    output reg       o_bne_or_bge,
@@ -62,7 +63,12 @@ module serv_decode
    //To RF IF
    output reg       o_rd_mem_en,
    output reg       o_rd_csr_en,
-   output reg       o_rd_alu_en
+   output reg       o_rd_alu_en,
+   // Debug signal
+   input  wire      i_dbg_halt,
+   input  wire      i_dbg_step,
+   output reg       o_dbg_process,
+   output reg       o_dbg_delay
 );
 
    reg [4:0] opcode;
@@ -207,13 +213,20 @@ module serv_decode
    // for valid csr (stored in rf)
    wire co_csr_en         = csr_op & csr_valid;
    // for invalid csr (process in serv_csr)
-   wire co_csr_mstatus_en = csr_op & !op22  & !op21 & !op20;
-   wire co_csr_mie_en     = csr_op & !imm30 & !op26 &  op22;
-   wire co_csr_mcause_en  = csr_op &  op21  & !op20;
-   wire co_csr_misa_en    = csr_op &  op20;
-   wire co_csr_mhartid_en = csr_op &  imm30 & op22;
-   wire co_csr_dcsr_en    = csr_op &  imm30 & !op22;
-  
+//   wire co_csr_mstatus_en = csr_op & !op22  & !op21 & !op20;
+//   wire co_csr_mie_en     = csr_op & !imm30 & !op26 &  op22;
+//   wire co_csr_mcause_en  = csr_op &  op21  & !op20;
+//   wire co_csr_misa_en    = csr_op &  op20;
+//   wire co_csr_mhartid_en = csr_op &  imm30 & op22;
+//   wire co_csr_dcsr_en    = csr_op &  imm30 & !op22;
+   
+   wire co_csr_mstatus_en = {imm30, op26, op22, op21, op20} == 5'b00_000;
+   wire co_csr_mie_en     = {imm30, op26, op22, op21, op20} == 5'b00_100;
+   wire co_csr_mcause_en  = {imm30, op26, op22, op21, op20} == 5'b01_010;
+   wire co_csr_misa_en    = {imm30, op26, op22, op21, op20} == 5'b00_001;
+   wire co_csr_mhartid_en = {imm30, op26, op22, op21, op20} == 5'b10_100;
+   wire co_csr_dcsr_en    = {imm30, op26, op22, op21, op20} == 5'b10_000;
+   
    wire [1:0] co_csr_source = funct3[1:0];
    wire co_csr_d_sel = funct3[2];
    wire co_csr_imm_en = opcode[4] & opcode[2] & funct3[2];
@@ -254,7 +267,8 @@ module serv_decode
    //1 (OP_B_SOURCE_RS2) when BRANCH or OP
    wire co_op_b_source = opcode[3];
 
-
+   wire enter_debug = (i_dbg_halt | i_dbg_step) & !(o_dbg_delay | o_dbg_process);
+   
     always @(posedge clk) begin
         if (i_rst) begin // NOP
             funct3 <= 3'b000;
@@ -270,17 +284,38 @@ module serv_decode
             op31   <= 1'b0;
         end
         else if (i_wb_en) begin
-            funct3 <= i_wb_rdt[14:12];
+            // wire co_ebreak = &{op20, opcode[4:2]};
+            // wire co_e_op = opcode[4] & opcode[2] & !op21 & !(|funct3);
+            
+            funct3 <= i_wb_rdt[14:12] & {3{!enter_debug}};
             imm30  <= i_wb_rdt[30];
             imm25  <= i_wb_rdt[25];
-            opcode <= i_wb_rdt[6:2];
-            op20   <= i_wb_rdt[20];
-            op21   <= i_wb_rdt[21];
+//            opcode <= i_wb_rdt[6:2];
+            opcode[4:2] <= i_wb_rdt[6:4] | {3{enter_debug}};
+            opcode[1:0] <= i_wb_rdt[3:2];
+            op20   <= i_wb_rdt[20] | enter_debug;
+            op21   <= i_wb_rdt[21] & !enter_debug;
             op22   <= i_wb_rdt[22];
             op26   <= i_wb_rdt[26];
             op27   <= i_wb_rdt[27];
             op29   <= i_wb_rdt[29];
             op31   <= i_wb_rdt[31];
+            
+
+        end
+        
+        if (i_rst) o_dbg_process <= 1'b0;
+        else begin
+//            if (&{i_wb_rdt[20], i_wb_rdt[6:4]}) o_dbg_process <= 1'b1;
+//            else if (co_ctrl_dret && i_cnt_done) o_dbg_process <= 1'b0;  
+            if (co_ebreak) o_dbg_process <= 1'b1;
+            else if (co_ctrl_dret && i_cnt_done) o_dbg_process <= 1'b0;        
+        end
+        
+        if (i_rst) o_dbg_delay <= 1'b1;
+        else begin
+            if (i_cnt_done && o_dbg_process) o_dbg_delay <= 1'b1;
+            else if (i_cnt_done && o_dbg_delay) o_dbg_delay <= 1'b0;
         end
     end
     

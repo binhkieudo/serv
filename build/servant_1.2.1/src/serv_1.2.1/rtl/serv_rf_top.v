@@ -22,10 +22,11 @@ module serv_rf_top
     output wire 	    o_dbus_we ,
     output wire 	    o_dbus_cyc,
     input  wire [31:0]  i_dbus_rdt,
-    input  wire 	    i_dbus_ack
+    input  wire 	    i_dbus_ack,
     // Debug signals
-//    input  wire         i_dbg_req_ack, // halt
-//    output wire         o_dbg_resp_ack // set whenever CPU in debug mode (halt, ebreak, step)
+    input  wire         i_dbg_halt, // halt
+    input  wire         i_dbg_reset,
+    output wire         o_dbg_process // set whenever CPU in debug mode (halt, ebreak, step)
 );
    
     localparam CSR_REGS = 4;
@@ -83,7 +84,11 @@ module serv_rf_top
       .o_dbus_we   (o_dbus_we   ),
       .o_dbus_cyc  (o_dbus_cyc  ),
       .i_dbus_rdt  (i_dbus_rdt  ),
-      .i_dbus_ack  (i_dbus_ack  )
+      .i_dbus_ack  (i_dbus_ack  ),
+      // Debug interface
+      .i_dbg_halt  (i_dbg_halt  ),
+      .i_dbg_reset (i_dbg_reset ),
+      .o_dbg_process(o_dbg_process )
     );
 
     serv_rf_ram_if #(
@@ -92,7 +97,7 @@ module serv_rf_top
     ) rf_ram_if (
         // Global control
         .i_clk    (clk      ),
-        .i_rst    (i_rst    ),
+        .i_rst    (i_rst | i_dbg_reset   ),
         // SERV control signals
         .i_rreq   (rf_rreq  ),
         .i_wreq   (rf_wreq  ),
@@ -121,7 +126,7 @@ module serv_rf_top
       .csr_regs (CSR_REGS)
    ) rf_ram (
       .i_clk   (clk     ),
-      .i_rst   (i_rst   ),
+      .i_rst   (i_rst | i_dbg_reset ),
       .i_waddr (waddr   ),
       .i_wdata (wdata   ),
       .i_wen   (wen     ),

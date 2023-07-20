@@ -24,9 +24,21 @@ module tb(
 
     );
     
-    reg  wb_clk = 1'b0;
-    reg  wb_rst = 1'b1;
-    wire q;
+     reg wb_clk = 1'b0;
+     reg wb_rst = 1'b1;
+     // GPIO
+     wire q;
+     // JTAG
+     reg i_jtag_trst = 1'b0;
+     reg i_jtag_tck  = 1'b0;
+     reg i_jtag_tdi  = 1'b0;
+     wire o_jtag_tdo;
+     reg i_jtag_tms  = 1'b0;
+     // Flash control
+     wire o_flash_SCK;
+     wire o_flash_CSn;
+     wire o_flash_MOSI;
+     reg i_flash_MISO = 1'b0;
 
     servant udt (.*);
     

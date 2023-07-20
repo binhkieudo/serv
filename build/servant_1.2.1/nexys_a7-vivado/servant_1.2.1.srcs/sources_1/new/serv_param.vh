@@ -1,5 +1,5 @@
 //============== RISC-V opcodes ===================
-localparam OPCODE_SYSTEM 7'b1110011; // system/csr access
+localparam OPCODE_SYSTEM = 7'b1110011; // system/csr access
 
 //============== RISC-V funct3  ===================
 // system/csr

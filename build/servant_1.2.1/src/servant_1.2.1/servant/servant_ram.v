@@ -1,19 +1,18 @@
-`default_nettype none
 module servant_ram
   #(//Memory parameters
     parameter depth = 256,
     parameter aw    = $clog2(depth),
-    parameter RESET_STRATEGY = "",
     parameter memfile = "")
-   (input wire 		i_wb_clk,
-    input wire 		i_wb_rst,
-    input wire [aw-1:2] i_wb_adr,
-    input wire [31:0] 	i_wb_dat,
-    input wire [3:0] 	i_wb_sel,
-    input wire 		i_wb_we,
-    input wire 		i_wb_cyc,
-    output reg [31:0] 	o_wb_rdt,
-    output reg 		o_wb_ack);
+   (input wire 		   i_wb_clk,
+    input wire 		   i_wb_rst,
+    input wire [31:2]  i_wb_adr,
+    input wire [31:0]  i_wb_dat,
+    input wire [3:0]   i_wb_sel,
+    input wire 		   i_wb_we,
+    input wire 		   i_wb_cyc,
+    output reg [31:0]  o_wb_rdt,
+    output reg 		   o_wb_ack
+);
 
    wire [3:0] 		we = {4{i_wb_we & i_wb_cyc}} & i_wb_sel;
 
@@ -26,35 +25,18 @@ module servant_ram
    initial begin
     for (i = 0; i < depth/4; i = i + 1)
         mem[i] = 32'd0;
-//          mem[0] = 32'h00000413; // addi x8, x0, 0
-//          mem[1] = 32'h30141473; //csrrw x8, misa, x8
-          
-//        mem[0] = 32'h00800413; // addi x8, x0, 8
-//        mem[1] = 32'h7b141073; // csrrw x0, dscratch0,    x8
-//        mem[2] = 32'h00900413; // addi x8, x0, 9
-//        mem[3] = 32'h7b1414f3; // csrrw x9, dscratch0, x8
-        
-//        mem[2] = 32'h34041073; // csrrw x0, mscratch, x8
-//        mem[3] = 32'h34141073; // csrrw x0, mepc,     x8
-//        mem[4] = 32'h34341073; // csrrw x0, mtval,    x8
-//        mem[5] = 32'h7b041073; // csrrw x0, dcsr,     x8
-//        mem[6] = 32'h7b141073; // csrrw x0, dpc,      x8
-//        mem[7] = 32'h7b241073; // csrrw x0, dscratch0,x8
 
-//          mem[0] = 32'h04000413; // addi x8, x0, 64 -- set step bit in dcsr
-//          mem[1] = 32'h7b141073; // csrrw x0, dpc, x8
-//          mem[2] = 32'h7b200073; // dret
-          mem[0] = 32'h00000413; // addi x8, x0, 0
-          mem[1] = 32'h00000413; // addi x8, x0, 0
-          mem[2] = 32'h00000413; // addi x8, x0, 0
-          mem[3] = 32'h00000413; // addi x8, x0, 0
-          mem[4] = 32'h00000413; // addi x8, x0, 0
-          mem[5] = 32'h00000413; // addi x8, x0, 0
-          mem[6] = 32'h00000413; // addi x8, x0, 0
-          mem[7] = 32'h00000413; // addi x8, x0, 0
-          mem[8] = 32'h00100073; // ebreak
-          mem[9] = 32'h7b200073; // dret
-          
+        //mem[0] = 32'h04000413; // addi x8, x0, 64 -- set step bit in dcsr
+        //mem[1] = 32'h7b141073; // csrrw x0, dpc, x8
+        //mem[2] = 32'h7b200073; // dret
+        mem[0] = 32'h00100413; // addi x8, x0, 1   // 00
+        mem[1] = 32'h00400413; // addi x8, x0, 4   // 04
+        mem[2] = 32'h00100073; // ebreak           // 08
+        mem[3] = 32'h00800413; // addi x8, x0, 8   // 0c
+        mem[4] = 32'h00c00413; // addi x8, x0, 12  // 10
+        mem[5] = 32'h00100073; // ebreak           // 14 
+        mem[6] = 32'h01000413; // addi x8, x0, 16  // 18
+        mem[7] = 32'h01400413; // addi x8, x0, 20  // 1c
    end
    
 
@@ -69,6 +51,7 @@ module servant_ram
       if (we[1]) mem[addr][15:8]  <= i_wb_dat[15:8];
       if (we[2]) mem[addr][23:16] <= i_wb_dat[23:16];
       if (we[3]) mem[addr][31:24] <= i_wb_dat[31:24];
+      
       o_wb_rdt <= mem[addr];
    end
 

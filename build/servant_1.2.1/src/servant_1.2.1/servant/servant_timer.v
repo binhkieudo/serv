@@ -1,4 +1,3 @@
-`default_nettype none
 module servant_timer
   #(parameter WIDTH = 16,
     parameter RESET_STRATEGY = "",

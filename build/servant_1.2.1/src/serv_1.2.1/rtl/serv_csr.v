@@ -1,9 +1,9 @@
-`default_nettype none
 module serv_csr
 (
    input  wire 	     i_clk,
    input  wire 	     i_rst,
    input  wire       i_dbg_halt,
+   input  wire       i_dbg_reset,
    //State
    input  wire 	     i_init,
    input  wire 	     i_en,
@@ -92,7 +92,7 @@ module serv_csr
    assign o_csr_in = csr_in;
 
    always @(posedge i_clk) begin
-      if (i_rst) begin
+      if (i_rst| i_dbg_reset) begin
          timer_irq_r <= 1'b0;
          o_new_irq   <= 1'b0;
       end
@@ -101,7 +101,7 @@ module serv_csr
          o_new_irq   <= timer_irq & !timer_irq_r;
       end
       
-      if (i_rst) 
+      if (i_rst | i_dbg_reset) 
         mie_mtie <= 1'b0;
       else if (i_mie_en && i_cnt7) 
         mie_mtie <= csr_in;

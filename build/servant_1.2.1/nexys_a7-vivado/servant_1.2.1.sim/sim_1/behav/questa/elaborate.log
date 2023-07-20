@@ -1,5 +1,5 @@
 QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 00:28:49 on Jul 20,2023
+Start time: 03:15:58 on Jul 21,2023
 vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl -o tb_opt 
 
 Top level modules:
@@ -13,6 +13,7 @@ Analyzing design...
 -- Loading module servant_arbiter
 -- Loading module servant_mux
 -- Loading module servant_ram
+-- Loading module servant_timer
 -- Loading module servant_gpio
 -- Loading module serv_rf_top
 -- Loading module serv_top
@@ -28,17 +29,39 @@ Analyzing design...
 -- Loading module serv_csr
 -- Loading module serv_rf_ram_if
 -- Loading module serv_rf_ram
--- Loading module servant_timer
-Incremental compilation check found 18 design-units (out of 22) may be reused.
-Optimizing 4 design-units (inlining 0/22 module instances):
+-- Loading module flash_controller
+-- Loading module spi_master
+-- Loading module debug_dtm
+-- Loading module debug_dm
+Optimizing 26 design-units (inlining 0/26 module instances):
+-- Optimizing module debug_dm(fast)
+-- Optimizing module serv_decode(fast)
+-- Optimizing module debug_dtm(fast)
 -- Optimizing module serv_top(fast)
-** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(215): (vopt-2685) [TFMPC] - Too few port connections for 'decode'.  Expected 52, found 51.
-** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(215): (vopt-2718) [TFMPC] - Missing connection for port 'o_ext_funct3'.
-** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(460): (vopt-2685) [TFMPC] - Too few port connections for 'csr'.  Expected 37, found 36.
-** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(460): (vopt-2718) [TFMPC] - Missing connection for port 'i_dbg_halt'.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(224): (vopt-2685) [TFMPC] - Too few port connections for 'decode'.  Expected 57, found 56.
+** Warning: ../../../../../src/serv_1.2.1/rtl/serv_top.v(224): (vopt-2718) [TFMPC] - Missing connection for port 'o_ext_funct3'.
+-- Optimizing module flash_controller(fast)
 -- Optimizing module serv_state(fast)
+-- Optimizing module serv_rf_ram_if(fast)
+-- Optimizing module serv_immdec(fast)
 -- Optimizing module serv_csr(fast)
+-- Optimizing module spi_master(fast)
+-- Optimizing module servant(fast)
+-- Optimizing module serv_rf_if(fast)
+-- Optimizing module serv_ctrl(fast)
+-- Optimizing module servant_ram(fast)
 -- Optimizing module serv_rf_top(fast)
+-- Optimizing module servant_mux(fast)
+-- Optimizing module servant_arbiter(fast)
+-- Optimizing module serv_mem_if(fast)
+-- Optimizing module serv_alu(fast)
+-- Optimizing module serv_bufreg2(fast)
+-- Optimizing module serv_bufreg(fast)
+-- Optimizing module serv_rf_ram(fast)
+-- Optimizing module glbl(fast)
+-- Optimizing module servant_timer(fast)
+-- Optimizing module tb(fast)
+-- Optimizing module servant_gpio(fast)
 Optimized design name is tb_opt
-End time: 00:28:50 on Jul 20,2023, Elapsed time: 0:00:01
-Errors: 0, Warnings: 4
+End time: 03:15:58 on Jul 21,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2

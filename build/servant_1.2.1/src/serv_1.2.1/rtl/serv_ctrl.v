@@ -19,6 +19,7 @@ module serv_ctrl
    input wire 	     i_pc_rel,
    input wire 	     i_trap,
    input wire        i_ebreak,
+   input wire        i_halt,
    input wire        i_iscomp,
    //Data
    input wire 	     i_imm,
@@ -94,6 +95,6 @@ module serv_ctrl
     
    end
    
-   assign o_ibus_nxtadr = r_ibus_nxtadr[0];
+   assign o_ibus_nxtadr = i_halt? o_ibus_adr[0]: r_ibus_nxtadr[0];
    
 endmodule
