@@ -39,14 +39,16 @@ module debug_dtm (
     input  wire        i_dmi_rsp_valid,
     output wire        o_dmi_rsp_ready,
     input  wire [31:0] i_dmi_rsp_data,
-    input  wire [1:0]  i_dmi_rsp_op
+    input  wire [1:0]  i_dmi_rsp_op,
+    // Debug instruction
+    output reg  [4:0]  o_dbg_instr
 );
 
     localparam dmi_idle_cycle    = 3'b000;
     localparam dmi_version       = 4'b0001;
     localparam dmi_address_width = 6'b000110;
     
-    localparam IDCODE_VERSION = 4'b0001;
+    localparam IDCODE_VERSION = 4'b0010;
     localparam IDCODE_PARTID  = 16'h0001;
     localparam IDCODE_MANID   = 11'd0;
 
@@ -106,7 +108,7 @@ module debug_dtm (
     
     always @(posedge i_clk)
         if (i_rst || !tap_sync_trst) tap_ctrl_state <= STATE_test_logic_reset;
-        else tap_ctrl_state <= tap_ctrl_next_state;
+        else if (tap_sync_tck_rising) tap_ctrl_state <= tap_ctrl_next_state;
     
     always @(*)
         case (tap_ctrl_state)
@@ -285,6 +287,7 @@ module debug_dtm (
             dmi_rdata      <= 32'd0;
             dmi_wdata      <= 32'd0;
             dmi_addr       <= 6'd0;
+            o_dbg_instr    <= 5'd0;
         end
         else begin
             // reset flag
@@ -319,18 +322,20 @@ module debug_dtm (
                 (dr_update_trig_valid == 1'b1)     &&
                 (tap_reg_ireg == 5'b10001))
                 dmi_addr <= tap_reg_dmi[39:34];
-                                                           
+                                                       
+            o_dbg_instr <= tap_reg_ireg;                                                
         end
     end
      
     // trigger for Update state
-    assign dr_update_trig_is_update = tap_ctrl_state == STATE_update_dr;
-    assign dr_update_trig_valid     = (dr_update_trig_is_update == 1'b1) && (dr_update_trig_is_update_r == 1'b0);
     always @(posedge i_clk) begin
         if (i_rst) dr_update_trig_is_update_r <= 1'b0;
         else dr_update_trig_is_update_r <= dr_update_trig_is_update;
     end
-    
+        
+    assign dr_update_trig_is_update = tap_ctrl_state == STATE_update_dr;
+    assign dr_update_trig_valid     = (dr_update_trig_is_update == 1'b1) && (dr_update_trig_is_update_r == 1'b0);
+
     // JTAG interface
     assign o_tdo = r_tdo;
     

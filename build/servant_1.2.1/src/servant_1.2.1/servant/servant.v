@@ -1,7 +1,7 @@
 module servant
 (
  input  wire wb_clk,
- input  wire wb_rst,
+ input  wire wb_rstn,
  // GPIO
  output wire q,
  // JTAG
@@ -14,7 +14,9 @@ module servant
  output wire o_flash_SCK,
  output wire o_flash_CSn,
  output wire o_flash_MOSI,
- input  wire i_flash_MISO
+ input  wire i_flash_MISO,
+ // Debug
+ output wire [4:0] debug
 );
 
    parameter memfile = "blinky.hex";
@@ -98,6 +100,8 @@ module servant
    wire w_dbg_halt;
    wire w_dbg_reset;
    wire w_dbg_process;
+   
+   wire wb_rst = !wb_rstn;
    
    servant_arbiter arbiter
    (
@@ -275,7 +279,9 @@ module servant
         .i_dmi_rsp_valid    (dmi_rsp_valid  ),
         .o_dmi_rsp_ready    (dmi_rsp_ready  ),
         .i_dmi_rsp_data     (dmi_rsp_data   ),
-        .i_dmi_rsp_op       (dmi_rsp_op     )
+        .i_dmi_rsp_op       (dmi_rsp_op     ),
+        // Debug
+        .o_dbg_instr        (debug          )
     );
     
     // Debug Module (DM)
