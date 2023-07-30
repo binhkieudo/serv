@@ -40,15 +40,27 @@ module debug_dtm (
     output wire        o_dmi_rsp_ready,
     input  wire [31:0] i_dmi_rsp_data,
     input  wire [1:0]  i_dmi_rsp_op,
-    // Debug instruction
-    output reg  [4:0]  o_dbg_instr
+    // Debug
+    input  wire [31:0] i_debug0,
+    input  wire [31:0] i_debug1,
+    input  wire [2:0]  dm_ctrl_state,
+    // Debug CPU-DM
+    input  wire [31:0] i_sbus_adr,
+    input  wire [31:0] i_sbus_dat,
+    input  wire [3:0]  i_subs_sel,
+    input  wire        i_sbus_we,
+    input  wire        i_sbus_cyc,
+    input  wire [31:0] o_sbus_rdt,
+    input  wire        o_sbus_ack,
+    input  wire        o_cpu_ndmrst,
+    input  wire        o_cpu_req_halt
 );
 
     localparam dmi_idle_cycle    = 3'b000;
     localparam dmi_version       = 4'b0001;
     localparam dmi_address_width = 6'b000110;
     
-    localparam IDCODE_VERSION = 4'b0010;
+    localparam IDCODE_VERSION = 4'b0001;
     localparam IDCODE_PARTID  = 16'h0001;
     localparam IDCODE_MANID   = 11'd0;
 
@@ -287,7 +299,6 @@ module debug_dtm (
             dmi_rdata      <= 32'd0;
             dmi_wdata      <= 32'd0;
             dmi_addr       <= 6'd0;
-            o_dbg_instr    <= 5'd0;
         end
         else begin
             // reset flag
@@ -321,9 +332,7 @@ module debug_dtm (
             if ((dmi_ctrl_state == DMI_STATE_Idle) &&
                 (dr_update_trig_valid == 1'b1)     &&
                 (tap_reg_ireg == 5'b10001))
-                dmi_addr <= tap_reg_dmi[39:34];
-                                                       
-            o_dbg_instr <= tap_reg_ireg;                                                
+                dmi_addr <= tap_reg_dmi[39:34];                                              
         end
     end
      
@@ -346,5 +355,101 @@ module debug_dtm (
     assign o_dmi_req_op      = tap_reg_dmi[1:0];
     // DMI interface response
     assign o_dmi_rsp_ready   = (dmi_ctrl_state == DMI_STATE_read_busy) || (dmi_ctrl_state == DMI_STATE_write_busy);
-        
+  
+    wire [31:0] dmi_dmcontrol = i_debug0;
+    wire [31:0] pc = i_debug1;
+    
+    vio_0 vpins(
+        .clk         (i_clk                  ), 
+        .probe_in0   (o_dmi_req_valid        ), //input [0 : 0] probe_0 (1);
+        .probe_in1   (o_dmi_req_address      ), //input [5 : 0] probe_1 (6);
+        .probe_in2   (o_dmi_req_data         ), //input [31 : 0] probe_2 (32);
+        .probe_in3   (o_dmi_req_op           ), //input [1 : 0] probe_3 (2);
+        .probe_in4   (o_dmi_rsp_ready        ), //input [0 : 0] probe_4 (1);
+        .probe_in5   (tap_sync_trst          ), //input [0 : 0] probe_5 (1);
+        .probe_in6   (tap_sync_tck_rising    ), //input [0 : 0] probe_6 (1);
+        .probe_in7   (tap_sync_tck_falling   ), //input [0 : 0] probe_7 (1);
+        .probe_in8   (tap_sync_tdi           ), //input [0 : 0] probe_8 (1);
+        .probe_in9   (tap_sync_tms           ), //input [0 : 0] probe_9 (1);
+        .probe_in11  (dmi_ctrl_state         ), //input [2 : 0] probe_10 (3);
+        .probe_in12  (dmi_hard_reset         ), //input [0 : 0] probe_11 (1);
+        .probe_in13  (dmi_reset              ), //input [0 : 0] probe_12 (1);
+        .probe_in14  (dmi_rsp                ), //input [1 : 0] probe_13 (2);
+        .probe_in15  (dmi_rdata              ), //input [31 : 0] probe_14 (32);
+        .probe_in16  (dmi_wdata              ), //input [31 : 0] probe_15 (32);
+        .probe_in17  (dmi_addr               ), //input [5 : 0] probe_16 (6);
+        .probe_in10  (tap_ctrl_state         ), //input [3 : 0] probe_17 (4);
+        .probe_in18  (tap_reg_ireg           ), //input [4 : 0] probe_18 (5);
+        .probe_in19  (tap_reg_bypass         ), //input [0 : 0] probe_19 (1);
+        .probe_in20  (tap_reg_idcode         ), //input [31 : 0] probe_20 (32);
+        .probe_in21  (tap_reg_dtmcs          ), //input [31 : 0] probe_21 (32);
+        .probe_in22  (tap_reg_dtmcs_nxt      ), //input [31 : 0] 
+        .probe_in23  (tap_reg_dmi            ), //input [39 : 0] probe_in22 (40);
+        .probe_in24  (tap_reg_dmi_nxt        ), //input [39 : 0] 
+        .probe_in25  (dmi_dmcontrol          ), //dmi_DMCONTROL
+        .probe_in26  (pc                     ), 
+        .probe_in27  (i_sbus_adr             ),
+        .probe_in28  (i_sbus_dat             ),
+        .probe_in29  (i_subs_sel             ),
+        .probe_in30  (i_sbus_we              ),
+        .probe_in31  (i_sbus_cyc             ),
+        .probe_in32  (o_sbus_rdt             ),
+        .probe_in33  (o_sbus_ack             ),
+        .probe_in34  (o_cpu_ndmrst           ),
+        .probe_in35  (o_cpu_req_halt         ), 
+        .probe_in36  (dm_ctrl_state          ),
+        .probe_out0  (                       ), //output [0 : 0] probe_out0 (1);
+        .probe_out1  (                       ), //output [0 : 0] probe_out1 (1);
+        .probe_out2  (                       ), //output [31 : 0] probe_out2 (32);
+        .probe_out3  (                       )  //output [1 : 0] probe_out3 (2);
+    );
+    
+    ila_0 debugger(
+        .clk     (i_clk                 ),
+        .probe0  (o_dmi_req_valid       ),
+        .probe1  (o_dmi_req_address     ),
+        .probe2  (o_dmi_req_data        ),
+        .probe3  (o_dmi_req_op          ),
+        .probe4  (o_dmi_rsp_ready       ),
+        .probe5  (tap_sync_trst         ),
+        .probe6  (tap_sync_tck_rising   ),
+        .probe7  (tap_sync_tck_falling  ),
+        .probe8  (tap_sync_tdi          ),
+        .probe9  (tap_sync_tms          ),
+        .probe10 (dmi_ctrl_state        ),
+        .probe11 (dmi_hard_reset        ),
+        .probe12 (dmi_reset             ),
+        .probe13 (dmi_rsp               ),
+        .probe14 (dmi_rdata             ),
+        .probe15 (dmi_wdata             ),
+        .probe16 (dmi_addr              ),
+        .probe17 (tap_ctrl_state        ),
+        .probe18 (tap_reg_ireg          ),
+        .probe19 (tap_reg_bypass        ),
+        .probe20 (tap_reg_idcode        ),
+        .probe21 (tap_reg_dtmcs         ),
+        .probe22 (tap_reg_dmi           ),
+        .probe23 (i_tck                 ),
+        .probe24 (i_trst                ),
+        .probe25 (i_tdi                 ),
+        .probe26 (i_tms                 ),
+        .probe27 (o_tdo                 ),
+        .probe28 (i_dmi_rsp_valid       ),
+        .probe29 (o_dmi_rsp_ready       ),
+        .probe30 (i_dmi_rsp_data        ),
+        .probe31 (i_dmi_rsp_op          ),
+        .probe32 (dmi_dmcontrol         ),
+        .probe33 (pc                    ),
+        .probe34 (i_sbus_adr            ),
+        .probe35 (i_sbus_dat            ),
+        .probe36 (i_subs_sel            ),
+        .probe37 (i_sbus_we             ),
+        .probe38 (i_sbus_cyc            ),
+        .probe39 (o_sbus_rdt            ),
+        .probe40 (o_sbus_ack            ),
+        .probe41 (o_cpu_ndmrst          ),
+        .probe42 (o_cpu_req_halt        ),
+        .probe43 (dm_ctrl_state         )
+    );      
+    
 endmodule

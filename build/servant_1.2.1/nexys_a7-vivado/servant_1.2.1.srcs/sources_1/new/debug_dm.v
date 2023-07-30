@@ -43,7 +43,10 @@ module debug_dm(
     output reg         o_sbus_ack,
     // CPU control
     output wire        o_cpu_ndmrst,
-    output wire        o_cpu_req_halt    
+    output wire        o_cpu_req_halt,
+    // Debug
+    output wire [31:0] dbg_0,
+    output wire [2:0]  dbg_1    
 );
 
     //============== RISC-V DM =============
@@ -487,8 +490,9 @@ module debug_dm(
         end
         DMI_ADDR_ABSTRACTS  :
         begin
-            o_dmi_rsp_data[31:24] <= 8'd0;
+            o_dmi_rsp_data[31:29] <= 3'd0;
             o_dmi_rsp_data[28:24] <= 5'b00010;
+            o_dmi_rsp_data[23:13] <= 11'd0;
             o_dmi_rsp_data[12]    <= dm_ctrl_busy;
             o_dmi_rsp_data[11]    <= 1'b1;
             o_dmi_rsp_data[10:8]  <= dm_ctrl_cmderr;
@@ -619,4 +623,6 @@ module debug_dm(
         endcase  
   end
   
+  assign dbg_0 = {dm_reg_halt_req, dm_reg_resume_req, 1'b0, dm_reg_reset_ack, 26'd0, dm_reg_dmcontrol_ndmreset, dm_reg_dmcontrol_dmactive};
+  assign dbg_1 = dm_ctrl_state;
 endmodule

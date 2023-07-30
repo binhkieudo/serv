@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Jul 28 02:10:07 2023
-# Process ID: 1171734
+# Start of session at: Mon Jul 31 03:59:48 2023
+# Process ID: 1155226
 # Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1
 # Command line: vivado -log servant.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source servant.tcl
 # Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.vds
@@ -14,7 +14,7 @@ source servant.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top servant -part xc7a35ticsg324-1L -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off -keep_equivalent_registers -shreg_min_size 5
+Command: synth_design -top servant -part xc7a35ticsg324-1L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
@@ -23,12 +23,12 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1171760
+INFO: [Synth 8-7075] Helper process launched with PID 1155268
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2743.605 ; gain = 389.645 ; free physical = 4575 ; free virtual = 80058
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2168.123; parent = 1957.278; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3771.730; parent = 2743.609; children = 1028.121
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2770.645 ; gain = 387.676 ; free physical = 1868 ; free virtual = 82559
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2195.641; parent = 1984.047; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3802.742; parent = 2774.617; children = 1028.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'servant' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:1]
 	Parameter memfile bound to: /home/binhkieudo/Workspace/XRPIX/serv/sw/blinky.hex - type: string 
@@ -90,21 +90,29 @@ INFO: [Synth 8-6157] synthesizing module 'flash_controller' [/home/binhkieudo/Wo
 INFO: [Synth 8-6157] synthesizing module 'spi_master' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/spi_master.v:33]
 INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/spi_master.v:33]
 INFO: [Synth 8-6155] done synthesizing module 'flash_controller' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/flash_controller.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'i_wb_adr' does not match port width (24) of module 'flash_controller' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:247]
+WARNING: [Synth 8-689] width (32) of port connection 'i_wb_adr' does not match port width (24) of module 'flash_controller' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:245]
 INFO: [Synth 8-6157] synthesizing module 'debug_dtm' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:22]
-INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:114]
+INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:126]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:362]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/.Xil/Vivado-1155226-binhkieudo-hotswap/realtime/vio_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/.Xil/Vivado-1155226-binhkieudo-hotswap/realtime/vio_0_stub.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:407]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/.Xil/Vivado-1155226-binhkieudo-hotswap/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/.Xil/Vivado-1155226-binhkieudo-hotswap/realtime/ila_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'debug_dtm' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:22]
 INFO: [Synth 8-6157] synthesizing module 'debug_dm' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:21]
-INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:599]
-INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:602]
+INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:603]
+INFO: [Synth 8-226] default block is never used [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:606]
 INFO: [Synth 8-6155] done synthesizing module 'debug_dm' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v:21]
-WARNING: [Synth 8-689] width (32) of port connection 'i_dmi_req_op' does not match port width (2) of module 'debug_dm' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:297]
 INFO: [Synth 8-6155] done synthesizing module 'servant' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:1]
 WARNING: [Synth 8-3301] Unused top level parameter/generic frequency
 WARNING: [Synth 8-6014] Unused sequential element imm25_reg was removed.  [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:276]
 WARNING: [Synth 8-6014] Unused sequential element op29_reg was removed.  [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:283]
 WARNING: [Synth 8-6014] Unused sequential element op31_reg was removed.  [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:284]
 WARNING: [Synth 8-3848] Net o_ext_funct3 in module/entity serv_decode does not have driver. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_decode.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'serv_dtm'. This will prevent further optimization [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:263]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debugger'. This will prevent further optimization [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:407]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vpins'. This will prevent further optimization [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v:362]
 WARNING: [Synth 8-7129] Port i_dmi_rsp_ready in module debug_dm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_sbus_adr[1] in module debug_dm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_sbus_adr[0] in module debug_dm is either unconnected or has no load
@@ -155,385 +163,167 @@ WARNING: [Synth 8-7129] Port i_wb_adr[15] in module servant_ram is either unconn
 WARNING: [Synth 8-7129] Port i_wb_adr[14] in module servant_ram is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[13] in module servant_ram is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2822.574 ; gain = 468.613 ; free physical = 4648 ; free virtual = 80132
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2168.123; parent = 1957.278; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3850.699; parent = 2822.578; children = 1028.121
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2856.582 ; gain = 473.613 ; free physical = 1940 ; free virtual = 82632
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2195.641; parent = 1984.047; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3884.711; parent = 2856.586; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2840.387 ; gain = 486.426 ; free physical = 4648 ; free virtual = 80131
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2168.123; parent = 1957.278; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3868.512; parent = 2840.391; children = 1028.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2874.395 ; gain = 491.426 ; free physical = 1940 ; free virtual = 82632
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2195.641; parent = 1984.047; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3902.523; parent = 2874.398; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2840.387 ; gain = 486.426 ; free physical = 4647 ; free virtual = 80132
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2168.123; parent = 1957.278; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3868.512; parent = 2840.391; children = 1028.121
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2874.395 ; gain = 491.426 ; free physical = 1940 ; free virtual = 82632
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2195.641; parent = 1984.047; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3902.523; parent = 2874.398; children = 1028.125
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2840.387 ; gain = 0.000 ; free physical = 4644 ; free virtual = 80128
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2880.332 ; gain = 0.000 ; free physical = 1934 ; free virtual = 82627
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'serv_dtm/debugger'
+Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'serv_dtm/debugger'
+Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'serv_dtm/vpins'
+Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'serv_dtm/vpins'
 Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc]
-WARNING: [Vivado 12-507] No nets matched 'i_jtag_tck_IBUF'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:219]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:219]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'i_jtag_tdi_IBUF'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:220]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:220]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'i_jtag_tms_IBUF'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:221]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:221]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'i_jtag_trst_IBUF'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:222]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:222]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'o_jtag_tdo_OBUF'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:223]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:223]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[28]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:226]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:226]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[29]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:227]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:227]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[30]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:228]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:228]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[31]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:229]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:229]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[12]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:230]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:230]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[11]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:231]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:231]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[13]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:232]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:232]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[14]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:233]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:233]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[15]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:234]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:234]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[24]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:235]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:235]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[25]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:236]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:236]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[26]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:237]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:237]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[27]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:238]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:238]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[20]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:239]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:239]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[21]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:240]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:240]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[22]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:241]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:241]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[23]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:242]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:242]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[16]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:243]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:243]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[17]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:244]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:244]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[18]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:245]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:245]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[19]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:246]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:246]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[3]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:247]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:247]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[0]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:248]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:248]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[1]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:249]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:249]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[2]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:250]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:250]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[4]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:251]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:251]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[5]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:252]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:252]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[6]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:253]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:253]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[7]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:254]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:254]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[8]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:255]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:255]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[9]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:256]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:256]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/o_dmi_rsp_data[10]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:257]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:257]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_req_op[0]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:258]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:258]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_req_op[1]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:259]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:259]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_req_valid'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:260]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:260]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_ctrl_state[2]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:292]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:292]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_ctrl_state[0]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:293]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:293]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/dmi_ctrl_state[1]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:294]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:294]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[2]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:295]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:295]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[3]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:296]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:296]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[20]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:297]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:297]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[21]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:298]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:298]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[4]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:299]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:299]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[36]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:300]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:300]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[37]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:301]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:301]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[5]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:302]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:302]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[6]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:303]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:303]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[28]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:304]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:304]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[35]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:305]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:305]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[34]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:306]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:306]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[10]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:307]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:307]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[11]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:308]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:308]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[12]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:309]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:309]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[32]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:310]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:310]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[24]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:311]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:311]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[39]_i_2_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:312]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:312]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[31]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:313]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:313]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[27]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:314]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:314]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[22]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:315]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:315]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[23]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:316]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:316]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[30]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:317]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:317]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[25]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:318]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:318]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[38]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:319]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:319]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[39]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:320]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:320]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[15]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:321]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:321]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[29]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:322]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:322]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[33]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:323]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:323]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[26]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:324]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:324]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[39]_i_3_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:325]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:325]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[18]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:326]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:326]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[7]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:327]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:327]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[13]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:328]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:328]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[14]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:329]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:329]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[16]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:330]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:330]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[17]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:331]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:331]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[19]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:332]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:332]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[8]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:333]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:333]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[9]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:334]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:334]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_ireg[0]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:335]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:335]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_ireg[4]_i_2_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:336]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:336]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[1]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:339]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:339]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi[0]_i_1_n_0'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:340]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:340]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[34]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:341]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:341]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[31]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:342]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:342]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[8]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:343]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:343]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[3]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:344]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:344]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[5]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:345]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:345]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[39]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:346]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:346]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[6]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:347]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:347]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[38]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:348]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:348]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[7]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:349]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:349]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[9]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:350]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:350]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[32]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:351]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:351]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[35]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:352]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:352]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'serv_dtm/tap_reg_dmi_reg_n_0_[37]'. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:353]
-INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:353]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc:353]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/servant_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/servant_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.137 ; gain = 0.000 ; free physical = 4561 ; free virtual = 80045
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3034.145 ; gain = 0.000 ; free physical = 1858 ; free virtual = 82551
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.137 ; gain = 0.000 ; free physical = 4561 ; free virtual = 80045
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3034.145 ; gain = 0.000 ; free physical = 1858 ; free virtual = 82551
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4625 ; free virtual = 80109
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2175.293; parent = 1964.811; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1923 ; free virtual = 82616
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2208.842; parent = 1998.209; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4624 ; free virtual = 80109
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2175.293; parent = 1964.811; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1923 ; free virtual = 82616
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2208.842; parent = 1998.209; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property MARK_DEBUG = true for serv_dtm/o_dmi_req_address[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 262).
-Applied set_property MARK_DEBUG = true for serv_dtm/o_dmi_req_data[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 268).
-Applied set_property MARK_DEBUG = true for serv_dtm/o_dmi_req_op[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 270).
-Applied set_property MARK_DEBUG = true for serv_dtm/tap_ctrl_state[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 272).
-Applied set_property MARK_DEBUG = true for serv_dtm/o_dmi_req_valid. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 276).
-Applied set_property MARK_DEBUG = true for serv_dtm/tap_sync_tms. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 278).
-Applied set_property MARK_DEBUG = true for serv_dtm/tap_sync_tdi. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 279).
-Applied set_property MARK_DEBUG = true for serv_dtm/tap_sync_tck_falling. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 280).
-Applied set_property MARK_DEBUG = false for serv_dtm/p_0_in[1]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 281).
-Applied set_property MARK_DEBUG = true for serv_dtm/i_clk. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 283).
-Applied set_property MARK_DEBUG = false for serv_dtm/dmi_reset. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 285).
-Applied set_property MARK_DEBUG = false for serv_dtm/dmi_hard_reset. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 286).
-Applied set_property MARK_DEBUG = false for serv_dtm/tap_sync_trst_r[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 289).
-Applied set_property MARK_DEBUG = true for serv_dtm/tap_sync_tck_rising. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 337).
-Applied set_property MARK_DEBUG = true for serv_dtm/o_dbg_instr[0]. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/data/nexys_a7.xdc, line 379).
+Applied set_property KEEP_HIERARCHY = SOFT for serv_dtm/debugger. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for serv_dtm/vpins. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4624 ; free virtual = 80109
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2175.293; parent = 1964.811; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1923 ; free virtual = 82616
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2208.842; parent = 1998.209; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'serv_dtm'. This will prevent further optimization [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/servant_1.2.1/servant/servant.v:262]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'flash_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'tap_ctrl_state_reg' in module 'debug_dtm'
+INFO: [Synth 8-802] inferred FSM for state register 'dmi_ctrl_state_reg' in module 'debug_dtm'
+INFO: [Synth 8-802] inferred FSM for state register 'dm_ctrl_state_reg' in module 'debug_dm'
+INFO: [Synth 8-802] inferred FSM for state register 'dm_ctrl_cmderr_reg' in module 'debug_dm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |      000000000000000000100000000 |                            00000
+            S_STATS_SEND |      000000000010000000000000000 |                            00001
+           S_STATS_WAIT1 |      000000000000000010000000000 |                            00010
+           S_STATS_DUMMY |      000000000000000000001000000 |                            00011
+           S_STATS_WAIT2 |      000000000000000000010000000 |                            00100
+           S_STATS_CHECK |      100000000000000000000000000 |                            00101
+           S_STATS_STALL |      001000000000000000000000000 |                            00110
+             S_WREN_SEND |      000001000000000000000000000 |                            00111
+             S_WREN_WAIT |      000010000000000000000000000 |                            01000
+            S_WREN_STALL |      010000000000000000000000000 |                            01001
+              S_CMD_SEND |      000000100000000000000000000 |                            01010
+              S_CMD_WAIT |      000000001000000000000000000 |                            01011
+            S_SEND_ADDR2 |      000000000000000000000001000 |                            01100
+            S_WAIT_ADDR2 |      000000000000000000000000100 |                            01101
+            S_SEND_ADDR1 |      000000000000000000000000001 |                            01110
+            S_WAIT_ADDR1 |      000000000000000000000000010 |                            01111
+            S_SEND_ADDR0 |      000000000000001000000000000 |                            10000
+            S_WAIT_ADDR0 |      000000000000000001000000000 |                            10001
+            S_DATA3_SEND |      000000000000000000000010000 |                            10011
+            S_DATA3_WAIT |      000000000000000000000100000 |                            10100
+            S_DATA2_SEND |      000100000000000000000000000 |                            10101
+            S_DATA2_WAIT |      000000000100000000000000000 |                            10110
+            S_DATA1_SEND |      000000000000100000000000000 |                            10111
+            S_DATA1_WAIT |      000000000001000000000000000 |                            11000
+            S_DATA0_SEND |      000000010000000000000000000 |                            11001
+            S_DATA0_WAIT |      000000000000010000000000000 |                            11010
+                  S_DONE |      000000000000000100000000000 |                            11011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'flash_controller'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tap_ctrl_state_reg' in module 'debug_dtm', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+  STATE_test_logic_reset |                             1111 |                             1111
+     STATE_run_test_idle |                             1100 |                             1100
+    STATE_select_dr_scan |                             0111 |                             0111
+    STATE_select_ir_scan |                             0100 |                             0100
+        STATE_capture_ir |                             1110 |                             1110
+          STATE_shift_ir |                             1010 |                             1010
+          STATE_exit1_ir |                             1001 |                             1001
+          STATE_pause_ir |                             1011 |                             1011
+          STATE_exit2_ir |                             1000 |                             1000
+         STATE_update_ir |                             1101 |                             1101
+        STATE_capture_dr |                             0110 |                             0110
+          STATE_shift_dr |                             0010 |                             0010
+          STATE_exit1_dr |                             0001 |                             0001
+          STATE_pause_dr |                             0011 |                             0011
+          STATE_exit2_dr |                             0000 |                             0000
+         STATE_update_dr |                             0101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'dmi_ctrl_state_reg' in module 'debug_dtm', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+          DMI_STATE_Idle |                              000 |                              000
+     DMI_STATE_read_wait |                              001 |                              001
+          DMI_STATE_read |                              010 |                              010
+     DMI_STATE_read_busy |                              011 |                              011
+    DMI_STATE_write_wait |                              100 |                              100
+         DMI_STATE_write |                              101 |                              101
+    DMI_STATE_write_busy |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                CMD_IDLE |                              000 |                              001
+           CMD_EXE_CHECK |                              101 |                              010
+         CMD_EXE_PREAPRE |                              100 |                              011
+         CMD_EXE_TRIGGER |                              011 |                              100
+            CMD_EXE_BUSY |                              010 |                              101
+           CMD_EXE_ERROR |                              001 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dm_ctrl_state_reg' using encoding 'sequential' in module 'debug_dm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              100
+                 iSTATE1 |                              010 |                              011
+                 iSTATE3 |                              011 |                              010
+                 iSTATE2 |                              100 |                              001
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dm_ctrl_cmderr_reg' using encoding 'sequential' in module 'debug_dm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4614 ; free virtual = 80100
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2175.293; parent = 1964.811; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1914 ; free virtual = 82608
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2208.842; parent = 1998.209; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -557,40 +347,45 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 5     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 8     
-	                4 Bit    Registers := 5     
-	                3 Bit    Registers := 11    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 9     
 	                2 Bit    Registers := 4     
 	                1 Bit    Registers := 84    
 +---RAMs : 
 	              64K Bit	(2048 X 32 bit)          RAMs := 1     
 	             1024 Bit	(128 X 8 bit)          RAMs := 1     
 +---Muxes : 
-	   2 Input   40 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 19    
-	   4 Input   32 Bit        Muxes := 4     
-	   7 Input   32 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 28    
+	   4 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 1     
 	  16 Input   32 Bit        Muxes := 1     
-	   3 Input   30 Bit        Muxes := 1     
+	  27 Input   27 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 17    
 	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 5     
 	  11 Input    8 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 1     
-	   3 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 6     
-	   2 Input    5 Bit        Muxes := 7     
-	   3 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 11    
+	   3 Input    5 Bit        Muxes := 1     
+	  27 Input    5 Bit        Muxes := 1     
 	   3 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 8     
-	   2 Input    3 Bit        Muxes := 9     
-	   9 Input    3 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 10    
+	  16 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 19    
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 71    
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 72    
 	   5 Input    1 Bit        Muxes := 1     
-	   3 Input    1 Bit        Muxes := 6     
-	   8 Input    1 Bit        Muxes := 1     
-	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -607,22 +402,46 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port i_dmi_rsp_ready in module debug_dm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_sbus_adr[1] in module debug_dm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_sbus_adr[0] in module debug_dm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ibus_rdt[1] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ibus_rdt[0] in module serv_rf_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[31] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[30] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[29] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[28] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[27] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[26] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[25] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[24] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[23] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[22] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[21] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[20] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[19] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[18] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[17] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[16] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[15] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[14] in module servant_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_adr[13] in module servant_ram is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4613 ; free virtual = 80104
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2175.293; parent = 1964.811; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1892 ; free virtual = 82592
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2208.842; parent = 1998.209; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Preliminary Mapping Report (see note below)
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|ram         | mem_reg    | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
-|cpu/rf_ram  | memory_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|servant     | ram/mem_reg           | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|servant     | cpu/rf_ram/memory_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
@@ -632,21 +451,29 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4501 ; free virtual = 79992
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2270.191; parent = 2059.764; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1782 ; free virtual = 82482
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2308.855; parent = 2098.438; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1759 ; free virtual = 82459
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2329.574; parent = 2119.166; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Final Mapping Report
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|ram         | mem_reg    | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
-|cpu/rf_ram  | memory_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-+------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|servant     | ram/mem_reg           | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|servant     | cpu/rf_ram/memory_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -658,12 +485,18 @@ INFO: [Synth 8-7052] The timing for the instance ram/mem_reg_0 (implemented as a
 INFO: [Synth 8-7052] The timing for the instance ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance cpu/rf_ram/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4493 ; free virtual = 79984
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2279.012; parent = 2068.584; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1752 ; free virtual = 82452
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -672,100 +505,111 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4492 ; free virtual = 79983
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2279.012; parent = 2068.584; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4492 ; free virtual = 79983
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2279.012; parent = 2068.584; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4492 ; free virtual = 79983
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2279.012; parent = 2068.584; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|debug_dtm   | tap_reg_idcode_reg[13] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|debug_dtm   | tap_reg_idcode_reg[1]  | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
 ---------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio_0         |         1|
+|2     |ila_0         |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |BUFG     |     1|
-|2     |CARRY4   |     8|
-|3     |LUT1     |     8|
-|4     |LUT2     |   130|
-|5     |LUT3     |   249|
-|6     |LUT4     |   102|
-|7     |LUT5     |   112|
-|8     |LUT6     |   195|
-|9     |MUXF7    |    13|
-|10    |RAMB18E1 |     1|
-|11    |RAMB36E1 |     2|
-|13    |SRL16E   |     2|
-|14    |FDCE     |    31|
-|15    |FDPE     |     6|
-|16    |FDRE     |   689|
-|17    |FDSE     |    15|
-|18    |IBUF     |     7|
-|19    |OBUF     |    10|
+|1     |ila      |     1|
+|2     |vio      |     1|
+|3     |BUFG     |     1|
+|4     |CARRY4   |     8|
+|5     |LUT1     |   115|
+|6     |LUT2     |    44|
+|7     |LUT3     |   181|
+|8     |LUT4     |   189|
+|9     |LUT5     |   121|
+|10    |LUT6     |   371|
+|11    |MUXF7    |     3|
+|12    |RAMB18E1 |     1|
+|13    |RAMB36E1 |     2|
+|15    |FDCE     |    31|
+|16    |FDPE     |     6|
+|17    |FDRE     |   827|
+|18    |FDSE     |    21|
+|19    |IBUF     |     7|
+|20    |OBUF     |     5|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4492 ; free virtual = 79983
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2279.012; parent = 2068.584; children = 210.845
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3997.246; parent = 2969.125; children = 1028.121
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1753 ; free virtual = 82453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2331.520; parent = 2121.111; children = 211.594
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4030.258; parent = 3002.133; children = 1028.125
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3001.137 ; gain = 486.426 ; free physical = 4547 ; free virtual = 80038
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3001.137 ; gain = 647.176 ; free physical = 4547 ; free virtual = 80038
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3034.145 ; gain = 491.426 ; free physical = 1805 ; free virtual = 82505
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3034.145 ; gain = 651.176 ; free physical = 1805 ; free virtual = 82505
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3001.137 ; gain = 0.000 ; free physical = 4646 ; free virtual = 80137
-INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3034.145 ; gain = 0.000 ; free physical = 1912 ; free virtual = 82612
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.137 ; gain = 0.000 ; free physical = 4595 ; free virtual = 80086
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3034.145 ; gain = 0.000 ; free physical = 1859 ; free virtual = 82559
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 5ccad162
+Synth Design complete, checksum: 829c3b29
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 161 Warnings, 100 Critical Warnings and 0 Errors encountered.
+94 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3001.137 ; gain = 962.215 ; free physical = 4805 ; free virtual = 80296
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 3034.145 ; gain = 959.309 ; free physical = 2083 ; free virtual = 82783
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file servant_utilization_synth.rpt -pb servant_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 28 02:10:44 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 31 04:00:30 2023...

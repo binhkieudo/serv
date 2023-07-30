@@ -14,9 +14,7 @@ module servant
  output wire o_flash_SCK,
  output wire o_flash_CSn,
  output wire o_flash_MOSI,
- input  wire i_flash_MISO,
- // Debug
- output wire [4:0] debug
+ input  wire i_flash_MISO
 );
 
    parameter memfile = "blinky.hex";
@@ -258,6 +256,9 @@ module servant
         .MISO       (i_flash_MISO )
     );
     
+    wire [31:0] debug0;
+    wire [2:0] dm_ctrl_state;
+    
     // Debug Transport Module (DTM)
     debug_dtm serv_dtm(
         // global control
@@ -281,7 +282,19 @@ module servant
         .i_dmi_rsp_data     (dmi_rsp_data   ),
         .i_dmi_rsp_op       (dmi_rsp_op     ),
         // Debug
-        .o_dbg_instr        (debug          )
+        .i_debug0           (debug0         ),
+        .i_debug1           (wb_ibus_adr    ),
+        .dm_ctrl_state      (dm_ctrl_state  ),
+            // Debug CPU-DM
+        .i_sbus_adr         (wb_dm_adr      ),
+        .i_sbus_dat         (wb_dm_dat      ),
+        .i_subs_sel         (wb_dm_sel      ),
+        .i_sbus_we          (wb_dm_we       ),
+        .i_sbus_cyc         (wb_dm_cyc      ),
+        .o_sbus_rdt         (wb_dm_rdt      ),
+        .o_sbus_ack         (wb_dm_ack      ),
+        .o_cpu_ndmrst       (w_dbg_reset    ),
+        .o_cpu_req_halt     (w_dbg_halt     )
     );
     
     // Debug Module (DM)
@@ -294,8 +307,8 @@ module servant
         .i_dmi_req_valid    (dmi_req_valid  ),
         .o_dmi_req_ready    (dmi_req_ready  ),
         .i_dmi_req_address  (dmi_req_address),
-        .i_dmi_req_op       (dmi_req_data   ),
-        .i_dmi_req_data     (dmi_req_op     ),
+        .i_dmi_req_op       (dmi_req_op     ),
+        .i_dmi_req_data     (dmi_req_data   ),
         // Debug Module Interface (DMI) - Response
         .o_dmi_rsp_valid    (dmi_rsp_valid  ),
         .i_dmi_rsp_ready    (dmi_rsp_ready  ),
@@ -311,7 +324,10 @@ module servant
         .o_sbus_ack         (wb_dm_ack      ),
         // CPU control
         .o_cpu_ndmrst       (w_dbg_reset    ),
-        .o_cpu_req_halt     (w_dbg_halt     )    
+        .o_cpu_req_halt     (w_dbg_halt     ),
+        // Debug
+        .dbg_0              (debug0         ),
+        .dbg_1              (dm_ctrl_state  )          
     );
     
 endmodule
