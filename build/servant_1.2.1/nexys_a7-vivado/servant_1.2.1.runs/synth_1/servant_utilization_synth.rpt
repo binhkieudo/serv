@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Tue Aug  1 01:37:30 2023
-| Host         : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
+| Date         : Tue Aug  1 11:43:40 2023
+| Host         : binhkieudo running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file servant_utilization_synth.rpt -pb servant_utilization_synth.pb
 | Design       : servant
 | Device       : xc7a35ticsg324-1L
@@ -37,7 +37,7 @@ Table of Contents
 | Slice Registers         |  885 |     0 |          0 |     41600 |  2.13 |
 |   Register as Flip Flop |  885 |     0 |          0 |     41600 |  2.13 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                |    5 |     0 |          0 |     16300 |  0.03 |
+| F7 Muxes                |    3 |     0 |          0 |     16300 |  0.02 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -154,7 +154,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT6     |  370 |                 LUT |
 | LUT4     |  188 |                 LUT |
 | LUT3     |  180 |                 LUT |
-| LUT5     |  119 |                 LUT |
+| LUT5     |  120 |                 LUT |
 | LUT1     |  115 |                 LUT |
 | LUT2     |  108 |                 LUT |
 | FDCE     |   31 |        Flop & Latch |
@@ -163,7 +163,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | IBUF     |    7 |                  IO |
 | FDPE     |    6 |        Flop & Latch |
 | OBUF     |    5 |                  IO |
-| MUXF7    |    5 |               MuxFx |
+| MUXF7    |    3 |               MuxFx |
 | RAMB36E1 |    2 |        Block Memory |
 | RAMB18E1 |    1 |        Block Memory |
 | BUFG     |    1 |               Clock |

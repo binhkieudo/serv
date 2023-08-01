@@ -103,6 +103,7 @@ vio_0 your_instance_name (
   .probe_in44(probe_in44),  // input wire [0 : 0] probe_in44
   .probe_in45(probe_in45),  // input wire [0 : 0] probe_in45
   .probe_in46(probe_in46),  // input wire [0 : 0] probe_in46
+  .probe_in47(probe_in47),  // input wire [0 : 0] probe_in47
   .probe_out0(probe_out0),  // output wire [0 : 0] probe_out0
   .probe_out1(probe_out1),  // output wire [0 : 0] probe_out1
   .probe_out2(probe_out2),  // output wire [31 : 0] probe_out2

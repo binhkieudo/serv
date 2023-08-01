@@ -593,12 +593,12 @@ module debug_dm(
         // Resume
         6: rom_rdata = 32'h8c8000a3;  // ffff_f818 sb x8, ffff_f8c1(x0)    // ACK that CPU is about to resume
         7: rom_rdata = 32'h7b202473;  // ffff_f81c csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        8: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
-        9: rom_rdata = 32'h7b200073;  // ffff_f820 dret                    // exit debug mode
+        //8: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
+        8: rom_rdata = 32'h7b200073;  // ffff_f820 dret                    // exit debug mode
         // Execute   
-        10: rom_rdata = 32'h8c000123; //  ffff_f824 sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
-        11: rom_rdata = 32'h7b202473; // ffff_f828 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        12: rom_rdata = 32'h84000067; // ffff_f82c jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
+        9: rom_rdata = 32'h8c000123; //  ffff_f824 sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
+        10: rom_rdata = 32'h7b202473; // ffff_f828 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        11: rom_rdata = 32'h84000067; // ffff_f82c jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
         default: rom_rdata = 32'd0;   
     endcase
       

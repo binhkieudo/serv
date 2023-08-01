@@ -101,6 +101,7 @@ COMPONENT vio_0
     probe_in44 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_in45 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_in46 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe_in47 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out0 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -163,6 +164,7 @@ your_instance_name : vio_0
     probe_in44 => probe_in44,
     probe_in45 => probe_in45,
     probe_in46 => probe_in46,
+    probe_in47 => probe_in47,
     probe_out0 => probe_out0,
     probe_out1 => probe_out1,
     probe_out2 => probe_out2,

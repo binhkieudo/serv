@@ -45,6 +45,7 @@ module debug_dtm (
     input  wire [31:0] i_debug1,
     input  wire [2:0]  dm_ctrl_state,
     // Debug CPU-DM
+    input  wire        q,
     input  wire [31:0] i_sbus_adr,
     input  wire [31:0] i_sbus_dat,
     input  wire [3:0]  i_subs_sel,
@@ -418,6 +419,7 @@ module debug_dtm (
         .probe_in44  (dbg_resume_req         ),
         .probe_in45  (dbg_execute_req        ),
         .probe_in46  (dbg_process            ),
+        .probe_in47  ( ),
         .probe_out0  (                       ), //output [0 : 0] probe_out0 (1);
         .probe_out1  (                       ), //output [0 : 0] probe_out1 (1);
         .probe_out2  (                       ), //output [31 : 0] probe_out2 (32);

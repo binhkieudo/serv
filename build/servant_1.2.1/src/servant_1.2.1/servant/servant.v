@@ -296,6 +296,7 @@ module servant
         .i_debug1           (wb_ibus_adr    ),
         .dm_ctrl_state      (dm_ctrl_state  ),
             // Debug CPU-DM
+        .q                  (q              ),
         .i_sbus_adr         (wb_dm_adr      ),
         .i_sbus_dat         (wb_dm_dat      ),
         .i_subs_sel         (wb_dm_sel      ),
