@@ -93,6 +93,16 @@ vio_0 your_instance_name (
   .probe_in34(probe_in34),  // input wire [0 : 0] probe_in34
   .probe_in35(probe_in35),  // input wire [0 : 0] probe_in35
   .probe_in36(probe_in36),  // input wire [2 : 0] probe_in36
+  .probe_in37(probe_in37),  // input wire [31 : 0] probe_in37
+  .probe_in38(probe_in38),  // input wire [31 : 0] probe_in38
+  .probe_in39(probe_in39),  // input wire [31 : 0] probe_in39
+  .probe_in40(probe_in40),  // input wire [31 : 0] probe_in40
+  .probe_in41(probe_in41),  // input wire [0 : 0] probe_in41
+  .probe_in42(probe_in42),  // input wire [0 : 0] probe_in42
+  .probe_in43(probe_in43),  // input wire [1 : 0] probe_in43
+  .probe_in44(probe_in44),  // input wire [0 : 0] probe_in44
+  .probe_in45(probe_in45),  // input wire [0 : 0] probe_in45
+  .probe_in46(probe_in46),  // input wire [0 : 0] probe_in46
   .probe_out0(probe_out0),  // output wire [0 : 0] probe_out0
   .probe_out1(probe_out1),  // output wire [0 : 0] probe_out1
   .probe_out2(probe_out2),  // output wire [31 : 0] probe_out2

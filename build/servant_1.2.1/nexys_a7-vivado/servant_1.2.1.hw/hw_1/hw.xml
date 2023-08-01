@@ -29,10 +29,13 @@
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="i_jtag_tck_IBUF" gui_info=""/>
+    <Object name="serv_dtm/dbg_execute_req_1" gui_info="Trigger Setup=0"/>
+    <Object name="serv_dtm/dbg_resume_req_1" gui_info=""/>
+    <Object name="serv_dtm/dm_ctrl_state_1[2:0]" gui_info=""/>
     <Object name="serv_dtm/i_dmi_rsp_data[31:0]" gui_info=""/>
     <Object name="serv_dtm/i_tck" gui_info=""/>
     <Object name="serv_dtm/o_cpu_ndmrst_1" gui_info=""/>
-    <Object name="serv_dtm/o_cpu_req_halt_1" gui_info="Trigger Setup=0"/>
+    <Object name="serv_dtm/o_cpu_req_halt_1" gui_info=""/>
     <Object name="serv_dtm/o_dmi_req_address_1[5:0]" gui_info=""/>
     <Object name="serv_dtm/o_dmi_req_data[31:0]" gui_info="Trigger Setup=0"/>
     <Object name="serv_dtm/o_dmi_req_data_1[31:0]" gui_info=""/>
@@ -172,6 +175,341 @@
       </probeOptions>
       <nets>
         <net name="o_jtag_tdo_OBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe52[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_execute_req_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe50[1:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_maddr_1[1]"/>
+        <net name="serv_dtm/dbg_maddr_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe44[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf0_1[31]"/>
+        <net name="serv_dtm/dbg_probuf0_1[30]"/>
+        <net name="serv_dtm/dbg_probuf0_1[29]"/>
+        <net name="serv_dtm/dbg_probuf0_1[28]"/>
+        <net name="serv_dtm/dbg_probuf0_1[27]"/>
+        <net name="serv_dtm/dbg_probuf0_1[26]"/>
+        <net name="serv_dtm/dbg_probuf0_1[25]"/>
+        <net name="serv_dtm/dbg_probuf0_1[24]"/>
+        <net name="serv_dtm/dbg_probuf0_1[23]"/>
+        <net name="serv_dtm/dbg_probuf0_1[22]"/>
+        <net name="serv_dtm/dbg_probuf0_1[21]"/>
+        <net name="serv_dtm/dbg_probuf0_1[20]"/>
+        <net name="serv_dtm/dbg_probuf0_1[19]"/>
+        <net name="serv_dtm/dbg_probuf0_1[18]"/>
+        <net name="serv_dtm/dbg_probuf0_1[17]"/>
+        <net name="serv_dtm/dbg_probuf0_1[16]"/>
+        <net name="serv_dtm/dbg_probuf0_1[15]"/>
+        <net name="serv_dtm/dbg_probuf0_1[14]"/>
+        <net name="serv_dtm/dbg_probuf0_1[13]"/>
+        <net name="serv_dtm/dbg_probuf0_1[12]"/>
+        <net name="serv_dtm/dbg_probuf0_1[11]"/>
+        <net name="serv_dtm/dbg_probuf0_1[10]"/>
+        <net name="serv_dtm/dbg_probuf0_1[9]"/>
+        <net name="serv_dtm/dbg_probuf0_1[8]"/>
+        <net name="serv_dtm/dbg_probuf0_1[7]"/>
+        <net name="serv_dtm/dbg_probuf0_1[6]"/>
+        <net name="serv_dtm/dbg_probuf0_1[5]"/>
+        <net name="serv_dtm/dbg_probuf0_1[4]"/>
+        <net name="serv_dtm/dbg_probuf0_1[3]"/>
+        <net name="serv_dtm/dbg_probuf0_1[2]"/>
+        <net name="serv_dtm/dbg_probuf0_1[1]"/>
+        <net name="serv_dtm/dbg_probuf0_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe45[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf1_1[31]"/>
+        <net name="serv_dtm/dbg_probuf1_1[30]"/>
+        <net name="serv_dtm/dbg_probuf1_1[29]"/>
+        <net name="serv_dtm/dbg_probuf1_1[28]"/>
+        <net name="serv_dtm/dbg_probuf1_1[27]"/>
+        <net name="serv_dtm/dbg_probuf1_1[26]"/>
+        <net name="serv_dtm/dbg_probuf1_1[25]"/>
+        <net name="serv_dtm/dbg_probuf1_1[24]"/>
+        <net name="serv_dtm/dbg_probuf1_1[23]"/>
+        <net name="serv_dtm/dbg_probuf1_1[22]"/>
+        <net name="serv_dtm/dbg_probuf1_1[21]"/>
+        <net name="serv_dtm/dbg_probuf1_1[20]"/>
+        <net name="serv_dtm/dbg_probuf1_1[19]"/>
+        <net name="serv_dtm/dbg_probuf1_1[18]"/>
+        <net name="serv_dtm/dbg_probuf1_1[17]"/>
+        <net name="serv_dtm/dbg_probuf1_1[16]"/>
+        <net name="serv_dtm/dbg_probuf1_1[15]"/>
+        <net name="serv_dtm/dbg_probuf1_1[14]"/>
+        <net name="serv_dtm/dbg_probuf1_1[13]"/>
+        <net name="serv_dtm/dbg_probuf1_1[12]"/>
+        <net name="serv_dtm/dbg_probuf1_1[11]"/>
+        <net name="serv_dtm/dbg_probuf1_1[10]"/>
+        <net name="serv_dtm/dbg_probuf1_1[9]"/>
+        <net name="serv_dtm/dbg_probuf1_1[8]"/>
+        <net name="serv_dtm/dbg_probuf1_1[7]"/>
+        <net name="serv_dtm/dbg_probuf1_1[6]"/>
+        <net name="serv_dtm/dbg_probuf1_1[5]"/>
+        <net name="serv_dtm/dbg_probuf1_1[4]"/>
+        <net name="serv_dtm/dbg_probuf1_1[3]"/>
+        <net name="serv_dtm/dbg_probuf1_1[2]"/>
+        <net name="serv_dtm/dbg_probuf1_1[1]"/>
+        <net name="serv_dtm/dbg_probuf1_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe46[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf2_1[31]"/>
+        <net name="serv_dtm/dbg_probuf2_1[30]"/>
+        <net name="serv_dtm/dbg_probuf2_1[29]"/>
+        <net name="serv_dtm/dbg_probuf2_1[28]"/>
+        <net name="serv_dtm/dbg_probuf2_1[27]"/>
+        <net name="serv_dtm/dbg_probuf2_1[26]"/>
+        <net name="serv_dtm/dbg_probuf2_1[25]"/>
+        <net name="serv_dtm/dbg_probuf2_1[24]"/>
+        <net name="serv_dtm/dbg_probuf2_1[23]"/>
+        <net name="serv_dtm/dbg_probuf2_1[22]"/>
+        <net name="serv_dtm/dbg_probuf2_1[21]"/>
+        <net name="serv_dtm/dbg_probuf2_1[20]"/>
+        <net name="serv_dtm/dbg_probuf2_1[19]"/>
+        <net name="serv_dtm/dbg_probuf2_1[18]"/>
+        <net name="serv_dtm/dbg_probuf2_1[17]"/>
+        <net name="serv_dtm/dbg_probuf2_1[16]"/>
+        <net name="serv_dtm/dbg_probuf2_1[15]"/>
+        <net name="serv_dtm/dbg_probuf2_1[14]"/>
+        <net name="serv_dtm/dbg_probuf2_1[13]"/>
+        <net name="serv_dtm/dbg_probuf2_1[12]"/>
+        <net name="serv_dtm/dbg_probuf2_1[11]"/>
+        <net name="serv_dtm/dbg_probuf2_1[10]"/>
+        <net name="serv_dtm/dbg_probuf2_1[9]"/>
+        <net name="serv_dtm/dbg_probuf2_1[8]"/>
+        <net name="serv_dtm/dbg_probuf2_1[7]"/>
+        <net name="serv_dtm/dbg_probuf2_1[6]"/>
+        <net name="serv_dtm/dbg_probuf2_1[5]"/>
+        <net name="serv_dtm/dbg_probuf2_1[4]"/>
+        <net name="serv_dtm/dbg_probuf2_1[3]"/>
+        <net name="serv_dtm/dbg_probuf2_1[2]"/>
+        <net name="serv_dtm/dbg_probuf2_1[1]"/>
+        <net name="serv_dtm/dbg_probuf2_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe47[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf3_1[31]"/>
+        <net name="serv_dtm/dbg_probuf3_1[30]"/>
+        <net name="serv_dtm/dbg_probuf3_1[29]"/>
+        <net name="serv_dtm/dbg_probuf3_1[28]"/>
+        <net name="serv_dtm/dbg_probuf3_1[27]"/>
+        <net name="serv_dtm/dbg_probuf3_1[26]"/>
+        <net name="serv_dtm/dbg_probuf3_1[25]"/>
+        <net name="serv_dtm/dbg_probuf3_1[24]"/>
+        <net name="serv_dtm/dbg_probuf3_1[23]"/>
+        <net name="serv_dtm/dbg_probuf3_1[22]"/>
+        <net name="serv_dtm/dbg_probuf3_1[21]"/>
+        <net name="serv_dtm/dbg_probuf3_1[20]"/>
+        <net name="serv_dtm/dbg_probuf3_1[19]"/>
+        <net name="serv_dtm/dbg_probuf3_1[18]"/>
+        <net name="serv_dtm/dbg_probuf3_1[17]"/>
+        <net name="serv_dtm/dbg_probuf3_1[16]"/>
+        <net name="serv_dtm/dbg_probuf3_1[15]"/>
+        <net name="serv_dtm/dbg_probuf3_1[14]"/>
+        <net name="serv_dtm/dbg_probuf3_1[13]"/>
+        <net name="serv_dtm/dbg_probuf3_1[12]"/>
+        <net name="serv_dtm/dbg_probuf3_1[11]"/>
+        <net name="serv_dtm/dbg_probuf3_1[10]"/>
+        <net name="serv_dtm/dbg_probuf3_1[9]"/>
+        <net name="serv_dtm/dbg_probuf3_1[8]"/>
+        <net name="serv_dtm/dbg_probuf3_1[7]"/>
+        <net name="serv_dtm/dbg_probuf3_1[6]"/>
+        <net name="serv_dtm/dbg_probuf3_1[5]"/>
+        <net name="serv_dtm/dbg_probuf3_1[4]"/>
+        <net name="serv_dtm/dbg_probuf3_1[3]"/>
+        <net name="serv_dtm/dbg_probuf3_1[2]"/>
+        <net name="serv_dtm/dbg_probuf3_1[1]"/>
+        <net name="serv_dtm/dbg_probuf3_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe53[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_process_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe48[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_rden_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe51[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_resume_req_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe49[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_wren_1"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -652,7 +990,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="BINARY"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -820,7 +1158,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bF"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -831,7 +1169,28 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bF"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/o_cpu_req_haldbg_execute_reqt"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe42[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -3043,6 +3402,281 @@
         <net name="wb_clk_IBUF"/>
       </nets>
     </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_execute_req"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_maddr[1]"/>
+        <net name="serv_dtm/dbg_maddr[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf0[31]"/>
+        <net name="serv_dtm/dbg_probuf0[30]"/>
+        <net name="serv_dtm/dbg_probuf0[29]"/>
+        <net name="serv_dtm/dbg_probuf0[28]"/>
+        <net name="serv_dtm/dbg_probuf0[27]"/>
+        <net name="serv_dtm/dbg_probuf0[26]"/>
+        <net name="serv_dtm/dbg_probuf0[25]"/>
+        <net name="serv_dtm/dbg_probuf0[24]"/>
+        <net name="serv_dtm/dbg_probuf0[23]"/>
+        <net name="serv_dtm/dbg_probuf0[22]"/>
+        <net name="serv_dtm/dbg_probuf0[21]"/>
+        <net name="serv_dtm/dbg_probuf0[20]"/>
+        <net name="serv_dtm/dbg_probuf0[19]"/>
+        <net name="serv_dtm/dbg_probuf0[18]"/>
+        <net name="serv_dtm/dbg_probuf0[17]"/>
+        <net name="serv_dtm/dbg_probuf0[16]"/>
+        <net name="serv_dtm/dbg_probuf0[15]"/>
+        <net name="serv_dtm/dbg_probuf0[14]"/>
+        <net name="serv_dtm/dbg_probuf0[13]"/>
+        <net name="serv_dtm/dbg_probuf0[12]"/>
+        <net name="serv_dtm/dbg_probuf0[11]"/>
+        <net name="serv_dtm/dbg_probuf0[10]"/>
+        <net name="serv_dtm/dbg_probuf0[9]"/>
+        <net name="serv_dtm/dbg_probuf0[8]"/>
+        <net name="serv_dtm/dbg_probuf0[7]"/>
+        <net name="serv_dtm/dbg_probuf0[6]"/>
+        <net name="serv_dtm/dbg_probuf0[5]"/>
+        <net name="serv_dtm/dbg_probuf0[4]"/>
+        <net name="serv_dtm/dbg_probuf0[3]"/>
+        <net name="serv_dtm/dbg_probuf0[2]"/>
+        <net name="serv_dtm/dbg_probuf0[1]"/>
+        <net name="serv_dtm/dbg_probuf0[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf1[31]"/>
+        <net name="serv_dtm/dbg_probuf1[30]"/>
+        <net name="serv_dtm/dbg_probuf1[29]"/>
+        <net name="serv_dtm/dbg_probuf1[28]"/>
+        <net name="serv_dtm/dbg_probuf1[27]"/>
+        <net name="serv_dtm/dbg_probuf1[26]"/>
+        <net name="serv_dtm/dbg_probuf1[25]"/>
+        <net name="serv_dtm/dbg_probuf1[24]"/>
+        <net name="serv_dtm/dbg_probuf1[23]"/>
+        <net name="serv_dtm/dbg_probuf1[22]"/>
+        <net name="serv_dtm/dbg_probuf1[21]"/>
+        <net name="serv_dtm/dbg_probuf1[20]"/>
+        <net name="serv_dtm/dbg_probuf1[19]"/>
+        <net name="serv_dtm/dbg_probuf1[18]"/>
+        <net name="serv_dtm/dbg_probuf1[17]"/>
+        <net name="serv_dtm/dbg_probuf1[16]"/>
+        <net name="serv_dtm/dbg_probuf1[15]"/>
+        <net name="serv_dtm/dbg_probuf1[14]"/>
+        <net name="serv_dtm/dbg_probuf1[13]"/>
+        <net name="serv_dtm/dbg_probuf1[12]"/>
+        <net name="serv_dtm/dbg_probuf1[11]"/>
+        <net name="serv_dtm/dbg_probuf1[10]"/>
+        <net name="serv_dtm/dbg_probuf1[9]"/>
+        <net name="serv_dtm/dbg_probuf1[8]"/>
+        <net name="serv_dtm/dbg_probuf1[7]"/>
+        <net name="serv_dtm/dbg_probuf1[6]"/>
+        <net name="serv_dtm/dbg_probuf1[5]"/>
+        <net name="serv_dtm/dbg_probuf1[4]"/>
+        <net name="serv_dtm/dbg_probuf1[3]"/>
+        <net name="serv_dtm/dbg_probuf1[2]"/>
+        <net name="serv_dtm/dbg_probuf1[1]"/>
+        <net name="serv_dtm/dbg_probuf1[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf2[31]"/>
+        <net name="serv_dtm/dbg_probuf2[30]"/>
+        <net name="serv_dtm/dbg_probuf2[29]"/>
+        <net name="serv_dtm/dbg_probuf2[28]"/>
+        <net name="serv_dtm/dbg_probuf2[27]"/>
+        <net name="serv_dtm/dbg_probuf2[26]"/>
+        <net name="serv_dtm/dbg_probuf2[25]"/>
+        <net name="serv_dtm/dbg_probuf2[24]"/>
+        <net name="serv_dtm/dbg_probuf2[23]"/>
+        <net name="serv_dtm/dbg_probuf2[22]"/>
+        <net name="serv_dtm/dbg_probuf2[21]"/>
+        <net name="serv_dtm/dbg_probuf2[20]"/>
+        <net name="serv_dtm/dbg_probuf2[19]"/>
+        <net name="serv_dtm/dbg_probuf2[18]"/>
+        <net name="serv_dtm/dbg_probuf2[17]"/>
+        <net name="serv_dtm/dbg_probuf2[16]"/>
+        <net name="serv_dtm/dbg_probuf2[15]"/>
+        <net name="serv_dtm/dbg_probuf2[14]"/>
+        <net name="serv_dtm/dbg_probuf2[13]"/>
+        <net name="serv_dtm/dbg_probuf2[12]"/>
+        <net name="serv_dtm/dbg_probuf2[11]"/>
+        <net name="serv_dtm/dbg_probuf2[10]"/>
+        <net name="serv_dtm/dbg_probuf2[9]"/>
+        <net name="serv_dtm/dbg_probuf2[8]"/>
+        <net name="serv_dtm/dbg_probuf2[7]"/>
+        <net name="serv_dtm/dbg_probuf2[6]"/>
+        <net name="serv_dtm/dbg_probuf2[5]"/>
+        <net name="serv_dtm/dbg_probuf2[4]"/>
+        <net name="serv_dtm/dbg_probuf2[3]"/>
+        <net name="serv_dtm/dbg_probuf2[2]"/>
+        <net name="serv_dtm/dbg_probuf2[1]"/>
+        <net name="serv_dtm/dbg_probuf2[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_probuf3[31]"/>
+        <net name="serv_dtm/dbg_probuf3[30]"/>
+        <net name="serv_dtm/dbg_probuf3[29]"/>
+        <net name="serv_dtm/dbg_probuf3[28]"/>
+        <net name="serv_dtm/dbg_probuf3[27]"/>
+        <net name="serv_dtm/dbg_probuf3[26]"/>
+        <net name="serv_dtm/dbg_probuf3[25]"/>
+        <net name="serv_dtm/dbg_probuf3[24]"/>
+        <net name="serv_dtm/dbg_probuf3[23]"/>
+        <net name="serv_dtm/dbg_probuf3[22]"/>
+        <net name="serv_dtm/dbg_probuf3[21]"/>
+        <net name="serv_dtm/dbg_probuf3[20]"/>
+        <net name="serv_dtm/dbg_probuf3[19]"/>
+        <net name="serv_dtm/dbg_probuf3[18]"/>
+        <net name="serv_dtm/dbg_probuf3[17]"/>
+        <net name="serv_dtm/dbg_probuf3[16]"/>
+        <net name="serv_dtm/dbg_probuf3[15]"/>
+        <net name="serv_dtm/dbg_probuf3[14]"/>
+        <net name="serv_dtm/dbg_probuf3[13]"/>
+        <net name="serv_dtm/dbg_probuf3[12]"/>
+        <net name="serv_dtm/dbg_probuf3[11]"/>
+        <net name="serv_dtm/dbg_probuf3[10]"/>
+        <net name="serv_dtm/dbg_probuf3[9]"/>
+        <net name="serv_dtm/dbg_probuf3[8]"/>
+        <net name="serv_dtm/dbg_probuf3[7]"/>
+        <net name="serv_dtm/dbg_probuf3[6]"/>
+        <net name="serv_dtm/dbg_probuf3[5]"/>
+        <net name="serv_dtm/dbg_probuf3[4]"/>
+        <net name="serv_dtm/dbg_probuf3[3]"/>
+        <net name="serv_dtm/dbg_probuf3[2]"/>
+        <net name="serv_dtm/dbg_probuf3[1]"/>
+        <net name="serv_dtm/dbg_probuf3[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_process"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_rden"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_resume_req"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="serv_dtm/dbg_wren"/>
+      </nets>
+    </probe>
     <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
@@ -3777,7 +4411,7 @@
         <net name="serv_dtm/tap_reg_dmi_nxt[2]"/>
       </nets>
     </probe>
-    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -4071,7 +4705,7 @@
         <net name="serv_dtm/tap_sync_trst"/>
       </nets>
     </probe>
-    <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>

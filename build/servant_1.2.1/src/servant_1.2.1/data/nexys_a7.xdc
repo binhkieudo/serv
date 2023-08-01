@@ -40,14 +40,19 @@ set_property -dict {PACKAGE_PIN H5 IOSTANDARD LVCMOS33} [get_ports q]
 #set_property -dict { PACKAGE_PIN B8    IOSTANDARD LVCMOS33 } [get_ports { btn[3] }]; #IO_L12P_T1_MRCC_16 Sch=btn[3]
 
 ## Pmod Header JA
-set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports o_jtag_tdo]
-set_property -dict {PACKAGE_PIN B11 IOSTANDARD LVCMOS33} [get_ports i_jtag_tms]
-set_property -dict {PACKAGE_PIN A11 IOSTANDARD LVCMOS33} [get_ports i_jtag_tdi]
-set_property -dict {PACKAGE_PIN D12 IOSTANDARD LVCMOS33} [get_ports i_jtag_trst]
-#set_property -dict { PACKAGE_PIN D13   IOSTANDARD LVCMOS33 } [get_ports { ja[4] }]; #IO_L6N_T0_VREF_15 Sch=ja[7]
+# o_jtag_tdo
+# i_jtag_tms
+# i_jtag_tdi
+# i_jtag_trst
+# i_jtag_tck
+set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports i_jtag_trst]
+set_property -dict {PACKAGE_PIN B11 IOSTANDARD LVCMOS33} [get_ports i_jtag_tdi]
+set_property -dict {PACKAGE_PIN A11 IOSTANDARD LVCMOS33} [get_ports i_jtag_tms]
+set_property -dict {PACKAGE_PIN D12 IOSTANDARD LVCMOS33} [get_ports i_jtag_tck]
+set_property -dict {PACKAGE_PIN D13 IOSTANDARD LVCMOS33} [get_ports o_jtag_tdo]; #IO_L6N_T0_VREF_15 Sch=ja[7]
 #set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports { ja[5] }]; #IO_L10P_T1_AD11P_15 Sch=ja[8]
 #set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { ja[6] }]; #IO_L10N_T1_AD11N_15 Sch=ja[9]
-set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports i_jtag_tck]
+#set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports i_jtag_tck]
 
 ## Pmod Header JB
 #set_property -dict {PACKAGE_PIN E15 IOSTANDARD LVCMOS33} [get_ports {debug[0]}]

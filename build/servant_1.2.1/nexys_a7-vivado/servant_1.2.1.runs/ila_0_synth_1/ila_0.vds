@@ -2,13 +2,13 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Jul 31 03:58:00 2023
-# Process ID: 1154844
+# Start of session at: Tue Aug  1 01:34:03 2023
+# Process ID: 347912
 # Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1
 # Command line: vivado -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
 # Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/ila_0.vds
 # Journal file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/vivado.jou
-# Running On: binhkieudo-hotswap, OS: Linux, CPU Frequency: 2317.825 MHz, CPU Physical cores: 16, Host memory: 33036 MB
+# Running On: binhkieudo-hotswap, OS: Linux, CPU Frequency: 1400.000 MHz, CPU Physical cores: 16, Host memory: 33036 MB
 #-----------------------------------------------------------
 source ila_0.tcl -notrace
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
@@ -19,7 +19,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1154904
+INFO: [Synth 8-7075] Helper process launched with PID 347944
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2188]
 INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2235]
@@ -132,9 +132,9 @@ WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode 
 WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4588]
 WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:5486]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2775.539 ; gain = 394.738 ; free physical = 1809 ; free virtual = 82504
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2224.345; parent = 2013.311; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3827.477; parent = 2799.355; children = 1028.121
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2775.867 ; gain = 394.707 ; free physical = 13237 ; free virtual = 84148
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2226.074; parent = 2015.298; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3827.809; parent = 2799.684; children = 1028.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
@@ -149,139 +149,139 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [/opt/Xilinx/Vivado/2022.2/sc
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131733]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
-WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
-WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3295]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3315]
 INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
 WARNING: [Synth 8-3301] Unused top level parameter/generic memfile
 WARNING: [Synth 8-3301] Unused top level parameter/generic memsize
 WARNING: [Synth 8-3301] Unused top level parameter/generic frequency
-WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:184]
-WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[451] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[450] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[449] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[448] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[447] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[446] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[445] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[444] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[443] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[442] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[441] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[440] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[439] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[438] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[437] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[436] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[435] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[434] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[433] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[432] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[431] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[430] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[429] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[428] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[427] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[426] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[425] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[424] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[423] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[422] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[421] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[420] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[419] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[418] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[417] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[416] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[415] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[414] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[413] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[412] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[411] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[410] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[409] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[408] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[407] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[406] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[405] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[404] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[403] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[402] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[401] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[400] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[399] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[398] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[397] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[396] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[395] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[394] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[393] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[392] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[391] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[390] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[389] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[388] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[387] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[386] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[385] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[384] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[383] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[382] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[381] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[380] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[379] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[378] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[377] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[376] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[375] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[374] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[373] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[372] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[371] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[370] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[369] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[368] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[367] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[366] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[365] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[364] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[363] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[362] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[361] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[360] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[359] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[358] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[357] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[356] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[355] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[354] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[353] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:204]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[74] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[73] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[72] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[71] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[70] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[69] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[68] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[67] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[66] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[65] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[64] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[63] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[62] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[61] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[60] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[59] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[58] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[57] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[56] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[55] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[54] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[53] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[52] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[51] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[50] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[49] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[48] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[47] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[46] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[45] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[44] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[43] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[42] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[41] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[40] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[39] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[38] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[37] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[36] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[35] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[34] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[33] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[32] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[31] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[30] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[29] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[28] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[27] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[26] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[25] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[24] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[23] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[22] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[21] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[20] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[19] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[18] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[17] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[16] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[15] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[14] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[13] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[12] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[11] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[10] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[9] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[8] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[7] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[6] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[5] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[4] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[6] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[5] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[4] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[35] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[34] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[33] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[32] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[31] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[30] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[29] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[28] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[27] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[26] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[25] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[24] in module blk_mem_gen_v8_4_5_blk_mem_gen_prim_wrapper__parameterized16 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3183.828 ; gain = 803.027 ; free physical = 1893 ; free virtual = 82555
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4211.953; parent = 3183.832; children = 1028.121
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3261.664 ; gain = 880.504 ; free physical = 13215 ; free virtual = 84129
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4289.793; parent = 3261.668; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3183.828 ; gain = 803.027 ; free physical = 1887 ; free virtual = 82549
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4211.953; parent = 3183.832; children = 1028.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 3261.664 ; gain = 880.504 ; free physical = 13233 ; free virtual = 84147
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4289.793; parent = 3261.668; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3183.828 ; gain = 803.027 ; free physical = 1886 ; free virtual = 82548
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4211.953; parent = 3183.832; children = 1028.121
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 3261.664 ; gain = 880.504 ; free physical = 13233 ; free virtual = 84147
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4289.793; parent = 3261.668; children = 1028.125
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3183.828 ; gain = 0.000 ; free physical = 1837 ; free virtual = 82499
-INFO: [Netlist 29-17] Analyzing 574 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3261.664 ; gain = 0.000 ; free physical = 13201 ; free virtual = 84115
+INFO: [Netlist 29-17] Analyzing 714 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -295,36 +295,36 @@ Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexy
 Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3247.859 ; gain = 0.000 ; free physical = 1767 ; free virtual = 82429
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3325.695 ; gain = 0.000 ; free physical = 13087 ; free virtual = 84001
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 420 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 372 instances
-  CFGLUT5 => SRLC32E: 48 instances
+  A total of 522 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 464 instances
+  CFGLUT5 => SRLC32E: 58 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3247.859 ; gain = 0.000 ; free physical = 1764 ; free virtual = 82426
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3325.695 ; gain = 0.000 ; free physical = 13080 ; free virtual = 83994
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3247.859 ; gain = 867.059 ; free physical = 1890 ; free virtual = 82553
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4243.969; parent = 3215.848; children = 1028.121
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3325.695 ; gain = 944.535 ; free physical = 13227 ; free virtual = 84141
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4321.809; parent = 3293.684; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3247.859 ; gain = 867.059 ; free physical = 1891 ; free virtual = 82553
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4243.969; parent = 3215.848; children = 1028.121
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 3325.695 ; gain = 944.535 ; free physical = 13227 ; free virtual = 84142
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4321.809; parent = 3293.684; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3247.859 ; gain = 867.059 ; free physical = 1891 ; free virtual = 82553
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4243.969; parent = 3215.848; children = 1028.121
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 3325.695 ; gain = 944.535 ; free physical = 13225 ; free virtual = 84139
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4321.809; parent = 3293.684; children = 1028.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
@@ -372,6 +372,16 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized42'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized43'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized44'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized45'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized46'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized47'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized48'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized49'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized50'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized51'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized52'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized53'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized54'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -837,6 +847,106 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
 *
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized45'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized46'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized47'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized48'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized49'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized50'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized51'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized52'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized53'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized54'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
               RESET_ADDR |                          0000001 |                          0000001
             REQUEST_READ |                          0000010 |                          0000010
            WAIT_READ_ACK |                          0000100 |                          0000100
@@ -847,9 +957,9 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3247.859 ; gain = 867.059 ; free physical = 1872 ; free virtual = 82537
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4243.969; parent = 3215.848; children = 1028.121
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 3325.695 ; gain = 944.535 ; free physical = 13188 ; free virtual = 84105
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4321.809; parent = 3293.684; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -871,33 +981,33 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1820 ; free virtual = 82505
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13158 ; free virtual = 84101
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1719 ; free virtual = 82404
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13055 ; free virtual = 83999
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1705 ; free virtual = 82390
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13022 ; free virtual = 83965
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1699 ; free virtual = 82384
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13052 ; free virtual = 83996
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -955,49 +1065,49 @@ INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1699 ; free virtual = 82384
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13051 ; free virtual = 83994
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13052 ; free virtual = 83995
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13099 ; free virtual = 84006
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13099 ; free virtual = 84006
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13098 ; free virtual = 84004
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13097 ; free virtual = 84003
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1013,53 +1123,54 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |   141|
-|2     |CFGLUT5  |   420|
-|3     |LUT1     |    72|
-|4     |LUT2     |   519|
-|5     |LUT3     |   218|
-|6     |LUT4     |   469|
-|7     |LUT5     |   207|
-|8     |LUT6     |  1508|
-|9     |MUXF7    |   152|
-|10    |MUXF8    |    44|
-|11    |RAMB36E1 |    13|
-|12    |SRL16E   |   455|
-|13    |SRLC16E  |     2|
-|14    |SRLC32E  |    17|
-|15    |FDRE     |  5311|
-|16    |FDSE     |    10|
+|1     |CARRY4   |   174|
+|2     |CFGLUT5  |   522|
+|3     |LUT1     |    82|
+|4     |LUT2     |   660|
+|5     |LUT3     |   252|
+|6     |LUT4     |   562|
+|7     |LUT5     |   242|
+|8     |LUT6     |  1795|
+|9     |MUXF7    |   202|
+|10    |MUXF8    |    49|
+|11    |RAMB18E1 |     2|
+|12    |RAMB36E1 |    16|
+|13    |SRL16E   |   590|
+|14    |SRLC16E  |     2|
+|15    |SRLC32E  |    17|
+|16    |FDRE     |  6441|
+|17    |FDSE     |    18|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.867 ; gain = 867.066 ; free physical = 1701 ; free virtual = 82386
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2603.142; parent = 2392.133; children = 211.034
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4275.992; parent = 3247.871; children = 1028.121
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3325.703 ; gain = 944.543 ; free physical = 13086 ; free virtual = 83992
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2562.369; parent = 2351.602; children = 210.776
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4353.832; parent = 3325.707; children = 1028.125
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5962 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 3247.867 ; gain = 803.035 ; free physical = 1750 ; free virtual = 82435
-Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3247.875 ; gain = 867.066 ; free physical = 1750 ; free virtual = 82435
+Synthesis finished with 0 errors, 0 critical warnings and 6963 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 3325.703 ; gain = 880.512 ; free physical = 13134 ; free virtual = 84039
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3325.711 ; gain = 944.543 ; free physical = 13134 ; free virtual = 84039
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3247.875 ; gain = 0.000 ; free physical = 1856 ; free virtual = 82541
-INFO: [Netlist 29-17] Analyzing 770 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3325.711 ; gain = 0.000 ; free physical = 13257 ; free virtual = 84162
+INFO: [Netlist 29-17] Analyzing 965 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3271.879 ; gain = 0.000 ; free physical = 1797 ; free virtual = 82482
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3349.715 ; gain = 0.000 ; free physical = 13198 ; free virtual = 84103
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 420 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 372 instances
-  CFGLUT5 => SRLC32E: 48 instances
+  A total of 522 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 464 instances
+  CFGLUT5 => SRLC32E: 58 instances
 
-Synth Design complete, checksum: 65ff8d15
+Synth Design complete, checksum: 6e7ad146
 INFO: [Common 17-83] Releasing license: Synthesis
-268 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+288 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 3271.879 ; gain = 1199.242 ; free physical = 2015 ; free virtual = 82700
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 3349.715 ; gain = 1274.688 ; free physical = 13419 ; free virtual = 84325
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/ila_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ila_0, cache-ID = 7cdb6e4fd842f02a
-INFO: [Coretcl 2-1174] Renamed 384 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ila_0, cache-ID = 4e020d982dcd3cf2
+INFO: [Coretcl 2-1174] Renamed 461 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/ila_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ila_0_utilization_synth.rpt -pb ila_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 31 03:59:36 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug  1 01:35:54 2023...

@@ -37,6 +37,7 @@ module servant_ram
 //        mem[5] = 32'h00100073; // ebreak           // 14 
 //        mem[6] = 32'h01000413; // addi x8, x0, 16  // 18
 //        mem[7] = 32'h01400413; // addi x8, x0, 20  // 1c
+//        mem[0] = 32'h00100073;
         // _start
         mem[0] = 32'h40000537; // [00] lui a0, %hi(GPIO_BASE)
         mem[1] = 32'h00050513; // [04] addi a0, a0, %lo(GPIO_BASE)

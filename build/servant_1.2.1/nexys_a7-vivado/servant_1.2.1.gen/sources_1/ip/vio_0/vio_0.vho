@@ -91,6 +91,16 @@ COMPONENT vio_0
     probe_in34 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_in35 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_in36 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    probe_in37 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    probe_in38 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    probe_in39 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    probe_in40 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    probe_in41 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe_in42 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe_in43 : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    probe_in44 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe_in45 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe_in46 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out0 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe_out2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -143,6 +153,16 @@ your_instance_name : vio_0
     probe_in34 => probe_in34,
     probe_in35 => probe_in35,
     probe_in36 => probe_in36,
+    probe_in37 => probe_in37,
+    probe_in38 => probe_in38,
+    probe_in39 => probe_in39,
+    probe_in40 => probe_in40,
+    probe_in41 => probe_in41,
+    probe_in42 => probe_in42,
+    probe_in43 => probe_in43,
+    probe_in44 => probe_in44,
+    probe_in45 => probe_in45,
+    probe_in46 => probe_in46,
     probe_out0 => probe_out0,
     probe_out1 => probe_out1,
     probe_out2 => probe_out2,

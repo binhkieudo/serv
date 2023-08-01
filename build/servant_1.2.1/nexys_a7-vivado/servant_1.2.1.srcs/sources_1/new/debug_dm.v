@@ -46,7 +46,16 @@ module debug_dm(
     output wire        o_cpu_req_halt,
     // Debug
     output wire [31:0] dbg_0,
-    output wire [2:0]  dbg_1    
+    output wire [2:0]  dbg_1,
+    output wire [31:0] dbg_probuf0,
+    output wire [31:0] dbg_probuf1,
+    output wire [31:0] dbg_probuf2,
+    output wire [31:0] dbg_probuf3,
+    output wire        dbg_rden,
+    output wire        dbg_wren,
+    output wire [1:0]  dbg_maddr,
+    output wire        dbg_resume_req,
+    output wire        dbg_execute_req
 );
 
     //============== RISC-V DM =============
@@ -84,17 +93,17 @@ module debug_dm(
     localparam DMI_OP_RESERVE = 2'B11;
                    
     // DMI registers
-    localparam DMI_ADDR_DATA0       = {2'b00, 4'b0100};
-    localparam DMI_ADDR_DMCONTROL   = {2'b01, 4'b0000};
-    localparam DMI_ADDR_DMSTATUS    = {2'b01, 4'b0001};
-    localparam DMI_ADDR_HARTINFO    = {2'b01, 4'b0010};
-    localparam DMI_ADDR_ABSTRACTS   = {2'b01, 4'b0110};
-    localparam DMI_ADDR_COMMAND     = {2'b01, 4'b0111};
-    localparam DMI_ADDR_ABSRACTAUTO = {2'b01, 4'b1000};
-    localparam DMI_ADDR_NEXTDM      = {2'b01, 4'b1101};
-    localparam DMI_ADDR_PROGBUF0    = {2'b10, 4'b0000};
-    localparam DMI_ADDR_PROGBUF1    = {2'b10, 4'b0001};
-    localparam DMI_ADDR_SBCS        = {2'b11, 4'b1000};
+    localparam DMI_ADDR_DATA0       = {2'b00, 4'b0100}; // 04
+    localparam DMI_ADDR_DMCONTROL   = {2'b01, 4'b0000}; // 10
+    localparam DMI_ADDR_DMSTATUS    = {2'b01, 4'b0001}; // 11
+    localparam DMI_ADDR_HARTINFO    = {2'b01, 4'b0010}; // 12
+    localparam DMI_ADDR_ABSTRACTS   = {2'b01, 4'b0110}; // 16
+    localparam DMI_ADDR_COMMAND     = {2'b01, 4'b0111}; // 17
+    localparam DMI_ADDR_ABSRACTAUTO = {2'b01, 4'b1000}; // 18
+    localparam DMI_ADDR_NEXTDM      = {2'b01, 4'b1101}; // 19
+    localparam DMI_ADDR_PROGBUF0    = {2'b10, 4'b0000}; // 20
+    localparam DMI_ADDR_PROGBUF1    = {2'b10, 4'b0001}; // 21
+    localparam DMI_ADDR_SBCS        = {2'b11, 4'b1000}; // 31
         
     // RISC-V Instruction           
     localparam INSTR_NOP    = 32'h00000013; // NOP
@@ -181,12 +190,12 @@ module debug_dm(
     /*================================================================
     ============ Debug Module (DM) control FSM =======================
     ================================================================*/
-    localparam CMD_IDLE         = 1,
-               CMD_EXE_CHECK    = 2,
-               CMD_EXE_PREAPRE  = 3,
-               CMD_EXE_TRIGGER  = 4,
-               CMD_EXE_BUSY     = 5,
-               CMD_EXE_ERROR    = 6;
+    localparam CMD_IDLE         = 0,
+               CMD_EXE_CHECK    = 1,
+               CMD_EXE_PREAPRE  = 2,
+               CMD_EXE_TRIGGER  = 3,
+               CMD_EXE_BUSY     = 4,
+               CMD_EXE_ERROR    = 5;
     
     reg [2:0] dm_ctrl_state;
 
@@ -584,11 +593,12 @@ module debug_dm(
         // Resume
         6: rom_rdata = 32'h8c8000a3;  // ffff_f818 sb x8, ffff_f8c1(x0)    // ACK that CPU is about to resume
         7: rom_rdata = 32'h7b202473;  // ffff_f81c csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        8: rom_rdata = 32'h7b200073;  // ffff_f820 dret                    // exit debug mode
+        8: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
+        9: rom_rdata = 32'h7b200073;  // ffff_f820 dret                    // exit debug mode
         // Execute   
-        9: rom_rdata = 32'h8c000123; //  ffff_f824 sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
-        10: rom_rdata = 32'h7b202473; // ffff_f828 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        11: rom_rdata = 32'h84000067; // ffff_f82c jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
+        10: rom_rdata = 32'h8c000123; //  ffff_f824 sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
+        11: rom_rdata = 32'h7b202473; // ffff_f828 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        12: rom_rdata = 32'h84000067; // ffff_f82c jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
         default: rom_rdata = 32'd0;   
     endcase
       
@@ -625,4 +635,15 @@ module debug_dm(
   
   assign dbg_0 = {dm_reg_halt_req, dm_reg_resume_req, 1'b0, dm_reg_reset_ack, 26'd0, dm_reg_dmcontrol_ndmreset, dm_reg_dmcontrol_dmactive};
   assign dbg_1 = dm_ctrl_state;
+  
+  assign dbg_probuf0     = cpu_progbuf0;
+  assign dbg_probuf1     = cpu_progbuf1;
+  assign dbg_probuf2     = cpu_progbuf2;
+  assign dbg_probuf3     = cpu_progbuf3;
+  assign dbg_rden        = rden;
+  assign dbg_wren        = wren;
+  assign dbg_maddr       = maddr;
+  assign dbg_resume_req  = dci_resume_req;
+  assign dbg_execute_req = dci_execute_req;
+  
 endmodule

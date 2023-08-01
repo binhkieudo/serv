@@ -27,6 +27,8 @@ module serv_rf_top
     input  wire         i_dbg_halt, // halt
     input  wire         i_dbg_reset,
     output wire         o_dbg_process // set whenever CPU in debug mode (halt, ebreak, step)
+    // Debug
+    
 );
    
     localparam CSR_REGS = 4;

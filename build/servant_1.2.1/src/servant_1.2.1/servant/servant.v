@@ -259,6 +259,16 @@ module servant
     wire [31:0] debug0;
     wire [2:0] dm_ctrl_state;
     
+    wire [31:0] dbg_probuf0;
+    wire [31:0] dbg_probuf1;
+    wire [31:0] dbg_probuf2;
+    wire [31:0] dbg_probuf3;
+    wire        dbg_rden;
+    wire        dbg_wren;
+    wire [1:0]  dbg_maddr;
+    wire        dbg_resume_req;
+    wire        dbg_execute_req;
+    
     // Debug Transport Module (DTM)
     debug_dtm serv_dtm(
         // global control
@@ -294,7 +304,17 @@ module servant
         .o_sbus_rdt         (wb_dm_rdt      ),
         .o_sbus_ack         (wb_dm_ack      ),
         .o_cpu_ndmrst       (w_dbg_reset    ),
-        .o_cpu_req_halt     (w_dbg_halt     )
+        .o_cpu_req_halt     (w_dbg_halt     ),
+        .dbg_probuf0        (dbg_probuf0    ),
+        .dbg_probuf1        (dbg_probuf1    ),
+        .dbg_probuf2        (dbg_probuf2    ),
+        .dbg_probuf3        (dbg_probuf3    ),
+        .dbg_rden           (dbg_rden       ),
+        .dbg_wren           (dbg_wren       ),
+        .dbg_maddr          (dbg_maddr      ),
+        .dbg_resume_req     (dbg_resume_req ),
+        .dbg_execute_req    (dbg_execute_req),
+        .dbg_process        (w_dbg_process  )
     );
     
     // Debug Module (DM)
@@ -327,7 +347,16 @@ module servant
         .o_cpu_req_halt     (w_dbg_halt     ),
         // Debug
         .dbg_0              (debug0         ),
-        .dbg_1              (dm_ctrl_state  )          
+        .dbg_1              (dm_ctrl_state  ),
+        .dbg_probuf0        (dbg_probuf0    ),
+        .dbg_probuf1        (dbg_probuf1    ),
+        .dbg_probuf2        (dbg_probuf2    ),
+        .dbg_probuf3        (dbg_probuf3    ),
+        .dbg_rden           (dbg_rden       ),
+        .dbg_wren           (dbg_wren       ),
+        .dbg_maddr          (dbg_maddr      ),
+        .dbg_resume_req     (dbg_resume_req ),
+        .dbg_execute_req    (dbg_execute_req)          
     );
     
 endmodule

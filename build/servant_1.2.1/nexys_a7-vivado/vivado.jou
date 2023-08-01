@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Jul 31 01:08:32 2023
-# Process ID: 752179
+# Start of session at: Mon Jul 31 16:58:57 2023
+# Process ID: 8907
 # Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
 # Command line: vivado servant_1.2.1.xpr
 # Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.log
@@ -13,331 +13,6 @@
 start_gui
 open_project servant_1.2.1.xpr
 update_compile_order -fileset sources_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes serv_dtm/i_dmi_rsp_data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq2'h1 [get_hw_probes serv_dtm/o_dmi_req_op_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_target {localhost:3121/xilinx_tcf/Digilent/210319B4A283A}
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes serv_dtm/o_dmi_req_valid_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-close_hw_manager
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top servant [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-set_property -dict [list \
-  CONFIG.C_NUM_PROBE_IN {26} \
-  CONFIG.C_PROBE_IN25_WIDTH {32} \
-] [get_ips vio_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
-catch { config_ip_cache -export [get_ips -all vio_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
-launch_runs vio_0_synth_1 -jobs 16
-wait_on_run vio_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list \
-  CONFIG.C_NUM_OF_PROBES {33} \
-  CONFIG.C_PROBE32_WIDTH {32} \
-] [get_ips ila_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-reset_run ila_0_synth_1
-launch_runs ila_0_synth_1 -jobs 16
-wait_on_run ila_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dmi_dmcontrol_1} }
-set_property TRIGGER_COMPARE_VALUE eq2'hX [get_hw_probes serv_dtm/o_dmi_req_op_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_dmi_req_valid_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE neq32'hXXXX_XXXX [get_hw_probes serv_dtm/o_dmi_req_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE neq32'h0000_0000 [get_hw_probes serv_dtm/o_dmi_req_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
-set_property -dict [list \
-  CONFIG.C_NUM_PROBE_IN {27} \
-  CONFIG.C_PROBE_IN26_WIDTH {32} \
-] [get_ips vio_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
-catch { config_ip_cache -export [get_ips -all vio_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
-reset_run vio_0_synth_1
-launch_runs vio_0_synth_1 -jobs 16
-wait_on_run vio_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list \
-  CONFIG.C_NUM_OF_PROBES {34} \
-  CONFIG.C_PROBE33_WIDTH {32} \
-] [get_ips ila_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-reset_run ila_0_synth_1
-launch_runs ila_0_synth_1 -jobs 16
-wait_on_run ila_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/pc_1} }
-set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes serv_dtm/o_dmi_req_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE neq32'hXXXX_XXXX [get_hw_probes serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE neq32'h0000_0000 [get_hw_probes serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
-set_property -dict [list \
-  CONFIG.C_NUM_PROBE_IN {36} \
-  CONFIG.C_PROBE_IN27_WIDTH {32} \
-  CONFIG.C_PROBE_IN28_WIDTH {32} \
-  CONFIG.C_PROBE_IN29_WIDTH {4} \
-  CONFIG.C_PROBE_IN32_WIDTH {32} \
-] [get_ips vio_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
-catch { config_ip_cache -export [get_ips -all vio_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
-reset_run vio_0_synth_1
-launch_runs vio_0_synth_1 -jobs 16
-wait_on_run vio_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list \
-  CONFIG.C_NUM_OF_PROBES {43} \
-  CONFIG.C_PROBE34_WIDTH {32} \
-  CONFIG.C_PROBE35_WIDTH {32} \
-  CONFIG.C_PROBE36_WIDTH {4} \
-  CONFIG.C_PROBE39_WIDTH {32} \
-] [get_ips ila_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-reset_run ila_0_synth_1
-launch_runs ila_0_synth_1 -jobs 16
-wait_on_run ila_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-set_property CONFIG.C_DATA_DEPTH {1024} [get_ips ila_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-reset_run ila_0_synth_1
-launch_runs ila_0_synth_1 -jobs 16
-wait_on_run ila_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/o_sbus_rdt_1} {serv_dtm/o_sbus_ack_1} {serv_dtm/i_subs_sel_1} {serv_dtm/i_sbus_we_1} {serv_dtm/i_sbus_dat_1} {serv_dtm/i_sbus_cyc_1} {serv_dtm/i_sbus_adr_1} {serv_dtm/o_cpu_ndmrst_1} {serv_dtm/o_cpu_req_halt_1} }
-set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes serv_dtm/i_tck -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -jobs 16
 wait_on_run impl_1
@@ -357,16 +32,68 @@ set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'hFFFF_F800 [get_hw_probes serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 set_property -dict [list \
-  CONFIG.C_NUM_PROBE_IN {37} \
-  CONFIG.C_PROBE_IN33_WIDTH {1} \
-  CONFIG.C_PROBE_IN34_WIDTH {1} \
-  CONFIG.C_PROBE_IN36_WIDTH {3} \
+  CONFIG.C_NUM_PROBE_IN {46} \
+  CONFIG.C_PROBE_IN37_WIDTH {32} \
+  CONFIG.C_PROBE_IN38_WIDTH {32} \
+  CONFIG.C_PROBE_IN39_WIDTH {32} \
+  CONFIG.C_PROBE_IN40_WIDTH {32} \
+  CONFIG.C_PROBE_IN43_WIDTH {2} \
 ] [get_ips vio_0]
 generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
 catch { config_ip_cache -export [get_ips -all vio_0] }
@@ -375,7 +102,14 @@ reset_run vio_0_synth_1
 launch_runs vio_0_synth_1 -jobs 16
 wait_on_run vio_0_synth_1
 export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-set_property CONFIG.C_NUM_OF_PROBES {44} [get_ips ila_0]
+set_property -dict [list \
+  CONFIG.C_NUM_OF_PROBES {53} \
+  CONFIG.C_PROBE44_WIDTH {32} \
+  CONFIG.C_PROBE45_WIDTH {32} \
+  CONFIG.C_PROBE46_WIDTH {32} \
+  CONFIG.C_PROBE47_WIDTH {32} \
+  CONFIG.C_PROBE50_WIDTH {2} \
+] [get_ips ila_0]
 generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
 catch { config_ip_cache -export [get_ips -all ila_0] }
 export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
@@ -400,21 +134,36 @@ set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dmi_ctrl_state_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dbg_probuf0_1} {serv_dtm/dbg_probuf1_1} {serv_dtm/dbg_probuf2_1} {serv_dtm/dbg_probuf3_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dbg_maddr_1} {serv_dtm/dbg_rden_1} {serv_dtm/dbg_wren_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dbg_execute_req_1} {serv_dtm/dbg_resume_req_1} }
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dm_ctrl_state_1} }
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 close_hw_manager
-set_property CONFIG.C_PROBE43_WIDTH {3} [get_ips ila_0]
-generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-reset_run ila_0_synth_1
-launch_runs ila_0_synth_1 -jobs 16
-wait_on_run ila_0_synth_1
-export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
@@ -435,11 +184,40 @@ display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dm_ctrl_state_1} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/o_cpu_req_haldbg_execute_reqt} }
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/o_cpu_req_halt_1} }
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/i_tck -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
@@ -449,11 +227,122 @@ refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'h5 [get_hw_probes serv_dtm/dm_ctrl_state_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq3'hX [get_hw_probes serv_dtm/dm_ctrl_state_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property TRIGGER_COMPARE_VALUE eq6'h16 [get_hw_probes serv_dtm/o_dmi_req_address_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+set_property CONFIG.C_NUM_PROBE_IN {47} [get_ips vio_0]
+generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci]
+catch { config_ip_cache -export [get_ips -all vio_0] }
+export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
+reset_run vio_0_synth_1
+launch_runs vio_0_synth_1 -jobs 16
+wait_on_run vio_0_synth_1
+export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0/vio_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.C_NUM_OF_PROBES {54} [get_ips ila_0]
+generate_target all [get_files  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci]
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs ila_0_synth_1 -jobs 16
+wait_on_run ila_0_synth_1
+export_simulation -of_objects [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0/ila_0.xci] -directory /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/sim_scripts -ip_user_files_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files -ipstatic_source_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/modelsim} {questa=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa} {xcelium=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/xcelium} {vcs=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/vcs} {riviera=/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {serv_dtm/dbg_process_1} }
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
@@ -465,48 +354,20 @@ set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/serva
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property TRIGGER_COMPARE_VALUE eq6'hXX [get_hw_probes serv_dtm/o_dmi_req_address_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes serv_dtm/o_cpu_ndmrst_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_cpu_ndmrst_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
@@ -516,3 +377,56 @@ run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAM
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
 save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/o_cpu_req_halt_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes serv_dtm/dbg_resume_req_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/servant.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes serv_dtm/dbg_resume_req_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes serv_dtm/dbg_execute_req_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"serv_dtm/debugger"}]]
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager

@@ -53,7 +53,17 @@ module debug_dtm (
     input  wire [31:0] o_sbus_rdt,
     input  wire        o_sbus_ack,
     input  wire        o_cpu_ndmrst,
-    input  wire        o_cpu_req_halt
+    input  wire        o_cpu_req_halt,
+    input  wire [31:0] dbg_probuf0,
+    input  wire [31:0] dbg_probuf1,
+    input  wire [31:0] dbg_probuf2,
+    input  wire [31:0] dbg_probuf3,
+    input  wire        dbg_rden,
+    input  wire        dbg_wren,
+    input  wire [1:0]  dbg_maddr,
+    input  wire        dbg_resume_req,
+    input  wire        dbg_execute_req,
+    input  wire        dbg_process
 );
 
     localparam dmi_idle_cycle    = 3'b000;
@@ -398,6 +408,16 @@ module debug_dtm (
         .probe_in34  (o_cpu_ndmrst           ),
         .probe_in35  (o_cpu_req_halt         ), 
         .probe_in36  (dm_ctrl_state          ),
+        .probe_in37  (dbg_probuf0            ),
+        .probe_in38  (dbg_probuf1            ),
+        .probe_in39  (dbg_probuf2            ),
+        .probe_in40  (dbg_probuf3            ),
+        .probe_in41  (dbg_rden               ),
+        .probe_in42  (dbg_wren               ),
+        .probe_in43  (dbg_maddr              ),
+        .probe_in44  (dbg_resume_req         ),
+        .probe_in45  (dbg_execute_req        ),
+        .probe_in46  (dbg_process            ),
         .probe_out0  (                       ), //output [0 : 0] probe_out0 (1);
         .probe_out1  (                       ), //output [0 : 0] probe_out1 (1);
         .probe_out2  (                       ), //output [31 : 0] probe_out2 (32);
@@ -449,7 +469,17 @@ module debug_dtm (
         .probe40 (o_sbus_ack            ),
         .probe41 (o_cpu_ndmrst          ),
         .probe42 (o_cpu_req_halt        ),
-        .probe43 (dm_ctrl_state         )
+        .probe43 (dm_ctrl_state         ),
+        .probe44 (dbg_probuf0           ),
+        .probe45 (dbg_probuf1           ),
+        .probe46 (dbg_probuf2           ),
+        .probe47 (dbg_probuf3           ),
+        .probe48 (dbg_rden              ),
+        .probe49 (dbg_wren              ),
+        .probe50 (dbg_maddr             ),
+        .probe51 (dbg_resume_req        ),
+        .probe52 (dbg_execute_req       ),
+        .probe53 (dbg_process           )
     );      
     
 endmodule
