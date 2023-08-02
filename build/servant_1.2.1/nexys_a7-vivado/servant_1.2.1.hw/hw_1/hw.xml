@@ -26,7 +26,7 @@
     </Object>
     <Object name="nolabel_line52/serv_dtm/debugger" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
-      <Properties Property="CONTROL.TRIGGER_POSITION" value="512"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="4096"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="serv_dtm/debugger" gui_info="">
@@ -40,9 +40,12 @@
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="i_jtag_tck_IBUF" gui_info=""/>
+    <Object name="nolabel_line52/serv_dtm/clk_count_1[127:0]" gui_info="Trigger Setup=1"/>
     <Object name="nolabel_line52/serv_dtm/dbg_execute_req_1" gui_info=""/>
-    <Object name="nolabel_line52/serv_dtm/i_dmi_rsp_data[31:0]" gui_info="Trigger Setup=0"/>
+    <Object name="nolabel_line52/serv_dtm/i_dmi_rsp_data[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/ibus_cycle" gui_info=""/>
+    <Object name="nolabel_line52/serv_dtm/ibus_cycle_1" gui_info="Trigger Setup=2"/>
+    <Object name="nolabel_line52/serv_dtm/pc_1[31:0]" gui_info="Trigger Setup=0"/>
     <Object name="serv_dtm/dbg_execute_req_1" gui_info="Trigger Setup=0"/>
     <Object name="serv_dtm/dbg_resume_req_1" gui_info=""/>
     <Object name="serv_dtm/dm_ctrl_state_1[2:0]" gui_info=""/>
@@ -173,7 +176,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq128&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq128&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="neq128&apos;h0000_0000_0000_0000_0000_0000_0000_0000"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
@@ -184,7 +187,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq128&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="neq128&apos;h0000_0000_0000_0000_0000_0000_0000_0000"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -869,7 +872,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq32&apos;h0200_1901"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -880,7 +883,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;h0200_1901"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -1196,7 +1199,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -1207,7 +1210,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -1658,7 +1661,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;h0000_0020"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -1669,7 +1672,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;h0000_0020"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -5515,7 +5518,7 @@
         <net name="nolabel_line52/serv_dtm/dbg_dm_ctrl_busy"/>
       </nets>
     </probe>
-    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -5655,7 +5658,7 @@
         <net name="nolabel_line52/serv_dtm/dbg_probuf1[0]"/>
       </nets>
     </probe>
-    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -6250,7 +6253,7 @@
         <net name="nolabel_line52/serv_dtm/o_dmi_req_data_3[0]"/>
       </nets>
     </probe>
-    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
         <Option Id="DISPLAY_HINT" value=""/>
