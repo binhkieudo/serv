@@ -104,6 +104,9 @@ vio_0 your_instance_name (
   .probe_in45(probe_in45),  // input wire [0 : 0] probe_in45
   .probe_in46(probe_in46),  // input wire [0 : 0] probe_in46
   .probe_in47(probe_in47),  // input wire [0 : 0] probe_in47
+  .probe_in48(probe_in48),  // input wire [0 : 0] probe_in48
+  .probe_in49(probe_in49),  // input wire [2 : 0] probe_in49
+  .probe_in50(probe_in50),  // input wire [127 : 0] probe_in50
   .probe_out0(probe_out0),  // output wire [0 : 0] probe_out0
   .probe_out1(probe_out1),  // output wire [0 : 0] probe_out1
   .probe_out2(probe_out2),  // output wire [31 : 0] probe_out2

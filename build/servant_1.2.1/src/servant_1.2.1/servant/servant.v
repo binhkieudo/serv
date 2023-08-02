@@ -269,6 +269,9 @@ module servant
     wire        dbg_resume_req;
     wire        dbg_execute_req;
     
+    wire        dbg_dm_ctrl_busy;
+    wire [2:0]  dbg_dm_ctrl_cmderr; 
+    
     // Debug Transport Module (DTM)
     debug_dtm serv_dtm(
         // global control
@@ -294,6 +297,7 @@ module servant
         // Debug
         .i_debug0           (debug0         ),
         .i_debug1           (wb_ibus_adr    ),
+        .ibus_cycle         (wb_ibus_cyc    ),
         .dm_ctrl_state      (dm_ctrl_state  ),
             // Debug CPU-DM
         .q                  (q              ),
@@ -315,7 +319,9 @@ module servant
         .dbg_maddr          (dbg_maddr      ),
         .dbg_resume_req     (dbg_resume_req ),
         .dbg_execute_req    (dbg_execute_req),
-        .dbg_process        (w_dbg_process  )
+        .dbg_process        (w_dbg_process  ),
+        .dbg_dm_ctrl_busy   (dbg_dm_ctrl_busy ),
+        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr ) 
     );
     
     // Debug Module (DM)
@@ -357,7 +363,9 @@ module servant
         .dbg_wren           (dbg_wren       ),
         .dbg_maddr          (dbg_maddr      ),
         .dbg_resume_req     (dbg_resume_req ),
-        .dbg_execute_req    (dbg_execute_req)          
+        .dbg_execute_req    (dbg_execute_req),    
+        .dbg_dm_ctrl_busy   (dbg_dm_ctrl_busy ),
+        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr )      
     );
     
 endmodule

@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Tue Aug  1 12:35:33 2023
+// Date        : Wed Aug  2 18:40:42 2023
 // Host        : binhkieudo running 64-bit Ubuntu 20.04.6 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0/vio_0_stub.v
@@ -20,8 +20,9 @@ module vio_0(clk, probe_in0, probe_in1, probe_in2, probe_in3,
   probe_in20, probe_in21, probe_in22, probe_in23, probe_in24, probe_in25, probe_in26, probe_in27, 
   probe_in28, probe_in29, probe_in30, probe_in31, probe_in32, probe_in33, probe_in34, probe_in35, 
   probe_in36, probe_in37, probe_in38, probe_in39, probe_in40, probe_in41, probe_in42, probe_in43, 
-  probe_in44, probe_in45, probe_in46, probe_in47, probe_out0, probe_out1, probe_out2, probe_out3)
-/* synthesis syn_black_box black_box_pad_pin="clk,probe_in0[0:0],probe_in1[5:0],probe_in2[31:0],probe_in3[1:0],probe_in4[0:0],probe_in5[0:0],probe_in6[0:0],probe_in7[0:0],probe_in8[0:0],probe_in9[0:0],probe_in10[3:0],probe_in11[2:0],probe_in12[0:0],probe_in13[0:0],probe_in14[1:0],probe_in15[31:0],probe_in16[31:0],probe_in17[5:0],probe_in18[4:0],probe_in19[0:0],probe_in20[31:0],probe_in21[31:0],probe_in22[31:0],probe_in23[39:0],probe_in24[39:0],probe_in25[31:0],probe_in26[31:0],probe_in27[31:0],probe_in28[31:0],probe_in29[3:0],probe_in30[0:0],probe_in31[0:0],probe_in32[31:0],probe_in33[0:0],probe_in34[0:0],probe_in35[0:0],probe_in36[2:0],probe_in37[31:0],probe_in38[31:0],probe_in39[31:0],probe_in40[31:0],probe_in41[0:0],probe_in42[0:0],probe_in43[1:0],probe_in44[0:0],probe_in45[0:0],probe_in46[0:0],probe_in47[0:0],probe_out0[0:0],probe_out1[0:0],probe_out2[31:0],probe_out3[1:0]" */;
+  probe_in44, probe_in45, probe_in46, probe_in47, probe_in48, probe_in49, probe_in50, probe_out0, 
+  probe_out1, probe_out2, probe_out3)
+/* synthesis syn_black_box black_box_pad_pin="clk,probe_in0[0:0],probe_in1[5:0],probe_in2[31:0],probe_in3[1:0],probe_in4[0:0],probe_in5[0:0],probe_in6[0:0],probe_in7[0:0],probe_in8[0:0],probe_in9[0:0],probe_in10[3:0],probe_in11[2:0],probe_in12[0:0],probe_in13[0:0],probe_in14[1:0],probe_in15[31:0],probe_in16[31:0],probe_in17[5:0],probe_in18[4:0],probe_in19[0:0],probe_in20[31:0],probe_in21[31:0],probe_in22[31:0],probe_in23[39:0],probe_in24[39:0],probe_in25[31:0],probe_in26[31:0],probe_in27[31:0],probe_in28[31:0],probe_in29[3:0],probe_in30[0:0],probe_in31[0:0],probe_in32[31:0],probe_in33[0:0],probe_in34[0:0],probe_in35[0:0],probe_in36[2:0],probe_in37[31:0],probe_in38[31:0],probe_in39[31:0],probe_in40[31:0],probe_in41[0:0],probe_in42[0:0],probe_in43[1:0],probe_in44[0:0],probe_in45[0:0],probe_in46[0:0],probe_in47[0:0],probe_in48[0:0],probe_in49[2:0],probe_in50[127:0],probe_out0[0:0],probe_out1[0:0],probe_out2[31:0],probe_out3[1:0]" */;
   input clk;
   input [0:0]probe_in0;
   input [5:0]probe_in1;
@@ -71,6 +72,9 @@ module vio_0(clk, probe_in0, probe_in1, probe_in2, probe_in3,
   input [0:0]probe_in45;
   input [0:0]probe_in46;
   input [0:0]probe_in47;
+  input [0:0]probe_in48;
+  input [2:0]probe_in49;
+  input [127:0]probe_in50;
   output [0:0]probe_out0;
   output [0:0]probe_out1;
   output [31:0]probe_out2;

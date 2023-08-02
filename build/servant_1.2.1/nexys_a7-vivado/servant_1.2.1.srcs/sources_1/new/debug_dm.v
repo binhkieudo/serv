@@ -55,7 +55,9 @@ module debug_dm(
     output wire        dbg_wren,
     output wire [1:0]  dbg_maddr,
     output wire        dbg_resume_req,
-    output wire        dbg_execute_req
+    output wire        dbg_execute_req,
+    output wire        dbg_dm_ctrl_busy,
+    output wire [2:0]  dbg_dm_ctrl_cmderr
 );
 
     //============== RISC-V DM =============
@@ -646,4 +648,7 @@ module debug_dm(
   assign dbg_resume_req  = dci_resume_req;
   assign dbg_execute_req = dci_execute_req;
   
+  assign dbg_dm_ctrl_busy = dm_ctrl_busy;
+  assign dbg_dm_ctrl_cmderr = dm_ctrl_cmderr;
+   
 endmodule

@@ -43,6 +43,7 @@ module debug_dtm (
     // Debug
     input  wire [31:0] i_debug0,
     input  wire [31:0] i_debug1,
+    input  wire        ibus_cycle, 
     input  wire [2:0]  dm_ctrl_state,
     // Debug CPU-DM
     input  wire        q,
@@ -64,7 +65,9 @@ module debug_dtm (
     input  wire [1:0]  dbg_maddr,
     input  wire        dbg_resume_req,
     input  wire        dbg_execute_req,
-    input  wire        dbg_process
+    input  wire        dbg_process,
+    input  wire        dbg_dm_ctrl_busy,
+    input  wire [2:0]  dbg_dm_ctrl_cmderr   
 );
 
     localparam dmi_idle_cycle    = 3'b000;
@@ -95,6 +98,12 @@ module debug_dtm (
 
     reg r_tdo;
     
+    reg [127:0] clk_count;
+    
+    always @(posedge i_clk)
+        if (i_rst) clk_count <= 128'd0;
+        else clk_count <= clk_count + 1'b1;
+        
     /*===============================
     ========= TAP FSM ===============
     ================================*/
@@ -419,7 +428,10 @@ module debug_dtm (
         .probe_in44  (dbg_resume_req         ),
         .probe_in45  (dbg_execute_req        ),
         .probe_in46  (dbg_process            ),
-        .probe_in47  ( ),
+        .probe_in47  (ibus_cycle             ),
+        .probe_in48  (dbg_dm_ctrl_busy       ),
+        .probe_in49  (dbg_dm_ctrl_cmderr     ),
+        .probe_in50  (clk_count              ),
         .probe_out0  (                       ), //output [0 : 0] probe_out0 (1);
         .probe_out1  (                       ), //output [0 : 0] probe_out1 (1);
         .probe_out2  (                       ), //output [31 : 0] probe_out2 (32);
@@ -481,7 +493,11 @@ module debug_dtm (
         .probe50 (dbg_maddr             ),
         .probe51 (dbg_resume_req        ),
         .probe52 (dbg_execute_req       ),
-        .probe53 (dbg_process           )
+        .probe53 (dbg_process           ),
+        .probe54 (dbg_dm_ctrl_busy      ),
+        .probe55 (dbg_dm_ctrl_cmderr    ),
+        .probe56 (ibus_cycle            ),
+        .probe57 (clk_count             )
     );      
     
 endmodule

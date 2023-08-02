@@ -103,7 +103,11 @@ probe49,
 probe50,
 probe51,
 probe52,
-probe53
+probe53,
+probe54,
+probe55,
+probe56,
+probe57
 );
 
 input clk;
@@ -163,6 +167,10 @@ input [1 : 0] probe50;
 input [0 : 0] probe51;
 input [0 : 0] probe52;
 input [0 : 0] probe53;
+input [0 : 0] probe54;
+input [2 : 0] probe55;
+input [0 : 0] probe56;
+input [127 : 0] probe57;
 
 
 endmodule
