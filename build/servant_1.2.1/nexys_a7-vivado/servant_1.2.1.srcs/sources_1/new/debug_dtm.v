@@ -43,6 +43,7 @@ module debug_dtm (
     // Debug
     input  wire [31:0] i_debug0,
     input  wire [31:0] i_debug1,
+    input  wire [31:0] i_bus_rdt,
     input  wire        ibus_cycle, 
     input  wire [2:0]  dm_ctrl_state,
     // Debug CPU-DM
@@ -67,7 +68,12 @@ module debug_dtm (
     input  wire        dbg_execute_req,
     input  wire        dbg_process,
     input  wire        dbg_dm_ctrl_busy,
-    input  wire [2:0]  dbg_dm_ctrl_cmderr   
+    input  wire [2:0]  dbg_dm_ctrl_cmderr,
+    input  wire        o_dbg_step,
+    input  wire [5:0]  o_dbg_rf_waddr,
+    input  wire        o_dbg_rf_w1wren,
+    input  wire        o_dbg_rf_we,
+    input  wire [7:0]  o_dbg_rf_wdata
 );
 
     localparam dmi_idle_cycle    = 3'b000;
@@ -76,7 +82,7 @@ module debug_dtm (
     
     localparam IDCODE_VERSION = 4'b0001;
     localparam IDCODE_PARTID  = 16'h0001;
-    localparam IDCODE_MANID   = 11'd0;
+    localparam IDCODE_MANID   = 11'h787;
 
     // TAP signal sunchronizer
     reg [2:0] tap_sync_trst_r;
@@ -438,10 +444,11 @@ module debug_dtm (
         .probe_in48  (dbg_dm_ctrl_busy       ),
         .probe_in49  (dbg_dm_ctrl_cmderr     ),
         .probe_in50  (clk_count              ),
-        .probe_out0  (                       ), //output [0 : 0] probe_out0 (1);
-        .probe_out1  (                       ), //output [0 : 0] probe_out1 (1);
-        .probe_out2  (                       ), //output [31 : 0] probe_out2 (32);
-        .probe_out3  (                       )  //output [1 : 0] probe_out3 (2);
+        .probe_in51  (o_dbg_step  ),
+        .probe_in52  (o_dbg_rf_waddr  ),
+        .probe_in53  (o_dbg_rf_w1wren  ),
+        .probe_in54  (o_dbg_rf_we  ),
+        .probe_in55  (o_dbg_rf_wdata  )
     );
     
     ila_0 debugger(
@@ -503,7 +510,13 @@ module debug_dtm (
         .probe54 (dbg_dm_ctrl_busy      ),
         .probe55 (dbg_dm_ctrl_cmderr    ),
         .probe56 (ibus_cycle            ),
-        .probe57 (clk_count             )
+        .probe57 (clk_count             ),
+        .probe58 (o_dbg_step ),
+        .probe59 (o_dbg_rf_waddr ),
+        .probe60 (o_dbg_rf_w1wren ),
+        .probe61 (o_dbg_rf_we ),
+        .probe62 (o_dbg_rf_wdata ),
+        .probe63 (i_bus_rdt )
     );      
     
 endmodule

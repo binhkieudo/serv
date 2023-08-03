@@ -36,7 +36,8 @@ module serv_top
    // Debug interface
    input  wire        i_dbg_halt,
    input  wire        i_dbg_reset,
-   output wire        o_dbg_process
+   output wire        o_dbg_process,
+   output wire        o_dbg_step
 );
 
    wire [4:0]    rd_addr;
@@ -167,7 +168,9 @@ module serv_top
 
    assign i_wb_rdt =  wb_ibus_rdt;
    assign iscomp   =  1'b0;
-
+   
+   wire dbg_process_delay;
+   
    serv_state state (
       .i_clk          (clk          ),
       .i_rst          (i_rst | i_dbg_reset),
@@ -288,7 +291,7 @@ module serv_top
       .i_dbg_halt         (i_dbg_halt       ),
       .i_dbg_step         (dbg_step         ),
       .o_dbg_process      (o_dbg_process    ),
-      .o_dbg_delay        ( )
+      .o_dbg_delay        (dbg_process_delay)
    );
 
    serv_immdec immdec (
@@ -427,6 +430,7 @@ module serv_top
       //Trap interface
       .i_trap      (trap            ),
       .i_ebreak    (ebreak          ),
+      .i_dbg_process (dbg_process_delay),
       .i_mret      (mret            ),
       .i_dret      (dret            ),
       .i_mepc      (wb_ibus_adr[0]  ),
@@ -522,5 +526,7 @@ module serv_top
 	    .i_rs1        (rs1            ),
 	    .o_q          (csr_rd         )
     );
+    
+    assign o_dbg_step = dbg_step;
    
 endmodule

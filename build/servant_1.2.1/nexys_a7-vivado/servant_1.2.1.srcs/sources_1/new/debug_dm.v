@@ -439,6 +439,7 @@ module debug_dm(
   assign cpu_progbuf1 = !dm_ctrl_pbuf_en? INSTR_NOP : dm_reg_progbuf0;
   assign cpu_progbuf2 = !dm_ctrl_pbuf_en? INSTR_NOP : dm_reg_progbuf1;
   assign cpu_progbuf3 = INSTR_EBREAK; // implicit ebreak instruction
+//  assign cpu_progbuf3 = 32'h8000_0067; // Jump to entry point (jalr x0, x0, fffff800)
   
   // DMI status
   assign o_dmi_rsp_op    = 2'b00; // operation success

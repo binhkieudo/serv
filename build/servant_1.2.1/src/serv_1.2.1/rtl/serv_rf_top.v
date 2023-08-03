@@ -26,9 +26,13 @@ module serv_rf_top
     // Debug signals
     input  wire         i_dbg_halt, // halt
     input  wire         i_dbg_reset,
-    output wire         o_dbg_process // set whenever CPU in debug mode (halt, ebreak, step)
+    output wire         o_dbg_process, // set whenever CPU in debug mode (halt, ebreak, step)
     // Debug
-    
+    output wire         o_dbg_step,
+    output wire [5:0]   o_dbg_rf_waddr,
+    output wire         o_dbg_rf_w1wren,
+    output wire         o_dbg_rf_we,
+    output wire [7:0]   o_dbg_rf_wdata
 );
    
     localparam CSR_REGS = 4;
@@ -90,7 +94,8 @@ module serv_rf_top
       // Debug interface
       .i_dbg_halt  (i_dbg_halt  ),
       .i_dbg_reset (i_dbg_reset ),
-      .o_dbg_process(o_dbg_process )
+      .o_dbg_process(o_dbg_process ),
+      .o_dbg_step  (o_dbg_step )
     );
 
     serv_rf_ram_if #(
@@ -137,4 +142,10 @@ module serv_rf_top
       .o_rdata (rdata   )
    );
    
+   
+    assign o_dbg_rf_waddr = wreg1;
+    assign o_dbg_rf_w1wren = wen1;
+    assign o_dbg_rf_we = wen;
+    assign o_dbg_rf_wdata = wdata;
+    
 endmodule

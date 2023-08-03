@@ -201,6 +201,12 @@ module servant
 	    .o_wb_dat (wb_timer_rdt)
     );
 
+   wire         o_dbg_step;
+   wire [5:0]   o_dbg_rf_waddr;
+   wire         o_dbg_rf_w1wren;
+   wire         o_dbg_rf_we;
+   wire [7:0]   o_dbg_rf_wdata;
+    
    servant_gpio gpio (
       .i_wb_clk (wb_clk     ),
       .i_wb_dat (wb_gpio_dat),
@@ -234,7 +240,12 @@ module servant
       // Debug interface
       .i_dbg_halt   (w_dbg_halt     ),
       .i_dbg_reset  (w_dbg_reset    ),
-      .o_dbg_process(w_dbg_process  )
+      .o_dbg_process(w_dbg_process  ),
+      .o_dbg_step       (o_dbg_step     ),
+      .o_dbg_rf_waddr   (o_dbg_rf_waddr ),
+      .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
+      .o_dbg_rf_we      (o_dbg_rf_we    ),
+      .o_dbg_rf_wdata   (o_dbg_rf_wdata )     
      );
       
     // SPI Programmer
@@ -297,6 +308,7 @@ module servant
         // Debug
         .i_debug0           (debug0         ),
         .i_debug1           (wb_ibus_adr    ),
+        .i_bus_rdt          (wb_ibus_rdt    ),
         .ibus_cycle         (wb_ibus_cyc    ),
         .dm_ctrl_state      (dm_ctrl_state  ),
             // Debug CPU-DM
@@ -321,7 +333,12 @@ module servant
         .dbg_execute_req    (dbg_execute_req),
         .dbg_process        (w_dbg_process  ),
         .dbg_dm_ctrl_busy   (dbg_dm_ctrl_busy ),
-        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr ) 
+        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr ),
+        .o_dbg_step       (o_dbg_step     ),
+        .o_dbg_rf_waddr   (o_dbg_rf_waddr ),
+        .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
+        .o_dbg_rf_we      (o_dbg_rf_we    ),
+        .o_dbg_rf_wdata   (o_dbg_rf_wdata )
     );
     
     // Debug Module (DM)

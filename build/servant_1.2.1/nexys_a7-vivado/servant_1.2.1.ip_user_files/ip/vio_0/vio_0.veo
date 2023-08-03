@@ -107,10 +107,11 @@ vio_0 your_instance_name (
   .probe_in48(probe_in48),  // input wire [0 : 0] probe_in48
   .probe_in49(probe_in49),  // input wire [2 : 0] probe_in49
   .probe_in50(probe_in50),  // input wire [127 : 0] probe_in50
-  .probe_out0(probe_out0),  // output wire [0 : 0] probe_out0
-  .probe_out1(probe_out1),  // output wire [0 : 0] probe_out1
-  .probe_out2(probe_out2),  // output wire [31 : 0] probe_out2
-  .probe_out3(probe_out3)  // output wire [1 : 0] probe_out3
+  .probe_in51(probe_in51),  // input wire [0 : 0] probe_in51
+  .probe_in52(probe_in52),  // input wire [5 : 0] probe_in52
+  .probe_in53(probe_in53),  // input wire [0 : 0] probe_in53
+  .probe_in54(probe_in54),  // input wire [0 : 0] probe_in54
+  .probe_in55(probe_in55)  // input wire [7 : 0] probe_in55
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Wed Aug  2 18:40:42 2023
-| Host         : binhkieudo running 64-bit Ubuntu 20.04.6 LTS
+| Date         : Fri Aug  4 04:12:30 2023
+| Host         : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file vio_0_utilization_synth.rpt -pb vio_0_utilization_synth.pb
 | Design       : vio_0
 | Device       : xc7vx485tffg1761-2
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 2305 |     0 |          0 |    303600 |  0.76 |
-|   LUT as Logic          | 2305 |     0 |          0 |    303600 |  0.76 |
+| Slice LUTs*             | 2288 |     0 |          0 |    303600 |  0.75 |
+|   LUT as Logic          | 2288 |     0 |          0 |    303600 |  0.75 |
 |   LUT as Memory         |    0 |     0 |          0 |    130800 |  0.00 |
-| Slice Registers         | 4157 |     0 |          0 |    607200 |  0.68 |
-|   Register as Flip Flop | 4157 |     0 |          0 |    607200 |  0.68 |
+| Slice Registers         | 4127 |     0 |          0 |    607200 |  0.68 |
+|   Register as Flip Flop | 4127 |     0 |          0 |    607200 |  0.68 |
 |   Register as Latch     |    0 |     0 |          0 |    607200 |  0.00 |
-| F7 Muxes                |  256 |     0 |          0 |    151800 |  0.17 |
-| F8 Muxes                |  128 |     0 |          0 |     75900 |  0.17 |
+| F7 Muxes                |  288 |     0 |          0 |    151800 |  0.19 |
+| F8 Muxes                |  144 |     0 |          0 |     75900 |  0.19 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -59,7 +59,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 4157  |          Yes |       Reset |            - |
+| 4127  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,14 +153,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 4157 |        Flop & Latch |
-| LUT3     | 1547 |                 LUT |
-| LUT6     |  689 |                 LUT |
-| MUXF7    |  256 |               MuxFx |
-| MUXF8    |  128 |               MuxFx |
-| LUT5     |   60 |                 LUT |
-| LUT4     |   32 |                 LUT |
-| LUT2     |    9 |                 LUT |
+| FDRE     | 4127 |        Flop & Latch |
+| LUT3     | 1558 |                 LUT |
+| LUT6     |  675 |                 LUT |
+| MUXF7    |  288 |               MuxFx |
+| MUXF8    |  144 |               MuxFx |
+| LUT5     |   57 |                 LUT |
+| LUT4     |   12 |                 LUT |
+| LUT2     |    6 |                 LUT |
 | LUT1     |    3 |                 LUT |
 +----------+------+---------------------+
 

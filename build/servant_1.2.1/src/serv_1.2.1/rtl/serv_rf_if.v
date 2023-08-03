@@ -17,6 +17,8 @@ module serv_rf_if
    //Trap interface
    input  wire 		 i_trap,
    input  wire       i_ebreak,
+   input  wire       i_dbg_process,
+   input  wire       i_halt,
    input  wire 		 i_mret,
    input  wire       i_dret,
    input  wire 		 i_mepc,
@@ -87,7 +89,7 @@ module serv_rf_if
                              {3'b010,i_csr_addr};
    
    assign o_wen0 = i_cnt_en & (i_trap | rd_wen) & !i_ebreak;
-   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak);
+   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak) & !i_dbg_process;
 
    /*
     ********** Read side ***********
