@@ -273,7 +273,7 @@ module debug_dm(
                         dm_ctrl_ldsw_progbuf[31:20] <= DM_DATAADDR;         // Source register
                         dm_ctrl_ldsw_progbuf[19:12] <= INSTR_LW[19:12];
                         dm_ctrl_ldsw_progbuf[11:7]  <= dm_reg_command[4:0]; // Destination register
-                        dm_ctrl_ldsw_progbuf[6:0]   <= INSTR_SW[6:0];
+                        dm_ctrl_ldsw_progbuf[6:0]   <= INSTR_LW[6:0];
                     end
                 else dm_ctrl_ldsw_progbuf <= INSTR_NOP;
                 

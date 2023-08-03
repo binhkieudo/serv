@@ -25,7 +25,7 @@ add wave -radix binary sim:/tb/wb_clk
 #================================================================================================================== SERVANT
 #add wave -divider -height 30 "SERVANT"
 add wave -group SERVANT -radix binary sim:/tb/wb_clk
-add wave -group SERVANT -radix binary sim:/tb/wb_rst
+add wave -group SERVANT -radix binary sim:/tb/wb_rstn
 add wave -group SERVANT -radix binary sim:/tb/q
 
 #================================================================================================================== Arbiter

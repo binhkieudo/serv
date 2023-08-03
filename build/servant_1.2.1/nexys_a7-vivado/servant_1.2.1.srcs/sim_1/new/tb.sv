@@ -24,8 +24,8 @@ module tb(
 
     );
     
-     reg wb_clk = 1'b0;
-     reg wb_rst = 1'b1;
+     reg wb_clk  = 1'b0;
+     reg wb_rstn = 1'b0;
      // GPIO
      wire q;
      // JTAG
@@ -47,7 +47,7 @@ module tb(
     always #1 wb_clk = ~wb_clk;
     
     initial begin
-        #4 wb_rst = 1'b0;
+        #4 wb_rstn = 1'b1;
         #100000 $stop;
     end
     

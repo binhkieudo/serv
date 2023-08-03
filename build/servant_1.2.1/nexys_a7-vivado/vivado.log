@@ -2,38 +2,177 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Aug  2 23:43:07 2023
-# Process ID: 11749
+# Start of session at: Thu Aug  3 17:40:22 2023
+# Process ID: 21427
 # Current directory: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado
 # Command line: vivado servant_1.2.1.xpr
 # Log file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.log
 # Journal file: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/vivado.jou
-# Running On: binhkieudo-hotswap, OS: Linux, CPU Frequency: 1400.000 MHz, CPU Physical cores: 16, Host memory: 33036 MB
+# Running On: binhkieudo, OS: Linux, CPU Frequency: 3300.000 MHz, CPU Physical cores: 10, Host memory: 134739 MB
 #-----------------------------------------------------------
 start_gui
 open_project servant_1.2.1.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 7362.961 ; gain = 286.820 ; free physical = 17782 ; free virtual = 88128
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 7387.363 ; gain = 305.559 ; free physical = 118558 ; free virtual = 125289
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-49] Using simulator executables from '/tools/questasim/linux_x86_64'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa/modelsim.ini' copied to run dir:'/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.sim/sim_1/behav/questa'
+INFO: [SIM-utils-80] Simulation library compiled with '7.4.0' version ('/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/compile_simlib/questa)
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.sim/sim_1/behav/questa'
+** Warning: (vlib-34) Library already exists at "questa_lib/work".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+Errors: 0, Warnings: 1
+** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+Errors: 0, Warnings: 1
+QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:40:56 on Aug 03,2023
+vlog -64 -incr -mfcu -work xil_defaultlib "+incdir+../../../../" "+incdir+../../../../servant_1.2.1.srcs/sources_1/new" ../../../../servant_1.2.1.gen/sources_1/ip/ila_0/sim/ila_0.v ../../../../servant_1.2.1.gen/sources_1/ip/vio_0/sim/vio_0.v ../../../../servant_1.2.1.srcs/sources_1/new/debug_dm.v ../../../../servant_1.2.1.srcs/sources_1/new/debug_dtm.v ../../../../servant_1.2.1.srcs/sources_1/new/flash_controller.v ../../../../../src/serv_1.2.1/rtl/serv_alu.v ../../../../../src/serv_1.2.1/rtl/serv_bufreg.v ../../../../../src/serv_1.2.1/rtl/serv_bufreg2.v ../../../../../src/serv_1.2.1/rtl/serv_csr.v ../../../../../src/serv_1.2.1/rtl/serv_ctrl.v ../../../../../src/serv_1.2.1/rtl/serv_decode.v ../../../../../src/serv_1.2.1/rtl/serv_immdec.v ../../../../../src/serv_1.2.1/rtl/serv_mem_if.v ../../../../../src/serv_1.2.1/rtl/serv_rf_if.v ../../../../../src/serv_1.2.1/rtl/serv_rf_ram.v ../../../../../src/serv_1.2.1/rtl/serv_rf_ram_if.v ../../../../../src/serv_1.2.1/rtl/serv_rf_top.v ../../../../../src/serv_1.2.1/rtl/serv_state.v ../../../../../src/serv_1.2.1/rtl/serv_top.v ../../../../../src/servant_1.2.1/servant/servant.v ../../../../../src/servant_1.2.1/servant/servant_arbiter.v ../../../../../src/servant_1.2.1/servant/servant_gpio.v ../../../../../src/servant_1.2.1/servant/servant_mux.v ../../../../../src/servant_1.2.1/servant/servant_ram.v ../../../../../src/servant_1.2.1/servant/servant_timer.v ../../../../servant_1.2.1.srcs/sources_1/new/spi_master.v 
+-- Skipping module ila_0
+-- Skipping module vio_0
+-- Skipping module debug_dm
+-- Skipping module debug_dtm
+-- Skipping module flash_controller
+-- Skipping module serv_alu
+-- Skipping module serv_bufreg
+-- Skipping module serv_bufreg2
+-- Skipping module serv_csr
+-- Skipping module serv_ctrl
+-- Skipping module serv_decode
+-- Skipping module serv_immdec
+-- Skipping module serv_mem_if
+-- Skipping module serv_rf_if
+-- Skipping module serv_rf_ram
+-- Skipping module serv_rf_ram_if
+-- Skipping module serv_rf_top
+-- Skipping module serv_state
+-- Skipping module serv_top
+-- Skipping module servant
+-- Skipping module servant_arbiter
+-- Skipping module servant_gpio
+-- Skipping module servant_mux
+-- Skipping module servant_ram
+-- Skipping module servant_timer
+-- Skipping module spi_master
+
+Top level modules:
+	servant
+End time: 17:40:57 on Aug 03,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:40:57 on Aug 03,2023
+vlog -64 -incr -mfcu -sv -work xil_defaultlib "+incdir+../../../../" "+incdir+../../../../servant_1.2.1.srcs/sources_1/new" ../../../../servant_1.2.1.srcs/sim_1/new/tb.sv 
+-- Skipping module tb
+
+Top level modules:
+	tb
+End time: 17:40:57 on Aug 03,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:40:57 on Aug 03,2023
+vlog -work xil_defaultlib glbl.v 
+-- Compiling module glbl
+
+Top level modules:
+	glbl
+End time: 17:40:57 on Aug 03,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.sim/sim_1/behav/questa'
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 17:40:57 on Aug 03,2023
+vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl -o tb_opt 
+
+Top level modules:
+	tb
+	glbl
+
+Analyzing design...
+-- Loading module tb
+-- Loading module glbl
+-- Loading module servant
+-- Loading module servant_arbiter
+-- Loading module servant_mux
+-- Loading module servant_ram
+-- Loading module servant_timer
+-- Loading module servant_gpio
+-- Loading module serv_rf_top
+-- Loading module serv_top
+-- Loading module serv_state
+-- Loading module serv_decode
+-- Loading module serv_immdec
+-- Loading module serv_bufreg
+-- Loading module serv_bufreg2
+-- Loading module serv_ctrl
+-- Loading module serv_alu
+-- Loading module serv_rf_if
+-- Loading module serv_mem_if
+-- Loading module serv_csr
+-- Loading module serv_rf_ram_if
+-- Loading module serv_rf_ram
+-- Loading module flash_controller
+-- Loading module spi_master
+-- Loading module debug_dtm
+-- Loading module vio_0
+-- Loading module ila_0
+-- Loading module debug_dm
+Incremental compilation check found no design-units have changed.
+Optimized design name is tb_opt
+End time: 17:40:57 on Aug 03,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.sim/sim_1/behav/questa'
+Program launched (PID=21666)
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 18:10:16 2023] Launched synth_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log
+[Thu Aug  3 18:10:16 2023] Launched impl_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/runme.log
+reset_run impl_1
+set_property top top [current_fileset]
 update_compile_order -fileset sources_1
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Thu Aug  3 01:31:04 2023] Launched synth_1...
+INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/servant.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 18:15:57 2023] Launched synth_1...
 Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log
-[Thu Aug  3 01:31:04 2023] Launched impl_1...
+[Thu Aug  3 18:15:57 2023] Launched impl_1...
 Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -58,7 +197,6 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 7577.672 ; gain = 0.000 ; free physical = 17233 ; free virtual = 88197
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001db705be01
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
@@ -66,27 +204,38 @@ set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 current_hw_device [get_hw_devices xc7vx485t_0]
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
-INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
 program_hw_devices [get_hw_devices xc7vx485t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9506.867 ; gain = 0.000 ; free physical = 15332 ; free virtual = 86290
+program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9746.434 ; gain = 0.000 ; free physical = 114492 ; free virtual = 121971
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00001db705be01
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001db705be01
-INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
 save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00001db705be01}
-INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/00001db705be01
-disconnect_hw_server localhost:3121
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 18:30:39 2023] Launched synth_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log
+[Thu Aug  3 18:30:39 2023] Launched impl_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/runme.log
+open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:10:28
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
 INFO: [Labtools 27-3417] Launching cs_server...
 INFO: [Labtools 27-2221] Launch Output:
@@ -106,13 +255,70 @@ set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 current_hw_device [get_hw_devices xc7vx485t_0]
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
-INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
 program_hw_devices [get_hw_devices xc7vx485t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9647.926 ; gain = 0.000 ; free physical = 14916 ; free virtual = 85909
+program_hw_devices: Time (s): cpu = 00:00:58 ; elapsed = 00:00:57 . Memory (MB): peak = 9794.496 ; gain = 0.000 ; free physical = 113912 ; free virtual = 121614
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property TRIGGER_COMPARE_VALUE eq32'hFFFF_FXXX [get_hw_probes nolabel_line52/serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE neq32'hFFFF_FXXX [get_hw_probes nolabel_line52/serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq128'u0 [get_hw_probes nolabel_line52/serv_dtm/clk_count_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq128'u200 [get_hw_probes nolabel_line52/serv_dtm/clk_count_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE gt128'u200 [get_hw_probes nolabel_line52/serv_dtm/clk_count_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes nolabel_line52/serv_dtm/ibus_cycle_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 18:44:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 18:45:17
+upload_hw_ila_data: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 9794.496 ; gain = 0.000 ; free physical = 113884 ; free virtual = 121592
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 9838.496 ; gain = 44.000 ; free physical = 113815 ; free virtual = 121561
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/utils_1/imports/synth_1/servix.dcp with file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 18:52:52 2023] Launched synth_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/runme.log
+[Thu Aug  3 18:52:52 2023] Launched impl_1...
+Run output will be captured here: /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:10:28
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 05 2022-08:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001db705be01
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
@@ -122,56 +328,55 @@ set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/serva
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
 program_hw_devices [get_hw_devices xc7vx485t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:58 ; elapsed = 00:00:57 . Memory (MB): peak = 9720.109 ; gain = 0.000 ; free physical = 15405 ; free virtual = 86376
+program_hw_devices: Time (s): cpu = 00:01:00 ; elapsed = 00:00:57 . Memory (MB): peak = 9922.910 ; gain = 0.000 ; free physical = 113809 ; free virtual = 121559
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 01:58:32
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 01:59:31
-upload_hw_ila_data: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 9730.105 ; gain = 0.000 ; free physical = 15424 ; free virtual = 86415
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9739.102 ; gain = 8.996 ; free physical = 15376 ; free virtual = 86405
-set_property TRIGGER_COMPARE_VALUE eq32'hXXXX_XXXX [get_hw_probes nolabel_line52/serv_dtm/i_dmi_rsp_data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq32'h0000_0020 [get_hw_probes nolabel_line52/serv_dtm/pc_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
 program_hw_devices [get_hw_devices xc7vx485t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9739.102 ; gain = 0.000 ; free physical = 15337 ; free virtual = 86371
+program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9922.910 ; gain = 0.000 ; free physical = 113785 ; free virtual = 121544
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 02:09:31
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 02:09:31
-upload_hw_ila_data: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 9745.117 ; gain = 0.000 ; free physical = 15170 ; free virtual = 86261
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-set_property TRIGGER_COMPARE_VALUE neq128'hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX [get_hw_probes nolabel_line52/serv_dtm/clk_count_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE neq128'h0000_0000_0000_0000_0000_0000_0000_0000 [get_hw_probes nolabel_line52/serv_dtm/clk_count_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes nolabel_line52/serv_dtm/ibus_cycle_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-set_property CONTROL.TRIGGER_POSITION 4096 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 19:11:26
 set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
 set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
 program_hw_devices [get_hw_devices xc7vx485t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9745.117 ; gain = 0.000 ; free physical = 14912 ; free virtual = 86007
+program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9923.914 ; gain = 0.000 ; free physical = 113765 ; free virtual = 121521
 refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 02:13:19
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 19:13:56
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 02:13:25
-upload_hw_ila_data: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 9745.117 ; gain = 0.000 ; free physical = 15019 ; free virtual = 86106
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 19:14:02
+upload_hw_ila_data: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 9936.910 ; gain = 0.000 ; free physical = 113759 ; free virtual = 121515
 INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-close_hw_manager
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 9944.914 ; gain = 8.004 ; free physical = 113753 ; free virtual = 121511
+set_property PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 9944.914 ; gain = 0.000 ; free physical = 113505 ; free virtual = 121385
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 19:17:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"nolabel_line52/serv_dtm/debugger"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 19:17:58
+upload_hw_ila_data: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 9949.922 ; gain = 0.000 ; free physical = 113736 ; free virtual = 121502
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 9949.922 ; gain = 0.000 ; free physical = 113726 ; free virtual = 121490
+save_wave_config {/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Aug  3 02:16:33 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  3 19:28:49 2023...
