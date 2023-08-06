@@ -47,11 +47,15 @@ module servant_ram
         mem[4] = 32'h00550023; // [10] sb t0, 0(a0)
         mem[5] = 32'h0012C293; // [14] xori t0, t0, 1
         mem[6] = 32'h000073B3; // [18] and t2, zero, zero
+        mem[7] = 32'h000075b3; // [1c] and a1, x0, x0
+        mem[8] = 32'h00007633; // [20] and a2, x0, x0
         // time1
-        mem[7] = 32'h00138393; // [1c] addi t2, t2, 1
-        mem[8] = 32'hFE731EE3; // [20] bne t1, t2, time1
-        mem[9] = 32'hFEDFF06F; // [24] j bl1
-        mem[10] = 32'h00000000; 
+        mem[9] = 32'h00138393;  // [24] addi t2, t2, 1
+        mem[10] = 32'h00158593; // [28] addi a1, a1, 1
+        mem[11] = 32'h00160613; // [2c] addi a2, a2, 1
+        mem[12] = 32'hfe731ae3; // [30] bne t1, t2, time1
+        mem[13] = 32'hFEDFF06F; // [34] j bl1
+        mem[14] = 32'h00000000; 
    end
    
 

@@ -107,14 +107,16 @@ module debug_dtm (
     reg [127:0] clk_count = 128'd0;
     reg         clk_count_en = 1'b0;
     
-    always @(posedge i_clk) begin
-        if (i_rst) clk_count_en <= 1'b0;
-        else if (o_cpu_req_halt) clk_count_en <= 1'b1;
+//    always @(posedge i_clk) begin
+//        if (i_rst) clk_count_en <= 1'b0;
+//        else if (o_cpu_req_halt) clk_count_en <= 1'b1;
        
-        if (i_rst) clk_count <= 128'd0;
-        else if (clk_count_en) clk_count <= clk_count + 1'b1;
+//        if (i_rst) clk_count <= 128'd0;
+//        else if (clk_count_en) clk_count <= clk_count + 1'b1;
         
-    end
+//    end
+    always @(posedge dbg_resume_req)
+        clk_count <= clk_count + 1'b1;
         
     /*===============================
     ========= TAP FSM ===============
