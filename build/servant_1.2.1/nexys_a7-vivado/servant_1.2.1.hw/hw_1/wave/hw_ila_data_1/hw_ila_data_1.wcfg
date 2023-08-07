@@ -9,13 +9,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="3,058"></ZoomStartTime>
-      <ZoomEndTime time="67,459"></ZoomEndTime>
-      <Cursor1Time time="8,192"></Cursor1Time>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="32,769"></ZoomEndTime>
+      <Cursor1Time time="8,407"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="416"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="5" />
    <wave_markers>
@@ -23,6 +23,7 @@
    <wvobject type="group" fp_name="group100">
       <obj_property name="label">JTAG</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/i_tck">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line52/serv_dtm/i_tck</obj_property>
@@ -194,6 +195,15 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
       </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/ibus_cycle_1">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/ibus_cycle_1</obj_property>
+         <obj_property name="ObjectShortName">ibus_cycle_1</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
       <wvobject type="array" fp_name="nolabel_line52/serv_dtm/pc_1">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line52/serv_dtm/pc_1[31:0]</obj_property>
@@ -204,14 +214,15 @@
          <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/ibus_cycle_1">
+      <wvobject type="array" fp_name="nolabel_line52/serv_dtm/i_bus_rdt">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/ibus_cycle_1</obj_property>
-         <obj_property name="ObjectShortName">ibus_cycle_1</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/i_bus_rdt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_bus_rdt[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="nolabel_line52/serv_dtm/clk_count_1">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -224,6 +235,7 @@
       <wvobject type="group" fp_name="group134">
          <obj_property name="label">debug_signals</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/o_cpu_ndmrst_1">
             <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_cpu_ndmrst_1</obj_property>
