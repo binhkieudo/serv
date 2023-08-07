@@ -37,7 +37,11 @@ module serv_top
    input  wire        i_dbg_halt,
    input  wire        i_dbg_reset,
    output wire        o_dbg_process,
-   output wire        o_dbg_step
+   output wire        o_dbg_step,
+   output wire [1:0]  o_dbg_csr_addr,
+   output wire        o_dbg_csr_out,
+   output wire        o_dbg_csr_dcsr_en,
+   output wire        o_dbg_csr_cnt8
 );
 
    wire [4:0]    rd_addr;
@@ -529,4 +533,9 @@ module serv_top
     
     assign o_dbg_step = dbg_step;
    
+    assign  o_dbg_csr_addr    = csr_source;
+    assign  o_dbg_csr_out     = csr_rd;
+    assign  o_dbg_csr_dcsr_en = csr_dcsr_en;
+    assign  o_dbg_csr_cnt8    = cnt8;
+    
 endmodule

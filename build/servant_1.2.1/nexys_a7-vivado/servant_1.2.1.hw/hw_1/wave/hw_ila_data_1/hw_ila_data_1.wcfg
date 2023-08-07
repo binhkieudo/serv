@@ -9,15 +9,17 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="13"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <ZoomStartTime time="3,058"></ZoomStartTime>
+      <ZoomEndTime time="67,459"></ZoomEndTime>
+      <Cursor1Time time="8,192"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="416"></NameColumnWidth>
-      <ValueColumnWidth column_width="89"></ValueColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
    <wvobject type="group" fp_name="group100">
       <obj_property name="label">JTAG</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -278,7 +280,6 @@
       <wvobject type="group" fp_name="group133">
          <obj_property name="label">rf</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject type="array" fp_name="nolabel_line52/serv_dtm/o_dbg_rf_waddr_1">
             <obj_property name="DisplayName">FullPathName</obj_property>
             <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_dbg_rf_waddr_1[5:0]</obj_property>
@@ -310,24 +311,44 @@
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
       </wvobject>
+      <wvobject type="group" fp_name="group141">
+         <obj_property name="label">csr</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="nolabel_line52/serv_dtm/o_dbg_csr_addr">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_dbg_csr_addr[1:0]</obj_property>
+            <obj_property name="ObjectShortName">o_dbg_csr_addr[1:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/o_dbg_csr_cnt8">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_dbg_csr_cnt8</obj_property>
+            <obj_property name="ObjectShortName">o_dbg_csr_cnt8</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/o_dbg_csr_dcsr_en">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_dbg_csr_dcsr_en</obj_property>
+            <obj_property name="ObjectShortName">o_dbg_csr_dcsr_en</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/o_dbg_csr_out">
+            <obj_property name="DisplayName">FullPathName</obj_property>
+            <obj_property name="ElementShortName">nolabel_line52/serv_dtm/o_dbg_csr_out</obj_property>
+            <obj_property name="ObjectShortName">o_dbg_csr_out</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group94">
       <obj_property name="label">TAP</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/tap_sync_tck_falling_1">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/tap_sync_tck_falling_1</obj_property>
-         <obj_property name="ObjectShortName">tap_sync_tck_falling_1</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/tap_sync_tck_rising_1">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/tap_sync_tck_rising_1</obj_property>
-         <obj_property name="ObjectShortName">tap_sync_tck_rising_1</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
       <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/tap_sync_tdi_1">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line52/serv_dtm/tap_sync_tdi_1</obj_property>
@@ -339,13 +360,6 @@
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line52/serv_dtm/tap_sync_tms_1</obj_property>
          <obj_property name="ObjectShortName">tap_sync_tms_1</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line52/serv_dtm/tap_sync_trst_1">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/tap_sync_trst_1</obj_property>
-         <obj_property name="ObjectShortName">tap_sync_trst_1</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
@@ -496,14 +510,6 @@
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line52/serv_dtm/dmi_reset_1</obj_property>
          <obj_property name="ObjectShortName">dmi_reset_1</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="nolabel_line52/serv_dtm/dmi_rsp_1">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line52/serv_dtm/dmi_rsp_1[1:0]</obj_property>
-         <obj_property name="ObjectShortName">dmi_rsp_1[1:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>

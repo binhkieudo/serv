@@ -32,7 +32,11 @@ module serv_rf_top
     output wire [5:0]   o_dbg_rf_waddr,
     output wire         o_dbg_rf_w1wren,
     output wire         o_dbg_rf_we,
-    output wire [7:0]   o_dbg_rf_wdata
+    output wire [7:0]   o_dbg_rf_wdata,
+    output wire [1:0]   o_dbg_csr_addr,
+    output wire         o_dbg_csr_out,
+    output wire         o_dbg_csr_dcsr_en,
+    output wire         o_dbg_csr_cnt8    
 );
    
     localparam CSR_REGS = 4;
@@ -95,7 +99,11 @@ module serv_rf_top
       .i_dbg_halt  (i_dbg_halt  ),
       .i_dbg_reset (i_dbg_reset ),
       .o_dbg_process(o_dbg_process ),
-      .o_dbg_step  (o_dbg_step )
+      .o_dbg_step  (o_dbg_step ),
+      .o_dbg_csr_addr    (o_dbg_csr_addr),
+      .o_dbg_csr_out     (o_dbg_csr_out),
+      .o_dbg_csr_dcsr_en (o_dbg_csr_dcsr_en),
+      .o_dbg_csr_cnt8    (o_dbg_csr_cnt8)
     );
 
     serv_rf_ram_if #(

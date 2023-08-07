@@ -73,7 +73,11 @@ module debug_dtm (
     input  wire [5:0]  o_dbg_rf_waddr,
     input  wire        o_dbg_rf_w1wren,
     input  wire        o_dbg_rf_we,
-    input  wire [7:0]  o_dbg_rf_wdata
+    input  wire [7:0]  o_dbg_rf_wdata,
+    input  wire [1:0]  o_dbg_csr_addr,
+    input  wire        o_dbg_csr_out,
+    input  wire        o_dbg_csr_dcsr_en,
+    input  wire        o_dbg_csr_cnt8    
 );
 
     localparam dmi_idle_cycle    = 3'b000;
@@ -453,6 +457,11 @@ module debug_dtm (
         .probe_in55  (o_dbg_rf_wdata  )
     );
     
+//        input  wire [1:0]  o_dbg_csr_addr,
+//    input  wire        o_dbg_csr_out,
+//    input  wire        o_dbg_csr_dcsr_en,
+//    input  wire        o_dbg_csr_cnt8 
+    
     ila_0 debugger(
         .clk     (i_clk                 ),
         .probe0  (o_dmi_req_valid       ),
@@ -460,15 +469,19 @@ module debug_dtm (
         .probe2  (o_dmi_req_data        ),
         .probe3  (o_dmi_req_op          ),
         .probe4  (o_dmi_rsp_ready       ),
-        .probe5  (tap_sync_trst         ),
-        .probe6  (tap_sync_tck_rising   ),
-        .probe7  (tap_sync_tck_falling  ),
+//        .probe5  (tap_sync_trst         ),
+//        .probe6  (tap_sync_tck_rising   ),
+//        .probe7  (tap_sync_tck_falling  ),
+        .probe5  (o_dbg_csr_out         ),
+        .probe6  (o_dbg_csr_dcsr_en     ),
+        .probe7  (o_dbg_csr_cnt8        ),
         .probe8  (tap_sync_tdi          ),
         .probe9  (tap_sync_tms          ),
         .probe10 (dmi_ctrl_state        ),
         .probe11 (dmi_hard_reset        ),
         .probe12 (dmi_reset             ),
-        .probe13 (dmi_rsp               ),
+//        .probe13 (dmi_rsp               ),
+        .probe13 (o_dbg_csr_addr        ),
         .probe14 (dmi_rdata             ),
         .probe15 (dmi_wdata             ),
         .probe16 (dmi_addr              ),

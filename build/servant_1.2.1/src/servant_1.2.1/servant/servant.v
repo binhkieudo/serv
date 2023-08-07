@@ -101,6 +101,11 @@ module servant
    
    wire wb_rst = !wb_rstn;
    
+   wire [1:0]   o_dbg_csr_addr;
+   wire         o_dbg_csr_out;
+   wire         o_dbg_csr_dcsr_en;
+   wire         o_dbg_csr_cnt8;
+       
    servant_arbiter arbiter
    (
        // from CPU
@@ -245,7 +250,11 @@ module servant
       .o_dbg_rf_waddr   (o_dbg_rf_waddr ),
       .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
       .o_dbg_rf_we      (o_dbg_rf_we    ),
-      .o_dbg_rf_wdata   (o_dbg_rf_wdata )     
+      .o_dbg_rf_wdata   (o_dbg_rf_wdata ),
+      .o_dbg_csr_addr   (o_dbg_csr_addr),
+      .o_dbg_csr_out    (o_dbg_csr_out),
+      .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
+      .o_dbg_csr_cnt8   (o_dbg_csr_cnt8)     
      );
       
     // SPI Programmer
@@ -338,7 +347,11 @@ module servant
         .o_dbg_rf_waddr   (o_dbg_rf_waddr ),
         .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
         .o_dbg_rf_we      (o_dbg_rf_we    ),
-        .o_dbg_rf_wdata   (o_dbg_rf_wdata )
+        .o_dbg_rf_wdata   (o_dbg_rf_wdata ),
+        .o_dbg_csr_addr   (o_dbg_csr_addr ),
+        .o_dbg_csr_out    (o_dbg_csr_out  ),
+        .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
+        .o_dbg_csr_cnt8   (o_dbg_csr_cnt8)
     );
     
     // Debug Module (DM)

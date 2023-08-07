@@ -242,7 +242,7 @@
                                 "portIndex": 5,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line52/serv_dtm/tap_sync_trst_1",
+                                        "name": "nolabel_line52/serv_dtm/o_dbg_csr_out",
                                         "isBus": false
                                     }
                                 ]
@@ -258,9 +258,8 @@
                                 "portIndex": 6,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line52/serv_dtm/tap_sync_tck_rising_1",
-                                        "isBus": false,
-                                        "parentNetId": 43
+                                        "name": "nolabel_line52/serv_dtm/o_dbg_csr_dcsr_en",
+                                        "isBus": false
                                     }
                                 ]
                             },
@@ -275,7 +274,7 @@
                                 "portIndex": 7,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line52/serv_dtm/tap_sync_tck_falling_1",
+                                        "name": "nolabel_line52/serv_dtm/o_dbg_csr_cnt8",
                                         "isBus": false
                                     }
                                 ]
@@ -385,14 +384,14 @@
                                 "portIndex": 13,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line52/serv_dtm/dmi_rsp_1",
+                                        "name": "nolabel_line52/serv_dtm/o_dbg_csr_addr",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "nolabel_line52/serv_dtm/dmi_rsp_1[1]"
+                                                "name": "nolabel_line52/serv_dtm/o_dbg_csr_addr[1]"
                                             },
                                             {
-                                                "name": "nolabel_line52/serv_dtm/dmi_rsp_1[0]"
+                                                "name": "nolabel_line52/serv_dtm/o_dbg_csr_addr[0]"
                                             }
                                         ]
                                     }
@@ -6601,81 +6600,6 @@
                     }
                 ],
                 "parent_nets": [
-                    {
-                        "id": 43,
-                        "name": "nolabel_line52/serv_dtm/tap_sync_tck_rising",
-                        "state_reg": [
-                            {
-                                "name": "nolabel_line52/serv_dtm/tap_ctrl_state_reg[0]",
-                                "states": [
-                                    {
-                                        "name": "STATE_test_logic_reset",
-                                        "val": "1111"
-                                    },
-                                    {
-                                        "name": "STATE_run_test_idle",
-                                        "val": "1100"
-                                    },
-                                    {
-                                        "name": "STATE_select_dr_scan",
-                                        "val": "0111"
-                                    },
-                                    {
-                                        "name": "STATE_capture_dr",
-                                        "val": "0110"
-                                    },
-                                    {
-                                        "name": "STATE_shift_dr",
-                                        "val": "0010"
-                                    },
-                                    {
-                                        "name": "STATE_exit1_dr",
-                                        "val": "0001"
-                                    },
-                                    {
-                                        "name": "STATE_pause_dr",
-                                        "val": "0011"
-                                    },
-                                    {
-                                        "name": "STATE_exit2_dr",
-                                        "val": "0000"
-                                    },
-                                    {
-                                        "name": "STATE_update_dr",
-                                        "val": "0101"
-                                    },
-                                    {
-                                        "name": "STATE_select_ir_scan",
-                                        "val": "0100"
-                                    },
-                                    {
-                                        "name": "STATE_capture_ir",
-                                        "val": "1110"
-                                    },
-                                    {
-                                        "name": "STATE_shift_ir",
-                                        "val": "1010"
-                                    },
-                                    {
-                                        "name": "STATE_exit1_ir",
-                                        "val": "1001"
-                                    },
-                                    {
-                                        "name": "STATE_pause_ir",
-                                        "val": "1011"
-                                    },
-                                    {
-                                        "name": "STATE_exit2_ir",
-                                        "val": "1000"
-                                    },
-                                    {
-                                        "name": "STATE_update_ir",
-                                        "val": "1101"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
                     {
                         "id": 47,
                         "name": "nolabel_line52/serv_dtm/dmi_ctrl_state[2]",
