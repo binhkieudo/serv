@@ -160,6 +160,8 @@ module serv_csr
       
       if (i_rst)
          dcsr_step <= 1'b0;
+      else if (i_dbg_reset)
+         dcsr_step <= 1'b1;
       else if (i_dcsr_en & i_cnt2)
          dcsr_step <= csr_in;
    end

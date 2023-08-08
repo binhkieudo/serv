@@ -226,7 +226,8 @@ module serv_decode
    wire co_csr_misa_en    = {imm30, op26, op22, op21, op20} == 5'b00_001;
    wire co_csr_mhartid_en = {imm30, op26, op22, op21, op20} == 5'b10_100;
    wire co_csr_dcsr_en    = {imm30, op26, op22, op21, op20} == 5'b10_000;
-   
+   //4000_0500
+   //0100_0000_0000_0000_0000_0101_0000_0000
    wire [1:0] co_csr_source = funct3[1:0];
    wire co_csr_d_sel = funct3[2];
    wire co_csr_imm_en = opcode[4] & opcode[2] & funct3[2];

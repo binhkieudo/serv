@@ -592,7 +592,8 @@ module debug_dm(
         // Wait for resume loop
         1: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
         2: rom_rdata = 32'h8c204403;  // ffff_f808 lbu x8, ffff_f8c2(x0)   // request to execute program buffer?
-        3: rom_rdata = 32'h00041c63;  // ffff_f80c bne x8, x0, 24          // Jump to execute
+//        3: rom_rdata = 32'h00041c63;  // ffff_f80c bne x8, x0, 24        // Jump to execute
+        3: rom_rdata = 32'h02041063;  // ffff_f80c bne x8, x0, 32          // Jump to execute
         4: rom_rdata = 32'h8c104403;  // ffff_f810 lbu x8, ffff_f8c1(x0)   // request to resume?
         5: rom_rdata = 32'hfe0408e3;  // ffff_f814 beq x8, x0, -16         // return to loop or jump to resume
         // Resume
