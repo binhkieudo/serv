@@ -291,6 +291,7 @@ module servant
     
     wire        dbg_dm_ctrl_busy;
     wire [2:0]  dbg_dm_ctrl_cmderr; 
+    wire        dbg_resume_ack;
     
     // Debug Transport Module (DTM)
     debug_dtm serv_dtm(
@@ -351,7 +352,8 @@ module servant
         .o_dbg_csr_addr   (o_dbg_csr_addr ),
         .o_dbg_csr_out    (o_dbg_csr_out  ),
         .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
-        .o_dbg_csr_cnt8   (o_dbg_csr_cnt8)
+        .o_dbg_csr_cnt8   (o_dbg_csr_cnt8),
+        .dbg_resume_ack   (dbg_resume_ack)
     );
     
     // Debug Module (DM)
@@ -395,7 +397,8 @@ module servant
         .dbg_resume_req     (dbg_resume_req ),
         .dbg_execute_req    (dbg_execute_req),    
         .dbg_dm_ctrl_busy   (dbg_dm_ctrl_busy ),
-        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr )      
+        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr ),
+        .dbg_resume_ack     (dbg_resume_ack)   
     );
     
 endmodule

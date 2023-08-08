@@ -77,7 +77,8 @@ module debug_dtm (
     input  wire [1:0]  o_dbg_csr_addr,
     input  wire        o_dbg_csr_out,
     input  wire        o_dbg_csr_dcsr_en,
-    input  wire        o_dbg_csr_cnt8    
+    input  wire        o_dbg_csr_cnt8,
+    input  wire        dbg_resume_ack  
 );
 
     localparam dmi_idle_cycle    = 3'b000;
@@ -86,7 +87,7 @@ module debug_dtm (
     
     localparam IDCODE_VERSION = 4'b0001;
     localparam IDCODE_PARTID  = 16'h0001;
-    localparam IDCODE_MANID   = 11'h787;
+    localparam IDCODE_MANID   = 11'h70d; // Xilinx
 
     // TAP signal sunchronizer
     reg [2:0] tap_sync_trst_r;
@@ -472,10 +473,11 @@ module debug_dtm (
 //        .probe5  (tap_sync_trst         ),
 //        .probe6  (tap_sync_tck_rising   ),
 //        .probe7  (tap_sync_tck_falling  ),
+//        .probe8  (tap_sync_tdi          ),
         .probe5  (o_dbg_csr_out         ),
         .probe6  (o_dbg_csr_dcsr_en     ),
         .probe7  (o_dbg_csr_cnt8        ),
-        .probe8  (tap_sync_tdi          ),
+        .probe8  (dbg_resume_ack        ),
         .probe9  (tap_sync_tms          ),
         .probe10 (dmi_ctrl_state        ),
         .probe11 (dmi_hard_reset        ),

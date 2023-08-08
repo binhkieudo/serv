@@ -26,7 +26,7 @@
     </Object>
     <Object name="nolabel_line52/serv_dtm/debugger" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
-      <Properties Property="CONTROL.TRIGGER_POSITION" value="8192"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="64"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="serv_dtm/debugger" gui_info="">
@@ -41,11 +41,12 @@
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="i_jtag_tck_IBUF" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/clk_count_1[127:0]" gui_info=""/>
-    <Object name="nolabel_line52/serv_dtm/dbg_execute_req_1" gui_info=""/>
+    <Object name="nolabel_line52/serv_dtm/dbg_execute_req_1" gui_info="Trigger Setup=0"/>
     <Object name="nolabel_line52/serv_dtm/dbg_probuf1_1[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/dbg_probuf2_1[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/dbg_process_1" gui_info=""/>
-    <Object name="nolabel_line52/serv_dtm/dbg_resume_req_1" gui_info="Trigger Setup=0"/>
+    <Object name="nolabel_line52/serv_dtm/dbg_resume_ack" gui_info=""/>
+    <Object name="nolabel_line52/serv_dtm/dbg_resume_req_1" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/i_dmi_rsp_data[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/i_sbus_adr_1[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/i_sbus_cyc_1" gui_info=""/>
@@ -55,6 +56,7 @@
     <Object name="nolabel_line52/serv_dtm/o_dbg_rf_w1wren_1" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/o_dbg_rf_waddr_1[5:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/o_dbg_step_1" gui_info=""/>
+    <Object name="nolabel_line52/serv_dtm/o_dmi_req_valid_1" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/o_sbus_ack_1" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/o_sbus_rdt_1[31:0]" gui_info=""/>
     <Object name="nolabel_line52/serv_dtm/pc_1[31:0]" gui_info=""/>
@@ -380,7 +382,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -388,10 +390,10 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe52[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="dbg_execute_req_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -639,8 +641,8 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe53[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="dbg_process_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -673,7 +675,28 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[0]"/>
+        <Option Id="NAME.CUSTOM" value="dbg_resume_ack"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="nolabel_line52/serv_dtm/dbg_resume_ack"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -681,10 +704,10 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe51[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="dbg_resume_req_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -1334,8 +1357,8 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe41[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="o_cpu_ndmrst_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1355,8 +1378,8 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe42[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="o_cpu_req_halt_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -1557,8 +1580,8 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe58[0]"/>
-        <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.CUSTOM" value="o_dbg_step_1"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>

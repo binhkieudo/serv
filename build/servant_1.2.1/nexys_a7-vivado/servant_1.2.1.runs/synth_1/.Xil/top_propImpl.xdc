@@ -13,5 +13,3 @@ set_property src_info {type:XDC file:1 line:254 export:INPUT save:INPUT read:REA
 set_property -dict {PACKAGE_PIN K30 IOSTANDARD LVCMOS18} [get_ports i_jtag_tck]; # LA25_N
 set_property src_info {type:XDC file:1 line:255 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN J30 IOSTANDARD LVCMOS18} [get_ports o_jtag_tdo]; # LA26_P
-set_property src_info {type:XDC file:1 line:596 export:INPUT save:INPUT read:READ} [current_design]
-set_property CONTROL.TRIGGER_POSITION 512 [get_hw_ilas ila_0]

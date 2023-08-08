@@ -593,4 +593,4 @@ set_property -dict {PACKAGE_PIN J30 IOSTANDARD LVCMOS18} [get_ports o_jtag_tdo];
 ## EEPROM
 #################################################################################
 
-set_property CONTROL.TRIGGER_POSITION 512 [get_hw_ilas ila_0]
+#set_property CONTROL.TRIGGER_POSITION 512 [get_hw_ilas ila_0]

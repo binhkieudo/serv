@@ -57,9 +57,12 @@ module debug_dm(
     output wire        dbg_resume_req,
     output wire        dbg_execute_req,
     output wire        dbg_dm_ctrl_busy,
-    output wire [2:0]  dbg_dm_ctrl_cmderr
+    output wire [2:0]  dbg_dm_ctrl_cmderr,
+    output wire        dbg_resume_ack
 );
 
+    
+    
     //============== RISC-V DM =============
     // DM configurations
     localparam DM_BASE      = 32'hfffff800;
@@ -328,20 +331,19 @@ module debug_dm(
                 dm_ctrl_hart_halted <= 1'b0;  
             
           // RESUME REQ
-          if (dm_reg_dmcontrol_ndmreset == 1'b1)
-            dm_ctrl_hart_resume_req <= 1'b0;
-          else if (dm_reg_resume_req == 1'b1)
-            dm_ctrl_hart_resume_req <= 1'b1;
-          else if (dci_resume_ack == 1'b1)
-            dm_ctrl_hart_resume_req <= 1'b0;
+               if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_req <= 1'b0;
+          else if (dm_reg_resume_req == 1'b1)         dm_ctrl_hart_resume_req <= 1'b1;
+//          else if (dci_resume_ack == 1'b1)            dm_ctrl_hart_resume_req <= 1'b0;
+          else if (dm_ctrl_hart_resume_ack == 1'b1)   dm_ctrl_hart_resume_req <= 1'b0;
           
           // RESUME ACK
-          if (dm_reg_dmcontrol_ndmreset == 1'b1)
-            dm_ctrl_hart_resume_ack <= 1'b0;
-          else if (dci_resume_ack == 1'b1)
-            dm_ctrl_hart_resume_ack <= 1'b1;
-          else if (dm_reg_resume_req == 1'b1)
-            dm_ctrl_hart_resume_ack <= 1'b0;
+              if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_ack <= 1'b0;
+         else if (dm_reg_resume_req)                 dm_ctrl_hart_resume_ack <= dm_ctrl_hart_resume_ack? dm_ctrl_hart_resume_ack: dci_resume_ack;
+         else                                        dm_ctrl_hart_resume_ack <= 1'b0;
+//          else if (dci_resume_ack == 1'b1)
+//            dm_ctrl_hart_resume_ack <= 1'b1;
+//          else if (dm_reg_resume_req == 1'b1)
+//            dm_ctrl_hart_resume_ack <= 1'b0;
   
           // hart has been RESET
           if (dm_reg_dmcontrol_ndmreset == 1'b1) // explicit RESET triggered by DM
@@ -595,14 +597,15 @@ module debug_dm(
         5: rom_rdata = 32'hfe0408e3;  // ffff_f814 beq x8, x0, -16         // return to loop or jump to resume
         // Resume
         6: rom_rdata = 32'h8c8000a3;  // ffff_f818 sb x8, ffff_f8c1(x0)    // ACK that CPU is about to resume
-        7: rom_rdata = 32'h7b202473;  // ffff_f81c csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        //8: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
-        8: rom_rdata = 32'h7b200073;  // ffff_f820 dret                    // exit debug mode
+        7: rom_rdata = 32'h8c104403;  // ffff_f81c lbu x8, ffff_f8c1(x0)   // read resume request
+        8: rom_rdata = 32'hfe041ee3;  // ffff_f820 bne x8, x0, -4          // wait until debbuger low the resume request
+        9: rom_rdata = 32'h7b202473;  // ffff_f824 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        10: rom_rdata = 32'h7b200073;  // ffff_f828 dret                    // exit debug mode
         // Execute   
-        9: rom_rdata = 32'h8c000123; //  ffff_f824 sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
-        10: rom_rdata = 32'h7b202473; // ffff_f828 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        11: rom_rdata = 32'h84000067; // ffff_f82c jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
-        default: rom_rdata = 32'd0;   
+        11: rom_rdata = 32'h8c000123; //  ffff_f82c sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
+        12: rom_rdata = 32'h7b202473; // ffff_f830 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        13: rom_rdata = 32'h84000067; // ffff_f834 jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
+        default: rom_rdata = INSTR_NOP;   
     endcase
       
   assign rom_addr = i_sbus_adr[5:2];
@@ -651,5 +654,6 @@ module debug_dm(
   
   assign dbg_dm_ctrl_busy = dm_ctrl_busy;
   assign dbg_dm_ctrl_cmderr = dm_ctrl_cmderr;
-   
+  assign dbg_resume_ack = dm_ctrl_hart_resume_ack;
+  
 endmodule
