@@ -220,12 +220,12 @@ module serv_decode
 //   wire co_csr_mhartid_en = csr_op &  imm30 & op22;
 //   wire co_csr_dcsr_en    = csr_op &  imm30 & !op22;
    
-   wire co_csr_mstatus_en = {imm30, op26, op22, op21, op20} == 5'b00_000;
-   wire co_csr_mie_en     = {imm30, op26, op22, op21, op20} == 5'b00_100;
-   wire co_csr_mcause_en  = {imm30, op26, op22, op21, op20} == 5'b01_010;
-   wire co_csr_misa_en    = {imm30, op26, op22, op21, op20} == 5'b00_001;
-   wire co_csr_mhartid_en = {imm30, op26, op22, op21, op20} == 5'b10_100;
-   wire co_csr_dcsr_en    = {imm30, op26, op22, op21, op20} == 5'b10_000;
+   wire co_csr_mstatus_en = ({imm30, op26, op22, op21, op20} == 5'b00_000) & csr_op;
+   wire co_csr_mie_en     = ({imm30, op26, op22, op21, op20} == 5'b00_100) & csr_op;
+   wire co_csr_mcause_en  = ({imm30, op26, op22, op21, op20} == 5'b01_010) & csr_op;
+   wire co_csr_misa_en    = ({imm30, op26, op22, op21, op20} == 5'b00_001) & csr_op;
+   wire co_csr_mhartid_en = ({imm30, op26, op22, op21, op20} == 5'b10_100) & csr_op;
+   wire co_csr_dcsr_en    = ({imm30, op26, op22, op21, op20} == 5'b10_000) & csr_op;
    //4000_0500
    //0100_0000_0000_0000_0000_0101_0000_0000
    wire [1:0] co_csr_source = funct3[1:0];

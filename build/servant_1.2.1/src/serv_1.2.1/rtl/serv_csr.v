@@ -14,6 +14,7 @@ module serv_csr
    input  wire       i_cnt6,
    input  wire 	     i_cnt7,
    input  wire       i_cnt8,
+   input  wire       i_cnt15,
    input  wire       i_cnt30,
    input  wire 	     i_cnt_done,
    input  wire 	     i_mem_op,
@@ -60,6 +61,7 @@ module serv_csr
    wire 	csr_out;
 
    reg      dcsr_step;
+   reg      dcsr_ebreakm;
    
    reg 		timer_irq_r;
 
@@ -75,9 +77,11 @@ module serv_csr
                     (i_misa_en & i_cnt30)                 | // 32-bit
 //                    (!i_mhartid_en)                       | // only one hart -> return zeros
                     (i_dcsr_en & i_cnt30)                 | // adapt to sepc 1.0 
+                    (i_dcsr_en & i_cnt15 & dcsr_ebreakm)  | // ebreakm
                     (i_dcsr_en & i_cnt8 & dcsr_step)      | // dcsr.cause: debug cause is step highest priority
                     (i_dcsr_en & i_cnt7 & !(dcsr_step | i_ebreak) & i_dbg_halt) | // dcsr.cause: debug from external (lowest priority)    
                     (i_dcsr_en & i_cnt6 & !dcsr_step & (i_ebreak | i_dbg_halt)) | // dcsr.cause: debug from ebreak /halt
+		            (i_dcsr_en & i_cnt2 & dcsr_step)      |
 		            (i_rf_csr_out)                        |
 		            (i_mcause_en & i_en & mcause);
 
@@ -160,10 +164,15 @@ module serv_csr
       
       if (i_rst)
          dcsr_step <= 1'b0;
-      else if (i_dbg_reset)
-         dcsr_step <= 1'b1;
+//      else if (i_dbg_reset)
+//         dcsr_step <= 1'b1;
       else if (i_dcsr_en & i_cnt2)
          dcsr_step <= csr_in;
+
+      if (i_rst)
+         dcsr_ebreakm <= 1'b0;
+      else if (i_dcsr_en & i_cnt15)
+         dcsr_ebreakm <= csr_in;
    end
     
    assign o_dbg_step = dcsr_step;

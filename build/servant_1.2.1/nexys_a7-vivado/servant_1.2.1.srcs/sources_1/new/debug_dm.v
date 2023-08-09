@@ -351,7 +351,9 @@ module debug_dm(
           else if (dm_reg_reset_ack == 1'b1)
             dm_ctrl_hart_reset <= 1'b0;        
         end
-   
+  
+  wire misc_mem = i_dmi_req_data[6:2] == 5'b00011;
+  
    // Debug Module Interface - Write access
   always @(posedge i_clk)
     if (i_rst)
@@ -419,9 +421,9 @@ module debug_dm(
      if (i_dmi_req_address[5:1] == DMI_ADDR_PROGBUF0[5:1])
         if (!dm_ctrl_busy)   
             if (~i_dmi_req_address[0])
-                dm_reg_progbuf0 <= i_dmi_req_data;
+                dm_reg_progbuf0 <= misc_mem? INSTR_NOP: i_dmi_req_data;
             else
-                dm_reg_progbuf1 <= i_dmi_req_data;                              
+                dm_reg_progbuf1 <= misc_mem? INSTR_NOP: i_dmi_req_data;                              
    end
             
    // ===== Direct control ====================================
