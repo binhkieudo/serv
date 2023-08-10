@@ -1,15 +1,13 @@
-set_property SRC_FILE_INFO {cfile:/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/new/vc707_xdc105.xdc rfile:../../../servant_1.2.1.srcs/constrs_1/new/vc707_xdc105.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVDS} [get_ports SYSCLK_P];
-set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVDS} [get_ports SYSCLK_N];
-set_property src_info {type:XDC file:1 line:251 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN R30 IOSTANDARD LVCMOS18} [get_ports i_jtag_trst];  # LA24_P
-set_property src_info {type:XDC file:1 line:252 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN P31 IOSTANDARD LVCMOS18} [get_ports i_jtag_tdi];  # LA24_N
-set_property src_info {type:XDC file:1 line:253 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN K29 IOSTANDARD LVCMOS18} [get_ports i_jtag_tms]; # LA25_P
-set_property src_info {type:XDC file:1 line:254 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN K30 IOSTANDARD LVCMOS18} [get_ports i_jtag_tck]; # LA25_N
-set_property src_info {type:XDC file:1 line:255 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN J30 IOSTANDARD LVCMOS18} [get_ports o_jtag_tdo]; # LA26_P
+set_property SRC_FILE_INFO {cfile:/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/new/z2.xdc rfile:../../../servant_1.2.1.srcs/constrs_1/new/z2.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { sysclk }]; #IO_L13P_T2_MRCC_35 Sch=sysclk
+set_property src_info {type:XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { i_jtag_trst }]; #IO_L17P_T2_34 Sch=ja_p[1]
+set_property src_info {type:XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { i_jtag_tdi }]; #IO_L17N_T2_34 Sch=ja_n[1]
+set_property src_info {type:XDC file:1 line:43 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { i_jtag_tms }]; #IO_L7P_T1_34 Sch=ja_p[2]
+set_property src_info {type:XDC file:1 line:44 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { i_jtag_tck }]; #IO_L7N_T1_34 Sch=ja_n[2]
+set_property src_info {type:XDC file:1 line:45 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { o_jtag_tdo }]; #IO_L12P_T1_MRCC_34 Sch=ja_p[3]

@@ -1,13 +1,13 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Fri Aug  4 04:50:05 2023
+-- Date        : Wed Aug  9 23:45:33 2023
 -- Host        : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_0_stub.vhdl
 -- Design      : ila_0
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xc7vx485tffg1761-2
+-- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

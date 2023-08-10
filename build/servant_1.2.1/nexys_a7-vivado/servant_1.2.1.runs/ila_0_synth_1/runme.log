@@ -10,131 +10,131 @@
 
 source ila_0.tcl -notrace
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
-Command: synth_design -top ila_0 -part xc7vx485tffg1761-2 -incremental_mode off -mode out_of_context
+Command: synth_design -top ila_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
-INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 318402
+INFO: [Synth 8-7075] Helper process launched with PID 157021
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2188]
-INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2235]
-INFO: [Synth 8-11241] undeclared symbol 'datard_underflow', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:2236]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6379]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6381]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6412]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6414]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6447]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6449]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6554]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6556]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6589]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:6591]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10347]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10349]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10380]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10382]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10413]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/xsdbm_v3_0_vl_rfs.v:10415]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:2188]
+INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:2235]
+INFO: [Synth 8-11241] undeclared symbol 'datard_underflow', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:2236]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6379]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6381]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6412]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6414]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6447]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6449]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6554]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6556]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6589]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:6591]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10347]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10349]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10413]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/xsdbm_v3_0_vl_rfs.v:10415]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:417]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4527]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4528]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4529]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4530]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4531]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4532]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4586]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4587]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:4588]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/hdl/ila_v6_2_syn_rfs.v:5486]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4527]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4528]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4529]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4530]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4531]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4532]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4586]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4587]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:4588]
+WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/hdl/ila_v6_2_syn_rfs.v:5486]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2930.359 ; gain = 386.770 ; free physical = 6156 ; free virtual = 81550
-Synthesis current peak Physical Memory [PSS] (MB): peak = 2374.272; parent = 2164.696; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3982.301; parent = 2954.176; children = 1028.125
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2801.238 ; gain = 394.738 ; free physical = 13196 ; free virtual = 83560
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2233.564; parent = 2027.228; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3852.176; parent = 2824.055; children = 1028.121
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
 INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1534]
 INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
@@ -147,182 +147,182 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [/opt/Xilinx/Vivado/2022.2/sc
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131733]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
-WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:3335]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_12_ila' is unconnected for instance 'inst' [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_12_ila' has 1033 connections declared, but only 1027 given [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3269]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:48]
 WARNING: [Synth 8-3301] Unused top level parameter/generic memfile
 WARNING: [Synth 8-3301] Unused top level parameter/generic memsize
 WARNING: [Synth 8-3301] Unused top level parameter/generic frequency
-WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/synth/ila_0.v:224]
-WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[256] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[255] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[254] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[253] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[252] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[251] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[250] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[249] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[248] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[247] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[246] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[245] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[244] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[243] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[242] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[241] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[240] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[239] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[238] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[237] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[236] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[235] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[234] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[233] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[232] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[231] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[230] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[229] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[228] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[227] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[226] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[225] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[224] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[223] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[222] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[221] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[220] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[219] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[218] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[217] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[216] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[215] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[214] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[213] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[212] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[211] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[210] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[209] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[208] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[207] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[206] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[205] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[204] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[203] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[202] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[201] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[200] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[199] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[198] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[197] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[196] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[195] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[194] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[193] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[192] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[191] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[190] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[189] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[188] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[187] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[186] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[185] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[184] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[183] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[182] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[181] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[180] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[179] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[178] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[177] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[176] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[175] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[174] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[173] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[172] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[171] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[170] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[169] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[168] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[167] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[166] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[165] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[164] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[163] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[162] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[161] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[160] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[159] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA_I[158] in module blk_mem_gen_v8_4_5_blk_mem_output_block__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/synth/ila_0.v:158]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[224] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[223] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[222] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[221] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[220] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[219] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[218] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[217] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[216] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[215] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[214] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[213] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[212] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[211] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[210] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[209] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[208] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[207] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[206] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[205] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[204] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[203] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[202] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[201] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[200] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[199] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[198] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[197] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[196] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[195] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[194] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[193] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[192] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[191] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[190] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[189] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[188] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[187] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[186] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[185] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[184] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[183] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[182] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[181] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[180] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[179] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[178] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[177] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[176] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[175] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[174] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[173] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[172] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[171] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[170] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[169] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[168] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[167] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[166] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[165] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[164] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[163] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[162] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[161] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[160] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[159] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[158] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[157] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[156] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[155] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[154] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[153] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[152] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[151] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[150] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[149] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[148] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[147] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[146] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[145] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[144] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[143] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[142] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[141] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[140] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[139] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[138] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[137] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[136] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[135] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[134] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[133] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[132] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[131] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[130] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[129] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[128] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[127] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[126] in module blk_mem_gen_v8_4_5_blk_mem_output_block is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 4029.438 ; gain = 1485.848 ; free physical = 5700 ; free virtual = 81102
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5057.566; parent = 4029.441; children = 1028.125
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3275.527 ; gain = 869.027 ; free physical = 12906 ; free virtual = 83274
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4303.652; parent = 3275.531; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 4029.438 ; gain = 1485.848 ; free physical = 5677 ; free virtual = 81080
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5057.566; parent = 4029.441; children = 1028.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3275.527 ; gain = 869.027 ; free physical = 12891 ; free virtual = 83258
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4303.652; parent = 3275.531; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 4029.438 ; gain = 1485.848 ; free physical = 5677 ; free virtual = 81080
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5057.566; parent = 4029.441; children = 1028.125
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3275.527 ; gain = 869.027 ; free physical = 12889 ; free virtual = 83256
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4303.652; parent = 3275.531; children = 1028.121
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.52 . Memory (MB): peak = 4029.438 ; gain = 0.000 ; free physical = 5614 ; free virtual = 81017
-INFO: [Netlist 29-17] Analyzing 1546 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3275.527 ; gain = 0.000 ; free physical = 12790 ; free virtual = 83158
+INFO: [Netlist 29-17] Analyzing 465 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
+Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'inst'
 Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4101.102 ; gain = 0.000 ; free physical = 5531 ; free virtual = 80933
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3339.559 ; gain = 0.000 ; free physical = 13046 ; free virtual = 83414
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 648 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 580 instances
-  CFGLUT5 => SRLC32E: 68 instances
+  A total of 271 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 236 instances
+  CFGLUT5 => SRLC32E: 35 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.44 . Memory (MB): peak = 4101.102 ; gain = 0.000 ; free physical = 5530 ; free virtual = 80933
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3339.559 ; gain = 0.000 ; free physical = 13048 ; free virtual = 83416
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5900 ; free virtual = 81304
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5097.215; parent = 4069.090; children = 1028.125
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13211 ; free virtual = 83580
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4335.668; parent = 3307.547; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7vx485tffg1761-2
+Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5900 ; free virtual = 81304
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5097.215; parent = 4069.090; children = 1028.125
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13211 ; free virtual = 83580
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4335.668; parent = 3307.547; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5899 ; free virtual = 81303
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5097.215; parent = 4069.090; children = 1028.125
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13211 ; free virtual = 83580
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4335.668; parent = 3307.547; children = 1028.121
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized0'
@@ -357,39 +357,6 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized29'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized30'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized31'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized32'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized33'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized34'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized35'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized36'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized37'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized38'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized39'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized40'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized41'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized42'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized43'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized44'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized45'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized46'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized47'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized48'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized49'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized50'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized51'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized52'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized53'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized54'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized55'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized56'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized57'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized58'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized59'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized60'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized61'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized62'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized63'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized64'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -725,336 +692,6 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
 *
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized32'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized33'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized34'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized35'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized36'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized37'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized38'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized39'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized40'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized41'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized42'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized43'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized44'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized45'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized46'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized47'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized48'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized49'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized50'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized51'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized52'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized53'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized54'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized55'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized56'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized57'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized58'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized59'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized60'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized61'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized62'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized63'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_2_reg_p2s__parameterized64'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
               RESET_ADDR |                          0000001 |                          0000001
             REQUEST_READ |                          0000010 |                          0000010
            WAIT_READ_ACK |                          0000100 |                          0000100
@@ -1065,9 +702,9 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_0_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5857 ; free virtual = 81268
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5097.215; parent = 4069.090; children = 1028.125
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13199 ; free virtual = 83570
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4335.668; parent = 3307.547; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1079,8 +716,8 @@ Finished RTL Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 2800 (col length:140)
-BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -1089,38 +726,33 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:25 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5810 ; free virtual = 81277
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13143 ; free virtual = 83535
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 14 of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:14]
-WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 15 of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:15]
-WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 83 of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:83]
-WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 85 of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:85]
-WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 86 of /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc. [/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc:86]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:25 ; elapsed = 00:02:31 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5695 ; free virtual = 81164
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13023 ; free virtual = 83414
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:02:34 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5712 ; free virtual = 81179
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13017 ; free virtual = 83408
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:35 ; elapsed = 00:02:44 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5729 ; free virtual = 81196
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13021 ; free virtual = 83412
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1178,49 +810,49 @@ INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:39 ; elapsed = 00:02:47 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5731 ; free virtual = 81199
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13017 ; free virtual = 83408
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:39 ; elapsed = 00:02:47 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5732 ; free virtual = 81199
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13016 ; free virtual = 83407
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:02:49 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5717 ; free virtual = 81184
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13011 ; free virtual = 83403
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:02:50 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5714 ; free virtual = 81182
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13011 ; free virtual = 83403
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:41 ; elapsed = 00:02:50 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5701 ; free virtual = 81168
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13033 ; free virtual = 83425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:41 ; elapsed = 00:02:50 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5700 ; free virtual = 81167
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13033 ; free virtual = 83425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1236,53 +868,53 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |   225|
-|2     |CFGLUT5  |   648|
-|3     |LUT1     |    90|
-|4     |LUT2     |   850|
-|5     |LUT3     |   291|
-|6     |LUT4     |   670|
-|7     |LUT5     |   242|
-|8     |LUT6     |  3610|
-|9     |MUXF7    |  1008|
-|10    |MUXF8    |   112|
-|11    |RAMB36E1 |   685|
-|13    |SRL16E   |   772|
-|14    |SRLC16E  |     2|
-|15    |SRLC32E  |    17|
-|16    |FDRE     |  7914|
-|17    |FDSE     |    18|
+|1     |CARRY4   |   106|
+|2     |CFGLUT5  |   271|
+|3     |LUT1     |    58|
+|4     |LUT2     |   278|
+|5     |LUT3     |   192|
+|6     |LUT4     |   358|
+|7     |LUT5     |   194|
+|8     |LUT6     |  1333|
+|9     |MUXF7    |    63|
+|10    |MUXF8    |    16|
+|11    |RAMB36E1 |   100|
+|12    |SRL16E   |   228|
+|13    |SRLC16E  |     2|
+|14    |SRLC32E  |    17|
+|15    |FDRE     |  3621|
+|16    |FDSE     |    10|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:41 ; elapsed = 00:02:50 . Memory (MB): peak = 4101.102 ; gain = 1557.512 ; free physical = 5690 ; free virtual = 81157
-Synthesis current peak Physical Memory [PSS] (MB): peak = 3253.575; parent = 3044.078; children = 209.576
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 5129.230; parent = 4101.105; children = 1028.125
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 3339.559 ; gain = 933.059 ; free physical = 13033 ; free virtual = 83425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2607.956; parent = 2402.902; children = 206.337
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4367.684; parent = 3339.562; children = 1028.121
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 969 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 4101.102 ; gain = 1485.848 ; free physical = 5759 ; free virtual = 81229
-Synthesis Optimization Complete : Time (s): cpu = 00:02:41 ; elapsed = 00:02:51 . Memory (MB): peak = 4101.109 ; gain = 1557.512 ; free physical = 5755 ; free virtual = 81222
+Synthesis finished with 0 errors, 0 critical warnings and 5376 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 3339.559 ; gain = 869.027 ; free physical = 13081 ; free virtual = 83473
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 3339.566 ; gain = 933.059 ; free physical = 13081 ; free virtual = 83473
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.29 . Memory (MB): peak = 4101.109 ; gain = 0.000 ; free physical = 5827 ; free virtual = 81294
-INFO: [Netlist 29-17] Analyzing 2678 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3339.566 ; gain = 0.000 ; free physical = 13162 ; free virtual = 83561
+INFO: [Netlist 29-17] Analyzing 556 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4125.113 ; gain = 0.000 ; free physical = 5751 ; free virtual = 81219
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3363.570 ; gain = 0.000 ; free physical = 13096 ; free virtual = 83494
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 648 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 580 instances
-  CFGLUT5 => SRLC32E: 68 instances
+  A total of 271 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 236 instances
+  CFGLUT5 => SRLC32E: 35 instances
 
-Synth Design complete, checksum: 37172e52
+Synth Design complete, checksum: 8c449093
 INFO: [Common 17-83] Releasing license: Synthesis
-308 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+242 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:59 ; elapsed = 00:03:06 . Memory (MB): peak = 4125.113 ; gain = 2056.176 ; free physical = 6025 ; free virtual = 81492
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 3363.570 ; gain = 1288.633 ; free physical = 13308 ; free virtual = 83706
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/ila_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ila_0, cache-ID = 72eecae85187c746
-INFO: [Coretcl 2-1174] Renamed 1870 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ila_0, cache-ID = 50807e2ef6835ee7
+INFO: [Coretcl 2-1174] Renamed 475 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/ila_0_synth_1/ila_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ila_0_utilization_synth.rpt -pb ila_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 04:50:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 10 01:52:21 2023...
