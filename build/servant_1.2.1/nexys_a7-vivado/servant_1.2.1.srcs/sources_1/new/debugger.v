@@ -34,6 +34,10 @@ module debugger(
         input wire [5:0]  dmi_req_address,  /* probe 7 */
         input wire [31:0] dmi_req_data,     /* probe 8 */
         input wire [1:0]  dmi_req_op,       /* probe 9 */
+        input wire        dmi_rsp_valid,    /* probe 31 */
+        input wire        dmi_rsp_ready,    /* probe 32 */
+        input wire [31:0] dmi_rsp_data,     /* probe 33 */
+        input wire [1:0]  dmi_rsp_op,       /* probe 34 */
         // DM
         input wire [1:0]  dm_maddr,         /* probe 10 */
         input wire        dm_rden,          /* probe 11 */
@@ -57,9 +61,16 @@ module debugger(
         input wire        dbg_cpu_resume_req,   /* probe 23 */
         input wire        dbg_cpu_resume_ack,   /* probe 24 */
         input wire        dbg_cpu_execute_req,  /* probe 25 */
-        input wire        dbg_cpu_execute_ack   /* probe 26 */
+        input wire        dbg_cpu_execute_ack,  /* probe 26 */
+        // Outputs
+        output wire       o_dbg_step
     );
     
+    vio_0 vpins(
+        .clk            (i_clk      ),
+        .probe_out0     (o_dbg_step )
+    );
+
     ila_0 analyzer (
         .clk        (i_clk              ),
         .probe0     (jtag_trst          ),
@@ -92,7 +103,11 @@ module debugger(
         .probe27    (dm_probuf0         ),
         .probe28    (dm_probuf1         ),
         .probe29    (dm_probuf2         ),
-        .probe30    (dm_probuf3         )
+        .probe30    (dm_probuf3         ),
+        .probe31    (dmi_rsp_valid      ),
+        .probe32    (dmi_rsp_ready      ),
+        .probe33    (dmi_rsp_data       ),
+        .probe34    (dmi_rsp_op         )
    );
    
 endmodule

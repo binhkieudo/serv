@@ -123,12 +123,11 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param tcl.collectionResultDisplayLimit 0
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 5
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg400-1
-  set_property board_part_repo_paths {/home/binhkieudo/.Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store} [current_project]
-  set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+  create_project -in_memory -part xc7vx485tffg1761-2
+  set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -142,12 +141,13 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.runs/synth_1/top.dcp
   read_ip -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0_1/ila_0.xci
+  read_ip -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0_1/vio_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/new/z2.xdc
+  read_xdc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/vc707_xdc105.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top top -part xc7z020clg400-1 
+  link_design -top top -part xc7vx485tffg1761-2 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }

@@ -166,6 +166,8 @@ module debug_dm(
     wire [31:0] dci_wdata;
     wire [31:0] dci_rdata;
     
+    wire misc_mem = i_dmi_req_data[6:2] == 5'b00011;
+    
     // Global access control
     wire       acc_en;
     wire       rden;
@@ -333,21 +335,38 @@ module debug_dm(
             else if (dci_resume_ack == 1'b1)
                 dm_ctrl_hart_halted <= 1'b0;  
             
+//          // RESUME REQ
+//               if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_req <= 1'b0;
+//          else if (dm_reg_resume_req == 1'b1)         dm_ctrl_hart_resume_req <= 1'b1;
+//          else if (dm_ctrl_hart_resume_ack == 1'b1)   dm_ctrl_hart_resume_req <= 1'b0;
+          
+//          // RESUME ACK
+//              if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_ack <= 1'b0;
+//          else if (dm_reg_resume_req)                 dm_ctrl_hart_resume_ack <= dm_ctrl_hart_resume_ack? dm_ctrl_hart_resume_ack: dci_resume_ack;
+//          else                                        dm_ctrl_hart_resume_ack <= 1'b0;
+          
+//               if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_ack <= 1'b0;
+//          else if (dm_reg_halt_req && dm_reg_dmcontrol_dmactive) dm_ctrl_hart_resume_ack <= 1'b0;
+//          else if (dci_resume_ack == 1'b1)   dm_ctrl_hart_resume_ack <= 1'b1;
+          
           // RESUME REQ
-               if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_req <= 1'b0;
-          else if (dm_reg_resume_req == 1'b1)         dm_ctrl_hart_resume_req <= 1'b1;
-//          else if (dci_resume_ack == 1'b1)            dm_ctrl_hart_resume_req <= 1'b0;
-          else if (dm_ctrl_hart_resume_ack == 1'b1)   dm_ctrl_hart_resume_req <= 1'b0;
+          if (dm_reg_dmcontrol_ndmreset == 1'b1)
+            dm_ctrl_hart_resume_req <= 1'b0;
+          else if (dm_reg_resume_req == 1'b1)
+            dm_ctrl_hart_resume_req <= 1'b1;
+          else if (dci_resume_ack == 1'b1)
+            dm_ctrl_hart_resume_req <= 1'b0;
           
           // RESUME ACK
-              if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_ack <= 1'b0;
-         else if (dm_reg_resume_req)                 dm_ctrl_hart_resume_ack <= dm_ctrl_hart_resume_ack? dm_ctrl_hart_resume_ack: dci_resume_ack;
-         else                                        dm_ctrl_hart_resume_ack <= 1'b0;
-//          else if (dci_resume_ack == 1'b1)
-//            dm_ctrl_hart_resume_ack <= 1'b1;
-//          else if (dm_reg_resume_req == 1'b1)
-//            dm_ctrl_hart_resume_ack <= 1'b0;
-  
+          if (dm_reg_dmcontrol_ndmreset == 1'b1)
+            dm_ctrl_hart_resume_ack <= 1'b0;
+          else if (dci_resume_ack == 1'b1)
+            dm_ctrl_hart_resume_ack <= 1'b1;
+          else if (dm_reg_resume_req == 1'b1)
+            dm_ctrl_hart_resume_ack <= 1'b0;
+          else dm_ctrl_hart_resume_ack <= 1'b0;
+              
+          
           // hart has been RESET
           if (dm_reg_dmcontrol_ndmreset == 1'b1) // explicit RESET triggered by DM
             dm_ctrl_hart_reset <= 1'b1;
@@ -355,7 +374,7 @@ module debug_dm(
             dm_ctrl_hart_reset <= 1'b0;        
         end
   
-  wire misc_mem = i_dmi_req_data[6:2] == 5'b00011;
+  
   
    // Debug Module Interface - Write access
   always @(posedge i_clk)
@@ -604,7 +623,8 @@ module debug_dm(
         // Resume
         6: rom_rdata = 32'h8c8000a3;  // ffff_f818 sb x8, ffff_f8c1(x0)    // ACK that CPU is about to resume
         7: rom_rdata = 32'h8c104403;  // ffff_f81c lbu x8, ffff_f8c1(x0)   // read resume request
-        8: rom_rdata = 32'hfe041ee3;  // ffff_f820 bne x8, x0, -4          // wait until debbuger low the resume request
+//        8: rom_rdata = 32'hfe041ee3;  // ffff_f820 bne x8, x0, -4          // wait until debbuger low the resume request
+        8: rom_rdata = 32'hfe041ce3;  // ffff_f820 bne x8, x0, -8          // wait until debbuger low the resume request
         9: rom_rdata = 32'h7b202473;  // ffff_f824 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
         10: rom_rdata = 32'h7b200073;  // ffff_f828 dret                    // exit debug mode
         // Execute   
@@ -655,7 +675,7 @@ module debug_dm(
   assign dbg_rden        = rden;
   assign dbg_wren        = wren;
   assign dbg_maddr       = maddr;
-  assign dbg_resume_req  = dci_resume_req;
+  assign dbg_resume_req  = dm_ctrl_hart_resume_req;
   assign dbg_resume_ack  = dm_ctrl_hart_resume_ack;
   assign dbg_execute_req = dci_execute_req;
   assign dbg_execute_ack = dci_execute_ack;

@@ -40,6 +40,7 @@ module servant_ram
 //        mem[0] = 32'h00100073;
         // _start
         mem[0] = 32'h40000537; // [00] lui a0, %hi(GPIO_BASE)
+//        mem[0] = 32'hff042783; // [00] lw x15, -16(x8)
         mem[1] = 32'h00050513; // [04] addi a0, a0, %lo(GPIO_BASE)
         mem[2] = 32'h00100337; // [08] li t1, DELAY
         mem[3] = 32'h00000293; // [0c] addi	t0, zero, 0

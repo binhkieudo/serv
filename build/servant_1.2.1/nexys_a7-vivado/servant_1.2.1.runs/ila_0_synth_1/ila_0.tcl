@@ -71,12 +71,12 @@ proc create_report { reportName command } {
 }
 OPTRACE "ila_0_synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 4
+set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xc7vx485tffg1761-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -87,8 +87,7 @@ set_property parent.project_path /home/binhkieudo/Workspace/XRPIX/serv/build/ser
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/home/binhkieudo/.Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
 set_property ip_output_repo /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado [current_fileset]
@@ -122,7 +121,7 @@ if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top ila_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+synth_design -top ila_0 -part xc7vx485tffg1761-2 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 

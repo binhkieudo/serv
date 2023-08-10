@@ -21,9 +21,9 @@
 
 
 module top(
-//         input  wire SYSCLK_P,
-//         input  wire SYSCLK_N,
-         input  wire sysclk,
+         input  wire SYSCLK_P,
+         input  wire SYSCLK_N,
+//         input  wire sysclk,
          // JTAG
          input  wire i_jtag_trst,
          input  wire i_jtag_tdi,
@@ -36,17 +36,17 @@ module top(
     
     reg [5:0] init_rst = 6'b000000;
     
-    wire wb_clk = sysclk;
+    wire wb_clk;
     
-//    IBUFDS #(
-//       .DIFF_TERM("FALSE"),       // Differential Termination
-//       .IBUF_LOW_PWR("TRUE"),     // Low power="TRUE", Highest performance="FALSE"
-//       .IOSTANDARD("LVDS")     // Specify the input I/O standard
-//    ) IBUFDS_inst (
-//       .O   (wb_clk    ),  // Buffer output
-//       .I   (SYSCLK_P   ),  // Diff_p buffer input (connect directly to top-level port)
-//       .IB  (SYSCLK_N   ) // Diff_n buffer input (connect directly to top-level port)
-//    );
+    IBUFDS #(
+       .DIFF_TERM("FALSE"),       // Differential Termination
+       .IBUF_LOW_PWR("TRUE"),     // Low power="TRUE", Highest performance="FALSE"
+       .IOSTANDARD("LVDS")     // Specify the input I/O standard
+    ) IBUFDS_inst (
+       .O   (wb_clk    ),  // Buffer output
+       .I   (SYSCLK_P   ),  // Diff_p buffer input (connect directly to top-level port)
+       .IB  (SYSCLK_N   ) // Diff_n buffer input (connect directly to top-level port)
+    );
     
     always @(posedge wb_clk)
         init_rst <= {init_rst[4:0], 1'b1};

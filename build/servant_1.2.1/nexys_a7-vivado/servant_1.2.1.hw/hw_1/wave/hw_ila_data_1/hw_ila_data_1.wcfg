@@ -9,13 +9,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="6,132"></ZoomStartTime>
-      <ZoomEndTime time="18,493"></ZoomEndTime>
-      <Cursor1Time time="8,192"></Cursor1Time>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="7,845"></ZoomEndTime>
+      <Cursor1Time time="1,270"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="418"></NameColumnWidth>
-      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+      <NameColumnWidth column_width="411"></NameColumnWidth>
+      <ValueColumnWidth column_width="176"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="5" />
    <wave_markers>
@@ -62,12 +62,15 @@
    <wvobject type="group" fp_name="group133">
       <obj_property name="label">IBUS</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/ibus_ack">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/ibus_ack</obj_property>
          <obj_property name="ObjectShortName">ibus_ack</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="nolabel_line55/my_debugger/ibus_adr">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -76,6 +79,8 @@
          <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/ibus_cyc">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -83,6 +88,8 @@
          <obj_property name="ObjectShortName">ibus_cyc</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/ibus_rdt">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -90,11 +97,14 @@
          <obj_property name="ObjectShortName">ibus_rdt</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group132">
       <obj_property name="label">DMI</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_req_address">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_req_address[5:0]</obj_property>
@@ -102,14 +112,8 @@
          <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_req_data">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_req_data[31:0]</obj_property>
-         <obj_property name="ObjectShortName">dmi_req_data[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_req_op">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -118,13 +122,18 @@
          <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dmi_req_ready">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_req_data">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_req_ready</obj_property>
-         <obj_property name="ObjectShortName">dmi_req_ready</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dmi_req_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dmi_req_valid">
          <obj_property name="DisplayName">FullPathName</obj_property>
@@ -132,11 +141,61 @@
          <obj_property name="ObjectShortName">dmi_req_valid</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dmi_req_ready">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_req_ready</obj_property>
+         <obj_property name="ObjectShortName">dmi_req_ready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_rsp_op">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_rsp_op[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dmi_rsp_op[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/dmi_rsp_data">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_rsp_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dmi_rsp_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dmi_rsp_valid">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_rsp_valid</obj_property>
+         <obj_property name="ObjectShortName">dmi_rsp_valid</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dmi_rsp_ready">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dmi_rsp_ready</obj_property>
+         <obj_property name="ObjectShortName">dmi_rsp_ready</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group131">
       <obj_property name="label">DM</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="nolabel_line55/my_debugger/dm_maddr">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/dm_maddr[1:0]</obj_property>
@@ -196,6 +255,13 @@
       <obj_property name="label">Debug</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_execute_req">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_execute_req</obj_property>
+         <obj_property name="ObjectShortName">dbg_cpu_execute_req</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_execute_ack">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_execute_ack</obj_property>
@@ -203,10 +269,10 @@
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_execute_req">
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_halt_req">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_execute_req</obj_property>
-         <obj_property name="ObjectShortName">dbg_cpu_execute_req</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_halt_req</obj_property>
+         <obj_property name="ObjectShortName">dbg_cpu_halt_req</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
@@ -217,10 +283,17 @@
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_halt_req">
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_resume_req">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_halt_req</obj_property>
-         <obj_property name="ObjectShortName">dbg_cpu_halt_req</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_resume_req</obj_property>
+         <obj_property name="ObjectShortName">dbg_cpu_resume_req</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_resume_ack">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_resume_ack</obj_property>
+         <obj_property name="ObjectShortName">dbg_cpu_resume_ack</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
@@ -235,20 +308,6 @@
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_reset</obj_property>
          <obj_property name="ObjectShortName">dbg_cpu_reset</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_resume_ack">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_resume_ack</obj_property>
-         <obj_property name="ObjectShortName">dbg_cpu_resume_ack</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_cpu_resume_req">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_cpu_resume_req</obj_property>
-         <obj_property name="ObjectShortName">dbg_cpu_resume_req</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>

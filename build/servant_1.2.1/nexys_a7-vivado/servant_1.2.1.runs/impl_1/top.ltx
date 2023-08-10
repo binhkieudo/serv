@@ -11,7 +11,7 @@
                         "type": "XSDB_V3",
                         "name": "dbg_hub",
                         "spec": "labtools_xsdbm_v3",
-                        "clk_input_freq_hz": "125000003"
+                        "clk_input_freq_hz": "200000001"
                     },
                     {
                         "type": "ILA_V3",
@@ -1142,6 +1142,206 @@
                                                 "name": "nolabel_line55/my_debugger/dm_probuf3[0]"
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe31",
+                                "id": 31,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 31,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dmi_rsp_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe32",
+                                "id": 32,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 32,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dmi_rsp_ready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe33",
+                                "id": 33,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 33,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dmi_rsp_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[31]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[30]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[29]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[28]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[27]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[26]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[25]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[24]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[23]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[22]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[21]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[20]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[19]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[18]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[17]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[16]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[15]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[14]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[13]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[12]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[11]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[10]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[9]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[8]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[7]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[6]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe34",
+                                "id": 34,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 34,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dmi_rsp_op",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_op[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dmi_rsp_op[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "nolabel_line55/my_debugger/vpins",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3F15AFBF9AF1536AB262FD175A56027D",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 35,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/o_dbg_step",
+                                        "isBus": false
                                     }
                                 ]
                             }

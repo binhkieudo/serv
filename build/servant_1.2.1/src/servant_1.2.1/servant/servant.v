@@ -109,6 +109,8 @@ module servant
    wire dbg_execute_ack;
    wire dbg_halt_ack;
    
+   wire mo_debug_step;
+   
    servant_arbiter arbiter
    (
        // from CPU
@@ -257,7 +259,8 @@ module servant
       .o_dbg_csr_addr   (o_dbg_csr_addr),
       .o_dbg_csr_out    (o_dbg_csr_out),
       .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
-      .o_dbg_csr_cnt8   (o_dbg_csr_cnt8)     
+      .o_dbg_csr_cnt8   (o_dbg_csr_cnt8),
+      .mo_dbg_step      (mo_debug_step)     
      );
       
     // SPI Programmer
@@ -368,7 +371,6 @@ module servant
           
     );
 
-      
     debugger my_debugger (
         .i_clk              (wb_clk ),
         // JTAG
@@ -380,9 +382,13 @@ module servant
         // DMI request
         .dmi_req_valid      (dmi_req_valid  ),    /* probe 5 */
         .dmi_req_ready      (dmi_req_ready  ),    /* probe 6 */
-        .dmi_req_address    (dmi_req_address),  /* probe 7 */
-        .dmi_req_data       (dmi_req_data   ),     /* probe 8 */
-        .dmi_req_op         (dmi_req_op     ),       /* probe 9 */
+        .dmi_req_address    (dmi_req_address),    /* probe 7 */
+        .dmi_req_data       (dmi_req_data   ),    /* probe 8 */
+        .dmi_req_op         (dmi_req_op     ),    /* probe 9 */
+        .dmi_rsp_valid      (dmi_rsp_valid  ),    /* probe 31 */
+        .dmi_rsp_ready      (dmi_rsp_ready  ),    /* probe 32 */
+        .dmi_rsp_data       (dmi_rsp_data   ),    /* probe 33 */
+        .dmi_rsp_op         (dmi_rsp_op     ),    /* probe 34 */
         // DM
         .dm_maddr           (dbg_maddr ),         /* probe 10 */
         .dm_rden            (dbg_rden  ),          /* probe 11 */
@@ -406,7 +412,9 @@ module servant
         .dbg_cpu_resume_req (dbg_resume_req     ),   /* probe 23 */
         .dbg_cpu_resume_ack (dbg_resume_ack     ),   /* probe 24 */
         .dbg_cpu_execute_req(dbg_execute_req    ),  /* probe 25 */
-        .dbg_cpu_execute_ack(dbg_execute_ack    )   /* probe 26 */
+        .dbg_cpu_execute_ack(dbg_execute_ack    ),  /* probe 26 */
+        // Outputs
+        .o_dbg_step         (mo_debug_step      )
     );
     
 endmodule

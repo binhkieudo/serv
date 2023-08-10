@@ -71,10 +71,10 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 4
+set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xc7vx485tffg1761-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -85,8 +85,7 @@ set_property parent.project_path /home/binhkieudo/Workspace/XRPIX/serv/build/ser
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/home/binhkieudo/.Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
 set_property ip_output_repo /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado [current_fileset]
@@ -127,6 +126,10 @@ set_property used_in_implementation false [get_files -all /home/binhkieudo/Works
 set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_0_ooc.xdc]
 
+read_ip -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0_1/vio_0.xci
+set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0_1/vio_0.xdc]
+set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0_1/vio_0_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -136,8 +139,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/new/z2.xdc
-set_property used_in_implementation false [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/new/z2.xdc]
+read_xdc /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/vc707_xdc105.xdc
+set_property used_in_implementation false [get_files /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/constrs_1/vc707_xdc105.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
@@ -145,7 +148,7 @@ read_checkpoint -auto_incremental -incremental /home/binhkieudo/Workspace/XRPIX/
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top top -part xc7z020clg400-1
+synth_design -top top -part xc7vx485tffg1761-2
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

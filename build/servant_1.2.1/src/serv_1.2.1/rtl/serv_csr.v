@@ -41,7 +41,9 @@ module serv_csr
    output wire 	     o_csr_in,
    input  wire 	     i_csr_imm,
    input  wire 	     i_rs1,
-   output wire 	     o_q
+   output wire 	     o_q,
+   // Debug
+   input  wire       mo_dbg_step
 );
 
    localparam [1:0] CSR_SOURCE_CSR = 2'b00,
@@ -166,6 +168,8 @@ module serv_csr
          dcsr_step <= 1'b0;
 //      else if (i_dbg_reset)
 //         dcsr_step <= 1'b1;
+      else if (mo_dbg_step)
+        dcsr_step <= 1'b1;
       else if (i_dcsr_en & i_cnt2)
          dcsr_step <= csr_in;
 

@@ -41,7 +41,9 @@ module serv_top
    output wire [1:0]  o_dbg_csr_addr,
    output wire        o_dbg_csr_out,
    output wire        o_dbg_csr_dcsr_en,
-   output wire        o_dbg_csr_cnt8
+   output wire        o_dbg_csr_cnt8,
+   // Input debug signal
+   input  wire        mo_dbg_step
 );
 
    wire [4:0]    rd_addr;
@@ -531,7 +533,9 @@ module serv_top
 	    .o_csr_in     (csr_in         ),
 	    .i_csr_imm    (csr_imm        ),
 	    .i_rs1        (rs1            ),
-	    .o_q          (csr_rd         )
+	    .o_q          (csr_rd         ),
+	    // Debug
+	    .mo_dbg_step  (mo_dbg_step    )
     );
     
     assign o_dbg_step = dbg_step;
