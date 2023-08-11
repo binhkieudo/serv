@@ -76,6 +76,7 @@ module serv_csr
 
    assign csr_out = (i_mstatus_en & mstatus_mie & i_cnt3) |
                     (i_misa_en & i_cnt4)                  | // support E extension
+//                    (i_misa_en & i_cnt8)                  | // support I extension
                     (i_misa_en & i_cnt30)                 | // 32-bit
 //                    (!i_mhartid_en)                       | // only one hart -> return zeros
                     (i_dcsr_en & i_cnt30)                 | // adapt to sepc 1.0 

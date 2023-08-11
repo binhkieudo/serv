@@ -18193,3 +18193,33 @@ dismissDialog("Program Device"); // bq
 // TclEventType: WAVEFORM_MODEL_EVENT
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 432 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_decode.v", 8); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serv_csr.v", 0); // o
+selectCodeEditor("serv_csr.v", 939, 702); // ac
+selectCodeEditor("serv_csr.v", 866, 655); // ac
+// Elapsed time: 43 seconds
+selectCodeEditor("serv_csr.v", 240, 291); // ac
+selectCodeEditor("serv_csr.v", 240, 291, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_csr.v", 756, 582); // ac
+selectCodeEditor("serv_csr.v", 812, 561); // ac
+selectCodeEditor("serv_csr.v", 828, 567); // ac
+selectCodeEditor("serv_csr.v", 828, 558); // ac
+typeControlKey((HResource) null, "serv_csr.v", 'c'); // ac
+selectCodeEditor("serv_csr.v", 215, 584); // ac
+typeControlKey((HResource) null, "serv_csr.v", 'v'); // ac
+selectCodeEditor("serv_csr.v", 724, 585); // ac
+selectCodeEditor("serv_csr.v", 732, 624); // ac
+selectCodeEditor("serv_csr.v", 737, 589); // ac
+// Elapsed time: 18 seconds
+selectCodeEditor("serv_csr.v", 376, 609); // ac
+selectCodeEditor("serv_csr.v", 397, 600); // ac
+selectCodeEditor("serv_csr.v", 367, 578); // ac
+selectCodeEditor("serv_csr.v", 368, 578, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("serv_csr.v", 379, 601); // ac
+selectCodeEditor("serv_csr.v", 387, 582); // ac
+selectCodeEditor("serv_csr.v", 711, 584); // ac
+selectCodeEditor("serv_csr.v", 792, 583); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("serv_csr.v", 831, 583); // ac
