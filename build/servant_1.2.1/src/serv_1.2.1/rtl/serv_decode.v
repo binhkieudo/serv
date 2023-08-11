@@ -143,8 +143,8 @@ module serv_decode
 
 
    //op20
-   wire co_ebreak = &{op20, opcode[4:2]};
-
+//   wire co_ebreak = &{op20, opcode[4:2]};
+    wire co_ebreak = op20 && (opcode == 5'b11100) && (funct3 == 3'b000);
 
    //opcode & funct3 & op21
 
@@ -288,7 +288,8 @@ module serv_decode
             // wire co_ebreak = &{op20, opcode[4:2]};
             // wire co_e_op = opcode[4] & opcode[2] & !op21 & !(|funct3);
             
-            funct3 <= i_wb_rdt[14:12] & {3{!enter_debug}};
+//            funct3 <= i_wb_rdt[14:12] & {3{!enter_debug}};
+            funct3 <= i_wb_rdt[14:12];
             imm30  <= i_wb_rdt[30];
             imm25  <= i_wb_rdt[25];
 //            opcode <= i_wb_rdt[6:2];

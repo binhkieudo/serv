@@ -89,8 +89,9 @@ module serv_rf_if
                              {3'b010,i_csr_addr};
    
    assign o_wen0 = i_cnt_en & (i_trap | rd_wen) & !i_ebreak;
-   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak) & !i_dbg_process;
-
+//   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak) & !i_dbg_process;
+   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak) & !(i_ebreak && i_dbg_process);
+//   assign o_wen1 = i_cnt_en & (i_trap | i_csr_en | i_ebreak);
    /*
     ********** Read side ***********
     */

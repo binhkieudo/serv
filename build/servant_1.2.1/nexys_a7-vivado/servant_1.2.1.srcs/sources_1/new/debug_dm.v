@@ -36,7 +36,7 @@ module debug_dm(
     // Wishbone bus slave interface
     input  wire [31:0] i_sbus_adr,
     input  wire [31:0] i_sbus_dat,
-    input  wire [3:0]  i_subs_sel,
+    input  wire [3:0]  i_sbus_sel,
     input  wire        i_sbus_we,
     input  wire        i_sbus_cyc,
     output reg  [31:0] o_sbus_rdt,
@@ -51,6 +51,7 @@ module debug_dm(
     output wire [31:0] dbg_probuf1,
     output wire [31:0] dbg_probuf2,
     output wire [31:0] dbg_probuf3,
+    output wire [31:0] dbg_dm_databuf,
     output wire        dbg_rden,
     output wire        dbg_wren,
     output wire [1:0]  dbg_maddr,
@@ -61,7 +62,6 @@ module debug_dm(
     output wire        dbg_halt_ack,
     output wire        dbg_dm_ctrl_busy,
     output wire [2:0]  dbg_dm_ctrl_cmderr
-    
 );
 
     
@@ -589,10 +589,10 @@ module debug_dm(
             data_buf <= i_sbus_dat;
             
         if ((maddr == 2'b11) && wren) begin
-            dci_halt_ack        <= i_subs_sel[0];
-            dci_resume_ack      <= i_subs_sel[1];
-            dci_execute_ack     <= i_subs_sel[2];
-            dci_exception_ack   <= i_subs_sel[3];
+            dci_halt_ack        <= i_sbus_sel[0];
+            dci_resume_ack      <= i_sbus_sel[1];
+            dci_execute_ack     <= i_sbus_sel[2];
+            dci_exception_ack   <= i_sbus_sel[3];
         end
         else begin
             dci_halt_ack        <= 1'b0;
@@ -672,6 +672,7 @@ module debug_dm(
   assign dbg_probuf1     = cpu_progbuf1;
   assign dbg_probuf2     = cpu_progbuf2;
   assign dbg_probuf3     = cpu_progbuf3;
+  assign dbg_dm_databuf  = data_buf;
   assign dbg_rden        = rden;
   assign dbg_wren        = wren;
   assign dbg_maddr       = maddr;

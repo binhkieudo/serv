@@ -111,6 +111,9 @@ module servant
    
    wire mo_debug_step;
    
+   wire [31:0] dm_databuf;
+   wire o_dbg_csr_misa_en;
+   
    servant_arbiter arbiter
    (
        // from CPU
@@ -260,6 +263,7 @@ module servant
       .o_dbg_csr_out    (o_dbg_csr_out),
       .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
       .o_dbg_csr_cnt8   (o_dbg_csr_cnt8),
+      .o_dbg_csr_misa_en(o_dbg_csr_misa_en),
       .mo_dbg_step      (mo_debug_step)     
      );
       
@@ -343,7 +347,7 @@ module servant
         // Wishbone bus slave interface
         .i_sbus_adr         (wb_dm_adr      ),
         .i_sbus_dat         (wb_dm_dat      ),
-        .i_subs_sel         (wb_dm_sel      ),
+        .i_sbus_sel         (wb_dm_sel      ),
         .i_sbus_we          (wb_dm_we       ),
         .i_sbus_cyc         (wb_dm_cyc      ),
         .o_sbus_rdt         (wb_dm_rdt      ),
@@ -358,6 +362,7 @@ module servant
         .dbg_probuf1        (dbg_probuf1    ),
         .dbg_probuf2        (dbg_probuf2    ),
         .dbg_probuf3        (dbg_probuf3    ),
+        .dbg_dm_databuf     (dm_databuf     ),
         .dbg_rden           (dbg_rden       ),
         .dbg_wren           (dbg_wren       ),
         .dbg_maddr          (dbg_maddr      ),
@@ -391,12 +396,13 @@ module servant
         .dmi_rsp_op         (dmi_rsp_op     ),    /* probe 34 */
         // DM
         .dm_maddr           (dbg_maddr ),         /* probe 10 */
-        .dm_rden            (dbg_rden  ),          /* probe 11 */
-        .dm_wren            (dbg_wren  ),          /* probe 12 */
+        .dm_rden            (dbg_rden  ),         /* probe 11 */
+        .dm_wren            (dbg_wren  ),         /* probe 12 */
         .dm_probuf0         (dbg_probuf0 ),       /* probe 27 */
         .dm_probuf1         (dbg_probuf1 ),       /* probe 28 */
         .dm_probuf2         (dbg_probuf2 ),       /* probe 29 */
         .dm_probuf3         (dbg_probuf3 ),       /* probe 30 */
+        .dm_databuf         (dm_databuf ),        /* probe 36 */
         // Instruction fetch
         .ibus_adr           (wb_ibus_adr ),         /* probe 13 */
         .ibus_cyc           (wb_ibus_cyc ),         /* probe 14 */
@@ -405,6 +411,7 @@ module servant
         // Debug signal 
         .dbg_dcsr_step      (o_dbg_step         ),    /* probe 17 */
         .dbg_dcsr_en        (o_dbg_csr_dcsr_en  ),      /* probe 18 */
+        .dbg_misa_en        (o_dbg_csr_misa_en ),
         .dbg_cpu_process    (w_dbg_process      ),  /* probe 19 */
         .dbg_cpu_reset      (w_dbg_reset        ),    /* probe 20 */
         .dbg_cpu_halt_req   (w_dbg_halt         ), /* probe 21 */
@@ -413,6 +420,19 @@ module servant
         .dbg_cpu_resume_ack (dbg_resume_ack     ),   /* probe 24 */
         .dbg_cpu_execute_req(dbg_execute_req    ),  /* probe 25 */
         .dbg_cpu_execute_ack(dbg_execute_ack    ),  /* probe 26 */
+        // Sbus
+        .sbus_adr           (wb_dm_adr  ),
+        .sbus_dat           (wb_dm_dat  ),
+        .sbus_sel           (wb_dm_sel  ),
+        .sbus_we            (wb_dm_we   ),
+        .sbus_cyc           (wb_dm_cyc  ),
+        .sbus_rdt           (wb_dm_rdt  ),
+        .sbus_ack           (wb_dm_ack  ),
+        // RF interface
+        .rf_addr            (o_dbg_rf_waddr ),
+        .rf_we              (o_dbg_rf_we    ),
+        .rf_we1             (o_dbg_rf_w1wren),
+        .rf_data            (o_dbg_rf_wdata ),
         // Outputs
         .o_dbg_step         (mo_debug_step      )
     );

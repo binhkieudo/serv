@@ -36,6 +36,7 @@ module serv_rf_top
     output wire [1:0]   o_dbg_csr_addr,
     output wire         o_dbg_csr_out,
     output wire         o_dbg_csr_dcsr_en,
+    output wire         o_dbg_csr_misa_en,
     output wire         o_dbg_csr_cnt8,
     input  wire         mo_dbg_step  
 );
@@ -104,6 +105,7 @@ module serv_rf_top
       .o_dbg_csr_addr    (o_dbg_csr_addr),
       .o_dbg_csr_out     (o_dbg_csr_out),
       .o_dbg_csr_dcsr_en (o_dbg_csr_dcsr_en),
+      .o_dbg_csr_misa_en (o_dbg_csr_misa_en),
       .o_dbg_csr_cnt8    (o_dbg_csr_cnt8),
       .mo_dbg_step       (mo_dbg_step   )
     );

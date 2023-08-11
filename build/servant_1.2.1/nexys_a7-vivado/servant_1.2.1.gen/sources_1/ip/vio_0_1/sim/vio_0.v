@@ -48,13 +48,22 @@
 `timescale 1ns / 1ps
 module vio_0 (
 clk,
-
-probe_out0
+probe_in0,probe_in1,probe_in2,probe_in3,probe_in4,
+probe_out0,
+probe_out1,
+probe_out2
 );
 
 input clk;
+input [31 : 0] probe_in0;
+input [31 : 0] probe_in1;
+input [31 : 0] probe_in2;
+input [31 : 0] probe_in3;
+input [255 : 0] probe_in4;
 
 output reg [0 : 0] probe_out0 = 'h0 ;
+output reg [1 : 0] probe_out1 = 'h0 ;
+output reg [9 : 0] probe_out2 = 'h000 ;
 
 
 endmodule

@@ -554,7 +554,7 @@ add wave -group dm -group dmi -color yellow -radix binary sim:/tb/udt/serv_dm/o_
 
 add wave -group dm -group wb -color white -radix hex    sim:/tb/udt/serv_dm/i_sbus_adr
 add wave -group dm -group wb -color white -radix hex    sim:/tb/udt/serv_dm/i_sbus_dat
-add wave -group dm -group wb -color white -radix binary sim:/tb/udt/serv_dm/i_subs_sel
+add wave -group dm -group wb -color white -radix binary sim:/tb/udt/serv_dm/i_sbus_sel
 add wave -group dm -group wb -color white -radix binary sim:/tb/udt/serv_dm/i_sbus_we
 add wave -group dm -group wb -color white -radix binary sim:/tb/udt/serv_dm/i_sbus_cyc
 add wave -group dm -group wb -color white -radix hex    sim:/tb/udt/serv_dm/o_sbus_rdt
