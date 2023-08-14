@@ -29,10 +29,18 @@ module serv_rf_top
     output wire         o_dbg_process, // set whenever CPU in debug mode (halt, ebreak, step)
     // Debug
     output wire         o_dbg_step,
-    output wire [5:0]   o_dbg_rf_waddr,
-    output wire         o_dbg_rf_w1wren,
+    output wire [6:0]   o_dbg_rf_waddr,
     output wire         o_dbg_rf_we,
     output wire [7:0]   o_dbg_rf_wdata,
+    output wire [6:0]   o_dbg_rf_raddr,
+    output wire [7:0]   o_dbg_rf_rdata,
+    output wire         o_dbg_rf_re,
+    output wire [5:0]   o_dbg_rf_w0addr,
+    output wire         o_dbg_rf_w0wren,    
+    output wire [5:0]   o_dbg_rf_r0addr,
+    output wire [5:0]   o_dbg_rf_w1addr,
+    output wire         o_dbg_rf_w1wren,
+    output wire [5:0]   o_dbg_rf_r1addr,
     output wire [1:0]   o_dbg_csr_addr,
     output wire         o_dbg_csr_out,
     output wire         o_dbg_csr_dcsr_en,
@@ -155,9 +163,20 @@ module serv_rf_top
    );
    
    
-    assign o_dbg_rf_waddr = wreg1;
+    assign o_dbg_rf_waddr   = waddr;
+    assign o_dbg_rf_we      = wen;
+    assign o_dbg_rf_wdata   = wdata;
+    assign o_dbg_rf_raddr   = raddr;
+    assign o_dbg_rf_rdata   = rdata;
+    assign o_dbg_rf_re      = ren;
+
+    assign o_dbg_rf_w0addr = wreg0;
+    assign o_dbg_rf_w0wren = wen0;    
+    assign o_dbg_rf_r0addr = rreg0;
+        
+    assign o_dbg_rf_w1addr = wreg1;
     assign o_dbg_rf_w1wren = wen1;
-    assign o_dbg_rf_we = wen;
-    assign o_dbg_rf_wdata = wdata;
+    assign o_dbg_rf_r1addr = rreg1;
+
     
 endmodule

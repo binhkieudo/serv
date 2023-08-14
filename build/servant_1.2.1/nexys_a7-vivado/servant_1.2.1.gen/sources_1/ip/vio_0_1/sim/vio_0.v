@@ -58,12 +58,12 @@ input clk;
 input [31 : 0] probe_in0;
 input [31 : 0] probe_in1;
 input [31 : 0] probe_in2;
-input [31 : 0] probe_in3;
+input [12 : 0] probe_in3;
 input [255 : 0] probe_in4;
 
 output reg [0 : 0] probe_out0 = 'h0 ;
-output reg [1 : 0] probe_out1 = 'h0 ;
-output reg [9 : 0] probe_out2 = 'h000 ;
+output reg [2 : 0] probe_out1 = 'h0 ;
+output reg [12 : 0] probe_out2 = 'h0000 ;
 
 
 endmodule

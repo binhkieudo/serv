@@ -1,7 +1,7 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
--- Date        : Fri Aug 11 14:27:33 2023
+-- Date        : Mon Aug 14 17:51:25 2023
 -- Host        : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_0_stub.vhdl
@@ -15,7 +15,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ila_0 is
   Port ( 
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe0 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -60,10 +60,25 @@ entity ila_0 is
     probe42 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe43 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe44 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe45 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe45 : in STD_LOGIC_VECTOR ( 6 downto 0 );
     probe46 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe47 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe48 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe48 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe49 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe50 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe51 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe52 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe53 : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    probe54 : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    probe55 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe56 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe57 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe58 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe59 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe60 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe61 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe62 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe63 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 
 end ila_0;
@@ -72,7 +87,7 @@ architecture stub of ila_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,probe0[0:0],probe1[0:0],probe2[0:0],probe3[0:0],probe4[0:0],probe5[0:0],probe6[0:0],probe7[5:0],probe8[31:0],probe9[1:0],probe10[1:0],probe11[0:0],probe12[0:0],probe13[31:0],probe14[0:0],probe15[31:0],probe16[0:0],probe17[0:0],probe18[0:0],probe19[0:0],probe20[0:0],probe21[0:0],probe22[0:0],probe23[0:0],probe24[0:0],probe25[0:0],probe26[0:0],probe27[31:0],probe28[31:0],probe29[31:0],probe30[31:0],probe31[0:0],probe32[0:0],probe33[31:0],probe34[1:0],probe35[31:0],probe36[31:0],probe37[31:0],probe38[31:0],probe39[3:0],probe40[0:0],probe41[0:0],probe42[31:0],probe43[0:0],probe44[0:0],probe45[5:0],probe46[0:0],probe47[7:0],probe48[0:0]";
+attribute black_box_pad_pin of stub : architecture is "clk,probe0[2:0],probe1[0:0],probe2[0:0],probe3[0:0],probe4[0:0],probe5[0:0],probe6[0:0],probe7[5:0],probe8[31:0],probe9[1:0],probe10[1:0],probe11[0:0],probe12[0:0],probe13[31:0],probe14[0:0],probe15[31:0],probe16[0:0],probe17[0:0],probe18[0:0],probe19[0:0],probe20[0:0],probe21[0:0],probe22[0:0],probe23[0:0],probe24[0:0],probe25[0:0],probe26[0:0],probe27[31:0],probe28[31:0],probe29[31:0],probe30[31:0],probe31[0:0],probe32[0:0],probe33[31:0],probe34[1:0],probe35[31:0],probe36[31:0],probe37[31:0],probe38[31:0],probe39[3:0],probe40[0:0],probe41[0:0],probe42[31:0],probe43[0:0],probe44[0:0],probe45[6:0],probe46[0:0],probe47[7:0],probe48[0:0],probe49[0:0],probe50[0:0],probe51[2:0],probe52[5:0],probe53[6:0],probe54[7:0],probe55[0:0],probe56[5:0],probe57[0:0],probe58[5:0],probe59[5:0],probe60[31:0],probe61[31:0],probe62[0:0],probe63[0:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "ila,Vivado 2022.2";
 begin

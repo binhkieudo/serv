@@ -114,6 +114,22 @@ module servant
    wire [31:0] dm_databuf;
    wire o_dbg_csr_misa_en;
    
+   wire         o_dbg_step;
+   
+   wire [6:0]   o_dbg_rf_waddr;
+   wire         o_dbg_rf_we;
+   wire [7:0]   o_dbg_rf_wdata;
+   wire [6:0]   o_dbg_rf_raddr;
+   wire [7:0]   o_dbg_rf_rdata;
+   wire         o_dbg_rf_re;
+   
+   wire [5:0]   o_dbg_rf_w1addr;
+   wire         o_dbg_rf_w1wren;
+   wire [5:0]   o_dbg_rf_r1addr;
+   wire [5:0]   o_dbg_rf_w0addr;
+   wire         o_dbg_rf_w0wren; 
+   wire [5:0]   o_dbg_rf_r0addr;
+    
    servant_arbiter arbiter
    (
        // from CPU
@@ -214,11 +230,7 @@ module servant
 	    .o_wb_dat (wb_timer_rdt)
     );
 
-   wire         o_dbg_step;
-   wire [5:0]   o_dbg_rf_waddr;
-   wire         o_dbg_rf_w1wren;
-   wire         o_dbg_rf_we;
-   wire [7:0]   o_dbg_rf_wdata;
+
     
    servant_gpio gpio (
       .i_wb_clk (wb_clk     ),
@@ -255,10 +267,19 @@ module servant
       .i_dbg_reset  (w_dbg_reset    ),
       .o_dbg_process(w_dbg_process  ),
       .o_dbg_step       (o_dbg_step     ),
+      
       .o_dbg_rf_waddr   (o_dbg_rf_waddr ),
-      .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
       .o_dbg_rf_we      (o_dbg_rf_we    ),
       .o_dbg_rf_wdata   (o_dbg_rf_wdata ),
+      .o_dbg_rf_raddr   (o_dbg_rf_raddr ),
+      .o_dbg_rf_rdata   (o_dbg_rf_rdata ),
+      .o_dbg_rf_re      (o_dbg_rf_re ),
+      .o_dbg_rf_w0addr  (o_dbg_rf_w0addr ),
+      .o_dbg_rf_w0wren  (o_dbg_rf_w0wren ),
+      .o_dbg_rf_r0addr  (o_dbg_rf_r0addr ),
+      .o_dbg_rf_w1addr  (o_dbg_rf_w1addr),
+      .o_dbg_rf_w1wren  (o_dbg_rf_w1wren),
+      .o_dbg_rf_r1addr  (o_dbg_rf_r1addr ),
       .o_dbg_csr_addr   (o_dbg_csr_addr),
       .o_dbg_csr_out    (o_dbg_csr_out),
       .o_dbg_csr_dcsr_en(o_dbg_csr_dcsr_en),
@@ -266,7 +287,7 @@ module servant
       .o_dbg_csr_misa_en(o_dbg_csr_misa_en),
       .mo_dbg_step      (mo_debug_step)     
      );
-      
+        
     // SPI Programmer
     flash_controller serv_flash(
         // Wishbone slave
@@ -372,7 +393,9 @@ module servant
         .dbg_execute_ack    (dbg_execute_ack ),
         .dbg_halt_ack       (dbg_halt_ack ),   
         .dbg_dm_ctrl_busy   (dbg_dm_ctrl_busy ),
-        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr)
+        .dbg_dm_ctrl_cmderr (dbg_dm_ctrl_cmderr),
+        .dbg_autoexec_rd    (dbg_autoexec_rd),
+        .dbg_autoexec_wr    (dbg_autoexec_wr)
           
     );
 
@@ -403,6 +426,9 @@ module servant
         .dm_probuf2         (dbg_probuf2 ),       /* probe 29 */
         .dm_probuf3         (dbg_probuf3 ),       /* probe 30 */
         .dm_databuf         (dm_databuf ),        /* probe 36 */
+        .dm_ctrl_state      (dm_ctrl_state),
+        .dm_ctrl_busy       (dbg_dm_ctrl_busy ),
+        .dm_ctrl_err        (dbg_dm_ctrl_cmderr ),
         // Instruction fetch
         .ibus_adr           (wb_ibus_adr ),         /* probe 13 */
         .ibus_cyc           (wb_ibus_cyc ),         /* probe 14 */
@@ -420,6 +446,8 @@ module servant
         .dbg_cpu_resume_ack (dbg_resume_ack     ),   /* probe 24 */
         .dbg_cpu_execute_req(dbg_execute_req    ),  /* probe 25 */
         .dbg_cpu_execute_ack(dbg_execute_ack    ),  /* probe 26 */
+        .dbg_autoexec_rd    (dbg_autoexec_rd),
+        .dbg_autoexec_wr    (dbg_autoexec_wr),
         // Sbus
         .sbus_adr           (wb_dm_adr  ),
         .sbus_dat           (wb_dm_dat  ),
@@ -429,12 +457,25 @@ module servant
         .sbus_rdt           (wb_dm_rdt  ),
         .sbus_ack           (wb_dm_ack  ),
         // RF interface
-        .rf_addr            (o_dbg_rf_waddr ),
+        .rf_waddr           (o_dbg_rf_waddr ),
         .rf_we              (o_dbg_rf_we    ),
-        .rf_we1             (o_dbg_rf_w1wren),
-        .rf_data            (o_dbg_rf_wdata ),
+        .rf_wdata           (o_dbg_rf_wdata ),
+        .rf_raddr           (o_dbg_rf_raddr ),
+        .rf_rdata           (o_dbg_rf_rdata ),
+        .rf_re              (o_dbg_rf_re    ),
+        .rf_w0addr          (o_dbg_rf_w0addr),
+        .rf_w0wren          (o_dbg_rf_w0wren),
+        .rf_r0addr          (o_dbg_rf_r0addr),
+        .rf_w1addr          (o_dbg_rf_w1addr),
+        .rf_w1wren          (o_dbg_rf_w1wren),
+        .rf_r1addr          (o_dbg_rf_r1addr),
+        // Debug memory
+        .mem_adr            (wb_mem_adr ),
+        .mem_dat            (wb_mem_dat ),
+        .mem_cyc            (wb_mem_cyc ),
+        .mem_we             (wb_mem_we  ),
         // Outputs
         .o_dbg_step         (mo_debug_step      )
     );
-    
+       
 endmodule

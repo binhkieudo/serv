@@ -23,8 +23,8 @@
 module debugger(
         input wire        i_clk,
         // JTAG
-        input wire        jtag_trst,        /* probe 0 */ 
-        input wire        jtag_tck,         /* probe 1 */
+        input wire        jtag_trst,        
+        input wire        jtag_tck,         
         input wire        jtag_tdi,         /* probe 2 */
         input wire        jtag_tdo,         /* probe 3 */
         input wire        jtag_tms,         /* probe 4 */
@@ -47,6 +47,9 @@ module debugger(
         input wire [31:0] dm_probuf2,       /* probe 29 */
         input wire [31:0] dm_probuf3,       /* probe 30 */
         input wire [31:0] dm_databuf,       /* probe 36 */
+        input wire [2:0]  dm_ctrl_state,    /* probe 51 */
+        input wire        dm_ctrl_busy,     /* probe 1 */
+        input wire [2:0]  dm_ctrl_err,      /* probe 0 */
         // Instruction fetch
         input wire [31:0] ibus_adr,         /* probe 13 */
         input wire        ibus_cyc,         /* probe 14 */
@@ -64,6 +67,8 @@ module debugger(
         input wire        dbg_cpu_resume_ack,   /* probe 24 */
         input wire        dbg_cpu_execute_req,  /* probe 25 */
         input wire        dbg_cpu_execute_ack,  /* probe 26 */
+        input wire        dbg_autoexec_rd,
+        input wire        dbg_autoexec_wr,
         // Sbus
         input wire [31:0] sbus_adr, /* probe 37 */
         input wire [31:0] sbus_dat, /* probe 38 */
@@ -73,39 +78,48 @@ module debugger(
         input wire [31:0] sbus_rdt, /* probe 42 */
         input wire        sbus_ack, /* probe 43 */   
         // RF interface
-        input wire [5:0]  rf_addr,  /* probe 45 */ 
+        input wire [6:0]  rf_waddr, /* probe 45 */ 
         input wire        rf_we,    /* probe 46 */ 
-        input wire        rf_we1,   /* probe 48 */
-        input wire [7:0]  rf_data,  /* probe 47 */   
+        input wire [7:0]  rf_wdata, /* probe 47 */ 
+        input wire [6:0]  rf_raddr, /* probe 53 */ 
+        input wire [7:0]  rf_rdata, /* probe 54 */
+        input wire        rf_re,    /* probe 55 */
+        input wire [5:0]  rf_w0addr,/* probe 56 */ 
+        input wire        rf_w0wren,/* probe 57 */ 
+        input wire [5:0]  rf_r0addr,/* probe 58 */        
+        input wire [5:0]  rf_w1addr,/* probe 52 */ 
+        input wire        rf_w1wren,/* probe 48 */  
+        input wire [5:0]  rf_r1addr,/* probe 59 */
+        // Debug memory
+        input wire [31:0] mem_adr,  /* probe 60 */ 
+        input wire [31:0] mem_dat,  /* probe 61 */
+        input wire        mem_cyc,  /* probe 62 */
+        input wire        mem_we,   /* probe 63 */
         // Outputs
         output wire       o_dbg_step
     );
-    
+   
     reg [31:0] execute_req_cnt;
     wire execute_req_cnt_rst;
     wire execute_req_cnt_en;
+    wire addr_sel;
     
-    reg [31:0] ram_trace_0 [0:1024];
-    reg [31:0] ram_trace_1 [0:1024];
-    reg [31:0] ram_trace_2 [0:1024];
-    reg [31:0] ram_trace_3 [0:1024];
+//    reg [31:0] ram_trace_0 [0:8192];
+//    reg [31:0] ram_trace_1 [0:8192];
+//    reg [31:0] ram_trace_2 [0:8192];
     
     reg [31:0] trace_0;
     reg [31:0] trace_1;
     reg [31:0] trace_2;
-    reg [31:0] trace_3;
-    
-    reg [31:0] trace_0_buf;
-    reg [31:0] trace_1_buf;
-    reg [31:0] trace_2_buf;
-    reg [31:0] trace_3_buf;
     
     reg [1:0] resume_bit;
     reg [1:0] execute_bit;
     reg [1:0] halt_bit;
     reg [255:0] trace_chain;
     
-    wire [9:0] trace_addr;
+    wire  [12:0] trace_addr;
+    reg  [12:0] trace_count;
+    wire [12:0] wtrace_addr;
     
     reg capture;
     
@@ -133,47 +147,62 @@ module debugger(
          
         end
     
+    parameter S_IDLE = 2'b00,
+              S_RISE = 2'b01,
+              S_FALL = 2'b10;
+              
+    reg [1:0]trace_state;
+    
     always @(posedge dbg_cpu_execute_req or posedge execute_req_cnt_rst) begin
         if (execute_req_cnt_rst) execute_req_cnt <= 32'd0;
-        else if (execute_req_cnt_en && capture) execute_req_cnt <= execute_req_cnt + 1'b1;
+        else if (execute_req_cnt_en && (dm_databuf == 32'h00050513)) execute_req_cnt <= execute_req_cnt + 1'b1;
     end
     
     always @(posedge i_clk) begin
-        trace_0_buf <= 32'd0;
-        trace_1_buf <= 32'd0;
-        trace_2_buf <= 32'd0;
-        trace_3_buf <= 32'd0;
-    
-        if (execute_req_cnt_en && dbg_cpu_execute_req && capture) begin
-            ram_trace_0[execute_req_cnt[9:0]] <= trace_0_buf;
-            ram_trace_1[execute_req_cnt[9:0]] <= trace_1_buf;
-            ram_trace_2[execute_req_cnt[9:0]] <= trace_2_buf;
-            ram_trace_3[execute_req_cnt[9:0]] <= trace_3_buf;
-        end
+        if (execute_req_cnt_rst) trace_state <= S_IDLE;
+        else if (execute_req_cnt_en)
+            case (trace_state)
+                S_IDLE: trace_state <= dbg_cpu_execute_req? S_RISE: S_IDLE;
+                S_RISE: trace_state <= !dbg_cpu_execute_req? S_FALL: S_RISE;
+                S_FALL: trace_state <= S_IDLE;
+            endcase
         
-        trace_0 <= ram_trace_0[trace_addr];
-        trace_1 <= ram_trace_1[trace_addr];
-        trace_2 <= ram_trace_2[trace_addr];
-        trace_3 <= ram_trace_3[trace_addr];
+        if (execute_req_cnt_rst) trace_count <= 13'd0;
+        else if (trace_state == S_FALL) trace_count <= trace_count + 1'b1;
         
+//        if (execute_req_cnt_en && (trace_state == S_FALL)) begin
+//            ram_trace_0[trace_addr] <= dm_probuf0;
+//            ram_trace_1[trace_addr] <= dm_probuf1;
+//            ram_trace_2[trace_addr] <= dm_probuf2;
+//        end
+        
+//        trace_0 <= ram_trace_0[trace_addr];
+//        trace_1 <= ram_trace_1[trace_addr];
+//        trace_2 <= ram_trace_2[trace_addr];    
+
+        trace_0 <= 32'd0;
+        trace_1 <= 32'd0;
+        trace_2 <= 32'd0;  
     end
+    
+    assign trace_addr = addr_sel? wtrace_addr: trace_count;
     
     vio_0 vpins(
         .clk            (i_clk      ),
         .probe_in0      (trace_0    ),
         .probe_in1      (trace_1    ),
         .probe_in2      (trace_2    ),
-        .probe_in3      (trace_3    ),
+        .probe_in3      (trace_count),
         .probe_in4      (trace_chain),
         .probe_out0     (o_dbg_step ),
-        .probe_out1     ({execute_req_cnt_rst, execute_req_cnt_en}),
-        .probe_out2     (trace_addr )
+        .probe_out1     ({addr_sel, execute_req_cnt_rst, execute_req_cnt_en}),
+        .probe_out2     (wtrace_addr )
     );
         
     ila_0 analyzer (
         .clk        (i_clk              ),
-        .probe0     (jtag_trst          ),
-        .probe1     (jtag_tck           ),
+        .probe0     (dm_ctrl_err        ),
+        .probe1     (dm_ctrl_busy       ),
         .probe2     (jtag_tdi           ),
         .probe3     (jtag_tdo           ),
         .probe4     (jtag_tms           ),
@@ -217,10 +246,25 @@ module debugger(
         .probe42    (sbus_rdt           ),
         .probe43    (sbus_ack           ),
         .probe44    (dbg_misa_en        ),
-        .probe45    (rf_addr            ),
+        .probe45    (rf_waddr           ),
         .probe46    (rf_we              ),
-        .probe47    (rf_data            ),
-        .probe48    (rf_we1             )
+        .probe47    (rf_wdata           ),
+        .probe48    (rf_w1wren          ),
+        .probe49    (dbg_autoexec_rd    ),
+        .probe50    (dbg_autoexec_wr    ),
+        .probe51    (dm_ctrl_state      ),
+        .probe52    (rf_w1addr          ),
+        .probe53    (rf_raddr           ),
+        .probe54    (rf_rdata           ),
+        .probe55    (rf_re              ),
+        .probe56    (rf_w0addr          ),
+        .probe57    (rf_w0wren          ),
+        .probe58    (rf_r0addr          ),
+        .probe59    (rf_r1addr          ),
+        .probe60    (mem_adr            ),
+        .probe61    (mem_dat            ),
+        .probe62    (mem_cyc            ),
+        .probe63    (mem_we             )
    );
    
 endmodule

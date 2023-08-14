@@ -285,16 +285,16 @@ module serv_decode
             op31   <= 1'b0;
         end
         else if (i_wb_en) begin
-            // wire co_ebreak = &{op20, opcode[4:2]};
+            // wire co_ebreak = op20 && (opcode == 5'b11100) && (funct3 == 3'b000);
             // wire co_e_op = opcode[4] & opcode[2] & !op21 & !(|funct3);
-            
+            // When enter debug mode, the fetch instruction is replaced by ebreak
 //            funct3 <= i_wb_rdt[14:12] & {3{!enter_debug}};
-            funct3 <= i_wb_rdt[14:12];
+            funct3 <= i_wb_rdt[14:12] & {3{!enter_debug}};
             imm30  <= i_wb_rdt[30];
             imm25  <= i_wb_rdt[25];
 //            opcode <= i_wb_rdt[6:2];
             opcode[4:2] <= i_wb_rdt[6:4] | {3{enter_debug}};
-            opcode[1:0] <= i_wb_rdt[3:2];
+            opcode[1:0] <= i_wb_rdt[3:2] & {2{!enter_debug}};
             op20   <= i_wb_rdt[20] | enter_debug;
             op21   <= i_wb_rdt[21] & !enter_debug;
             op22   <= i_wb_rdt[22];

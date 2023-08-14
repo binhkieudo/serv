@@ -9,28 +9,21 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="892"></ZoomStartTime>
-      <ZoomEndTime time="1,145"></ZoomEndTime>
-      <Cursor1Time time="989"></Cursor1Time>
+      <ZoomStartTime time="16,600"></ZoomStartTime>
+      <ZoomEndTime time="16,854"></ZoomEndTime>
+      <Cursor1Time time="16,711"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="411"></NameColumnWidth>
-      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+      <NameColumnWidth column_width="403"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="8" />
    <wave_markers>
    </wave_markers>
    <wvobject type="group" fp_name="group134">
       <obj_property name="label">JTAG</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/jtag_tck">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/jtag_tck</obj_property>
-         <obj_property name="ObjectShortName">jtag_tck</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/jtag_tdi">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/jtag_tdi</obj_property>
@@ -52,27 +45,11 @@
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/jtag_trst">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/jtag_trst</obj_property>
-         <obj_property name="ObjectShortName">jtag_trst</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group133">
       <obj_property name="label">IBUS</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/ibus_ack">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/ibus_ack</obj_property>
-         <obj_property name="ObjectShortName">ibus_ack</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
       <wvobject type="array" fp_name="nolabel_line55/my_debugger/ibus_adr">
          <obj_property name="DisplayName">FullPathName</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/ibus_adr[31:0]</obj_property>
@@ -102,40 +79,130 @@
          <obj_property name="CustomSignalColor">#00FFFF</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/ibus_ack">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/ibus_ack</obj_property>
+         <obj_property name="ObjectShortName">ibus_ack</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group729">
       <obj_property name="label">RF</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_addr">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_waddr">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_addr[5:0]</obj_property>
-         <obj_property name="ObjectShortName">rf_addr[5:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_waddr[6:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_waddr[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_data">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_wdata">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_data[7:0]</obj_property>
-         <obj_property name="ObjectShortName">rf_data[7:0]</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_wdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_wdata[7:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject type="logic" fp_name="nolabel_line55/my_debugger/rf_we">
-         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_we</obj_property>
          <obj_property name="ObjectShortName">rf_we</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="label">nolabel_line55/my_debugger/rf_we</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/rf_we1">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_raddr">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_we1</obj_property>
-         <obj_property name="ObjectShortName">rf_we1</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_raddr[6:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_raddr[6:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_rdata">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_rdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_rdata[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/rf_re">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_re</obj_property>
+         <obj_property name="ObjectShortName">rf_re</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_r0addr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_r0addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_r0addr[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_w0addr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_w0addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_w0addr[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/rf_w0wren">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_w0wren</obj_property>
+         <obj_property name="ObjectShortName">rf_w0wren</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_r1addr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_r1addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_r1addr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/rf_w1wren">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_w1wren</obj_property>
+         <obj_property name="ObjectShortName">rf_w1wren</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/rf_w1addr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/rf_w1addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rf_w1addr[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group132">
@@ -227,6 +294,93 @@
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          <obj_property name="CustomSignalColor">#FFFF00</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group674">
+      <obj_property name="label">Sbus</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_ack">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_ack</obj_property>
+         <obj_property name="ObjectShortName">sbus_ack</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_adr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_adr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sbus_adr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_cyc">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_cyc</obj_property>
+         <obj_property name="ObjectShortName">sbus_cyc</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_dat">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_dat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sbus_dat[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_rdt">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_rdt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sbus_rdt[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_sel">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_sel[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sbus_sel[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_we">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_we</obj_property>
+         <obj_property name="ObjectShortName">sbus_we</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/dm_ctrl_err">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dm_ctrl_err[2:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_ctrl_err[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dm_ctrl_busy">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dm_ctrl_busy</obj_property>
+         <obj_property name="ObjectShortName">dm_ctrl_busy</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group131">
@@ -385,74 +539,52 @@
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_autoexec_rd">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_autoexec_rd</obj_property>
+         <obj_property name="ObjectShortName">dbg_autoexec_rd</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/dbg_autoexec_wr">
+         <obj_property name="DisplayName">FullPathName</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/dbg_autoexec_wr</obj_property>
+         <obj_property name="ObjectShortName">dbg_autoexec_wr</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject type="group" fp_name="group674">
-      <obj_property name="label">Sbus</obj_property>
+   <wvobject type="group" fp_name="group796">
+      <obj_property name="label">MEM</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_ack">
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/mem_cyc">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_ack</obj_property>
-         <obj_property name="ObjectShortName">sbus_ack</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/mem_cyc</obj_property>
+         <obj_property name="ObjectShortName">mem_cyc</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_adr">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/mem_adr">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_adr[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sbus_adr[31:0]</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/mem_adr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_adr[31:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_cyc">
+      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/mem_we">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_cyc</obj_property>
-         <obj_property name="ObjectShortName">sbus_cyc</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/mem_we</obj_property>
+         <obj_property name="ObjectShortName">mem_we</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_dat">
+      <wvobject type="array" fp_name="nolabel_line55/my_debugger/mem_dat">
          <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_dat[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sbus_dat[31:0]</obj_property>
+         <obj_property name="ElementShortName">nolabel_line55/my_debugger/mem_dat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_dat[31:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_rdt">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_rdt[31:0]</obj_property>
-         <obj_property name="ObjectShortName">sbus_rdt[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="nolabel_line55/my_debugger/sbus_sel">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_sel[3:0]</obj_property>
-         <obj_property name="ObjectShortName">sbus_sel[3:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="LABELRADIX">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="nolabel_line55/my_debugger/sbus_we">
-         <obj_property name="DisplayName">FullPathName</obj_property>
-         <obj_property name="ElementShortName">nolabel_line55/my_debugger/sbus_we</obj_property>
-         <obj_property name="ObjectShortName">sbus_we</obj_property>
-         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="LABELRADIX">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>

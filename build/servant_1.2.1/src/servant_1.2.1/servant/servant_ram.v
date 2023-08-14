@@ -42,7 +42,7 @@ module servant_ram
         mem[0] = 32'h40000537; // [00] lui a0, %hi(GPIO_BASE)
 //        mem[0] = 32'hff042783; // [00] lw x15, -16(x8)
 //        mem[1] = 32'h00050513; // [04] addi a0, a0, %lo(GPIO_BASE)
-        mem[1] = 32'h30102473; // [04] csrrs x8, misa, x0
+        mem[1] = 32'h88002483; // [04] csrrs x8, misa, x0
         mem[2] = 32'h00100337; // [08] li t1, DELAY
         mem[3] = 32'h00000293; // [0c] addi	t0, zero, 0
         // bl1
@@ -54,7 +54,7 @@ module servant_ram
         // time1
         mem[9] = 32'h00138393;  // [24] addi t2, t2, 1
         mem[10] = 32'h00158593; // [28] addi a1, a1, 1
-        mem[11] = 32'h00160613; // [2c] addi a2, a2, 1
+        mem[11] = 32'h88002483; // [2c] addi a2, a2, 1
         mem[12] = 32'hfe731ae3; // [30] bne t1, t2, time1
         mem[13] = 32'hFEDFF06F; // [34] j bl1
         mem[14] = 32'h00000000; 

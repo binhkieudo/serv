@@ -61,11 +61,11 @@ module debug_dm(
     output wire        dbg_execute_ack,
     output wire        dbg_halt_ack,
     output wire        dbg_dm_ctrl_busy,
-    output wire [2:0]  dbg_dm_ctrl_cmderr
+    output wire [2:0]  dbg_dm_ctrl_cmderr,
+    output wire        dbg_autoexec_rd,
+    output wire        dbg_autoexec_wr
 );
-
-    
-    
+                        
     //============== RISC-V DM =============
     // DM configurations
     localparam DM_BASE      = 32'hfffff800;
@@ -122,8 +122,10 @@ module debug_dm(
                
     // DMI access
     wire dmi_wren;
+    reg  dmi_wren_delay;
     wire dmi_rden;
     
+    reg  r_dmi_req_valid;
     // Output registers
 //    reg         o_dmi_rsp_valid;
 //    reg [31:0]  o_dmi_rsp_data;
@@ -163,6 +165,7 @@ module debug_dm(
     reg         dci_exception_ack;
     reg [255:0] dci_progbuf;
     wire        dci_data_we;
+    wire        dci_data_autowe;
     wire [31:0] dci_wdata;
     wire [31:0] dci_rdata;
     
@@ -194,6 +197,7 @@ module debug_dm(
     // hart status
     reg         dm_ctrl_hart_halted;
     reg         dm_ctrl_hart_resume_req;
+    reg [1:0]   dm_ctrl_hart_resume_state;
     reg         dm_ctrl_hart_resume_ack;
     reg         dm_ctrl_hart_reset;
         
@@ -216,7 +220,7 @@ module debug_dm(
                 CMD_IDLE        : // wait for abstract command
                     if (dmi_wren && (dm_ctrl_cmderr == 3'b000) && (i_dmi_req_address == DMI_ADDR_COMMAND))
                         dm_ctrl_state <= CMD_EXE_CHECK;
-                    else if ((dm_reg_autoexec_rd == 1'b1) || (dm_reg_autoexec_wr == 1'b1))
+                    else if ((dm_reg_autoexec_rd == 1'b1) || ((dm_reg_autoexec_wr == 1'b1) && o_dmi_rsp_valid))
                         dm_ctrl_state <= CMD_EXE_CHECK;
                 CMD_EXE_CHECK   : // check if command is valid / supported
                     if ((dm_reg_command[31:24] == 8'h00)    &&
@@ -251,6 +255,15 @@ module debug_dm(
     // DMI access
     assign dmi_wren = i_dmi_req_valid && (i_dmi_req_op == DMI_OP_WRITE);
     assign dmi_rden = i_dmi_req_valid && (i_dmi_req_op == DMI_OP_READ);
+    
+    always @(posedge i_clk) begin
+        if (i_rst) dmi_wren_delay <= 1'b0;
+        else if (dm_reg_abstractauto_autoexecdata) begin
+            if (dmi_wren) dmi_wren_delay <= 1'b1;
+            else if (dmi_wren_delay && (!dm_ctrl_busy)) dmi_wren_delay <= 1'b0;
+        end
+        else dmi_wren_delay <= 1'b0;
+    end
     
     // Debug module command controller
     always @(posedge i_clk)
@@ -324,7 +337,8 @@ module debug_dm(
           dm_ctrl_hart_halted     <= 1'b0;
           dm_ctrl_hart_resume_req <= 1'b0;
           dm_ctrl_hart_resume_ack <= 1'b0;
-          dm_ctrl_hart_reset      <= 1'b0;            
+          dm_ctrl_hart_reset      <= 1'b0;
+          dm_ctrl_hart_resume_state <= 2'b00;            
         end
         else begin
             // HALTED ACK
@@ -348,23 +362,37 @@ module debug_dm(
 //               if (dm_reg_dmcontrol_ndmreset == 1'b1) dm_ctrl_hart_resume_ack <= 1'b0;
 //          else if (dm_reg_halt_req && dm_reg_dmcontrol_dmactive) dm_ctrl_hart_resume_ack <= 1'b0;
 //          else if (dci_resume_ack == 1'b1)   dm_ctrl_hart_resume_ack <= 1'b1;
+          if (dm_reg_dmcontrol_ndmreset == 1'b1)
+            dm_ctrl_hart_resume_state <= 2'b00; // idle
+          else begin
+            case (dm_ctrl_hart_resume_state)
+                2'b00: dm_ctrl_hart_resume_state <= dm_reg_resume_req? 2'b01: 2'b00;    // idle
+                2'b01: dm_ctrl_hart_resume_state <= dci_resume_ack? 2'b10: 2'b01;       // active
+                2'b10: dm_ctrl_hart_resume_state <= !dm_reg_resume_req? 2'b00: 2'b10;   // unactive
+                default: dm_ctrl_hart_resume_state <= 2'b00;
+            endcase
+          end
           
           // RESUME REQ
+//          if (dm_reg_dmcontrol_ndmreset == 1'b1)
+//            dm_ctrl_hart_resume_req <= 1'b0;
+//          else if (dm_reg_resume_req == 1'b1)
+//            dm_ctrl_hart_resume_req <= 1'b1;
+//          else if (dci_resume_ack == 1'b1)
+//            dm_ctrl_hart_resume_req <= 1'b0;
+
           if (dm_reg_dmcontrol_ndmreset == 1'b1)
             dm_ctrl_hart_resume_req <= 1'b0;
-          else if (dm_reg_resume_req == 1'b1)
-            dm_ctrl_hart_resume_req <= 1'b1;
-          else if (dci_resume_ack == 1'b1)
-            dm_ctrl_hart_resume_req <= 1'b0;
-          
+          else dm_ctrl_hart_resume_req <= dm_ctrl_hart_resume_state == 2'b01;
+                    
           // RESUME ACK
           if (dm_reg_dmcontrol_ndmreset == 1'b1)
             dm_ctrl_hart_resume_ack <= 1'b0;
           else if (dci_resume_ack == 1'b1)
             dm_ctrl_hart_resume_ack <= 1'b1;
-          else if (dm_reg_resume_req == 1'b1)
+          else if ((dm_reg_resume_req == 1'b1) && (dm_ctrl_hart_resume_state == 2'b00))
             dm_ctrl_hart_resume_ack <= 1'b0;
-          else dm_ctrl_hart_resume_ack <= 1'b0;
+//          else dm_ctrl_hart_resume_ack <= 1'b0;
               
           
           // hart has been RESET
@@ -450,9 +478,10 @@ module debug_dm(
             
    // ===== Direct control ====================================
    // Abtract data register
-   assign dci_data_we = dmi_wren && (i_dmi_req_address == DMI_ADDR_DATA0) && (!dm_ctrl_busy);
-   assign dci_wdata   = i_dmi_req_data;   
-   
+   assign dci_data_we     = dmi_wren && (i_dmi_req_address == DMI_ADDR_DATA0) && (!dm_ctrl_busy);
+   assign dci_data_autowe = dmi_wren_delay && (i_dmi_req_address == DMI_ADDR_DATA0) && (!dm_ctrl_busy);
+   assign dci_wdata       = i_dmi_req_data;   
+
    // CPU halt/resume request
   assign o_cpu_req_halt = dm_reg_halt_req && dm_reg_dmcontrol_dmactive; // single-shot
   assign dci_resume_req = dm_ctrl_hart_resume_req; // active until explicitly cleared   
@@ -476,6 +505,13 @@ module debug_dm(
   always @(posedge i_clk)
   begin
     o_dmi_rsp_valid <= i_dmi_req_valid;
+    
+    if (i_rst) 
+        r_dmi_req_valid <= 1'b0;
+    else if (i_dmi_req_valid) 
+        r_dmi_req_valid <= 1'b1;
+    else if (dm_ctrl_state == CMD_IDLE)
+        r_dmi_req_valid <= 1'b0;
     
     case (i_dmi_req_address)
         DMI_ADDR_DMSTATUS   : 
@@ -583,7 +619,7 @@ module debug_dm(
         dci_exception_ack   <= 1'b0;       
     end
     else begin
-        if (dci_data_we) // DM write acccess
+        if (dci_data_we || dci_data_autowe) // DM write acccess
             data_buf <= dci_wdata;
         else if (wren && (maddr == 2'b10))
             data_buf <= i_sbus_dat;
@@ -616,21 +652,21 @@ module debug_dm(
         // Wait for resume loop
         1: rom_rdata = 32'h8c000023;  // ffff_f804 sb x0, ffff_f8c0(x0)    // ACK that CPU is halted
         2: rom_rdata = 32'h8c204403;  // ffff_f808 lbu x8, ffff_f8c2(x0)   // request to execute program buffer?
-//        3: rom_rdata = 32'h00041c63;  // ffff_f80c bne x8, x0, 24        // Jump to execute
-        3: rom_rdata = 32'h02041063;  // ffff_f80c bne x8, x0, 32          // Jump to execute
+        3: rom_rdata = 32'h00041c63;  // ffff_f80c bne x8, x0, 24        // Jump to execute
+//        3: rom_rdata = 32'h02041063;  // ffff_f80c bne x8, x0, 32          // Jump to execute
         4: rom_rdata = 32'h8c104403;  // ffff_f810 lbu x8, ffff_f8c1(x0)   // request to resume?
         5: rom_rdata = 32'hfe0408e3;  // ffff_f814 beq x8, x0, -16         // return to loop or jump to resume
         // Resume
         6: rom_rdata = 32'h8c8000a3;  // ffff_f818 sb x8, ffff_f8c1(x0)    // ACK that CPU is about to resume
-        7: rom_rdata = 32'h8c104403;  // ffff_f81c lbu x8, ffff_f8c1(x0)   // read resume request
+//        7: rom_rdata = 32'h8c104403;  // ffff_f81c lbu x8, ffff_f8c1(x0)   // read resume request
 //        8: rom_rdata = 32'hfe041ee3;  // ffff_f820 bne x8, x0, -4          // wait until debbuger low the resume request
-        8: rom_rdata = 32'hfe041ce3;  // ffff_f820 bne x8, x0, -8          // wait until debbuger low the resume request
-        9: rom_rdata = 32'h7b202473;  // ffff_f824 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        10: rom_rdata = 32'h7b200073;  // ffff_f828 dret                    // exit debug mode
+//        8: rom_rdata = 32'hfe041ce3;  // ffff_f820 bne x8, x0, -8          // wait until debbuger low the resume request
+        7: rom_rdata = 32'h7b202473;  // ffff_f824 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        8: rom_rdata = 32'h7b200073;  // ffff_f828 dret                    // exit debug mode
         // Execute   
-        11: rom_rdata = 32'h8c000123; //  ffff_f82c sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
-        12: rom_rdata = 32'h7b202473; // ffff_f830 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
-        13: rom_rdata = 32'h84000067; // ffff_f834 jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
+        9: rom_rdata = 32'h8c000123; //  ffff_f82c sb x0, ffff_f8c2(x0)    // ACK that execution is about to start
+        10: rom_rdata = 32'h7b202473; // ffff_f830 csrrs x8, dscratch0, x0 // restore s0 from dscratch0
+        11: rom_rdata = 32'h84000067; // ffff_f834 jalr x0, x0, ffff_f840  // jump to beginning of program buffer (PBUF)
         default: rom_rdata = INSTR_NOP;   
     endcase
       
@@ -681,7 +717,9 @@ module debug_dm(
   assign dbg_execute_req = dci_execute_req;
   assign dbg_execute_ack = dci_execute_ack;
   assign dbg_halt_ack    = dci_halt_ack;
-  
+  assign dbg_autoexec_rd = dm_reg_autoexec_rd;
+  assign dbg_autoexec_wr = dm_reg_autoexec_wr;
+ 
   assign dbg_dm_ctrl_busy = dm_ctrl_busy;
   assign dbg_dm_ctrl_cmderr = dm_ctrl_cmderr;
   

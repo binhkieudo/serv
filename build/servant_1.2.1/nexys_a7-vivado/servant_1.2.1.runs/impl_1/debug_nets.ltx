@@ -30,14 +30,25 @@
                                 "id": 0,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 2,
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/jtag_trst",
-                                        "isBus": false
+                                        "name": "nolabel_line55/my_debugger/dm_ctrl_err",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_err[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_err[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_err[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -52,7 +63,7 @@
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/jtag_tck",
+                                        "name": "nolabel_line55/my_debugger/dm_ctrl_busy",
                                         "isBus": false
                                     }
                                 ]
@@ -2084,30 +2095,33 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 5,
+                                "rightIndex": 6,
                                 "portIndex": 45,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/rf_addr",
+                                        "name": "nolabel_line55/my_debugger/rf_waddr",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[5]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[6]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[4]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[5]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[3]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[4]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[2]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[3]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[1]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[2]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_addr[0]"
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_waddr[0]"
                                             }
                                         ]
                                     }
@@ -2140,32 +2154,32 @@
                                 "portIndex": 47,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/rf_data",
+                                        "name": "nolabel_line55/my_debugger/rf_wdata",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[7]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[7]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[6]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[6]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[5]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[5]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[4]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[4]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[3]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[3]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[2]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[2]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[1]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[1]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/rf_data[0]"
+                                                "name": "nolabel_line55/my_debugger/rf_wdata[0]"
                                             }
                                         ]
                                     }
@@ -2182,7 +2196,583 @@
                                 "portIndex": 48,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/rf_we1",
+                                        "name": "nolabel_line55/my_debugger/rf_w1wren",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe49",
+                                "id": 49,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 49,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dbg_autoexec_rd",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe50",
+                                "id": 50,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 50,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dbg_autoexec_wr",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe51",
+                                "id": 51,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 51,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/dm_ctrl_state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_state[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_state[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/dm_ctrl_state[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe52",
+                                "id": 52,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 52,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_w1addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w1addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe53",
+                                "id": 53,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 53,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_raddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[6]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_raddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe54",
+                                "id": 54,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 54,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_rdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[7]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[6]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_rdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe55",
+                                "id": 55,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 55,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_re",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe56",
+                                "id": 56,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 56,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_w0addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_w0addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe57",
+                                "id": 57,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 57,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_w0wren",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe58",
+                                "id": 58,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 58,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_r0addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r0addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe59",
+                                "id": 59,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 59,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/rf_r1addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/rf_r1addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe60",
+                                "id": 60,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 60,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/mem_adr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[31]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[30]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[29]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[28]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[27]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[26]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[25]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[24]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[23]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[22]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[21]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[20]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[19]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[18]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[17]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[16]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[15]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[14]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[13]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[12]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[11]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[10]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[9]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[8]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[7]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[6]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_adr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe61",
+                                "id": 61,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 61,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/mem_dat",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[31]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[30]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[29]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[28]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[27]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[26]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[25]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[24]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[23]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[22]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[21]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[20]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[19]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[18]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[17]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[16]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[15]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[14]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[13]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[12]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[11]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[10]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[9]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[8]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[7]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[6]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[5]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[4]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/mem_dat[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe62",
+                                "id": 62,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 62,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/mem_cyc",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe63",
+                                "id": 63,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 63,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/mem_we",
                                         "isBus": false
                                     }
                                 ]
@@ -2203,7 +2793,7 @@
                         "pins": [
                             {
                                 "name": "probe_in0",
-                                "id": 49,
+                                "id": 64,
                                 "type": "DATA",
                                 "direction": "IN",
                                 "isVector": true,
@@ -2317,7 +2907,7 @@
                             },
                             {
                                 "name": "probe_in1",
-                                "id": 50,
+                                "id": 65,
                                 "type": "DATA",
                                 "direction": "IN",
                                 "isVector": true,
@@ -2431,7 +3021,7 @@
                             },
                             {
                                 "name": "probe_in2",
-                                "id": 51,
+                                "id": 66,
                                 "type": "DATA",
                                 "direction": "IN",
                                 "isVector": true,
@@ -2545,113 +3135,56 @@
                             },
                             {
                                 "name": "probe_in3",
-                                "id": 52,
+                                "id": 67,
                                 "type": "DATA",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 31,
+                                "rightIndex": 12,
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/trace_3",
+                                        "name": "nolabel_line55/my_debugger/trace_count",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[31]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[12]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[30]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[11]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[29]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[10]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[28]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[9]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[27]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[8]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[26]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[7]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[25]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[6]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[24]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[5]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[23]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[4]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[22]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[3]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[21]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[2]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[20]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[1]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_3[19]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[18]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[17]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[16]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[15]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[14]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[13]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[12]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[11]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[10]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[9]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[8]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[7]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[6]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[5]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[4]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[3]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[2]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[1]"
-                                            },
-                                            {
-                                                "name": "nolabel_line55/my_debugger/trace_3[0]"
+                                                "name": "nolabel_line55/my_debugger/trace_count[0]"
                                             }
                                         ]
                                     }
@@ -2659,7 +3192,7 @@
                             },
                             {
                                 "name": "probe_in4",
-                                "id": 53,
+                                "id": 68,
                                 "type": "DATA",
                                 "direction": "IN",
                                 "isVector": true,
@@ -3445,7 +3978,7 @@
                             },
                             {
                                 "name": "probe_out0",
-                                "id": 54,
+                                "id": 69,
                                 "type": "DATA",
                                 "direction": "OUT",
                                 "isVector": false,
@@ -3461,7 +3994,7 @@
                             },
                             {
                                 "name": "probe_out1",
-                                "id": 55,
+                                "id": 70,
                                 "type": "DATA",
                                 "direction": "OUT",
                                 "isVector": true,
@@ -3477,7 +4010,7 @@
                             },
                             {
                                 "name": "probe_out1",
-                                "id": 56,
+                                "id": 71,
                                 "type": "DATA",
                                 "direction": "OUT",
                                 "isVector": true,
@@ -3492,48 +4025,73 @@
                                 ]
                             },
                             {
+                                "name": "probe_out1",
+                                "id": 72,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 2,
+                                "rightIndex": 2,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "nolabel_line55/my_debugger/vpins/probe_out1[2]",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
                                 "name": "probe_out2",
-                                "id": 57,
+                                "id": 73,
                                 "type": "DATA",
                                 "direction": "OUT",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 9,
+                                "rightIndex": 12,
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "nolabel_line55/my_debugger/trace_addr",
+                                        "name": "nolabel_line55/my_debugger/wtrace_addr",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[9]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[12]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[8]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[11]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[7]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[10]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[6]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[9]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[5]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[8]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[4]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[7]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[3]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[6]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[2]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[5]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[1]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[4]"
                                             },
                                             {
-                                                "name": "nolabel_line55/my_debugger/trace_addr[0]"
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[3]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[2]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[1]"
+                                            },
+                                            {
+                                                "name": "nolabel_line55/my_debugger/wtrace_addr[0]"
                                             }
                                         ]
                                     }
