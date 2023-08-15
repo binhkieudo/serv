@@ -5,7 +5,7 @@
 * Useful as smoke test to see that serv is running correctly
 */
 #ifndef GPIO_BASE
-#define GPIO_BASE 0x40000000
+#define GPIO_BASE 0x80000000
 #endif
 
 #ifndef DELAY

@@ -3,6 +3,8 @@ set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVDS} [get_ports SYSCLK_P];
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVDS} [get_ports SYSCLK_N];
+set_property src_info {type:XDC file:1 line:197 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN V29 IOSTANDARD LVCMOS18} [get_ports q];  # LA32_P
 set_property src_info {type:XDC file:1 line:251 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN R30 IOSTANDARD LVCMOS18} [get_ports i_jtag_trst];  # LA24_P
 set_property src_info {type:XDC file:1 line:252 export:INPUT save:INPUT read:READ} [current_design]

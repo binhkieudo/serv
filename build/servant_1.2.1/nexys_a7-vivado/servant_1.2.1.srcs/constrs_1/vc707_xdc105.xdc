@@ -194,7 +194,7 @@ create_clock -period 5.000 -name sys_clk_pin -waveform {0.000 2.500} -add [get_p
 #################################################################################
 #set_property -dict {PACKAGE_PIN IOSTANDARD LVCMOS18} [get_ports ] # VADJ (2.5)
 #set_property -dict {PACKAGE_PIN IOSTANDARD LVCMOS18} [get_ports ] # Ground
-#set_property -dict {PACKAGE_PIN V29 IOSTANDARD LVCMOS18} [get_ports {FMC1_J15[0]}];  # LA32_P
+set_property -dict {PACKAGE_PIN V29 IOSTANDARD LVCMOS18} [get_ports q];  # LA32_P
 #set_property -dict {PACKAGE_PIN U29 IOSTANDARD LVCMOS18} [get_ports {FMC1_J15[1]}];  # LA32_N
 #set_property -dict {PACKAGE_PIN U31 IOSTANDARD LVCMOS18} [get_ports {FMC1_J15[2]}];  # LA33_P
 #set_property -dict {PACKAGE_PIN T31 IOSTANDARD LVCMOS18} [get_ports {FMC1_J15[3]}];  # LA33_N

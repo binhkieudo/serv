@@ -399,83 +399,83 @@ module servant
           
     );
 
-    debugger my_debugger (
-        .i_clk              (wb_clk ),
-        // JTAG
-        .jtag_trst          (i_jtag_trst ),        /* probe 0 */ 
-        .jtag_tck           (i_jtag_tck  ),         /* probe 1 */
-        .jtag_tdi           (i_jtag_tdi  ),         /* probe 2 */
-        .jtag_tdo           (o_jtag_tdo  ),         /* probe 3 */
-        .jtag_tms           (i_jtag_tms  ),         /* probe 4 */
-        // DMI request
-        .dmi_req_valid      (dmi_req_valid  ),    /* probe 5 */
-        .dmi_req_ready      (dmi_req_ready  ),    /* probe 6 */
-        .dmi_req_address    (dmi_req_address),    /* probe 7 */
-        .dmi_req_data       (dmi_req_data   ),    /* probe 8 */
-        .dmi_req_op         (dmi_req_op     ),    /* probe 9 */
-        .dmi_rsp_valid      (dmi_rsp_valid  ),    /* probe 31 */
-        .dmi_rsp_ready      (dmi_rsp_ready  ),    /* probe 32 */
-        .dmi_rsp_data       (dmi_rsp_data   ),    /* probe 33 */
-        .dmi_rsp_op         (dmi_rsp_op     ),    /* probe 34 */
-        // DM
-        .dm_maddr           (dbg_maddr ),         /* probe 10 */
-        .dm_rden            (dbg_rden  ),         /* probe 11 */
-        .dm_wren            (dbg_wren  ),         /* probe 12 */
-        .dm_probuf0         (dbg_probuf0 ),       /* probe 27 */
-        .dm_probuf1         (dbg_probuf1 ),       /* probe 28 */
-        .dm_probuf2         (dbg_probuf2 ),       /* probe 29 */
-        .dm_probuf3         (dbg_probuf3 ),       /* probe 30 */
-        .dm_databuf         (dm_databuf ),        /* probe 36 */
-        .dm_ctrl_state      (dm_ctrl_state),
-        .dm_ctrl_busy       (dbg_dm_ctrl_busy ),
-        .dm_ctrl_err        (dbg_dm_ctrl_cmderr ),
-        // Instruction fetch
-        .ibus_adr           (wb_ibus_adr ),         /* probe 13 */
-        .ibus_cyc           (wb_ibus_cyc ),         /* probe 14 */
-        .ibus_rdt           (wb_ibus_rdt ),         /* probe 15 */
-        .ibus_ack           (wb_ibus_ack ),         /* probe 16 */
-        // Debug signal 
-        .dbg_dcsr_step      (o_dbg_step         ),    /* probe 17 */
-        .dbg_dcsr_en        (o_dbg_csr_dcsr_en  ),      /* probe 18 */
-        .dbg_misa_en        (o_dbg_csr_misa_en ),
-        .dbg_cpu_process    (w_dbg_process      ),  /* probe 19 */
-        .dbg_cpu_reset      (w_dbg_reset        ),    /* probe 20 */
-        .dbg_cpu_halt_req   (w_dbg_halt         ), /* probe 21 */
-        .dbg_cpu_halt_ack   (dbg_halt_ack       ), /* probe 22 */
-        .dbg_cpu_resume_req (dbg_resume_req     ),   /* probe 23 */
-        .dbg_cpu_resume_ack (dbg_resume_ack     ),   /* probe 24 */
-        .dbg_cpu_execute_req(dbg_execute_req    ),  /* probe 25 */
-        .dbg_cpu_execute_ack(dbg_execute_ack    ),  /* probe 26 */
-        .dbg_autoexec_rd    (dbg_autoexec_rd),
-        .dbg_autoexec_wr    (dbg_autoexec_wr),
-        // Sbus
-        .sbus_adr           (wb_dm_adr  ),
-        .sbus_dat           (wb_dm_dat  ),
-        .sbus_sel           (wb_dm_sel  ),
-        .sbus_we            (wb_dm_we   ),
-        .sbus_cyc           (wb_dm_cyc  ),
-        .sbus_rdt           (wb_dm_rdt  ),
-        .sbus_ack           (wb_dm_ack  ),
-        // RF interface
-        .rf_waddr           (o_dbg_rf_waddr ),
-        .rf_we              (o_dbg_rf_we    ),
-        .rf_wdata           (o_dbg_rf_wdata ),
-        .rf_raddr           (o_dbg_rf_raddr ),
-        .rf_rdata           (o_dbg_rf_rdata ),
-        .rf_re              (o_dbg_rf_re    ),
-        .rf_w0addr          (o_dbg_rf_w0addr),
-        .rf_w0wren          (o_dbg_rf_w0wren),
-        .rf_r0addr          (o_dbg_rf_r0addr),
-        .rf_w1addr          (o_dbg_rf_w1addr),
-        .rf_w1wren          (o_dbg_rf_w1wren),
-        .rf_r1addr          (o_dbg_rf_r1addr),
-        // Debug memory
-        .mem_adr            (wb_mem_adr ),
-        .mem_dat            (wb_mem_dat ),
-        .mem_cyc            (wb_mem_cyc ),
-        .mem_we             (wb_mem_we  ),
-        // Outputs
-        .o_dbg_step         (mo_debug_step      )
-    );
+//    debugger my_debugger (
+//        .i_clk              (wb_clk ),
+//        // JTAG
+//        .jtag_trst          (i_jtag_trst ),        /* probe 0 */ 
+//        .jtag_tck           (i_jtag_tck  ),         /* probe 1 */
+//        .jtag_tdi           (i_jtag_tdi  ),         /* probe 2 */
+//        .jtag_tdo           (o_jtag_tdo  ),         /* probe 3 */
+//        .jtag_tms           (i_jtag_tms  ),         /* probe 4 */
+//        // DMI request
+//        .dmi_req_valid      (dmi_req_valid  ),    /* probe 5 */
+//        .dmi_req_ready      (dmi_req_ready  ),    /* probe 6 */
+//        .dmi_req_address    (dmi_req_address),    /* probe 7 */
+//        .dmi_req_data       (dmi_req_data   ),    /* probe 8 */
+//        .dmi_req_op         (dmi_req_op     ),    /* probe 9 */
+//        .dmi_rsp_valid      (dmi_rsp_valid  ),    /* probe 31 */
+//        .dmi_rsp_ready      (dmi_rsp_ready  ),    /* probe 32 */
+//        .dmi_rsp_data       (dmi_rsp_data   ),    /* probe 33 */
+//        .dmi_rsp_op         (dmi_rsp_op     ),    /* probe 34 */
+//        // DM
+//        .dm_maddr           (dbg_maddr ),         /* probe 10 */
+//        .dm_rden            (dbg_rden  ),         /* probe 11 */
+//        .dm_wren            (dbg_wren  ),         /* probe 12 */
+//        .dm_probuf0         (dbg_probuf0 ),       /* probe 27 */
+//        .dm_probuf1         (dbg_probuf1 ),       /* probe 28 */
+//        .dm_probuf2         (dbg_probuf2 ),       /* probe 29 */
+//        .dm_probuf3         (dbg_probuf3 ),       /* probe 30 */
+//        .dm_databuf         (dm_databuf ),        /* probe 36 */
+//        .dm_ctrl_state      (dm_ctrl_state),
+//        .dm_ctrl_busy       (dbg_dm_ctrl_busy ),
+//        .dm_ctrl_err        (dbg_dm_ctrl_cmderr ),
+//        // Instruction fetch
+//        .ibus_adr           (wb_ibus_adr ),         /* probe 13 */
+//        .ibus_cyc           (wb_ibus_cyc ),         /* probe 14 */
+//        .ibus_rdt           (wb_ibus_rdt ),         /* probe 15 */
+//        .ibus_ack           (wb_ibus_ack ),         /* probe 16 */
+//        // Debug signal 
+//        .dbg_dcsr_step      (o_dbg_step         ),    /* probe 17 */
+//        .dbg_dcsr_en        (o_dbg_csr_dcsr_en  ),      /* probe 18 */
+//        .dbg_misa_en        (o_dbg_csr_misa_en ),
+//        .dbg_cpu_process    (w_dbg_process      ),  /* probe 19 */
+//        .dbg_cpu_reset      (w_dbg_reset        ),    /* probe 20 */
+//        .dbg_cpu_halt_req   (w_dbg_halt         ), /* probe 21 */
+//        .dbg_cpu_halt_ack   (dbg_halt_ack       ), /* probe 22 */
+//        .dbg_cpu_resume_req (dbg_resume_req     ),   /* probe 23 */
+//        .dbg_cpu_resume_ack (dbg_resume_ack     ),   /* probe 24 */
+//        .dbg_cpu_execute_req(dbg_execute_req    ),  /* probe 25 */
+//        .dbg_cpu_execute_ack(dbg_execute_ack    ),  /* probe 26 */
+//        .dbg_autoexec_rd    (dbg_autoexec_rd),
+//        .dbg_autoexec_wr    (dbg_autoexec_wr),
+//        // Sbus
+//        .sbus_adr           (wb_dm_adr  ),
+//        .sbus_dat           (wb_dm_dat  ),
+//        .sbus_sel           (wb_dm_sel  ),
+//        .sbus_we            (wb_dm_we   ),
+//        .sbus_cyc           (wb_dm_cyc  ),
+//        .sbus_rdt           (wb_dm_rdt  ),
+//        .sbus_ack           (wb_dm_ack  ),
+//        // RF interface
+//        .rf_waddr           (o_dbg_rf_waddr ),
+//        .rf_we              (o_dbg_rf_we    ),
+//        .rf_wdata           (o_dbg_rf_wdata ),
+//        .rf_raddr           (o_dbg_rf_raddr ),
+//        .rf_rdata           (o_dbg_rf_rdata ),
+//        .rf_re              (o_dbg_rf_re    ),
+//        .rf_w0addr          (o_dbg_rf_w0addr),
+//        .rf_w0wren          (o_dbg_rf_w0wren),
+//        .rf_r0addr          (o_dbg_rf_r0addr),
+//        .rf_w1addr          (o_dbg_rf_w1addr),
+//        .rf_w1wren          (o_dbg_rf_w1wren),
+//        .rf_r1addr          (o_dbg_rf_r1addr),
+//        // Debug memory
+//        .mem_adr            (wb_mem_adr ),
+//        .mem_dat            (wb_mem_dat ),
+//        .mem_cyc            (wb_mem_cyc ),
+//        .mem_we             (wb_mem_we  ),
+//        // Outputs
+//        .o_dbg_step         (mo_debug_step      )
+//    );
        
 endmodule

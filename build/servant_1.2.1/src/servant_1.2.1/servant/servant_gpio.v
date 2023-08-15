@@ -11,4 +11,6 @@ module servant_gpio
       if (i_wb_cyc & i_wb_we)
 	o_gpio <= i_wb_dat;
    end
+   
+   
 endmodule

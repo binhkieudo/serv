@@ -1,5 +1,5 @@
 QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
-Start time: 03:00:14 on Aug 14,2023
+Start time: 08:21:46 on Aug 15,2023
 vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl -o tb_opt 
 
 Top level modules:
@@ -36,12 +36,16 @@ Analyzing design...
 -- Loading module debugger
 -- Loading module vio_0
 -- Loading module ila_0
-Incremental compilation check found 25 design-units (out of 29) may be reused.
-Optimizing 4 design-units (inlining 0/29 module instances):
+Incremental compilation check found 21 design-units (out of 29) may be reused.
+Optimizing 8 design-units (inlining 0/29 module instances):
+-- Optimizing module debug_dm(fast)
+-- Optimizing module serv_decode(fast)
+-- Optimizing module serv_csr(fast)
 -- Optimizing module servant(fast)
 -- Optimizing module debugger(fast)
 -- Optimizing module serv_rf_top(fast)
+-- Optimizing module servant_ram(fast)
 -- Optimizing module ila_0(fast)
 Optimized design name is tb_opt
-End time: 03:00:15 on Aug 14,2023, Elapsed time: 0:00:01
+End time: 08:21:46 on Aug 15,2023, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0

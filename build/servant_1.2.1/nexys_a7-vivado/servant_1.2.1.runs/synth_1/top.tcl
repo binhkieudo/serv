@@ -79,10 +79,8 @@ create_project -in_memory -part xc7vx485tffg1761-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.cache/wt [current_project]
 set_property parent.project_path /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
@@ -95,7 +93,6 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dm.v
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debug_dtm.v
-  /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/debugger.v
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/flash_controller.v
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_alu.v
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/src/serv_1.2.1/rtl/serv_bufreg.v
@@ -120,16 +117,6 @@ read_verilog -library xil_defaultlib {
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/spi_master.v
   /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/new/top.v
 }
-read_ip -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/ila_0_1/ila_0.xci
-set_property used_in_synthesis false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/ila_0_1/ila_0_ooc.xdc]
-
-read_ip -quiet /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.srcs/sources_1/ip/vio_0_1/vio_0.xci
-set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0_1/vio_0.xdc]
-set_property used_in_implementation false [get_files -all /home/binhkieudo/Workspace/XRPIX/serv/build/servant_1.2.1/nexys_a7-vivado/servant_1.2.1.gen/sources_1/ip/vio_0_1/vio_0_ooc.xdc]
-
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

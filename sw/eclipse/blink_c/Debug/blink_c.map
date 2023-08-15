@@ -1,0 +1,51 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/main.o
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/libgcc.a
+START GROUP
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/lib/libc.a
+END GROUP
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/libgcc.a
+START GROUP
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/libgcc.a
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/lib/libc.a
+LOAD /opt/riscv/lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/lib/libnosys.a
+END GROUP
+                0x00000000                        . = 0x0
+
+.text           0x00000000        0x0
+ *(.text)
+ .text          0x00000000        0x0 ./src/main.o
+
+.text.main      0x00000000       0x5c
+ .text.main     0x00000000       0x5c ./src/main.o
+                0x00000000                main
+
+.srodata.DELAY  0x0000005c        0x4
+ .srodata.DELAY
+                0x0000005c        0x4 ./src/main.o
+                0x0000005c                DELAY
+
+.data           0x00000060        0x0
+ *(.data)
+ .data          0x00000060        0x0 ./src/main.o
+
+.bss            0x00000060        0x0
+ *(.bss)
+ .bss           0x00000060        0x0 ./src/main.o
+OUTPUT(blink_c.elf elf32-littleriscv)
+
+.comment        0x00000000        0xf
+ .comment       0x00000000        0xf ./src/main.o
+                                 0x10 (size before relaxing)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1c ./src/main.o

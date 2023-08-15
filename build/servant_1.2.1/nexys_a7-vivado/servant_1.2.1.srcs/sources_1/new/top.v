@@ -30,8 +30,9 @@ module top(
          input  wire i_jtag_tms,
          input  wire i_jtag_tck,
          //-------
-         output wire o_jtag_tdo
-         
+         output wire o_jtag_tdo,
+         // Leds
+         output q
     );
     
     reg [5:0] init_rst = 6'b000000;
@@ -56,7 +57,7 @@ module top(
          .wb_clk     (wb_clk),
          .wb_rstn    (init_rst[5]),
          // GPIO
-         .q          (),
+         .q          (q),
          // JTAG
          .i_jtag_trst(i_jtag_trst),
          .i_jtag_tck (i_jtag_tck),

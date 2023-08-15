@@ -1,0 +1,5 @@
+cd openocd/
+./bootstrap
+./configure --prefix=/opt/riscv-openocd --enable-ftdi --enable-dummy
+make -j`nproc`
+sudo make install

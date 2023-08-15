@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date                      : Tue Aug 15 03:38:42 2023
+| Date                      : Tue Aug 15 08:26:28 2023
 | Host                      : binhkieudo-hotswap running 64-bit Ubuntu 20.04.6 LTS
 | Command                   : report_io -file top_io_placed.rpt
 | Design                    : top
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|             7 |
+|             8 |
 +---------------+
 
 
@@ -1697,7 +1697,7 @@ Table of Contents
 | V26        |             |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | V27        |             |                  | VCCINT                       | VCCINT        |             |         |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | V28        |             |                  | GND                          | GND           |             |         |            |      |                     |                      |       0.0 |            |           |          |      |                  |              |                   |              |
-| V29        |             | High Performance | IO_L23P_T3_34                | User IO       |             |      34 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
+| V29        | q           | High Performance | IO_L23P_T3_34                | OUTPUT        | LVCMOS18    |      34 |         12 | SLOW |                     |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | V30        |             | High Performance | IO_L20P_T3_34                | User IO       |             |      34 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | V31        |             | High Performance | IO_L20N_T3_34                | User IO       |             |      34 |            |      |                     |                      |           |            |           |          |      |                  |              |                   |              |
 | V32        |             | High Performance | VCCO_18                      | VCCO          |             |      18 |            |      |                     |                      | 0.00-1.80 |            |           |          |      |                  |              |                   |              |
